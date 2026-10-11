@@ -7,7 +7,7 @@ export const site = {
   contactEmail: 'fperdintl@tipseindia.com',
   schoolName: 'The Indian Public School',
   // GoatCounter is off until Madan decides (PRD Section 16, item 3).
-  // When on, set this to the GoatCounter site code, e.g. 'tips-futurepathways'.
+  // When on, set this to the GoatCounter site code, e.g. 'futurepathways'.
   goatCounterCode: '',
 } as const;
 
