@@ -40,7 +40,7 @@ export const GET: APIRoute = async ({ props, site }) => {
     'CALSCALE:GREGORIAN',
     'METHOD:PUBLISH',
     'BEGIN:VEVENT',
-    `UID:${post.slug}-${date}@tips-futurepathways.github.io`,
+    `UID:${post.slug}-${date}@futurepathways.github.io`,
     `DTSTAMP:${stamp}`,
     `DTSTART;VALUE=DATE:${date}`,
     `DTEND;VALUE=DATE:${nextStr}`,

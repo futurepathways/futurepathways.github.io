@@ -48,7 +48,7 @@ Settled. Claude Code should not ask about these again.
 | 16 | Language | English only |
 | 17 | Analytics account | Same official account email, if turned on |
 | 18 | Phase reviews | Madan reviews every phase; Niranjan joins Phase 6 |
-| — | Hosting | Official TIPS GitHub organisation, account email fptrichy@tipseindia.com, main github.io site |
+| — | Hosting | **[v1.5]** Organisation `futurepathways` owned by Madan's personal account; main github.io site at `https://futurepathways.github.io` |
 | 19 | Tags per post [v1.3] | Required: 3 to 8 in total, at least one Subject area tag |
 | 20 | Finding by tag and category [v1.3] | Search box matches tags and categories, tag pages, Browse All Tags page, filterable search results |
 | 21 | Project folder [v1.4] | Subfolder `tips-futurepathways.github.io/` beside the PRD; the PRD stays outside the public repo |
@@ -61,5 +61,6 @@ Settled. Claude Code should not ask about these again.
 | 28 | Cover alt text [v1.4] | New `cover_alt` field, required when a cover image is set |
 | 29 | Filter engine [v1.4] | One shared engine: Pagefind for words, JSON index for filters and sort |
 | 30 | Phase 2 sample posts [v1.4] | Four temporary posts for testing; **[v1.5]** deleted once Phase 2 was checked |
+| 33 | Hosting account [v1.5] | Madan's personal GitHub account owns the `futurepathways` organisation; no fptrichy account |
 | 32 | Starter posts [v1.5] | The 28-post plan is withdrawn. Claude drafts no content; counsellors write every post |
 | 31 | Pages CMS pick lists [v1.4] | If Pages CMS cannot read `tags.yml` directly, a small script regenerates the pick lists in `.pages.yml`; the publishing guide covers it |

@@ -3,9 +3,9 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
 // The live address and base path live ONLY here (PRD Section 5.1).
-// If the GitHub organisation name changes, change `site` and the repo name.
+// If the GitHub organisation name changes, change `site` here and the repo name on GitHub.
 export default defineConfig({
-  site: 'https://tips-futurepathways.github.io',
+  site: 'https://futurepathways.github.io',
   base: '/',
   trailingSlash: 'always',
   build: {

@@ -2,7 +2,7 @@
 
 A free, read-only website where TIPS students and their parents find clear guides on careers, courses, countries and opportunities. Run by the TIPS FP (Future Pathway) team.
 
-Live address (once deployed): https://tips-futurepathways.github.io
+Live address (once deployed): https://futurepathways.github.io
 
 ## Run it on your laptop
 
