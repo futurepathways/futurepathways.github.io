@@ -1,0 +1,125 @@
+---
+// Hidden /review page (PRD 13, 5.4): posts due for checking, oldest first, for Madan and Niranjan.
+// noindex, and listed under Disallow in robots.txt. Includes drafts so they can be tracked too.
+import Base from '../layouts/Base.astro';
+import { getAllPosts, formatDate, monthsSince, istToday, toDateString } from '../lib/content';
+import { categoryByKey } from '../config/site';
+
+const all = await getAllPosts();
+const today = istToday();
+const rows = all
+  .map((p) => ({ p, months: monthsSince(p.lastChecked, today) }))
+  .sort((a, b) => a.p.lastChecked.getTime() - b.p.lastChecked.getTime());
+const due = rows.filter((r) => r.months >= 6);
+const noReviewer = all.filter((p) => p.status === 'published' && !p.reviewedBy);
+const drafts = all.filter((p) => p.status === 'draft');
+---
+
+<Base title="Review list" description="Posts due for a fact check." noindex>
+  <div class="container section">
+    <h1>Review list</h1>
+    <p class="prose">
+      For the FP team. Built on {formatDate(toDateString(today))} (the site rebuilds every day at 05:00 IST). A post is
+      due when <code>last_checked</code> is 6 months or older.
+    </p>
+
+    <h2>Due for checking ({due.length})</h2>
+    {
+      due.length === 0 ? (
+        <p>Nothing is overdue. Well done.</p>
+      ) : (
+        <table>
+          <thead>
+            <tr>
+              <th>Post</th>
+              <th>Category</th>
+              <th>Last checked</th>
+              <th>Months ago</th>
+              <th>Reviewer</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            {due.map(({ p, months }) => (
+              <tr>
+                <td>
+                  <a href={p.path}>{p.title}</a>
+                </td>
+                <td>{categoryByKey[p.category].shortName}</td>
+                <td>{formatDate(p.lastChecked)}</td>
+                <td>{months}</td>
+                <td>{p.reviewedBy || '—'}</td>
+                <td>{p.status}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )
+    }
+
+    <h2>Published without a reviewer ({noReviewer.length})</h2>
+    {
+      noReviewer.length === 0 ? (
+        <p>Every published post names who checked it.</p>
+      ) : (
+        <ul>
+          {noReviewer.map((p) => (
+            <li>
+              <a href={p.path}>{p.title}</a>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+
+    <h2>Drafts waiting ({drafts.length})</h2>
+    {
+      drafts.length === 0 ? (
+        <p>No drafts.</p>
+      ) : (
+        <table>
+          <thead>
+            <tr>
+              <th>Post</th>
+              <th>Category</th>
+              <th>Last checked</th>
+              <th>Reviewer</th>
+            </tr>
+          </thead>
+          <tbody>
+            {drafts.map((p) => (
+              <tr>
+                <td>{p.title}</td>
+                <td>{categoryByKey[p.category].shortName}</td>
+                <td>{formatDate(p.lastChecked)}</td>
+                <td>{p.reviewedBy || 'not yet checked'}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )
+    }
+
+    <h2>All posts by last checked ({rows.length})</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Post</th>
+          <th>Last checked</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          rows.map(({ p }) => (
+            <tr>
+              <td>{p.status === 'published' ? <a href={p.path}>{p.title}</a> : p.title}</td>
+              <td>{formatDate(p.lastChecked)}</td>
+              <td>{p.status}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+</Base>

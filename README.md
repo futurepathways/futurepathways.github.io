@@ -1,43 +1,39 @@
-# Astro Starter Kit: Minimal
+# Future Pathways
 
-```sh
-npm create astro@latest -- --template minimal
-```
+A free, read-only website where TIPS students and their parents find clear guides on careers, courses, countries and opportunities. Run by the TIPS FP (Future Pathway) team.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Live address (once deployed): https://tips-futurepathways.github.io
 
-## 🚀 Project Structure
+## Run it on your laptop
 
-Inside of your Astro project, you'll see the following folders and files:
+All commands work in Windows PowerShell, from this folder.
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+| Command | What it does |
+|---|---|
+| `npm install` | Install dependencies (first time only) |
+| `npm run dev` | Start a local preview at http://localhost:4321 that updates as you edit |
+| `npm run build` | Build the finished site into `dist/` |
+| `npm run preview` | Serve the built `dist/` folder exactly as it will appear online |
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Where things live
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+| Path | Purpose |
+|---|---|
+| `src/content/` | Blog posts as Markdown, one folder per category |
+| `src/data/` | Tag list, country list, "start here" lists |
+| `src/config/site.ts` | Site name, team name, contact email, menu |
+| `astro.config.mjs` | Live URL and base path only |
+| `public/images/` | Logo, category default images, link preview images |
+| `docs/` | Word templates and the publishing guide for the FP team |
+| `.pages.yml` | Pages CMS editor configuration |
+| `.github/workflows/deploy.yml` | Build and deploy on every change, plus daily at 05:00 IST |
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Adding a logo
 
-## 🧞 Commands
+Drop a file at `public/images/logo.svg` (or `logo.png`). The header switches from the text wordmark to the logo automatically.
 
-All commands are run from the root of the project, from a terminal:
+## Who does what
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- Counsellors write posts in Word using the templates in `docs/templates/`.
+- Niranjan enters them through Pages CMS. See `docs/PUBLISHING_GUIDE.md`.
+- Nobody needs to touch this code to publish a post.

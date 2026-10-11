@@ -1,0 +1,237 @@
+---
+// Upcoming Deadlines (PRD 6.4): every post with a future deadline, grouped by month,
+// soonest first. Past deadlines sit in a collapsed "Recently closed" section for 30 days.
+import Base from '../layouts/Base.astro';
+import PostList from '../components/PostList.astro';
+import DeadlineBadge from '../components/DeadlineBadge.astro';
+import Icon from '../components/Icon.astro';
+import { getVisiblePosts, gradeBandLabel, opportunityTypeLabel } from '../lib/content';
+import { categoryByKey } from '../config/site';
+import { istTodayString, daysLeft, formatDateString } from '../lib/deadlines';
+
+const today = istTodayString();
+const all = await getVisiblePosts();
+const dated = all.filter((p) => p.opportunity?.deadline && !p.opportunity.rolling);
+const upcoming = dated
+  .filter((p) => daysLeft(p.opportunity!.deadline!, today) >= 0)
+  .sort((a, b) => a.opportunity!.deadline!.localeCompare(b.opportunity!.deadline!));
+const recentlyClosed = dated
+  .filter((p) => {
+    const d = daysLeft(p.opportunity!.deadline!, today);
+    return d < 0 && d >= -30;
+  })
+  .sort((a, b) => b.opportunity!.deadline!.localeCompare(a.opportunity!.deadline!));
+const rolling = all.filter((p) => p.opportunity?.rolling);
+
+const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const months = new Map<string, typeof upcoming>();
+for (const p of upcoming) {
+  const key = p.opportunity!.deadline!.slice(0, 7);
+  if (!months.has(key)) months.set(key, []);
+  months.get(key)!.push(p);
+}
+const monthLabel = (key: string) => `${monthNames[+key.slice(5, 7) - 1]} ${key.slice(0, 4)}`;
+---
+
+<Base title="Upcoming Deadlines" description="Every opportunity with a deadline, soonest first, so you never miss an application date.">
+  <div class="container section">
+    <h1>Upcoming Deadlines</h1>
+    <p class="prose">
+      Every internship, programme, competition and scholarship with a date, soonest first. A deadline means 11:59 PM
+      India time on that day unless the post says otherwise. Always confirm on the official site.
+    </p>
+
+    {
+      upcoming.length === 0 && (
+        <p class="note">No upcoming deadlines right now. Check the <a href="/opportunities/">Internships &amp; Opportunities</a> page for rolling and new posts.</p>
+      )
+    }
+
+    {
+      Array.from(months.entries()).map(([key, posts]) => (
+        <section class="month">
+          <h2>{monthLabel(key)}</h2>
+          <ul class="deadline-list">
+            {posts.map((p) => (
+              <li class={`card deadline-item cat-${p.category}`} data-deadline-item>
+                <div class="deadline-date">
+                  <span class="deadline-day">{+p.opportunity!.deadline!.slice(8, 10)}</span>
+                  <span class="deadline-mon">{formatDateString(p.opportunity!.deadline!).split(' ')[1]}</span>
+                </div>
+                <div class="deadline-body">
+                  <p class="deadline-kicker">
+                    {opportunityTypeLabel[p.opportunity!.type] ?? 'Opportunity'} ·{' '}
+                    {p.gradeBands.map((g) => gradeBandLabel[g]).join(', ')}
+                  </p>
+                  <h3>
+                    <a href={p.path}>{p.title}</a>
+                  </h3>
+                  <p class="deadline-summary">{p.summary}</p>
+                  <div class="deadline-meta">
+                    <DeadlineBadge deadline={p.opportunity!.deadline} rolling={false} showDate />
+                    <a class="btn btn--outline btn--small" href={`${p.path}deadline.ics`} download>
+                      <Icon name="calendar" size={16} /> Add to calendar
+                    </a>
+                  </div>
+                  {p.opportunity!.deadlineNote && <p class="deadline-note">{p.opportunity!.deadlineNote}</p>}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+
+    {
+      rolling.length > 0 && (
+        <section class="month">
+          <h2>No fixed deadline (rolling)</h2>
+          <ul class="deadline-list">
+            {rolling.map((p) => (
+              <li class={`card deadline-item cat-${p.category}`}>
+                <div class="deadline-date deadline-date--rolling">
+                  <Icon name="opportunities" size={26} />
+                </div>
+                <div class="deadline-body">
+                  <p class="deadline-kicker">{opportunityTypeLabel[p.opportunity!.type] ?? 'Opportunity'}</p>
+                  <h3>
+                    <a href={p.path}>{p.title}</a>
+                  </h3>
+                  <p class="deadline-summary">{p.summary}</p>
+                  <DeadlineBadge deadline={null} rolling={true} />
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    {
+      recentlyClosed.length > 0 && (
+        <details class="closed">
+          <summary>Recently closed ({recentlyClosed.length})</summary>
+          <ul class="deadline-list">
+            {recentlyClosed.map((p) => (
+              <li class={`card deadline-item deadline-item--closed cat-${p.category}`}>
+                <div class="deadline-date">
+                  <span class="deadline-day">{+p.opportunity!.deadline!.slice(8, 10)}</span>
+                  <span class="deadline-mon">{formatDateString(p.opportunity!.deadline!).split(' ')[1]}</span>
+                </div>
+                <div class="deadline-body">
+                  <h3>
+                    <a href={p.path}>{p.title}</a>
+                  </h3>
+                  <DeadlineBadge deadline={p.opportunity!.deadline} rolling={false} showDate />
+                </div>
+              </li>
+            ))}
+          </ul>
+        </details>
+      )
+    }
+
+    <p class="deadline-footnote">
+      Want to see these with filters? Go to <a href="/opportunities/?sort=deadline">Internships &amp; Opportunities</a> and sort by deadline.
+    </p>
+  </div>
+</Base>
+
+<script>
+  import '../scripts/deadlines';
+</script>
+
+<style>
+  .month h2 {
+    font-size: 1.35rem;
+    margin-top: 1.8rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid var(--gold);
+  }
+  .deadline-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .deadline-item {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    gap: 1rem;
+    border-left: 5px solid var(--cat);
+  }
+  .deadline-item--closed {
+    opacity: 0.8;
+  }
+  .deadline-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--tag-bg);
+    color: var(--tag-text);
+    border-radius: var(--radius-sm);
+    padding: 0.4rem 0;
+    align-self: start;
+    min-height: 64px;
+  }
+  .deadline-day {
+    font-family: var(--font-heading);
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .deadline-mon {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .deadline-kicker {
+    margin: 0 0 0.2rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+  .deadline-body h3 {
+    margin: 0 0 0.3rem;
+    font-size: 1.15rem;
+  }
+  .deadline-body h3 a {
+    color: var(--heading);
+    text-decoration: none;
+  }
+  .deadline-body h3 a:hover {
+    text-decoration: underline;
+  }
+  .deadline-summary {
+    margin: 0 0 0.5rem;
+    font-size: 0.95rem;
+  }
+  .deadline-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    align-items: center;
+  }
+  .deadline-note {
+    margin: 0.5rem 0 0;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+  }
+  .closed {
+    margin-top: 2rem;
+  }
+  .closed summary {
+    cursor: pointer;
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--heading);
+    margin-bottom: 0.8rem;
+  }
+  .deadline-footnote {
+    margin-top: 2rem;
+    color: var(--text-muted);
+  }
+</style>

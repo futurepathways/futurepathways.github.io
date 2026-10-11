@@ -1,0 +1,69 @@
+---
+// Category listing page (PRD 6.2): main category OR extra categories.
+import Base from '../../layouts/Base.astro';
+import PostList from '../../components/PostList.astro';
+import Icon from '../../components/Icon.astro';
+import { categories, categoryByKey } from '../../config/site';
+import { getVisiblePosts, postsInCategory } from '../../lib/content';
+import type { CategoryKey } from '../../content.config';
+
+export async function getStaticPaths() {
+  return categories.map((c) => ({ params: { category: c.key } }));
+}
+
+const key = Astro.params.category as CategoryKey;
+const cat = categoryByKey[key];
+const posts = postsInCategory(await getVisiblePosts(), key);
+const intro: Record<CategoryKey, string> = {
+  careers: 'What different careers are really like, how people get into them, and what to study on the way.',
+  opportunities:
+    'Internships, summer programmes, competitions, webinars and scholarships you can apply for, with their deadlines.',
+  courses: 'Degree and diploma courses explained: what they cover, who they suit, and where they lead.',
+  countries: 'Studying in another country: costs, tests, visas, scholarships and what to think about.',
+};
+---
+
+<Base title={cat.name} description={intro[key]} image={`/images/preview-${key}.png`}>
+  <section class={`category-hero cat-${key}`}>
+    <div class="container">
+      <p class="eyebrow"><Icon name={key} size={22} /> Category</p>
+      <h1>{cat.name}</h1>
+      <p class="category-intro">{intro[key]}</p>
+    </div>
+  </section>
+  <div class="container section">
+    <PostList
+      posts={posts}
+      context={key}
+      sortDefault={key === 'opportunities' ? 'deadline' : 'newest'}
+      headingLevel="h2"
+    />
+  </div>
+</Base>
+
+<style>
+  .category-hero {
+    background: var(--bg-soft);
+    border-bottom: 4px solid var(--cat);
+    padding-block: 1.8rem;
+  }
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin: 0 0 0.3rem;
+    color: var(--cat);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.85rem;
+  }
+  .category-hero h1 {
+    margin-bottom: 0.4rem;
+  }
+  .category-intro {
+    max-width: 60ch;
+    margin: 0;
+    color: var(--text);
+  }
+</style>

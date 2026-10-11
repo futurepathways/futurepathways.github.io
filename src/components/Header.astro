@@ -1,0 +1,332 @@
+---
+import { existsSync } from 'node:fs';
+import { site, mainNav } from '../config/site';
+import Icon from './Icon.astro';
+
+// Logo rule (PRD Section 1): text wordmark until a logo file is dropped in at
+// public/images/logo.svg or public/images/logo.png. No layout change needed.
+const logoFile = ['logo.svg', 'logo.png'].find((f) => existsSync(new URL(`../../public/images/${f}`, import.meta.url)));
+const logoSrc = logoFile ? `/images/${logoFile}` : null;
+
+const currentPath = Astro.url.pathname;
+const isCurrent = (path: string) => (path === '/' ? currentPath === '/' : currentPath.startsWith(path));
+---
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="brand" aria-label={`${site.name} home`}>
+      {
+        logoSrc ? (
+          <img src={logoSrc} alt={site.name} class="brand-logo" width="160" height="48" />
+        ) : (
+          <span class="wordmark">
+            <span class="wordmark-name">{site.name}</span>
+            <span class="wordmark-by">by TIPS</span>
+          </span>
+        )
+      }
+    </a>
+
+    <form class="search" action="/search/" method="get" role="search" data-suggest-wrap>
+      <label for="site-search" class="visually-hidden">Search the site</label>
+      <input
+        id="site-search"
+        type="search"
+        name="q"
+        placeholder="Search careers, courses, tests…"
+        autocomplete="off"
+        enterkeyhint="search"
+        data-suggest
+      />
+      <button type="submit" class="search-btn" aria-label="Search">
+        <Icon name="search" size={20} />
+      </button>
+    </form>
+
+    <a href="/saved/" class="saved-link" data-saved-link aria-label="My saved posts">
+      <Icon name="bookmark" size={20} />
+      <span class="saved-word">Saved</span><span class="saved-count" data-saved-count></span>
+    </a>
+
+    <button
+      class="menu-btn"
+      type="button"
+      aria-expanded="false"
+      aria-controls="main-nav"
+      aria-label="Menu"
+      data-menu-btn
+    >
+      <Icon name="menu" size={22} class="menu-icon-open" />
+      <Icon name="close" size={22} class="menu-icon-close" />
+      <span class="menu-label">Menu</span>
+    </button>
+  </div>
+
+  <nav id="main-nav" class="main-nav" aria-label="Main menu" data-main-nav>
+    <ul class="container nav-list">
+      {
+        mainNav.map((item) => (
+          <li>
+            <a href={item.path} aria-current={isCurrent(item.path) ? 'page' : undefined}>
+              {item.label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</header>
+
+<script>
+  import '../scripts/suggest';
+  // Mobile menu toggle. Without JavaScript the menu is always shown (see <noscript> CSS).
+  const btn = document.querySelector<HTMLButtonElement>('[data-menu-btn]');
+  const nav = document.querySelector<HTMLElement>('[data-main-nav]');
+  if (btn && nav) {
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      nav.toggleAttribute('data-open', !open);
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && btn.getAttribute('aria-expanded') === 'true') {
+        btn.setAttribute('aria-expanded', 'false');
+        nav.removeAttribute('data-open');
+        btn.focus();
+      }
+    });
+  }
+</script>
+
+<noscript>
+  <style>
+    .main-nav {
+      display: block !important;
+    }
+    .menu-btn {
+      display: none !important;
+    }
+  </style>
+</noscript>
+
+<style>
+  .site-header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    z-index: 20;
+  }
+  .header-inner {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    grid-template-areas:
+      'brand saved menu'
+      'search search search';
+    align-items: center;
+    gap: 0.6rem 0.75rem;
+    padding-block: 0.7rem;
+  }
+  .brand {
+    grid-area: brand;
+    text-decoration: none;
+    color: inherit;
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+  .brand-logo {
+    height: 44px;
+    width: auto;
+  }
+  .wordmark {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.05;
+  }
+  .wordmark-name {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.45rem;
+    white-space: nowrap;
+    color: var(--heading);
+    letter-spacing: 0.01em;
+  }
+  .wordmark-by {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-top: 0.15rem;
+  }
+
+  .search {
+    grid-area: search;
+    display: flex;
+    align-items: stretch;
+    border: 1.5px solid var(--border);
+    border-radius: 999px;
+    background: var(--bg);
+    overflow: hidden;
+  }
+  .search:focus-within {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 3px rgb(24 95 165 / 0.18);
+  }
+  .search input {
+    flex: 1 1 auto;
+    min-width: 0;
+    border: 0;
+    background: transparent;
+    color: var(--text);
+    font: inherit;
+    padding: 0.55rem 0.4rem 0.55rem 1rem;
+    outline: none;
+  }
+  .search input::placeholder {
+    color: var(--text-muted);
+  }
+  .search-btn {
+    border: 0;
+    background: var(--blue);
+    color: #fff;
+    padding: 0 0.95rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    min-width: 44px;
+  }
+  .search-btn:hover {
+    background: var(--deep);
+  }
+
+  .saved-link {
+    grid-area: saved;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    min-height: 44px;
+    padding: 0 0.6rem;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: var(--radius-sm);
+  }
+  .saved-link:hover {
+    background: var(--bg-soft);
+  }
+
+  .menu-btn {
+    grid-area: menu;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    min-height: 44px;
+    padding: 0 0.7rem;
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--bg);
+    color: var(--text);
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .menu-btn :global(.menu-icon-close),
+  .menu-btn[aria-expanded='true'] :global(.menu-icon-open) {
+    display: none;
+  }
+  .menu-btn[aria-expanded='true'] :global(.menu-icon-close) {
+    display: inline-block;
+  }
+  .saved-count {
+    font-weight: 700;
+  }
+  @media (max-width: 519px) {
+    .saved-word,
+    .menu-label {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+    }
+    .saved-link,
+    .menu-btn {
+      padding-inline: 0.55rem;
+      min-width: 44px;
+      justify-content: center;
+    }
+  }
+
+  .main-nav {
+    display: none;
+    border-top: 1px solid var(--border);
+    background: var(--surface);
+  }
+  .main-nav[data-open] {
+    display: block;
+  }
+  .nav-list {
+    list-style: none;
+    margin: 0;
+    padding-block: 0.4rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-list a {
+    display: block;
+    padding: 0.7rem 0.4rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+    border-left: 4px solid transparent;
+  }
+  .nav-list li:last-child a {
+    border-bottom: 0;
+  }
+  .nav-list a:hover,
+  .nav-list a[aria-current='page'] {
+    color: var(--link);
+    border-left-color: var(--gold);
+    background: var(--bg-soft);
+  }
+
+  @media (min-width: 800px) {
+    .header-inner {
+      grid-template-columns: auto 1fr auto;
+      grid-template-areas: 'brand search saved';
+      gap: 1.5rem;
+    }
+    .search {
+      max-width: 520px;
+      justify-self: center;
+      width: 100%;
+    }
+    .menu-btn {
+      display: none;
+    }
+    .main-nav {
+      display: block;
+    }
+    .nav-list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 0.1rem;
+      padding-block: 0;
+    }
+    .nav-list a {
+      padding: 0.65rem 0.75rem;
+      border-bottom: 3px solid transparent;
+      border-left: 0;
+    }
+    .nav-list li:last-child a {
+      border-bottom: 3px solid transparent;
+    }
+    .nav-list a:hover,
+    .nav-list a[aria-current='page'] {
+      border-left: 0;
+      border-bottom-color: var(--gold);
+      background: transparent;
+    }
+  }
+</style>

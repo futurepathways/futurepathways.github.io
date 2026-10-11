@@ -1,0 +1,112 @@
+---
+// Browse All Tags (PRD 6.9): every tag with at least one visible post, grouped.
+import Base from '../../layouts/Base.astro';
+import { tags, tagGroupNames, tagGroupOrder } from '../../lib/data';
+import { getVisiblePosts } from '../../lib/content';
+
+const posts = await getVisiblePosts();
+const counts = new Map<string, number>();
+for (const p of posts) for (const t of p.tags) counts.set(t.slug, (counts.get(t.slug) ?? 0) + 1);
+const groups = tagGroupOrder
+  .map((g) => ({
+    key: g,
+    name: tagGroupNames[g],
+    tags: tags.filter((t) => t.group === g && counts.get(t.slug)).sort((a, b) => a.name.localeCompare(b.name)),
+  }))
+  .filter((g) => g.tags.length);
+---
+
+<Base title="Browse All Tags" description="Every topic on Future Pathways, grouped by subject, exam, skill, level and audience.">
+  <div class="container section">
+    <h1>Browse All Tags</h1>
+    <p class="prose">Tap a tag to see every post about it. Start typing to narrow the list.</p>
+
+    <div class="tag-search js-only">
+      <label for="tag-filter" class="visually-hidden">Narrow the tag list</label>
+      <input id="tag-filter" type="search" placeholder="Type to find a tag, e.g. NEET" autocomplete="off" />
+    </div>
+
+    {
+      groups.map((g) => (
+        <section class="tag-group-section" data-tag-group>
+          <h2>{g.name}</h2>
+          <ul class="tag-cloud">
+            {g.tags.map((t) => (
+              <li data-tag-item data-text={`${t.name} ${t.search.join(' ')}`.toLowerCase()}>
+                <a class="tag tag--big" href={`/tags/${t.slug}/`}>
+                  {t.name} <span class="count">{counts.get(t.slug)}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+    {groups.length === 0 && <p>No tags yet. Posts will appear here once they are published.</p>}
+    <p class="no-match" data-no-match hidden>No tag matches that. Try another word.</p>
+  </div>
+</Base>
+
+<script>
+  const input = document.getElementById('tag-filter') as HTMLInputElement | null;
+  const items = Array.from(document.querySelectorAll<HTMLElement>('[data-tag-item]'));
+  const groups = Array.from(document.querySelectorAll<HTMLElement>('[data-tag-group]'));
+  const noMatch = document.querySelector<HTMLElement>('[data-no-match]');
+  input?.addEventListener('input', () => {
+    const q = input.value.trim().toLowerCase();
+    let any = false;
+    items.forEach((li) => {
+      const show = !q || (li.dataset.text || '').includes(q);
+      li.hidden = !show;
+      if (show) any = true;
+    });
+    groups.forEach((g) => (g.hidden = !g.querySelector('[data-tag-item]:not([hidden])')));
+    if (noMatch) noMatch.hidden = any;
+  });
+</script>
+
+<style>
+  .tag-search {
+    margin: 1rem 0 1.5rem;
+    max-width: 420px;
+  }
+  .tag-search input {
+    width: 100%;
+    min-height: 46px;
+    font: inherit;
+    padding: 0.5rem 1rem;
+    border: 1.5px solid var(--border);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--text);
+  }
+  .tag-search input:focus {
+    outline: none;
+    border-color: var(--blue);
+    box-shadow: 0 0 0 3px rgb(24 95 165 / 0.18);
+  }
+  .tag-group-section h2 {
+    font-size: 1.3rem;
+    margin-top: 1.4rem;
+  }
+  .tag-cloud {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .tag--big {
+    font-size: 1rem;
+    padding: 0.4em 0.9em;
+  }
+  .count {
+    opacity: 0.75;
+    font-weight: 400;
+    margin-left: 0.2em;
+  }
+  .no-match {
+    color: var(--text-muted);
+  }
+</style>

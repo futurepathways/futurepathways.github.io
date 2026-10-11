@@ -1,0 +1,50 @@
+# Future Pathways: build and deploy to GitHub Pages (PRD 5, 5.3).
+#
+# This workflow is "switched off" until the repo is pushed to the official TIPS
+# organisation. The first push to `main` after that deploys the site.
+# Before the first deploy: Settings > Pages > Source = "GitHub Actions".
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  # Daily rebuild at 05:00 IST so deadline badges and the Upcoming Deadlines
+  # page stay current even when nobody posts. GitHub cron runs in UTC:
+  # 23:30 UTC = 05:00 IST (UTC+5:30).
+  schedule:
+    - cron: '30 23 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+      - name: Install, build and upload the site
+        uses: withastro/action@v6
+        with:
+          node-version: 24
+        env:
+          TZ: Asia/Kolkata
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

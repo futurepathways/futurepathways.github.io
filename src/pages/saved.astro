@@ -1,0 +1,133 @@
+---
+// My Saved Posts (PRD 6.6, 11). Cards are drawn in the browser from /index.json
+// for the slugs saved on this device. Posts that no longer exist are quietly dropped.
+import Base from '../layouts/Base.astro';
+import { categories } from '../config/site';
+---
+
+<Base title="My Saved Posts" description="Posts you saved on this device." noindex>
+  <div class="container section">
+    <h1>My Saved Posts</h1>
+    <p class="note note--blue">Saved posts stay on this device and browser only. Nothing is sent anywhere.</p>
+
+    <noscript>
+      <p>Saving posts needs JavaScript. You can still browse every post by category:</p>
+      <ul>{categories.map((c) => <li><a href={c.path}>{c.name}</a></li>)}</ul>
+    </noscript>
+
+    <p class="saved-status js-only" data-saved-status aria-live="polite">Loading your saved posts…</p>
+    <ul class="grid grid--2 saved-grid" data-saved-list></ul>
+    <p class="empty js-only" data-saved-empty hidden>
+      You have not saved anything yet. Tap <strong>Save</strong> on any post to keep it here.
+      <a href="/">Start exploring</a>.
+    </p>
+  </div>
+</Base>
+
+<script>
+  import { getSaved, setSaved } from '../scripts/bookmarks';
+
+  const gradeLabel: Record<string, string> = { '6-8': 'Grades 6–8', '9-10': 'Grades 9–10', '11-12': 'Grades 11–12' };
+  const catName: Record<string, string> = {
+    careers: 'Careers',
+    opportunities: 'Opportunities',
+    courses: 'Courses',
+    countries: 'Countries',
+  };
+
+  async function render() {
+    const list = document.querySelector<HTMLElement>('[data-saved-list]')!;
+    const status = document.querySelector<HTMLElement>('[data-saved-status]')!;
+    const empty = document.querySelector<HTMLElement>('[data-saved-empty]')!;
+    const saved = getSaved();
+    if (!saved.length) {
+      status.hidden = true;
+      empty.hidden = false;
+      list.innerHTML = '';
+      return;
+    }
+    let posts: any[] = [];
+    try {
+      const data = await fetch('/index.json').then((r) => r.json());
+      posts = data.posts;
+    } catch {
+      status.textContent = 'Could not load posts right now. Please try again.';
+      return;
+    }
+    const bySlug = new Map(posts.map((p) => [p.slug, p]));
+    const kept = saved.filter((s) => bySlug.has(s));
+    if (kept.length !== saved.length) setSaved(kept); // drop posts that were removed (PRD 11)
+    status.hidden = true;
+    empty.hidden = kept.length > 0;
+    list.innerHTML = '';
+    for (const slug of kept) {
+      const p = bySlug.get(slug)!;
+      const li = document.createElement('li');
+      li.className = `card post-card cat-${p.category}`;
+      li.innerHTML = `
+        <div class="post-card-top"><a class="cat-chip" href="/${p.category}/"></a></div>
+        <h2 class="post-card-title"><a></a></h2>
+        <p class="post-card-summary"></p>
+        <div class="post-card-meta"><span></span>
+          <button type="button" class="btn btn--outline btn--small" data-save="${p.slug}">Remove</button>
+        </div>`;
+      li.querySelector('.cat-chip')!.textContent = catName[p.category] ?? p.category;
+      const a = li.querySelector<HTMLAnchorElement>('.post-card-title a')!;
+      a.href = p.path;
+      a.textContent = p.title;
+      li.querySelector('.post-card-summary')!.textContent = p.summary;
+      li.querySelector('.post-card-meta span')!.textContent =
+        `${p.gradeBands.map((g: string) => gradeLabel[g] ?? g).join(' · ')} · ${p.readingMinutes} min read`;
+      li.querySelector('[data-save]')!.setAttribute('data-save-title', p.title);
+      list.appendChild(li);
+    }
+  }
+
+  render();
+  document.addEventListener('fp:saved-changed', render);
+</script>
+
+<style>
+  .saved-grid {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .saved-grid :global(.post-card) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-top: 4px solid var(--cat);
+  }
+  .saved-grid :global(.cat-chip) {
+    color: var(--cat);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 0.8rem;
+    text-decoration: none;
+  }
+  .saved-grid :global(.post-card-title) {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  .saved-grid :global(.post-card-title a) {
+    color: var(--heading);
+    text-decoration: none;
+  }
+  .saved-grid :global(.post-card-summary) {
+    margin: 0;
+  }
+  .saved-grid :global(.post-card-meta) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-muted);
+    font-size: 0.88rem;
+  }
+  .saved-status,
+  .empty {
+    color: var(--text-muted);
+  }
+</style>

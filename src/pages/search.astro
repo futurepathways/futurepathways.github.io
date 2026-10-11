@@ -1,0 +1,80 @@
+---
+// Full Search page (PRD 8): query box with suggestions, filterable results.
+// Every visible post's card is in the HTML; search.ts narrows them to matches.
+import Base from '../layouts/Base.astro';
+import PostList from '../components/PostList.astro';
+import Icon from '../components/Icon.astro';
+import { getVisiblePosts, byNewest } from '../lib/content';
+
+const posts = (await getVisiblePosts()).sort(byNewest);
+---
+
+<Base title="Search" description="Search every post on Future Pathways by career, course, test, country or tag." noindex>
+  <div class="container section">
+    <h1>Search</h1>
+    <form class="search-form" data-search-form role="search" action="/search/" method="get">
+      <div class="search-wrap" data-suggest-wrap>
+        <label for="search-q" class="visually-hidden">Search for a career, course, test, country or tag</label>
+        <input
+          id="search-q"
+          type="search"
+          name="q"
+          placeholder="Try “engineering”, “NEET” or “study in Canada”"
+          autocomplete="off"
+          enterkeyhint="search"
+          data-search-input
+          data-suggest
+        />
+      </div>
+      <button type="submit" class="btn">
+        <Icon name="search" size={20} />
+        Search
+      </button>
+    </form>
+    <p class="search-status" data-search-status aria-live="polite">
+      Type a word above, or use the filters to browse every post.
+    </p>
+    <noscript>
+      <p class="note">Search needs JavaScript. Without it, every post is listed below, or try <a href="/tags/">Browse All Tags</a>.</p>
+    </noscript>
+
+    <PostList posts={posts} showCategoryFilter sortDefault="relevance" headingLevel="h2" emptyMessage="No posts match. Try another word or clear a filter." />
+  </div>
+</Base>
+
+<script>
+  import '../scripts/suggest';
+  import '../scripts/search';
+</script>
+
+<style>
+  .search-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    max-width: 680px;
+    margin-bottom: 0.8rem;
+  }
+  .search-wrap {
+    flex: 1 1 260px;
+  }
+  .search-form input {
+    width: 100%;
+    min-height: 48px;
+    font: inherit;
+    padding: 0.5rem 1.1rem;
+    border: 1.5px solid var(--border);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--text);
+  }
+  .search-form input:focus {
+    outline: none;
+    border-color: var(--blue);
+    box-shadow: 0 0 0 3px rgb(24 95 165 / 0.18);
+  }
+  .search-status {
+    color: var(--text-muted);
+    margin-bottom: 1.2rem;
+  }
+</style>

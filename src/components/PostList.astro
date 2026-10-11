@@ -1,0 +1,371 @@
+---
+// A filterable, sortable, paginated list of posts (PRD 6.2, 8).
+// All cards are in the HTML, so the page works without JavaScript (every post shown).
+// With JavaScript, src/scripts/listing.ts filters, sorts and shows 12 at a time,
+// keeping the choices in the page address so links can be shared.
+import type { Post } from '../lib/content';
+import { gradeBandLabel, streamLabel, opportunityTypeLabel } from '../lib/content';
+import { categories } from '../config/site';
+import { tagGroupNames, tagGroupOrder, countryBySlug, type TagGroupKey } from '../lib/data';
+import PostCard from './PostCard.astro';
+
+interface Props {
+  posts: Post[];
+  context?: string; // category key when this list is a category page
+  showCategoryFilter?: boolean;
+  showOpportunityFilters?: boolean; // auto if any opportunity posts
+  sortDefault?: 'newest' | 'deadline' | 'az' | 'relevance';
+  pageSize?: number;
+  headingLevel?: 'h2' | 'h3';
+  emptyMessage?: string;
+}
+const {
+  posts,
+  context,
+  showCategoryFilter = false,
+  sortDefault = 'newest',
+  pageSize = 12,
+  headingLevel = 'h3',
+  emptyMessage = 'No posts match these filters yet. Try clearing a filter.',
+} = Astro.props;
+
+const hasOpportunities = posts.some((p) => p.opportunity);
+const showOpportunityFilters = Astro.props.showOpportunityFilters ?? (context === 'opportunities' || (hasOpportunities && !context));
+
+const present = {
+  grade: ['6-8', '9-10', '11-12'].filter((g) => posts.some((p) => p.gradeBands.includes(g))),
+  stream: ['science', 'commerce', 'humanities', 'any'].filter((s) => posts.some((p) => p.streams.includes(s))),
+  country: Array.from(new Set(posts.flatMap((p) => p.countries)))
+    .filter((c) => countryBySlug[c])
+    .sort((a, b) => countryBySlug[a].name.localeCompare(countryBySlug[b].name)),
+  category: categories.filter((c) => posts.some((p) => p.category === c.key || p.extraCategories.includes(c.key))),
+  type: Array.from(new Set(posts.map((p) => p.opportunity?.type).filter(Boolean) as string[])),
+  mode: Array.from(new Set(posts.map((p) => p.opportunity?.mode).filter(Boolean) as string[])),
+  cost: Array.from(new Set(posts.map((p) => p.opportunity?.cost).filter(Boolean) as string[])),
+};
+const tagsPresent: Record<TagGroupKey, { slug: string; name: string }[]> = {
+  subject: [],
+  exam: [],
+  skill: [],
+  level: [],
+  audience: [],
+};
+{
+  const seen = new Set<string>();
+  for (const p of posts)
+    for (const t of p.tags) {
+      if (seen.has(t.slug)) continue;
+      seen.add(t.slug);
+      tagsPresent[t.group].push({ slug: t.slug, name: t.name });
+    }
+  for (const g of tagGroupOrder) tagsPresent[g].sort((a, b) => a.name.localeCompare(b.name));
+}
+const listId = `list-${Math.random().toString(36).slice(2, 8)}`;
+const modeLabel: Record<string, string> = { online: 'Online', 'in-person': 'In person', hybrid: 'Hybrid' };
+---
+
+<div class="listing" data-listing data-page-size={pageSize} data-sort-default={sortDefault} id={listId}>
+  <form class="filters js-only" data-filters aria-label="Filter and sort posts">
+    <div class="filters-row">
+      {
+        showCategoryFilter && present.category.length > 1 && (
+          <details class="filter">
+            <summary>Category</summary>
+            <div class="filter-options">
+              {present.category.map((c) => (
+                <label>
+                  <input type="checkbox" name="cat" value={c.key} /> {c.name}
+                </label>
+              ))}
+            </div>
+          </details>
+        )
+      }
+      {
+        present.grade.length > 1 && (
+          <details class="filter">
+            <summary>Grade</summary>
+            <div class="filter-options">
+              {present.grade.map((g) => (
+                <label>
+                  <input type="checkbox" name="grade" value={g} /> {gradeBandLabel[g]}
+                </label>
+              ))}
+            </div>
+          </details>
+        )
+      }
+      {
+        present.stream.filter((s) => s !== 'any').length > 0 && (
+          <details class="filter">
+            <summary>Stream</summary>
+            <div class="filter-options">
+              {['science', 'commerce', 'humanities'].map((s) => (
+                <label>
+                  <input type="checkbox" name="stream" value={s} /> {streamLabel[s]}
+                </label>
+              ))}
+            </div>
+          </details>
+        )
+      }
+      {
+        present.country.length > 0 && (
+          <details class="filter">
+            <summary>Country</summary>
+            <div class="filter-options">
+              {present.country.map((c) => (
+                <label>
+                  <input type="checkbox" name="country" value={c} /> {countryBySlug[c].name}
+                </label>
+              ))}
+            </div>
+          </details>
+        )
+      }
+      {
+        tagGroupOrder.some((g) => tagsPresent[g].length) && (
+          <details class="filter filter--tags">
+            <summary>Tags</summary>
+            <div class="filter-options filter-options--grouped">
+              {tagGroupOrder
+                .filter((g) => tagsPresent[g].length)
+                .map((g) => (
+                  <fieldset>
+                    <legend>{tagGroupNames[g]}</legend>
+                    {tagsPresent[g].map((t) => (
+                      <label>
+                        <input type="checkbox" name="tags" value={t.slug} /> {t.name}
+                      </label>
+                    ))}
+                  </fieldset>
+                ))}
+            </div>
+          </details>
+        )
+      }
+      {
+        showOpportunityFilters && (
+          <details class="filter">
+            <summary>Opportunity</summary>
+            <div class="filter-options filter-options--grouped">
+              {present.type.length > 0 && (
+                <fieldset>
+                  <legend>Type</legend>
+                  {present.type.map((t) => (
+                    <label>
+                      <input type="checkbox" name="type" value={t} /> {opportunityTypeLabel[t] ?? t}
+                    </label>
+                  ))}
+                </fieldset>
+              )}
+              {present.mode.length > 0 && (
+                <fieldset>
+                  <legend>Mode</legend>
+                  {present.mode.map((m) => (
+                    <label>
+                      <input type="checkbox" name="mode" value={m} /> {modeLabel[m] ?? m}
+                    </label>
+                  ))}
+                </fieldset>
+              )}
+              {present.cost.length > 0 && (
+                <fieldset>
+                  <legend>Cost</legend>
+                  {present.cost.map((c) => (
+                    <label>
+                      <input type="checkbox" name="cost" value={c} /> {c === 'free' ? 'Free' : 'Paid'}
+                    </label>
+                  ))}
+                </fieldset>
+              )}
+              <fieldset>
+                <legend>Status</legend>
+                {[
+                  ['open', 'Open'],
+                  ['soon', 'Closing soon'],
+                  ['closed', 'Closed'],
+                  ['rolling', 'Rolling'],
+                ].map(([v, l]) => (
+                  <label>
+                    <input type="checkbox" name="status" value={v} /> {l}
+                  </label>
+                ))}
+              </fieldset>
+            </div>
+          </details>
+        )
+      }
+
+      <label class="sort">
+        <span>Sort</span>
+        <select name="sort">
+          {sortDefault === 'relevance' && <option value="relevance">Best match</option>}
+          <option value="newest">Newest first</option>
+          {hasOpportunities && <option value="deadline">Deadline soonest</option>}
+          <option value="az">A to Z</option>
+        </select>
+      </label>
+      <button type="button" class="btn btn--outline btn--small" data-clear>Clear filters</button>
+    </div>
+    <p class="result-count" data-count aria-live="polite"></p>
+  </form>
+
+  <ul class="post-grid grid grid--2" data-list>
+    {posts.map((p) => <PostCard post={p} context={context} headingLevel={headingLevel} />)}
+  </ul>
+  <p class="empty" data-empty hidden>{emptyMessage}</p>
+  {posts.length === 0 && <p class="empty">Nothing here yet. Check back soon.</p>}
+  <nav class="pagination js-only" data-pagination aria-label="More pages"></nav>
+</div>
+
+<script>
+  import { initListings } from '../scripts/listing';
+  initListings();
+</script>
+
+<style>
+  .filters {
+    margin-bottom: 1.2rem;
+  }
+  .filters-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .filter {
+    position: relative;
+  }
+  .filter summary {
+    list-style: none;
+    cursor: pointer;
+    min-height: 40px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.3rem 0.9rem;
+    border: 1.5px solid var(--border);
+    border-radius: 999px;
+    background: var(--surface);
+    font-weight: 600;
+    user-select: none;
+  }
+  .filter summary::-webkit-details-marker {
+    display: none;
+  }
+  .filter summary::after {
+    content: '▾';
+    font-size: 0.8em;
+  }
+  .filter[data-active] summary {
+    border-color: var(--blue);
+    background: var(--tag-bg);
+    color: var(--tag-text);
+  }
+  .filter[open] summary {
+    border-color: var(--blue);
+  }
+  .filter-options {
+    position: absolute;
+    z-index: 10;
+    top: calc(100% + 6px);
+    left: 0;
+    min-width: 220px;
+    max-width: min(92vw, 420px);
+    max-height: 60vh;
+    overflow: auto;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow);
+    padding: 0.6rem 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  .filter-options label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-height: 36px;
+    cursor: pointer;
+  }
+  .filter-options input {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--blue);
+  }
+  .filter-options fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0 0 0.5rem;
+  }
+  .filter-options legend {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-muted);
+    padding: 0;
+    margin-bottom: 0.2rem;
+  }
+  .sort {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-left: auto;
+    font-weight: 600;
+  }
+  .sort select {
+    font: inherit;
+    min-height: 40px;
+    padding: 0.3rem 0.6rem;
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+    color: var(--text);
+  }
+  .result-count {
+    margin: 0.6rem 0 0;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+  }
+  .post-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .empty {
+    color: var(--text-muted);
+    padding: 1rem 0;
+  }
+  .pagination {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+  .pagination :global(button) {
+    min-width: 44px;
+    min-height: 44px;
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+    color: var(--link);
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0 0.8rem;
+  }
+  .pagination :global(button[aria-current='page']) {
+    background: var(--blue);
+    border-color: var(--blue);
+    color: #fff;
+  }
+  .pagination :global(button:disabled) {
+    opacity: 0.45;
+    cursor: default;
+  }
+</style>

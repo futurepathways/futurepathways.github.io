@@ -1,0 +1,229 @@
+---
+// For Parents (PRD 6.5, 10): every post's parent summary as a card, parent-only posts first.
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { getVisiblePosts, byNewest, gradeBandLabel } from '../lib/content';
+import { categories, categoryByKey } from '../config/site';
+
+const all = (await getVisiblePosts()).sort(byNewest);
+const forParents = all.filter((p) => p.tags.some((t) => t.slug === 'parents'));
+const rest = all.filter((p) => !forParents.includes(p));
+const grades = ['6-8', '9-10', '11-12'];
+---
+
+<Base title="For Parents" description="Plain summaries of every post for parents: what it is, rough cost, key dates and what to ask the FP counsellor.">
+  <div class="container section">
+    <h1><Icon name="parents" size={30} /> For Parents</h1>
+    <p class="prose">
+      Every post on this site has a short summary written for parents: what it is, roughly what it costs, the key date,
+      and one question worth asking the FP (Future Pathway) counsellor. They are all collected here.
+    </p>
+
+    <form class="parent-filters js-only" data-parent-filters aria-label="Filter summaries">
+      <fieldset>
+        <legend>Category</legend>
+        {
+          categories.map((c) => (
+            <label>
+              <input type="checkbox" name="cat" value={c.key} /> {c.shortName}
+            </label>
+          ))
+        }
+      </fieldset>
+      <fieldset>
+        <legend>Grade</legend>
+        {
+          grades.map((g) => (
+            <label>
+              <input type="checkbox" name="grade" value={g} /> {gradeBandLabel[g]}
+            </label>
+          ))
+        }
+      </fieldset>
+      <button type="button" class="btn btn--outline btn--small" data-clear>Clear</button>
+      <p class="result-count" data-count aria-live="polite"></p>
+    </form>
+
+    {
+      forParents.length > 0 && (
+        <section>
+          <h2>Written for parents</h2>
+          <ul class="grid grid--2 parent-grid" data-parent-list>
+            {forParents.map((p) => (
+              <li class={`card parent-card cat-${p.category}`} data-parent-card data-cat={[p.category, ...p.extraCategories].join(' ')} data-grade={p.gradeBands.join(' ')}>
+                <p class="parent-kicker">
+                  <a href={categoryByKey[p.category].path}>{categoryByKey[p.category].shortName}</a> ·{' '}
+                  {p.gradeBands.map((g) => gradeBandLabel[g]).join(', ')}
+                </p>
+                <h3>
+                  <a href={p.path}>{p.title}</a>
+                </h3>
+                <p>{p.parentSummary}</p>
+                <a class="read-more" href={p.path}>
+                  Read the full post <Icon name="arrow" size={16} />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    <section>
+      <h2>Parent summaries of every post</h2>
+      <ul class="grid grid--2 parent-grid" data-parent-list>
+        {
+          rest.map((p) => (
+            <li class={`card parent-card cat-${p.category}`} data-parent-card data-cat={[p.category, ...p.extraCategories].join(' ')} data-grade={p.gradeBands.join(' ')}>
+              <p class="parent-kicker">
+                <a href={categoryByKey[p.category].path}>{categoryByKey[p.category].shortName}</a> ·{' '}
+                {p.gradeBands.map((g) => gradeBandLabel[g]).join(', ')}
+              </p>
+              <h3>
+                <a href={p.path}>{p.title}</a>
+              </h3>
+              <p>{p.parentSummary}</p>
+              <a class="read-more" href={p.path}>
+                Read the full post <Icon name="arrow" size={16} />
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      {all.length === 0 && <p class="empty">Summaries will appear here as posts are published.</p>}
+    </section>
+    <p class="empty" data-parent-empty hidden>No summaries match those filters.</p>
+  </div>
+</Base>
+
+<script>
+  const form = document.querySelector<HTMLFormElement>('[data-parent-filters]');
+  const cards = Array.from(document.querySelectorAll<HTMLElement>('[data-parent-card]'));
+  const count = document.querySelector<HTMLElement>('[data-count]');
+  const empty = document.querySelector<HTMLElement>('[data-parent-empty]');
+  if (form) {
+    const params = new URLSearchParams(location.search);
+    for (const g of ['cat', 'grade']) {
+      const wanted = params.getAll(g).flatMap((v) => v.split(','));
+      form.querySelectorAll<HTMLInputElement>(`input[name="${g}"]`).forEach((i) => (i.checked = wanted.includes(i.value)));
+    }
+    const apply = () => {
+      const want = (g: string) => Array.from(form.querySelectorAll<HTMLInputElement>(`input[name="${g}"]:checked`)).map((i) => i.value);
+      const cats = want('cat');
+      const grades = want('grade');
+      let shown = 0;
+      cards.forEach((c) => {
+        const ok =
+          (!cats.length || cats.some((x) => (c.dataset.cat || '').split(' ').includes(x))) &&
+          (!grades.length || grades.some((x) => (c.dataset.grade || '').split(' ').includes(x)));
+        c.hidden = !ok;
+        if (ok) shown++;
+      });
+      document.querySelectorAll<HTMLElement>('section').forEach((s) => {
+        if (s.querySelector('[data-parent-card]')) s.hidden = !s.querySelector('[data-parent-card]:not([hidden])');
+      });
+      if (count) count.textContent = cats.length || grades.length ? `${shown} of ${cards.length} summaries` : '';
+      if (empty) empty.hidden = shown > 0;
+      const p = new URLSearchParams();
+      if (cats.length) p.set('cat', cats.join(','));
+      if (grades.length) p.set('grade', grades.join(','));
+      history.replaceState(null, '', location.pathname + (p.toString() ? '?' + p : ''));
+    };
+    form.addEventListener('change', apply);
+    form.querySelector('[data-clear]')?.addEventListener('click', () => {
+      form.querySelectorAll<HTMLInputElement>('input').forEach((i) => (i.checked = false));
+      apply();
+    });
+    apply();
+  }
+</script>
+
+<style>
+  h1 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .parent-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem 1.5rem;
+    align-items: flex-end;
+    margin: 1rem 0 0.5rem;
+  }
+  .parent-filters fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem 0.9rem;
+  }
+  .parent-filters legend {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-muted);
+    padding: 0;
+    margin-bottom: 0.2rem;
+  }
+  .parent-filters label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    min-height: 36px;
+  }
+  .parent-filters input {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--blue);
+  }
+  .result-count {
+    flex-basis: 100%;
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+  }
+  .parent-grid {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .parent-card {
+    border-left: 5px solid var(--cat);
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .parent-card[hidden] {
+    display: none;
+  }
+  .parent-kicker {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+  .parent-card h3 {
+    margin: 0;
+    font-size: 1.15rem;
+  }
+  .parent-card h3 a {
+    color: var(--heading);
+    text-decoration: none;
+  }
+  .parent-card p {
+    margin: 0;
+  }
+  .read-more {
+    margin-top: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .empty {
+    color: var(--text-muted);
+  }
+</style>

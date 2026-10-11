@@ -1,16 +1,253 @@
 ---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import PostCard from '../components/PostCard.astro';
+import DeadlineBadge from '../components/DeadlineBadge.astro';
+import { site, categories, gradeBands } from '../config/site';
+import { getVisiblePosts, postsInCategory, byNewest } from '../lib/content';
+import { istTodayString, daysLeft } from '../lib/deadlines';
+
+const all = await getVisiblePosts();
+const counts = Object.fromEntries(categories.map((c) => [c.key, postsInCategory(all, c.key).length]));
+const today = istTodayString();
+// "Closing soon": next 5 opportunities with deadlines within 14 days (PRD 6.1)
+const closingSoon = all
+  .filter((p) => p.opportunity?.deadline && !p.opportunity.rolling)
+  .filter((p) => {
+    const d = daysLeft(p.opportunity!.deadline!, today);
+    return d >= 0 && d <= 14;
+  })
+  .sort((a, b) => a.opportunity!.deadline!.localeCompare(b.opportunity!.deadline!))
+  .slice(0, 5);
+const newest = [...all].sort(byNewest).slice(0, 6);
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Base title={site.name} description={site.tagline}>
+  <section class="hero">
+    <div class="container">
+      <h1>Find your path, one step at a time.</h1>
+      <p class="hero-lead">
+        Clear, friendly guides on careers, courses, countries and opportunities, written by the {site.teamName} for
+        every TIPS student and parent.
+      </p>
+      <form class="hero-search" action="/search/" method="get" role="search" data-suggest-wrap>
+        <label for="home-search" class="visually-hidden">Search the site</label>
+        <input
+          id="home-search"
+          type="search"
+          name="q"
+          placeholder="Try “engineering”, “NEET” or “study in Canada”"
+          autocomplete="off"
+          enterkeyhint="search"
+          data-suggest
+        />
+        <button type="submit" class="btn btn--gold">
+          <Icon name="search" size={20} />
+          Search
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <section class="container section">
+    <h2 class="section-title">What do you want to explore?</h2>
+    <div class="grid grid--2 category-grid">
+      {
+        categories.map((c) => (
+          <a href={c.path} class={`card category-card cat-${c.key}`}>
+            <span class="category-icon">
+              <Icon name={c.key} size={30} />
+            </span>
+            <span class="category-text">
+              <span class="category-name">{c.name}</span>
+              <span class="category-blurb">{c.blurb}</span>
+              <span class="category-count">{counts[c.key]} post{counts[c.key] === 1 ? '' : 's'}</span>
+            </span>
+            <Icon name="arrow" size={22} class="category-arrow" />
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  {
+    closingSoon.length > 0 && (
+      <section class="container section closing">
+        <h2 class="section-title">
+          <Icon name="calendar" size={24} /> Closing soon
+        </h2>
+        <ul class="closing-list">
+          {closingSoon.map((p) => (
+            <li>
+              <a href={p.path}>{p.title}</a>
+              <DeadlineBadge deadline={p.opportunity!.deadline} rolling={false} showDate />
+            </li>
+          ))}
+        </ul>
+        <p>
+          <a href="/deadlines/">See all upcoming deadlines</a>
+        </p>
+      </section>
+    )
+  }
+
+  {
+    newest.length > 0 && (
+      <section class="container section">
+        <h2 class="section-title">New this month</h2>
+        <ul class="grid grid--3 newest-grid">
+          {newest.map((p) => (
+            <PostCard post={p} headingLevel="h3" />
+          ))}
+        </ul>
+      </section>
+    )
+  }
+
+  <section class="container section">
+    <h2 class="section-title">Start here by grade</h2>
+    <p>Not sure where to begin? Pick your grade and we will show you what matters right now.</p>
+    <div class="grade-buttons">
+      {
+        gradeBands.map((g) => (
+          <a href={g.path} class="btn btn--outline">
+            {g.label}
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</Base>
+
+<script>
+  import '../scripts/suggest';
+  import '../scripts/deadlines';
+</script>
+
+<style>
+  .category-count {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-top: 0.15rem;
+  }
+  .closing-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .closing-list li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.4rem 1rem;
+    padding: 0.7rem 1rem;
+    background: var(--bg-soft);
+    border-left: 4px solid var(--gold);
+    border-radius: var(--radius-sm);
+  }
+  .closing-list a {
+    font-weight: 600;
+  }
+  .newest-grid {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .section-title :global(.icon) {
+    color: var(--gold-text);
+  }
+  .hero {
+    background: linear-gradient(160deg, var(--deep), var(--blue));
+    color: #fff;
+    padding-block: 2.5rem 2.75rem;
+  }
+  .hero h1 {
+    color: #fff;
+    max-width: 18ch;
+    margin-bottom: 0.6rem;
+  }
+  .hero-lead {
+    max-width: 58ch;
+    font-size: 1.08rem;
+    opacity: 0.95;
+    margin-bottom: 1.5rem;
+  }
+  .hero-search {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    max-width: 640px;
+  }
+  .hero-search input {
+    flex: 1 1 240px;
+    min-height: 48px;
+    border: 2px solid transparent;
+    border-radius: 999px;
+    padding: 0.5rem 1.1rem;
+    font: inherit;
+    color: #1b2a3a;
+    background: #fff;
+  }
+  .hero-search input:focus {
+    outline: none;
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgb(201 168 76 / 0.45);
+  }
+
+  .section-title {
+    margin-top: 0;
+  }
+
+  .category-card {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: inherit;
+    border-top: 4px solid var(--cat);
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .category-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgb(12 68 124 / 0.14);
+    color: inherit;
+  }
+  .category-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: var(--tag-bg);
+    color: var(--cat);
+  }
+  .category-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  .category-name {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--heading);
+  }
+  .category-blurb {
+    color: var(--text-muted);
+    font-size: 0.96rem;
+  }
+  .category-arrow {
+    color: var(--cat);
+  }
+
+  .grade-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+</style>

@@ -1,0 +1,110 @@
+---
+import { site, categories } from '../config/site';
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <p class="footer-name">{site.name}</p>
+      <p class="footer-by">{site.name}, by the {site.teamName}</p>
+      <p class="footer-note">
+        Information here is for guidance. Fees, dates and rules change. Always check the official link before applying,
+        and talk to your FP counsellor.
+      </p>
+    </div>
+
+    <nav class="footer-links" aria-label="Footer menu">
+      <p class="footer-heading">Explore</p>
+      <ul>
+        {categories.map((c) => <li><a href={c.path}>{c.name}</a></li>)}
+        <li><a href="/deadlines/">Upcoming Deadlines</a></li>
+        <li><a href="/parents/">For Parents</a></li>
+      </ul>
+    </nav>
+
+    <nav class="footer-links" aria-label="More pages">
+      <p class="footer-heading">More</p>
+      <ul>
+        <li><a href="/start/">Start here by grade</a></li>
+        <li><a href="/tags/">Browse All Tags</a></li>
+        <li><a href="/saved/">My Saved Posts</a></li>
+        <li><a href="/search/">Search</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href={`mailto:${site.contactEmail}`}>Contact the FP team</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container footer-bottom">
+    <p>© {year} {site.schoolName}. Made for all TIPS students.</p>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background: var(--footer-bg);
+    color: var(--footer-text);
+    margin-top: 3rem;
+    border-top: 4px solid var(--gold);
+  }
+  .footer-inner {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    padding-block: 2rem 1rem;
+  }
+  @media (min-width: 700px) {
+    .footer-inner {
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 2rem;
+    }
+  }
+  .footer-name {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0 0 0.2rem;
+    color: #fff;
+  }
+  .footer-by {
+    margin: 0 0 0.8rem;
+    color: var(--gold);
+    font-weight: 500;
+  }
+  .footer-note {
+    font-size: 0.93rem;
+    max-width: 48ch;
+    opacity: 0.9;
+  }
+  .footer-heading {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 0.5rem;
+  }
+  .footer-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .footer-links li {
+    margin-bottom: 0.35rem;
+  }
+  .site-footer a {
+    color: var(--footer-text);
+    text-decoration-color: rgb(255 255 255 / 0.4);
+  }
+  .site-footer a:hover {
+    color: #fff;
+    text-decoration-color: var(--gold);
+  }
+  .footer-bottom {
+    border-top: 1px solid rgb(255 255 255 / 0.15);
+    padding-block: 0.9rem;
+    font-size: 0.88rem;
+    opacity: 0.85;
+  }
+  .footer-bottom p {
+    margin: 0;
+  }
+</style>

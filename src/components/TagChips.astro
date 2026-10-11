@@ -1,0 +1,99 @@
+---
+// Tag chips as links to tag pages (PRD 6.2, 6.9).
+import type { Tag } from '../lib/data';
+import { tagGroupNames, tagGroupOrder } from '../lib/data';
+
+interface Props {
+  tags: Tag[];
+  grouped?: boolean; // show group headings (post page)
+  limit?: number; // cards: show at most N, then "+n more"
+  size?: 'small' | 'normal';
+}
+const { tags, grouped = false, limit, size = 'normal' } = Astro.props;
+const shown = limit ? tags.slice(0, limit) : tags;
+const extra = tags.length - shown.length;
+---
+
+{
+  grouped ? (
+    <dl class="tag-groups">
+      {tagGroupOrder
+        .filter((g) => tags.some((t) => t.group === g))
+        .map((g) => (
+          <div class="tag-group">
+            <dt>{tagGroupNames[g]}</dt>
+            <dd>
+              {tags
+                .filter((t) => t.group === g)
+                .map((t) => (
+                  <a class="tag" href={`/tags/${t.slug}/`}>
+                    {t.name}
+                  </a>
+                ))}
+            </dd>
+          </div>
+        ))}
+    </dl>
+  ) : (
+    <ul class:list={['tag-list', { 'tag-list--small': size === 'small' }]}>
+      {shown.map((t) => (
+        <li>
+          <a class="tag" href={`/tags/${t.slug}/`}>
+            {t.name}
+          </a>
+        </li>
+      ))}
+      {extra > 0 && <li class="tag-more">+{extra} more</li>}
+    </ul>
+  )
+}
+
+<style>
+  .tag-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+  .tag-list--small {
+    font-size: 0.92rem;
+  }
+  .tag-more {
+    color: var(--text-muted);
+    font-size: 0.85em;
+    align-self: center;
+  }
+  .tag-groups {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .tag-group {
+    display: grid;
+    grid-template-columns: 9.5em 1fr;
+    gap: 0.4rem 0.8rem;
+    align-items: baseline;
+  }
+  .tag-group dt {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .tag-group dd {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+  @media (max-width: 480px) {
+    .tag-group {
+      grid-template-columns: 1fr;
+      gap: 0.2rem;
+    }
+  }
+</style>

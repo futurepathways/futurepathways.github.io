@@ -1,0 +1,184 @@
+---
+// One post card (PRD 6.2): title, summary, grade band, tags, reading time, deadline badge.
+// Every tag and category on the card is a link. Data attributes feed the listing filters.
+import type { Post } from '../lib/content';
+import { gradeBandLabel, toDateString } from '../lib/content';
+import { categoryByKey } from '../config/site';
+import TagChips from './TagChips.astro';
+import DeadlineBadge from './DeadlineBadge.astro';
+import Icon from './Icon.astro';
+import { deadlineStatus } from '../lib/deadlines';
+
+interface Props {
+  post: Post;
+  /** The category whose listing this card sits in, for the "Also in …" label. */
+  context?: string;
+  headingLevel?: 'h2' | 'h3';
+}
+const { post, context, headingLevel = 'h3' } = Astro.props;
+const Heading = headingLevel;
+const main = categoryByKey[post.category];
+const alsoIn = context && context !== post.category && post.extraCategories.includes(context as any) ? categoryByKey[context as keyof typeof categoryByKey] : null;
+const status = post.opportunity ? deadlineStatus(post.opportunity.deadline, post.opportunity.rolling) : null;
+---
+
+<li
+  class={`card post-card cat-${post.category}`}
+  data-card
+  data-slug={post.slug}
+  data-title={post.title.toLowerCase()}
+  data-date={toDateString(post.publishedDate)}
+  data-cat={[post.category, ...post.extraCategories].join(' ')}
+  data-grade={post.gradeBands.join(' ')}
+  data-stream={post.streams.join(' ')}
+  data-country={post.countries.join(' ')}
+  data-tags={post.tags.map((t) => t.slug).join(' ')}
+  data-search-words={[main.name, ...post.extraCategories.map((c) => categoryByKey[c].name), ...post.tags.flatMap((t) => [t.name, ...t.search])].join(' ').toLowerCase()}
+  data-type={post.opportunity?.type}
+  data-mode={post.opportunity?.mode}
+  data-cost={post.opportunity?.cost}
+  data-deadline-date={post.opportunity?.deadline ?? undefined}
+  data-status={status ?? undefined}
+>
+  <div class="post-card-top">
+    <a class="cat-chip" href={main.path}>
+      <Icon name={post.category} size={16} />
+      {main.shortName}
+    </a>
+    {alsoIn && <span class="also-in">Also in {alsoIn.shortName}</span>}
+    {post.status === 'draft' && <span class="badge badge--closed">Draft</span>}
+    {
+      post.opportunity && (
+        <span class="post-card-deadline">
+          <DeadlineBadge deadline={post.opportunity.deadline} rolling={post.opportunity.rolling} />
+        </span>
+      )
+    }
+  </div>
+
+  <Heading class="post-card-title">
+    <a href={post.path}>{post.title}</a>
+  </Heading>
+  <p class="post-card-summary">{post.summary}</p>
+
+  <div class="post-card-meta">
+    <span>{post.gradeBands.map((g) => gradeBandLabel[g]).join(' · ')}</span>
+    <span aria-hidden="true">·</span>
+    <span>{post.readingMinutes} min read</span>
+    <button
+      type="button"
+      class="save-btn js-only"
+      data-save={post.slug}
+      data-save-title={post.title}
+      aria-pressed="false"
+      aria-label={`Save "${post.title}"`}
+    >
+      <Icon name="bookmark" size={18} class="save-icon-empty" />
+      <Icon name="bookmark-filled" size={18} class="save-icon-filled" />
+      <span data-save-label>Save</span>
+    </button>
+  </div>
+
+  <TagChips tags={post.tags} limit={5} size="small" />
+</li>
+
+<style>
+  .post-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-top: 4px solid var(--cat);
+    padding-top: 0.9rem;
+  }
+  .post-card[hidden] {
+    display: none;
+  }
+  .post-card-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.88rem;
+  }
+  .cat-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: var(--cat);
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 0.8rem;
+  }
+  .cat-chip:hover {
+    text-decoration: underline;
+  }
+  .also-in {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0.05em 0.6em;
+  }
+  .post-card-deadline {
+    margin-left: auto;
+  }
+  .post-card-title {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  .post-card-title a {
+    color: var(--heading);
+    text-decoration: none;
+  }
+  .post-card-title a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+  }
+  .post-card-summary {
+    margin: 0;
+    color: var(--text);
+    font-size: 0.97rem;
+  }
+  .post-card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.45rem;
+    color: var(--text-muted);
+    font-size: 0.88rem;
+  }
+  .save-btn {
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    min-height: 36px;
+    padding: 0.2rem 0.6rem;
+    border: 1.5px solid var(--border);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--link);
+    font: inherit;
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .save-btn:hover {
+    border-color: var(--blue);
+  }
+  .save-btn :global(.save-icon-filled),
+  .save-btn[aria-pressed='true'] :global(.save-icon-empty) {
+    display: none;
+  }
+  .save-btn[aria-pressed='true'] :global(.save-icon-filled) {
+    display: inline-block;
+  }
+  .save-btn[aria-pressed='true'] {
+    background: var(--tag-bg);
+    border-color: var(--tag-bg);
+    color: var(--tag-text);
+  }
+</style>

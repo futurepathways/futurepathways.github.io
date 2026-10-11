@@ -1,0 +1,62 @@
+---
+// Tag page (PRD 6.9): tag name, group, description, every visible post with it.
+import Base from '../../layouts/Base.astro';
+import PostList from '../../components/PostList.astro';
+import Icon from '../../components/Icon.astro';
+import { tags, tagGroupNames } from '../../lib/data';
+import { getVisiblePosts, postsWithTag } from '../../lib/content';
+
+export async function getStaticPaths() {
+  const posts = await getVisiblePosts();
+  return tags
+    .filter((t) => posts.some((p) => p.tags.some((x) => x.slug === t.slug)))
+    .map((t) => ({ params: { tag: t.slug }, props: { tag: t } }));
+}
+
+const { tag } = Astro.props;
+const posts = postsWithTag(await getVisiblePosts(), tag.slug);
+---
+
+<Base title={`${tag.name} posts`} description={tag.description || `Every post about ${tag.name}.`}>
+  <section class="tag-hero">
+    <div class="container">
+      <p class="eyebrow"><Icon name="tag" size={20} /> {tagGroupNames[tag.group]}</p>
+      <h1>{tag.name}</h1>
+      {tag.description && <p class="tag-desc">{tag.description}</p>}
+      <p class="tag-links"><a href="/tags/">Browse all tags</a></p>
+    </div>
+  </section>
+  <div class="container section">
+    <PostList posts={posts} showCategoryFilter headingLevel="h2" />
+  </div>
+</Base>
+
+<style>
+  .tag-hero {
+    background: var(--bg-soft);
+    border-bottom: 4px solid var(--gold);
+    padding-block: 1.8rem;
+  }
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin: 0 0 0.3rem;
+    color: var(--gold-text);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.85rem;
+  }
+  .tag-hero h1 {
+    margin-bottom: 0.4rem;
+  }
+  .tag-desc {
+    max-width: 60ch;
+    margin: 0 0 0.5rem;
+  }
+  .tag-links {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+</style>

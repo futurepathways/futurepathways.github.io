@@ -1,0 +1,48 @@
+# "Start here by grade" pages (PRD 6.10). For each grade band: a short intro and
+# up to 6 post slugs to read first. Madan edits the intros; Niranjan updates the lists.
+# A slug that does not exist or is not published is skipped quietly.
+
+bands:
+  - key: "6-8"
+    title: "Grades 6 to 8"
+    intro: >-
+      This is the time to be curious, not to decide. Find out what jobs exist, try things
+      you have never tried, and notice what you enjoy. Nothing you read here is a commitment.
+      Pick a post that sounds interesting and talk about it at home.
+    read_first:
+      - what-does-an-engineer-actually-do
+      - careers-you-may-not-have-heard-of
+      - careers-in-design
+      - olympiads-and-competitions-by-grade
+      - short-online-courses-worth-doing-in-school
+      - a-parents-guide-to-the-fp-journey
+
+  - key: "9-10"
+    title: "Grades 9 and 10"
+    intro: >-
+      Two big things happen now: you choose your subjects and stream for Grades 11 and 12,
+      and your first real opportunities open up, such as competitions, summer programmes and
+      volunteering. Start with the stream post, then explore two or three careers that
+      interest you. Your FP counsellor can help you narrow it down.
+    read_first:
+      - how-to-choose-a-stream-after-grade-10
+      - becoming-a-doctor
+      - what-does-an-engineer-actually-do
+      - careers-with-data-and-ai
+      - olympiads-and-competitions-by-grade
+      - summer-programmes-at-universities
+
+  - key: "11-12"
+    title: "Grades 11 and 12"
+    intro: >-
+      Now it gets practical: courses, entrance tests, countries, applications and deadlines.
+      Read about the courses that lead to the careers you like, check which tests they need,
+      and keep an eye on the Upcoming Deadlines page. Talk to your FP counsellor early in
+      Grade 11, not late in Grade 12.
+    read_first:
+      - btech-vs-bsc
+      - studying-in-india-vs-abroad
+      - studying-in-the-uk
+      - how-to-find-a-school-level-internship
+      - research-programmes-for-high-school-students
+      - planning-the-cost-of-higher-education

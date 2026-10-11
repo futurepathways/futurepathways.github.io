@@ -1,0 +1,40 @@
+---
+// Deadline badge (PRD 9). The build renders a sensible badge for the build date;
+// src/scripts/deadlines.ts recomputes it in the browser using today's IST date.
+import { deadlineStatus, statusLabel, formatDeadline } from '../lib/deadlines';
+
+interface Props {
+  deadline: string | null; // YYYY-MM-DD
+  rolling: boolean;
+  showDate?: boolean; // "31 Dec 2026 (12 days left)" next to the badge
+}
+const { deadline, rolling, showDate = false } = Astro.props;
+const status = deadlineStatus(deadline, rolling);
+---
+
+{
+  status && (
+    <span class="deadline" data-deadline={deadline ?? ''} data-rolling={rolling ? 'true' : undefined}>
+      <span class={`badge badge--${status}`} data-deadline-badge>
+        {statusLabel[status]}
+      </span>
+      {showDate && deadline && (
+        <span class="deadline-text" data-deadline-text>
+          {formatDeadline(deadline)}
+        </span>
+      )}
+    </span>
+  )
+}
+
+<style>
+  .deadline {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .deadline-text {
+    font-weight: 600;
+  }
+</style>

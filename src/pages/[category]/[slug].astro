@@ -1,0 +1,490 @@
+---
+// Post page (PRD 6.3). Sections appear in the order the PRD gives.
+import { render } from 'astro:content';
+import { Image } from 'astro:assets';
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import TagChips from '../../components/TagChips.astro';
+import DeadlineBadge from '../../components/DeadlineBadge.astro';
+import PostCard from '../../components/PostCard.astro';
+import { site, categoryByKey } from '../../config/site';
+import {
+  getVisiblePosts,
+  relatedPosts,
+  formatDate,
+  gradeBandLabel,
+  streamLabel,
+  opportunityTypeLabel,
+  monthsSince,
+  type Post,
+} from '../../lib/content';
+import { countryBySlug } from '../../lib/data';
+
+export async function getStaticPaths() {
+  const posts = await getVisiblePosts();
+  return posts.map((post) => ({ params: { category: post.category, slug: post.slug }, props: { post } }));
+}
+
+const { post } = Astro.props as { post: Post };
+const all = await getVisiblePosts();
+const related = relatedPosts(post, all, 3);
+const main = categoryByKey[post.category];
+const extras = post.extraCategories.map((k) => categoryByKey[k]);
+const opp = post.opportunity;
+const outOfDate = monthsSince(post.lastChecked) >= 6;
+const previewImage = post.coverImage ? post.coverImage.src : `/images/preview-${post.category}.png`;
+const { Content } = await render(post.entry);
+const modeLabel: Record<string, string> = { online: 'Online', 'in-person': 'In person', hybrid: 'Online and in person' };
+---
+
+<Base title={post.title} description={post.summary} image={previewImage} type="article">
+  {post.status === 'draft' && <p class="draft-banner">Draft. This post is not on the live site yet.</p>}
+
+  <article class={`post cat-${post.category}`} data-pagefind-body data-pagefind-meta={`slug:${post.slug}`} data-post-slug={post.slug}>
+    <header class="post-header">
+      <div class="container post-header-inner">
+        <p class="post-cats">
+          <a class="cat-chip" href={main.path} data-pagefind-filter="category"><Icon name={post.category} size={18} /> {main.name}</a>
+          {
+            extras.map((c) => (
+              <a class="cat-chip cat-chip--extra" href={c.path} data-pagefind-filter="category">
+                Also in {c.name}
+              </a>
+            ))
+          }
+        </p>
+        <h1 data-pagefind-meta="title" data-pagefind-weight="10">{post.title}</h1>
+        <p class="post-summary" data-pagefind-meta="summary" data-pagefind-weight="5">{post.summary}</p>
+
+        <dl class="post-facts">
+          <div>
+            <dt>For</dt>
+            <dd>{post.gradeBands.map((g) => gradeBandLabel[g]).join(', ')}</dd>
+          </div>
+          {
+            post.streams.length > 0 && (
+              <div>
+                <dt>Stream</dt>
+                <dd>{post.streams.map((s) => streamLabel[s]).join(', ')}</dd>
+              </div>
+            )
+          }
+          {
+            post.countries.length > 0 && (
+              <div>
+                <dt>Country</dt>
+                <dd>{post.countries.map((c) => countryBySlug[c].name).join(', ')}</dd>
+              </div>
+            )
+          }
+          <div>
+            <dt>Reading time</dt>
+            <dd>{post.readingMinutes} min</dd>
+          </div>
+          {
+            post.author && (
+              <div>
+                <dt>Written by</dt>
+                <dd>{post.author}</dd>
+              </div>
+            )
+          }
+        </dl>
+
+        <div class="post-tags" data-pagefind-weight="8">
+          <TagChips tags={post.tags} grouped />
+        </div>
+        <div hidden>
+          {/* Search words: tag names, search words and category names, indexed but not shown (PRD 8). */}
+          <span data-pagefind-weight="8">
+            {
+              [
+                main.name,
+                ...extras.map((c) => c.name),
+                ...post.tags.flatMap((t) => [t.name, ...t.search]),
+                ...post.countries.flatMap((c) => [countryBySlug[c].name, ...countryBySlug[c].search]),
+              ].join(', ')
+            }
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <div class="container post-layout">
+      <div class="post-main">
+        {
+          post.coverImage ? (
+            <figure class="post-cover">
+              <Image
+                src={post.coverImage}
+                alt={post.coverAlt}
+                widths={[480, 800, 1200]}
+                sizes="(max-width: 800px) 100vw, 800px"
+                loading="eager"
+              />
+            </figure>
+          ) : (
+            <figure class="post-cover">
+              <img src={`/images/preview-${post.category}.png`} alt="" width="1200" height="630" loading="eager" />
+            </figure>
+          )
+        }
+
+        {
+          opp && (
+            <aside class="deadline-box" aria-labelledby="deadline-heading">
+              <h2 id="deadline-heading">
+                <Icon name="calendar" size={22} /> {opportunityTypeLabel[opp.type] ?? 'Opportunity'}
+              </h2>
+              <dl class="deadline-facts">
+                <div>
+                  <dt>Deadline</dt>
+                  <dd>
+                    {opp.rolling ? (
+                      <DeadlineBadge deadline={null} rolling={true} />
+                    ) : opp.deadline ? (
+                      <DeadlineBadge deadline={opp.deadline} rolling={false} showDate />
+                    ) : (
+                      'Not announced yet'
+                    )}
+                    {opp.rolling && <span class="rolling-note"> No fixed deadline. Apply any time.</span>}
+                  </dd>
+                </div>
+                {opp.deadlineNote && (
+                  <div>
+                    <dt>Note</dt>
+                    <dd>{opp.deadlineNote}</dd>
+                  </div>
+                )}
+                {opp.eventDates && (
+                  <div>
+                    <dt>When</dt>
+                    <dd>{opp.eventDates}</dd>
+                  </div>
+                )}
+                {opp.mode && (
+                  <div>
+                    <dt>Mode</dt>
+                    <dd>{modeLabel[opp.mode] ?? opp.mode}</dd>
+                  </div>
+                )}
+                {opp.cost && (
+                  <div>
+                    <dt>Cost</dt>
+                    <dd>{opp.cost === 'free' ? 'Free' : 'Paid'}</dd>
+                  </div>
+                )}
+              </dl>
+              <div class="deadline-actions">
+                {opp.applyLink && (
+                  <a class="btn btn--gold" href={opp.applyLink} target="_blank" rel="noopener">
+                    Apply on the official site
+                  </a>
+                )}
+                {opp.deadline && !opp.rolling && (
+                  <a class="btn btn--outline" href={`${post.path}deadline.ics`} download>
+                    <Icon name="calendar" size={18} /> Add to calendar
+                  </a>
+                )}
+              </div>
+            </aside>
+          )
+        }
+
+        <aside class="parents-box" aria-labelledby="parents-heading">
+          <h2 id="parents-heading"><Icon name="parents" size={22} /> For Parents</h2>
+          <p>{post.parentSummary}</p>
+        </aside>
+
+        {
+          outOfDate && (
+            <p class="note">
+              <strong>May be out of date.</strong> This post was last checked on {formatDate(post.lastChecked)}. Please
+              confirm details on the official links.
+            </p>
+          )
+        }
+
+        <div class="post-body prose">
+          <Content />
+        </div>
+
+        <p class="checked-line" data-pagefind-ignore>
+          {
+            post.reviewedBy ? (
+              <>
+                <strong>Checked by {post.reviewedBy}</strong> on {formatDate(post.lastChecked)}.
+              </>
+            ) : (
+              <>
+                <strong>Last checked</strong> {formatDate(post.lastChecked)}.
+              </>
+            )
+          }
+          Fees, dates and rules change. Always check the official link before applying.
+        </p>
+
+        {
+          post.officialLinks.length > 0 && (
+            <section class="official-links" data-pagefind-ignore>
+              <h2>Official links</h2>
+              <ul>
+                {post.officialLinks.map((l) => (
+                  <li>
+                    <a href={l.url} target="_blank" rel="noopener">
+                      {l.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )
+        }
+
+        <div class="post-actions js-only" data-pagefind-ignore>
+          <button
+            type="button"
+            class="btn btn--outline"
+            data-save={post.slug}
+            data-save-title={post.title}
+            aria-pressed="false"
+          >
+            <Icon name="bookmark" size={18} class="save-icon-empty" />
+            <Icon name="bookmark-filled" size={18} class="save-icon-filled" />
+            <span data-save-label>Save</span>
+          </button>
+          <button type="button" class="btn btn--outline" data-copy-link>Copy link</button>
+          <a
+            class="btn btn--outline"
+            href={`https://wa.me/?text=${encodeURIComponent(`${post.title} - ${new URL(post.path, Astro.site)}`)}`}
+            target="_blank"
+            rel="noopener"
+          >
+            Share on WhatsApp
+          </a>
+        </div>
+
+        {
+          related.length > 0 && (
+            <section class="related" data-pagefind-ignore>
+              <h2>You may also like</h2>
+              <ul class="grid grid--3 related-grid">
+                {related.map((p) => (
+                  <PostCard post={p} />
+                ))}
+              </ul>
+            </section>
+          )
+        }
+
+        <p class="counsellor-note" data-pagefind-ignore>
+          <strong>Talk to your FP counsellor.</strong> They can help you work out what this means for you. Write to
+          <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a> or meet them at your campus.
+        </p>
+
+        {post.imageCredit && <p class="image-credit" data-pagefind-ignore>{post.imageCredit}</p>}
+      </div>
+    </div>
+  </article>
+</Base>
+
+<script>
+  import '../../scripts/deadlines';
+  const btn = document.querySelector<HTMLButtonElement>('[data-copy-link]');
+  btn?.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(location.href);
+      btn.textContent = 'Link copied';
+      setTimeout(() => (btn.textContent = 'Copy link'), 2000);
+    } catch {
+      prompt('Copy this link:', location.href);
+    }
+  });
+</script>
+
+<style>
+  .post-header {
+    background: var(--bg-soft);
+    border-bottom: 4px solid var(--cat);
+    padding-block: 1.6rem;
+  }
+  .post-header-inner {
+    max-width: 860px;
+  }
+  .post-cats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    margin: 0 0 0.4rem;
+  }
+  .cat-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: var(--cat);
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 0.85rem;
+  }
+  .cat-chip--extra {
+    color: var(--text-muted);
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: 600;
+  }
+  .cat-chip:hover {
+    text-decoration: underline;
+  }
+  .post-summary {
+    font-size: 1.12rem;
+    color: var(--text);
+    max-width: 60ch;
+  }
+  .post-facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.6rem;
+    margin: 0 0 1rem;
+    font-size: 0.95rem;
+  }
+  .post-facts div {
+    display: flex;
+    gap: 0.4rem;
+  }
+  .post-facts dt {
+    color: var(--text-muted);
+  }
+  .post-facts dd {
+    margin: 0;
+    font-weight: 600;
+  }
+  .post-tags {
+    margin-top: 0.6rem;
+  }
+
+  .post-layout {
+    padding-block: 1.5rem;
+  }
+  .post-main {
+    max-width: 800px;
+  }
+  .post-cover {
+    margin: 0 0 1.5rem;
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .post-cover img {
+    width: 100%;
+    height: auto;
+  }
+
+  .deadline-box,
+  .parents-box {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem 1.2rem;
+    margin-bottom: 1.4rem;
+    background: var(--surface);
+  }
+  .deadline-box {
+    border-left: 5px solid var(--gold);
+  }
+  .parents-box {
+    border-left: 5px solid var(--blue);
+    background: var(--bg-soft);
+  }
+  .deadline-box h2,
+  .parents-box h2 {
+    margin: 0 0 0.6rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .parents-box p {
+    margin: 0;
+  }
+  .deadline-facts {
+    margin: 0 0 0.8rem;
+    display: grid;
+    gap: 0.4rem;
+  }
+  .deadline-facts div {
+    display: grid;
+    grid-template-columns: 6.5em 1fr;
+    gap: 0.5rem;
+  }
+  .deadline-facts dt {
+    color: var(--text-muted);
+  }
+  .deadline-facts dd {
+    margin: 0;
+  }
+  .rolling-note {
+    color: var(--text-muted);
+  }
+  .deadline-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .post-body :global(h2) {
+    padding-top: 0.4rem;
+    border-top: 1px solid var(--border);
+    margin-top: 1.8rem;
+    padding-top: 1.2rem;
+  }
+  .post-body :global(h2:first-child) {
+    border-top: 0;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .post-body :global(img) {
+    border-radius: var(--radius-sm);
+  }
+  .post-body :global(li) {
+    margin-bottom: 0.3em;
+  }
+
+  .checked-line {
+    margin-top: 2rem;
+    padding: 0.8rem 1rem;
+    background: var(--bg-soft);
+    border-radius: var(--radius-sm);
+    font-size: 0.95rem;
+  }
+  .official-links ul {
+    padding-left: 1.2rem;
+  }
+  .post-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+  }
+  .post-actions :global(.save-icon-filled),
+  .post-actions [aria-pressed='true'] :global(.save-icon-empty) {
+    display: none;
+  }
+  .post-actions [aria-pressed='true'] :global(.save-icon-filled) {
+    display: inline-block;
+  }
+  .related-grid {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .counsellor-note {
+    margin-top: 2rem;
+    padding: 1rem 1.2rem;
+    border: 1px dashed var(--blue);
+    border-radius: var(--radius);
+  }
+  .image-credit {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+</style>

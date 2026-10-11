@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /review/
+Disallow: /search/
+Disallow: /saved/
+
+Sitemap: https://tips-futurepathways.github.io/sitemap-index.xml

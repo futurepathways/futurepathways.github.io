@@ -1,0 +1,66 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import { gradeBands } from '../../config/site';
+
+// The three grade pages themselves (with intros and curated lists) are built in Phase 5 (PRD 6.10).
+const blurbs: Record<string, string> = {
+  '6-8': 'Explore what jobs exist and what you enjoy. No pressure, just curiosity.',
+  '9-10': 'Choose your subjects and stream, and try your first competitions and programmes.',
+  '11-12': 'Courses, entrance tests, countries, applications and deadlines.',
+};
+---
+
+<Base title="Start here by grade" description="Pick your grade and see what matters right now.">
+  <div class="container section">
+    <h1>Start here by grade</h1>
+    <p class="prose">
+      Pick your grade. Each page tells you what matters at that stage and which posts to read first.
+    </p>
+    <div class="grid grid--3">
+      {
+        gradeBands.map((g) => (
+          <a href={g.path} class="card grade-card">
+            <span class="grade-label">{g.label}</span>
+            <span class="grade-blurb">{blurbs[g.key]}</span>
+            <span class="grade-go">
+              Open <Icon name="arrow" size={18} />
+            </span>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</Base>
+
+<style>
+  .grade-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    text-decoration: none;
+    color: inherit;
+    border-top: 4px solid var(--gold);
+  }
+  .grade-card:hover {
+    box-shadow: 0 6px 20px rgb(12 68 124 / 0.14);
+    color: inherit;
+  }
+  .grade-label {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--heading);
+  }
+  .grade-blurb {
+    color: var(--text-muted);
+  }
+  .grade-go {
+    margin-top: auto;
+    color: var(--link);
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+</style>

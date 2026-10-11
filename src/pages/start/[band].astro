@@ -1,0 +1,113 @@
+---
+// Start here by grade (PRD 6.10): intro, curated "read these first", then every other post for the band.
+import { load as loadYaml } from 'js-yaml';
+import startRaw from '../../data/start.yml?raw';
+import Base from '../../layouts/Base.astro';
+import PostCard from '../../components/PostCard.astro';
+import PostList from '../../components/PostList.astro';
+import { getVisiblePosts, byNewest } from '../../lib/content';
+import { gradeBands } from '../../config/site';
+
+interface Band {
+  key: string;
+  title: string;
+  intro: string;
+  read_first: string[];
+}
+const bands = (loadYaml(startRaw) as { bands: Band[] }).bands;
+
+export async function getStaticPaths() {
+  return gradeBands.map((g) => ({ params: { band: g.path.split('/')[2] }, props: { key: g.key } }));
+}
+
+const { key } = Astro.props as { key: string };
+const band = bands.find((b) => b.key === key) ?? { key, title: key, intro: '', read_first: [] };
+const all = (await getVisiblePosts()).filter((p) => p.gradeBands.includes(key));
+const first = band.read_first.map((slug) => all.find((p) => p.slug === slug)).filter(Boolean).slice(0, 6) as typeof all;
+const rest = all.filter((p) => !first.includes(p)).sort(byNewest);
+---
+
+<Base title={`Start here: ${band.title}`} description={band.intro.slice(0, 155)}>
+  <section class="band-hero">
+    <div class="container">
+      <p class="eyebrow">Start here</p>
+      <h1>{band.title}</h1>
+      <p class="band-intro">{band.intro}</p>
+      <p class="band-switch">
+        Not your grade?
+        {
+          gradeBands
+            .filter((g) => g.key !== key)
+            .map((g) => (
+              <a href={g.path}>{g.label}</a>
+            ))
+        }
+      </p>
+    </div>
+  </section>
+
+  <div class="container section">
+    {
+      first.length > 0 && (
+        <section>
+          <h2>Read these first</h2>
+          <ul class="grid grid--2 first-grid">
+            {first.map((p) => (
+              <PostCard post={p} headingLevel="h3" />
+            ))}
+          </ul>
+        </section>
+      )
+    }
+    <section>
+      <h2>{first.length ? 'More for your grade' : 'Posts for your grade'}</h2>
+      <PostList posts={rest} showCategoryFilter headingLevel="h3" emptyMessage="No more posts for this grade yet." />
+    </section>
+  </div>
+</Base>
+
+<script>
+  import '../../scripts/deadlines';
+</script>
+
+<style>
+  .band-hero {
+    background: linear-gradient(160deg, var(--deep), var(--blue));
+    color: #fff;
+    padding-block: 2rem;
+  }
+  .eyebrow {
+    margin: 0 0 0.2rem;
+    color: var(--gold);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.85rem;
+  }
+  .band-hero h1 {
+    color: #fff;
+  }
+  .band-intro {
+    max-width: 62ch;
+    font-size: 1.08rem;
+  }
+  .band-switch {
+    margin: 0;
+    font-size: 0.95rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1rem;
+  }
+  .band-switch a {
+    color: #fff;
+    text-decoration-color: var(--gold);
+  }
+  .first-grid {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem;
+  }
+  h2 {
+    margin-top: 1.2rem;
+  }
+</style>
