@@ -1,6 +1,6 @@
 # CLAUDE.md — Future Pathways
 
-Copy of Section 0 and Section 18 of the PRD (Future_Pathways_PRD_v1.4.md, kept outside this repo).
+Copy of Section 0 and Section 18 of the PRD (Future_Pathways_PRD_v1.5.md, kept outside this repo).
 The full PRD is the source of truth; this file exists so the rules travel with the code.
 
 ## Project notes
@@ -37,7 +37,7 @@ Settled. Claude Code should not ask about these again.
 | 5 | Deadline timing | 11:59 PM IST on the date, with an optional note for other time zones |
 | 6 | Yearly opportunities | Update the same post; no year in the address |
 | 7 | Posts in two categories | One main category plus up to 2 extra categories [v1.3, replaces "one category only"] |
-| 8 | Who writes the 28 starter posts | Claude drafts, a counsellor checks facts, Niranjan publishes |
+| 8 | Who writes the posts | **[v1.5, replaces "Claude drafts"]** Counsellors write every post; Claude drafts none. A second counsellor checks facts; Niranjan publishes |
 | 9 | Import existing FP material | Not in v1 |
 | 10 | Images | Free stock (Unsplash, Pexels) or TIPS photos; default image per category |
 | 11 | Logo | Text wordmark until a logo file is supplied |
@@ -60,5 +60,6 @@ Settled. Claude Code should not ask about these again.
 | 27 | Stream "any" [v1.4] | Shows under every stream filter |
 | 28 | Cover alt text [v1.4] | New `cover_alt` field, required when a cover image is set |
 | 29 | Filter engine [v1.4] | One shared engine: Pagefind for words, JSON index for filters and sort |
-| 30 | Phase 2 sample posts [v1.4] | Four of the 28 starter posts, one per category |
+| 30 | Phase 2 sample posts [v1.4] | Four temporary posts for testing; **[v1.5]** deleted once Phase 2 was checked |
+| 32 | Starter posts [v1.5] | The 28-post plan is withdrawn. Claude drafts no content; counsellors write every post |
 | 31 | Pages CMS pick lists [v1.4] | If Pages CMS cannot read `tags.yml` directly, a small script regenerates the pick lists in `.pages.yml`; the publishing guide covers it |
