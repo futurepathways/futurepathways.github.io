@@ -16,6 +16,7 @@ const categories = [
   { key: 'opportunities', name: 'Internships & Opportunities', accent: '#C9A84C' },
   { key: 'courses', name: 'Courses', accent: '#7FD3C4' },
   { key: 'countries', name: 'Countries', accent: '#CFA6EA' },
+  { key: 'universities', name: 'Universities', accent: '#F0A5A5' },
   { key: 'default', name: 'For every TIPS student and parent', accent: '#C9A84C' },
 ];
 

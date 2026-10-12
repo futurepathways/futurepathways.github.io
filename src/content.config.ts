@@ -4,7 +4,7 @@ import { z } from 'astro/zod';
 import { glob } from 'astro/loaders';
 import { tagBySlug, tagSlugsByGroup, countryBySlug, tagGroupNames } from './lib/data';
 
-export const categoryKeys = ['careers', 'opportunities', 'courses', 'countries'] as const;
+export const categoryKeys = ['careers', 'opportunities', 'courses', 'countries', 'universities'] as const;
 export type CategoryKey = (typeof categoryKeys)[number];
 
 const categoryEnum = z.enum(categoryKeys);
@@ -149,4 +149,5 @@ export const collections = {
   opportunities: makeCollection('opportunities', opportunityFields),
   courses: makeCollection('courses'),
   countries: makeCollection('countries'),
+  universities: makeCollection('universities'),
 };

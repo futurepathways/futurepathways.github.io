@@ -9,7 +9,8 @@ export type AnyEntry =
   | CollectionEntry<'careers'>
   | CollectionEntry<'opportunities'>
   | CollectionEntry<'courses'>
-  | CollectionEntry<'countries'>;
+  | CollectionEntry<'countries'>
+  | CollectionEntry<'universities'>;
 
 export interface OpportunityInfo {
   type: string;
@@ -155,13 +156,14 @@ let warned = false;
 /** Every post in every collection, drafts included. */
 export async function getAllPosts(): Promise<Post[]> {
   if (cache) return cache;
-  const [a, b, c, d] = await Promise.all([
+  const [a, b, c, d, e] = await Promise.all([
     getCollection('careers'),
     getCollection('opportunities'),
     getCollection('courses'),
     getCollection('countries'),
+    getCollection('universities'),
   ]);
-  cache = [...a, ...b, ...c, ...d].map(normalise);
+  cache = [...a, ...b, ...c, ...d, ...e].map(normalise);
 
   // Build warning (PRD 13): published posts with nobody in reviewed_by.
   if (!warned) {

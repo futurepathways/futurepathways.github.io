@@ -11,7 +11,7 @@ export const site = {
   goatCounterCode: '',
 } as const;
 
-export type CategoryKey = 'careers' | 'opportunities' | 'courses' | 'countries';
+export type CategoryKey = 'careers' | 'opportunities' | 'courses' | 'countries' | 'universities';
 
 export interface CategoryInfo {
   key: CategoryKey;
@@ -50,6 +50,13 @@ export const categories: CategoryInfo[] = [
     shortName: 'Countries',
     path: '/countries/',
     blurb: 'Studying in another country: costs, tests, visas and scholarships.',
+  },
+  {
+    key: 'universities',
+    name: 'Universities',
+    shortName: 'Universities',
+    path: '/universities/',
+    blurb: 'One university at a time: entry rules, fees, dates and what parents should know.',
   },
 ];
 

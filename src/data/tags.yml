@@ -119,6 +119,16 @@ tags:
     group: subject
     description: Picking subjects and a stream for Grades 11 and 12.
     search: [stream, subject choice, science commerce humanities, after 10th, after grade 10, a level, igcse subjects]
+  - slug: university-guides
+    name: University guides
+    group: subject
+    description: A close look at one university, including who it accepts, what it costs, the dates, and what parents should know.
+    search: [virtual tour, university spotlight, campus, college guide, admission requirements, which university]
+  - slug: scholarships-and-aid
+    name: Scholarships and financial aid
+    group: subject
+    description: Scholarships, bursaries, need-based aid and how to pay for a degree.
+    search: [scholarship, financial aid, need-blind, need-aware, bursary, fee waiver, tuition fees, cost of study]
 
   # ---------- Entrance exam ----------
   - slug: jee
@@ -176,6 +186,21 @@ tags:
     group: exam
     description: IGCSE, AS and A Level exams and how they are used for admissions.
     search: [igcse, a level, as level, cambridge international, board exams]
+  - slug: uk-admissions-tests
+    name: UK admissions tests
+    group: exam
+    description: Tests UK universities ask for, such as UCAT, ESAT, TMUA, LNAT and TARA.
+    search: [ucat, esat, tmua, lnat, tara, csat, uat-uk, oxford test, cambridge test, admissions test]
+  - slug: viteee
+    name: VITEEE
+    group: exam
+    description: The entrance exam for VIT's engineering degrees.
+    search: [vit entrance, vellore entrance exam]
+  - slug: iat
+    name: IISER Aptitude Test (IAT)
+    group: exam
+    description: The entrance test for the IISERs and one of the two doors into IISc's BS (Research).
+    search: [iiser, iiser aptitude test, iisc entrance, bs research]
 
   # ---------- Skill ----------
   - slug: coding
@@ -213,6 +238,11 @@ tags:
     group: skill
     description: Collecting work that shows what you can do, for design, arts or college applications.
     search: [portfolio, profile building, extracurricular, activities list]
+  - slug: languages
+    name: Learning a language
+    group: skill
+    description: Picking up a language early, such as German or French, to open doors to universities abroad.
+    search: [german, french, c1, language certificate, goethe, delf, foreign language]
 
   # ---------- Study level ----------
   - slug: school

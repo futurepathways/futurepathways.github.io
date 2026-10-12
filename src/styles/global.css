@@ -389,6 +389,9 @@ a.tag:hover {
 .cat-countries {
   --cat: #7a3e9d;
 }
+.cat-universities {
+  --cat: #9a3b3b;
+}
 @media (prefers-color-scheme: dark) {
   .cat-careers {
     --cat: #8fc1f3;
@@ -401,6 +404,9 @@ a.tag:hover {
   }
   .cat-countries {
     --cat: #cfa6ea;
+  }
+  .cat-universities {
+    --cat: #f0a5a5;
   }
 }
 
