@@ -12,6 +12,7 @@ The full PRD is the source of truth; this file exists so the rules travel with t
 - Scripts: `npm run dev` (drafts visible, Draft banner), `npm run build` (what GitHub Actions runs; drafts hidden), `npm run build:drafts` then `npm run preview` (review drafts as a built site), `npm run check` (types), `npm run images` (regenerate preview images).
 - Drafts are only ever shown in dev and in the drafts build. The live site never shows them.
 - Search: Pagefind indexes post pages (`data-pagefind-body`); tag names, tag search words and category names are inside each post page so they are searchable. Filters and sorting run over cards already in the page (`src/scripts/listing.ts`), including on the Search page (decision 29).
+- Publishing tools (Phase 6): `.pages.yml` is generated, run `npm run cms` after editing `scripts/make-pages-config.mjs`; Word templates come from `python scripts/make-templates.py`; tags and countries are one YAML file per entry under `src/data/tags/<group>/` and `src/data/countries/`, edited in Pages CMS as collections.
 - Build checks live in `src/content.config.ts`: unknown tag or country, wrong tag group, tag count (3 to 8, at least one Subject area) for published posts, main category must match the folder, `cover_alt` required with a cover image. Drafts only get a console warning for tag counts.
 
 ## 0. Instructions for Claude Code
@@ -61,6 +62,7 @@ Settled. Claude Code should not ask about these again.
 | 28 | Cover alt text [v1.4] | New `cover_alt` field, required when a cover image is set |
 | 29 | Filter engine [v1.4] | One shared engine: Pagefind for words, JSON index for filters and sort |
 | 30 | Phase 2 sample posts [v1.4] | Four temporary posts for testing; **[v1.5]** deleted once Phase 2 was checked |
+| 37 | Phase 6 built [12 Oct 2026] | Pages CMS config generated; tags and countries as per-entry files edited in the CMS; Word templates and publishing guide in `docs/` |
 | 36 | Blog import [12 Oct 2026] | 20 of Madan's blog articles imported under his name (PRD Section 20.2); four Skill tags added (Study habits, Focus, Critical thinking, Data literacy); mindset posts sit under Careers, no new category |
 | 35 | Universities category [12 Oct 2026] | Fifth top-level category. University guides use it as main category with Countries and Courses as extras |
 | 34 | FP-UV import [12 Oct 2026] | The 17 University Virtual Tour editions are imported as published posts, reviewed by Madan (PRD Section 20) |

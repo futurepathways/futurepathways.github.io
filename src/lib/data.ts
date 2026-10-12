@@ -1,8 +1,6 @@
-// Loads the fixed lists (PRD 7.3) from src/data/*.yml at build time.
+// Loads the fixed lists (PRD 7.3): one YAML file per tag (grouped by folder) and per country.
+// Pages CMS edits these folders as collections, so Niranjan can add a tag or country without code.
 import { load as loadYaml } from 'js-yaml';
-// The YAML files are inlined at build time, so this works in dev, build and prerender.
-import tagsRaw from '../data/tags.yml?raw';
-import countriesRaw from '../data/countries.yml?raw';
 
 export type TagGroupKey = 'subject' | 'exam' | 'skill' | 'level' | 'audience';
 
@@ -20,27 +18,58 @@ export interface Country {
   search: string[];
 }
 
-interface TagsFile {
-  groups: Record<TagGroupKey, string>;
-  tags: Array<Partial<Tag> & { slug: string; name: string; group: TagGroupKey }>;
+interface Entry {
+  title?: string;
+  name?: string;
+  description?: string;
+  search?: string[];
 }
-interface CountriesFile {
-  countries: Array<Partial<Country> & { slug: string; name: string }>;
-}
-
-const tagsFile = loadYaml(tagsRaw) as TagsFile;
-const countriesFile = loadYaml(countriesRaw) as CountriesFile;
 
 export const tagGroupOrder: TagGroupKey[] = ['subject', 'exam', 'skill', 'level', 'audience'];
-export const tagGroupNames: Record<TagGroupKey, string> = tagsFile.groups;
+export const tagGroupNames: Record<TagGroupKey, string> = {
+  subject: 'Subject area',
+  exam: 'Entrance exam',
+  skill: 'Skill',
+  level: 'Study level',
+  audience: 'Audience',
+};
 
-export const tags: Tag[] = tagsFile.tags.map((t) => ({
-  slug: t.slug,
-  name: t.name,
-  group: t.group,
-  description: t.description ?? '',
-  search: t.search ?? [],
-}));
+// The YAML files are inlined at build time, so this works in dev, build and prerender.
+const tagFiles = import.meta.glob('../data/tags/*/*.yml', { query: '?raw', import: 'default', eager: true }) as Record<
+  string,
+  string
+>;
+const countryFiles = import.meta.glob('../data/countries/*.yml', { query: '?raw', import: 'default', eager: true }) as Record<
+  string,
+  string
+>;
+
+function parse(path: string, raw: string): Entry {
+  try {
+    return (loadYaml(raw) as Entry) ?? {};
+  } catch (e) {
+    throw new Error(`${path} is not valid YAML: ${(e as Error).message}`);
+  }
+}
+
+export const tags: Tag[] = Object.entries(tagFiles)
+  .map(([path, raw]) => {
+    const m = path.match(/\/tags\/([a-z]+)\/([^/]+)\.yml$/);
+    if (!m) throw new Error(`Unexpected tag file path: ${path}`);
+    const group = m[1] as TagGroupKey;
+    const slug = m[2];
+    const e = parse(path, raw);
+    if (!tagGroupNames[group]) {
+      throw new Error(`Tag file ${path} is in folder "${group}", which is not one of ${tagGroupOrder.join(', ')}.`);
+    }
+    if (!/^[a-z0-9-]+$/.test(slug)) {
+      throw new Error(`Tag file name "${slug}" may only use lowercase letters, numbers and hyphens.`);
+    }
+    const name = (e.title ?? e.name ?? '').trim();
+    if (!name) throw new Error(`Tag file ${path} has no title.`);
+    return { slug, name, group, description: e.description ?? '', search: e.search ?? [] };
+  })
+  .sort((a, b) => a.name.localeCompare(b.name));
 
 export const tagBySlug: Record<string, Tag> = Object.fromEntries(tags.map((t) => [t.slug, t]));
 
@@ -53,28 +82,14 @@ export const tagSlugsByGroup: Record<TagGroupKey, string[]> = {
 };
 for (const t of tags) tagSlugsByGroup[t.group].push(t.slug);
 
-export const countries: Country[] = countriesFile.countries.map((c) => ({
-  slug: c.slug,
-  name: c.name,
-  search: c.search ?? [],
-}));
+export const countries: Country[] = Object.entries(countryFiles)
+  .map(([path, raw]) => {
+    const slug = path.match(/\/countries\/([^/]+)\.yml$/)![1];
+    const e = parse(path, raw);
+    const name = (e.title ?? e.name ?? '').trim();
+    if (!name) throw new Error(`Country file ${path} has no title.`);
+    return { slug, name, search: e.search ?? [] };
+  })
+  .sort((a, b) => a.name.localeCompare(b.name));
 
 export const countryBySlug: Record<string, Country> = Object.fromEntries(countries.map((c) => [c.slug, c]));
-
-// Sanity checks on the lists themselves, so a typo in tags.yml fails loudly.
-{
-  const seen = new Set<string>();
-  for (const t of tags) {
-    if (seen.has(t.slug)) throw new Error(`tags.yml: the tag slug "${t.slug}" appears twice.`);
-    seen.add(t.slug);
-    if (!tagGroupNames[t.group]) {
-      throw new Error(`tags.yml: tag "${t.slug}" has group "${t.group}", which is not one of ${tagGroupOrder.join(', ')}.`);
-    }
-    if (!/^[a-z0-9-]+$/.test(t.slug)) throw new Error(`tags.yml: tag slug "${t.slug}" may only use lowercase letters, numbers and hyphens.`);
-  }
-  const seenC = new Set<string>();
-  for (const c of countries) {
-    if (seenC.has(c.slug)) throw new Error(`countries.yml: the country slug "${c.slug}" appears twice.`);
-    seenC.add(c.slug);
-  }
-}
