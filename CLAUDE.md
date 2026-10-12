@@ -61,6 +61,8 @@ Settled. Claude Code should not ask about these again.
 | 28 | Cover alt text [v1.4] | New `cover_alt` field, required when a cover image is set |
 | 29 | Filter engine [v1.4] | One shared engine: Pagefind for words, JSON index for filters and sort |
 | 30 | Phase 2 sample posts [v1.4] | Four temporary posts for testing; **[v1.5]** deleted once Phase 2 was checked |
+| 35 | Universities category [12 Oct 2026] | Fifth top-level category. University guides use it as main category with Countries and Courses as extras |
+| 34 | FP-UV import [12 Oct 2026] | The 17 University Virtual Tour editions are imported as published posts, reviewed by Madan (PRD Section 20) |
 | 33 | Hosting account [v1.5] | Madan's personal GitHub account owns the `futurepathways` organisation; no fptrichy account |
 | 32 | Starter posts [v1.5] | The 28-post plan is withdrawn. Claude drafts no content; counsellors write every post |
 | 31 | Pages CMS pick lists [v1.4] | If Pages CMS cannot read `tags.yml` directly, a small script regenerates the pick lists in `.pages.yml`; the publishing guide covers it |
