@@ -243,6 +243,26 @@ tags:
     group: skill
     description: Picking up a language early, such as German or French, to open doors to universities abroad.
     search: [german, french, c1, language certificate, goethe, delf, foreign language]
+  - slug: study-habits
+    name: Study habits
+    group: skill
+    description: How to study well, organise your work and keep going.
+    search: [study tips, revision, routine, habits, organisation, pomodoro, time management, growth mindset, motivation]
+  - slug: focus
+    name: Focus
+    group: skill
+    description: Paying attention, avoiding distraction and managing screen time.
+    search: [concentration, attention, phone, scrolling, dopamine detox, distraction, digital wellbeing]
+  - slug: critical-thinking
+    name: Critical thinking
+    group: skill
+    description: Questioning claims, weighing evidence and reaching your own conclusions.
+    search: [reasoning, logic, assumptions, evidence, red model, decision making]
+  - slug: data-literacy
+    name: Data literacy
+    group: skill
+    description: Reading, questioning and using data in any field.
+    search: [data, statistics, numbers, charts, data skills, hype, bubble]
 
   # ---------- Study level ----------
   - slug: school

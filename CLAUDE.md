@@ -61,6 +61,7 @@ Settled. Claude Code should not ask about these again.
 | 28 | Cover alt text [v1.4] | New `cover_alt` field, required when a cover image is set |
 | 29 | Filter engine [v1.4] | One shared engine: Pagefind for words, JSON index for filters and sort |
 | 30 | Phase 2 sample posts [v1.4] | Four temporary posts for testing; **[v1.5]** deleted once Phase 2 was checked |
+| 36 | Blog import [12 Oct 2026] | 20 of Madan's blog articles imported under his name (PRD Section 20.2); four Skill tags added (Study habits, Focus, Critical thinking, Data literacy); mindset posts sit under Careers, no new category |
 | 35 | Universities category [12 Oct 2026] | Fifth top-level category. University guides use it as main category with Countries and Courses as extras |
 | 34 | FP-UV import [12 Oct 2026] | The 17 University Virtual Tour editions are imported as published posts, reviewed by Madan (PRD Section 20) |
 | 33 | Hosting account [v1.5] | Madan's personal GitHub account owns the `futurepathways` organisation; no fptrichy account |

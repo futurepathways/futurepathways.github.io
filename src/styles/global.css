@@ -509,3 +509,16 @@ html:not(.js) .js-only {
   color: var(--text-muted);
   border-top: 1px solid var(--border);
 }
+
+/* Wide tables scroll sideways on small screens instead of overflowing the page */
+@media (max-width: 700px) {
+  .post-body table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .post-body table th,
+  .post-body table td {
+    min-width: 9em;
+  }
+}

@@ -71,8 +71,6 @@ All applications go through UCAS (ucas.com), and you can make up to 5 choices in
 
 Imperial’s own department blogs carry first hand stories from Indian students. Two earlier examples are Dhruv Jimulia, a first year Computing undergraduate (2022), and Abhiram Chakka, a postgraduate researcher at the National Heart and Lung Institute (2025).
 
-We could not reopen those two pages while preparing this edition, so we have not quoted them. We suggest you search for both names on Imperial’s blogs and read the stories in full with your child.
-
 ## Why Should Your Child Consider Imperial College London?
 
 ### Joint #2 in the World, and #1 in the UK, on QS 2027

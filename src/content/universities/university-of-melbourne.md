@@ -25,7 +25,7 @@ author: "FP (Future Pathway) team"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
 status: published
-published_date: 2026-10-07  # PLACEHOLDER: replace with the actual send date of edition 13
+published_date: 2026-09-11
 ---
 ## At a glance
 
@@ -66,7 +66,7 @@ Melbourne offers no shortcut by board. Both CBSE and Cambridge students apply th
 
 ## A Melbourne Alumna Worth Knowing
 
-Melbourne has produced researchers who changed medicine. One example is Elizabeth Blackburn, an alumna of the University of Melbourne, who shared a Nobel Prize in Medicine for work on how chromosomes protect themselves. We have not found a recent quote from an Indian graduate that we can check, so we have chosen not to print one.
+Melbourne has produced researchers who changed medicine. One example is Elizabeth Blackburn, an alumna of the University of Melbourne, who shared a Nobel Prize in Medicine for work on how chromosomes protect themselves.
 
 ## Why Should Your Child Consider the University of Melbourne?
 

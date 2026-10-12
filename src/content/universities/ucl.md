@@ -66,8 +66,6 @@ All applications go through UCAS (ucas.com), UCL code U80. Offers are usually co
 
 ## UCL and Indian Students
 
-We looked for a current quote from an Indian UCL student on UCL's official pages. We did not find one that we could check this time, so we have not printed one. Please read the UCL India pages yourself.
-
 UCL's India page names Mahatma Gandhi, who registered for law at UCL in 1888 to 1889, and the poet Rabindranath Tagore among its Indian alumni. UCL says it has about 2,700 alumni in India. It also says more than 1,000 Indian students study there, and gave 1,016 for 2022 to 2023.
 
 ## Why Should Your Child Consider UCL?

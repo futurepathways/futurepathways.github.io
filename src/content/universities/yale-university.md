@@ -25,7 +25,7 @@ author: "FP (Future Pathway) team"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
 status: published
-published_date: 2026-10-05  # PLACEHOLDER: replace with the actual send date of edition 11
+published_date: 2026-09-03
 ---
 ## At a glance
 
@@ -81,7 +81,7 @@ Yale says its admissions office does not consider whether a family can pay, “f
 
 ### The Residential Colleges
 
-Every Yale undergraduate belongs to one of 14 residential colleges. Each is a smaller community inside the large university. It has its own dining hall, courtyard and traditions. The idea is close to the colleges at Oxford and Cambridge, which our Cambridge A Level students already know from earlier editions. A student is never just one face among about 6,700 undergraduates. Yale’s libraries and collections hold about 15.9 million volumes, so the resources are those of a very large research university. For a student who wants a close community and big resources together, this is one of Yale’s best features.
+Every Yale undergraduate belongs to one of 14 residential colleges. Each is a smaller community inside the large university. It has its own dining hall, courtyard and traditions. A student is never just one face among about 6,700 undergraduates. Yale’s libraries and collections hold about 15.9 million volumes, so the resources are those of a very large research university. For a student who wants a close community and big resources together, this is one of Yale’s best features.
 
 ### Yale and India
 

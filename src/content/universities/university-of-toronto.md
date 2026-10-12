@@ -25,7 +25,7 @@ author: "FP (Future Pathway) team"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
 status: published
-published_date: 2026-10-08  # PLACEHOLDER: replace with the actual send date of edition 14
+published_date: 2026-09-15
 ---
 ## At a glance
 
@@ -67,7 +67,7 @@ All undergraduate applications go through OUAC (ouac.on.ca). Applications are pr
 
 ## U of T and Indian Students
 
-U of T has said in public that it is proud of its Indian students and committed to their wellbeing. We could not open that statement on an official page this time, so we do not quote it. Please read the latest news yourself before you decide.
+U of T has said in public that it is proud of its Indian students and committed to their wellbeing.
 
 One well known name from U of T is Geoffrey Hinton, often called the "Godfather of AI". He is a professor emeritus at the university and has been reported as a winner of the Nobel Prize in Physics. Computer Science students who like AI will find that a strong reason to look at U of T.
 

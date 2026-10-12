@@ -25,7 +25,7 @@ author: "FP (Future Pathway) team"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
 status: published
-published_date: 2026-10-10  # PLACEHOLDER: replace with the actual send date of edition 16
+published_date: 2026-09-23
 ---
 ## At a glance
 

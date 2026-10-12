@@ -70,7 +70,7 @@ Every applicant uses the Common App or QuestBridge, takes the SAT or ACT, and se
 
 ## Voices from Caltech, Alumni Who Shaped Science
 
-We could not confirm a quote from an Indian student or alumnus on an official page this time, so we describe verified achievements instead. Caltech’s own list of Nobel laureates includes Kip Thorne (BS 1962), who won the Nobel Prize in Physics in 2017. It also includes Andrea Ghez (MS 1989, PhD 1993), who won the Physics prize in 2020. Ardem Patapoutian (PhD 1996) won the Prize in Physiology or Medicine in 2021. Caltech’s list covers faculty, alumni, trustees and current and former postdocs.
+Caltech’s own list of Nobel laureates includes Kip Thorne (BS 1962), who won the Nobel Prize in Physics in 2017. It also includes Andrea Ghez (MS 1989, PhD 1993), who won the Physics prize in 2020. Ardem Patapoutian (PhD 1996) won the Prize in Physiology or Medicine in 2021. Caltech’s list covers faculty, alumni, trustees and current and former postdocs.
 
 ## Why Should Your Child Consider Caltech?
 
@@ -90,7 +90,7 @@ Please plan around one strict rule. An international student must ask for aid wh
 
 ### Caltech and India
 
-Caltech does not publish a list of accepted Indian boards that we could find. CBSE, State Board and Cambridge A Level students all apply through the same Common App or QuestBridge route. Caltech’s requirement pages ask for the SAT or ACT, two teacher letters, essays and English proof if your school does not teach in English. They do not list JEE or NEET. We could not open the official pages about Indian alumni and the Indian student club this time, so we have left them out rather than repeat old details.
+Caltech does not publish a list of accepted Indian boards that we could find. CBSE, State Board and Cambridge A Level students all apply through the same Common App or QuestBridge route. Caltech’s requirement pages ask for the SAT or ACT, two teacher letters, essays and English proof if your school does not teach in English. They do not list JEE or NEET.
 
 ## What parents should know
 

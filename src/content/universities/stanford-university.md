@@ -68,8 +68,6 @@ Everyone applies through the Common Application, not UCAS. The fee is USD 100 (~
 
 ## Voices from Stanford, Indian Alumni
 
-We looked for a current quote from an Indian Stanford student on Stanford's own pages and could not check one, so we have not printed any. Instead, here is an alumnus whose path is widely reported.
-
 Sundar Pichai grew up in Chennai, studied at IIT Kharagpur, and then did an MS in Materials Science and Engineering at Stanford. He is now CEO of Google and Alphabet. Media reports say Stanford invited him to speak at its June 2026 commencement. We have not read the speech on Stanford's own site, so please treat this as reported.
 
 ## Why Should Your Child Consider Stanford University?

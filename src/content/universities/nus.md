@@ -66,10 +66,6 @@ The table below sums up what NUS states on its own pages. Please read the rows o
 
 Applications go through the NUS Undergraduate Admissions portal (nus.edu.sg/oam). The new year starts in August. Offers for most applicants come by the third week of May, and they depend on final results. Interview and test dates for 2027 are not posted yet. For 2026 they fell between mid March and late April, and we expect something similar. Please check the NUS page on interviews and test dates early in 2027.
 
-## NUS and Indian Students
-
-We looked for a current quote from an Indian NUS student on NUS's official pages. We could not open those pages to check the words this time, so we have not printed one. The FP team can share alumni stories from NUS's own website at the counselling session.
-
 ## Why Should Your Child Consider NUS?
 
 ### #10 in QS 2027, Down from #8, and the Top Asian University

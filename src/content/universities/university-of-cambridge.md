@@ -67,8 +67,6 @@ All applications go through UCAS (ucas.com), Cambridge code C05. The deadline is
 
 ## Indian Alumni of Cambridge
 
-We looked for a current quote from an Indian Cambridge student on official pages. We could not open the pages that held the older quotes, so we have not printed them. Here is what we know in our own words.
-
 Dr Manmohan Singh studied Economics at St John's College, Cambridge, and finished with First Class Honours in 1957. He later served as Prime Minister of India from 2004 to 2014. He also supported scholarships for Indian students at St John's, which carry his name.
 
 ## Why Should Your Child Consider the University of Cambridge?

@@ -68,7 +68,7 @@ All applications go through UCAS (ucas.com), Oxford code O33. The deadline is 15
 
 ## Voices from Oxford, Indian Students
 
-We looked for a current quote from an Indian Oxford undergraduate on official pages. We did not find one we could check. The words below come from the Rhodes House website, from two Indian Rhodes Scholars.
+The words below come from the Rhodes House website, from two Indian Rhodes Scholars.
 
 > “Oxford, where we first met as students, changed our lives, and we hope that this Scholarship will do just that for many more in the years ahead.”
 

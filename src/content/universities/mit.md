@@ -66,10 +66,6 @@ The table below sums up what MIT says it needs from applicants in each pathway. 
 
 Everyone applies through MIT's own portal, not the Common App. You can send only one application a year. If MIT turns down an Early Action application, you cannot apply again in Regular Action. Early Action is non-binding, so you may still choose another university. Early Action gives a decision in mid December, which leaves more time to plan money and the visa. MIT does not look at your family's money when it decides admission. Aid forms are separate and have their own dates.
 
-## Voices from MIT, Indian Students
-
-The earlier edition printed two quotes from Indian members of the MIT community. We could not open their pages this month to check the exact words, so we have not printed them again. We would rather leave a quote out than print one we could not check.
-
 ## Why Should Your Child Consider MIT?
 
 ### QS #1 and THE #2, a Top Place in Both Lists
@@ -82,7 +78,7 @@ MIT sits in Cambridge, Massachusetts, next to Boston and close to Harvard. The a
 
 ### Strong Science and Wide Choice
 
-MIT is not only for engineers. It teaches Computer Science, Electrical Engineering, Physics, Mathematics and Mechanical Engineering. It also offers Biology, Architecture and Economics. Students can combine subjects, for example Computer Science with Biology. We could not re-open the MIT pages on research in the first year, so the FP team will ask MIT how first year research places are given.
+MIT is not only for engineers. It teaches Computer Science, Electrical Engineering, Physics, Mathematics and Mechanical Engineering. It also offers Biology, Architecture and Economics. Students can combine subjects, for example Computer Science with Biology.
 
 ### Need-Blind and Full Need Aid, One of Six Universities
 

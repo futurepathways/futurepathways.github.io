@@ -70,7 +70,7 @@ Harvard uses the Common Application (commonapp.org). The application fee is USD 
 
 ## Harvard and Indian Students
 
-We looked for a current quote from an Indian Harvard student or graduate on Harvard's official pages. We could not open those pages this time to check the exact words, so we have not printed one. The FP team can share alumni stories from Harvard's own pages at your counselling session. Harvard also has a Lakshmi Mittal South Asia Institute, which studies South Asia and runs an India Conference. Please check its website for dates.
+Harvard also has a Lakshmi Mittal South Asia Institute, which studies South Asia and runs an India Conference. Please check its website for dates.
 
 ## Why Should Your Child Consider Harvard University?
 
