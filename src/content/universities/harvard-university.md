@@ -40,11 +40,11 @@ Harvard Yard & Campus Visit the YouTube tour to explore Harvard Yard, Widener Li
 
 On-demand access to the Harvard campus tour is available on YouTube. [Watch the Harvard Campus Tour today](https://www.youtube.com/watch?v=GyZd6tABvto)!
 
-**Visit a university in person.** The TIPS FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
+**Visit a university in person.** The FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
 
 ## Harvard Admission Requirements, CBSE and Cambridge A Level
 
-Harvard looks at the whole student. Marks matter, but they are only the starting point. Essays, teacher letters, activities and a student's own story count too. No two successful applications look the same. Please reach out to the TIPS FP (Future Pathway) team for a one on one counselling session.
+Harvard looks at the whole student. Marks matter, but they are only the starting point. Essays, teacher letters, activities and a student's own story count too. No two successful applications look the same. Please reach out to the FP (Future Pathway) team for a one on one counselling session.
 
 | Requirement | CBSE Grade 12 | Cambridge A Level |
 |---|---|---|
@@ -103,7 +103,7 @@ Harvard says about 16 percent of the Class of 2029 are international students. C
 
 ## Talk to the FP team
 
-To book a Harvard counselling session for your family, please write to the TIPS FP (Future Pathway) team at fperdintl@tipseindia.com. We cover SAT preparation, essay help, the Restrictive Early Action or Regular Decision choice, financial aid planning and the application itself. We are happy to set up a one on one session at a time that suits you.
+To book a Harvard counselling session for your family, please write to the FP (Future Pathway) team at fperdintl@tipseindia.com. We cover SAT preparation, essay help, the Restrictive Early Action or Regular Decision choice, financial aid planning and the application itself. We are happy to set up a one on one session at a time that suits you.
 
 ## Sources
 

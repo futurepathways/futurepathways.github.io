@@ -43,7 +43,7 @@ You can watch a University of Toronto campus tour on YouTube. [Watch the Univers
 
 Representatives of the University of Toronto visited TIPS in September 2026. If your family could not attend, please ask the FP team for the follow-up notes.
 
-**Visit a university in person.** The TIPS FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
+**Visit a university in person.** The FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
 
 ## U of T Admission Requirements for CBSE/State Boards and Cambridge A Level
 
@@ -104,7 +104,7 @@ Unlike the UK system (UCAS) or the single US application, U of T admits students
 
 ## Talk to the FP team
 
-To set up a University of Toronto counselling session for your family, please write to the TIPS FP (Future Pathway) team at fperdintl@tipseindia.com. We can cover programme choice, the PAL and PGWP rules, and the extra applications for Computer Science and Engineering. We are happy to arrange a one to one session at a time that suits you.
+To set up a University of Toronto counselling session for your family, please write to the FP (Future Pathway) team at fperdintl@tipseindia.com. We can cover programme choice, the PAL and PGWP rules, and the extra applications for Computer Science and Engineering. We are happy to arrange a one to one session at a time that suits you.
 
 ## Sources
 

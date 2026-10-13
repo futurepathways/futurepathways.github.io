@@ -41,7 +41,7 @@ VIT Vellore Campus, Katpadi, Vellore, Tamil Nadu Watch VIT's own Campus Life vid
 
 VIT has its own campus video. [Watch Campus Life by Vellore Institute of Technology on YouTube](https://www.youtube.com/watch?v=oGjoUN-MFrM). This is the university's own channel, so expect the best view of the campus. Student walkthrough videos also exist, and we can share them on request.
 
-**Visit a university in person.** The TIPS FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
+**Visit a university in person.** The FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
 
 ## VIT Admission Requirements for CBSE/State Boards and Cambridge A Level
 
@@ -99,7 +99,7 @@ VIT's own data to NIRF 2026 covers 11,913 four year undergraduates who finished 
 
 ## Talk to the FP team
 
-To book a VIT counselling session for your family, please write to the TIPS FP (Future Pathway) team at fperdintl@tipseindia.com. We will cover VITEEE preparation, the board rules for Cambridge students, the fee categories and the 2027 dates as VIT announces them.
+To book a VIT counselling session for your family, please write to the FP (Future Pathway) team at fperdintl@tipseindia.com. We will cover VITEEE preparation, the board rules for Cambridge students, the fee categories and the 2027 dates as VIT announces them.
 
 ## Sources
 

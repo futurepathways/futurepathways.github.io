@@ -40,11 +40,11 @@ MIT Campus Watch the YouTube tour to see the MIT Dome, the Infinite Corridor and
 
 On demand, a campus tour of MIT is available on YouTube. [Watch the MIT Campus Tour today](https://www.youtube.com/watch?v=p6NbLA5-K6g)! This video was made by an independent creator, not by the university.
 
-**Visit a university in person.** The TIPS FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
+**Visit a university in person.** The FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
 
 ## MIT Admission Requirements for CBSE and Cambridge A Level
 
-The table below sums up what MIT says it needs from applicants in each pathway. MIT publishes no cut-off marks, so we do not give a magic number. For subject plans and application strategy, please write to the TIPS FP (Future Pathway) team for a one to one session.
+The table below sums up what MIT says it needs from applicants in each pathway. MIT publishes no cut-off marks, so we do not give a magic number. For subject plans and application strategy, please write to the FP (Future Pathway) team for a one to one session.
 
 | Requirement | CBSE Grade 12 | Cambridge A Level |
 |---|---|---|
@@ -99,7 +99,7 @@ MIT is one of six US universities that are both need-blind for international stu
 
 ## Talk to the FP team
 
-To book a one to one MIT session for your family, please write to the TIPS FP (Future Pathway) team at fperdintl@tipseindia.com. We can cover SAT planning, application strategy, the aid forms and your full US list. We will fix a time that suits you.
+To book a one to one MIT session for your family, please write to the FP (Future Pathway) team at fperdintl@tipseindia.com. We can cover SAT planning, application strategy, the aid forms and your full US list. We will fix a time that suits you.
 
 ## Sources
 

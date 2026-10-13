@@ -40,7 +40,7 @@ Melbourne Campus, Parkville, Victoria Walk the historic Parkville campus, close 
 
 A tour of the campus is available on YouTube. [Watch the University of Melbourne Campus Tour](https://www.youtube.com/watch?v=DHgvF1dpk_g). This video was made by an independent creator, not by the university. It shows the research buildings, the lecture spaces and student life. The university also offers a self-guided tour and a live walking tour with student ambassadors. Check the campus tour page on unimelb.edu.au for the current options.
 
-**Visit a university in person.** The TIPS FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
+**Visit a university in person.** The FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
 
 ## Melbourne Admission Requirements for CBSE/State Boards and Cambridge A Level
 
@@ -100,7 +100,7 @@ About 46 percent of Melbourne’s students are international, from over 150 nati
 
 ## Talk to the FP team
 
-To book a Melbourne counselling session for your family, please write to the TIPS FP (Future Pathway) team at fperdintl@tipseindia.com. We will cover the Melbourne Model, course choice, visa costs, dates by board and scholarships. We will also compare Melbourne with the UK and US options in this series.
+To book a Melbourne counselling session for your family, please write to the FP (Future Pathway) team at fperdintl@tipseindia.com. We will cover the Melbourne Model, course choice, visa costs, dates by board and scholarships. We will also compare Melbourne with the UK and US options in this series.
 
 ## Sources
 

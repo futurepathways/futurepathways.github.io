@@ -40,7 +40,7 @@ ETH Main Building, Zurich Zentrum Walk the same corridors where Albert Einstein 
 
 On demand access to the official ETH campus tour is on YouTube. [Watch the official ETH Zurich Campus Tour today](https://www.youtube.com/watch?v=OeQf-eXBbzE).
 
-**Visit a university in person.** The TIPS FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
+**Visit a university in person.** The FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
 
 ## ETH Zurich Admission, Two Honest Routes for Indian Students
 
@@ -107,7 +107,7 @@ ETH runs an Ambassadors blog where current students, including Indian students, 
 
 ## Talk to the FP team
 
-To book a counselling session for your family on ETH Zurich, please write to the TIPS FP (Future Pathway) team at fperdintl@tipseindia.com. We can cover the German plan from Grade 9, the route from an Indian Bachelor's to an ETH Master's, ESOP and how ETH compares with German public universities. We will set up a one to one session at a time that suits you.
+To book a counselling session for your family on ETH Zurich, please write to the FP (Future Pathway) team at fperdintl@tipseindia.com. We can cover the German plan from Grade 9, the route from an Indian Bachelor's to an ETH Master's, ESOP and how ETH compares with German public universities. We will set up a one to one session at a time that suits you.
 
 ## Sources
 

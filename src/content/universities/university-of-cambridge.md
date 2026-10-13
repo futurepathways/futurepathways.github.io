@@ -40,7 +40,7 @@ Cambridge Colleges and the River Cam Visit the YouTube tour to see King’s Coll
 
 On-demand access to the Cambridge campus tour is available on YouTube. [Watch the Cambridge Campus Tour today](https://www.youtube.com/watch?v=LlCwHnp3kL4)! Cambridge also has a 360 degree virtual tour at virtualtour.study.cam.ac.uk.
 
-**Visit a university in person.** The TIPS FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
+**Visit a university in person.** The FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
 
 ## Cambridge Admission Requirements for CBSE and Cambridge A Level
 
@@ -101,7 +101,7 @@ Cambridge and India have a long shared history. India's first Prime Minister Jaw
 
 ## Talk to the FP team
 
-To set up a Cambridge counselling session for your family, please write to the TIPS FP (Future Pathway) team at fperdintl@tipseindia.com. We can help with the CBSE question, test choice, the personal statement, College choice and interview practice. We are happy to arrange a one to one session at a time that suits you.
+To set up a Cambridge counselling session for your family, please write to the FP (Future Pathway) team at fperdintl@tipseindia.com. We can help with the CBSE question, test choice, the personal statement, College choice and interview practice. We are happy to arrange a one to one session at a time that suits you.
 
 ## Sources
 

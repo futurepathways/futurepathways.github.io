@@ -39,7 +39,7 @@ Yale Campus: New Haven, Connecticut Watch Yale’s own admissions video on YouTu
 
 You can see Yale on video at any time. [Watch “That’s Why I Chose Yale” here](https://www.youtube.com/watch?v=64ujJviaPzQ). This is Yale’s own admissions video on YouTube. Yale’s admissions office also lists student led campus tours and virtual tour options on admissions.yale.edu.
 
-**Visit a university in person.** The TIPS FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
+**Visit a university in person.** The FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
 
 ## Yale Admission Requirements — CBSE/State Boards and Cambridge A Level
 
@@ -101,7 +101,7 @@ About 24% of Yale’s students are international, so a student from India will n
 
 ## Talk to the FP team
 
-To book a Yale counselling session for your family, please write to the TIPS FP (Future Pathway) team at fperdintl@tipseindia.com. We can cover SAT or ACT planning, SCEA or RD, the aid forms and essays. We are happy to set up a one to one session at a time that suits you.
+To book a Yale counselling session for your family, please write to the FP (Future Pathway) team at fperdintl@tipseindia.com. We can cover SAT or ACT planning, SCEA or RD, the aid forms and essays. We are happy to set up a one to one session at a time that suits you.
 
 ## Sources
 

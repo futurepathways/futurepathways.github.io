@@ -41,7 +41,7 @@ NUS Campus, Kent Ridge, Singapore Watch the YouTube tour to see the campus, stud
 
 On-demand access to the NUS virtual campus tour is available on YouTube. [Watch the NUS Campus Tour today](https://www.youtube.com/watch?v=DYhF88rJjlw)! This video was made by an independent creator, not by the university.
 
-**Visit a university in person.** The TIPS FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
+**Visit a university in person.** The FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
 
 ## NUS Admission Requirements for CBSE and Cambridge A Level
 
@@ -96,7 +96,7 @@ International students can apply for the MOE Tuition Grant. It cuts the tuition 
 
 ## Talk to the FP team
 
-To book a counselling session for your family on NUS admissions, scholarships, tests and subject choice, please write to the TIPS FP (Future Pathway) team at fperdintl@tipseindia.com. We are happy to set up a one to one session at a time that suits you.
+To book a counselling session for your family on NUS admissions, scholarships, tests and subject choice, please write to the FP (Future Pathway) team at fperdintl@tipseindia.com. We are happy to set up a one to one session at a time that suits you.
 
 ## Sources
 

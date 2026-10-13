@@ -42,7 +42,7 @@ IISc Campus, Malleswaram, Bengaluru A 400 acre campus in the north of Bengaluru,
 
 IISc has no campus tour video of its own that we could find. [Watch A Day at IISc Bangalore on YouTube](https://www.youtube.com/watch?v=P0LVA3anVTk). This video was made by an IISc graduate, not by the university, so treat it as one person's view. IISc holds an Open Day on the first or second Saturday of March each year, with about 30,000 visitors. For a family in Tamil Nadu, that is the easiest real visit in this whole series.
 
-**Visit a university in person.** The TIPS FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
+**Visit a university in person.** The FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
 
 ## IISc Admission Requirements for CBSE/State Boards and Cambridge A Level
 
@@ -99,7 +99,7 @@ The 400 acre campus houses nearly 3,000 students in hostels, including about 500
 
 ## Talk to the FP team
 
-To book an IISc counselling session for your family, please write to the TIPS FP (Future Pathway) team at fperdintl@tipseindia.com. We will cover the JEE Advanced and IAT routes, the board rules for Cambridge students, the fees and the dates for the 2027 cycle as they are announced.
+To book an IISc counselling session for your family, please write to the FP (Future Pathway) team at fperdintl@tipseindia.com. We will cover the JEE Advanced and IAT routes, the board rules for Cambridge students, the fees and the dates for the 2027 cycle as they are announced.
 
 ## Sources
 

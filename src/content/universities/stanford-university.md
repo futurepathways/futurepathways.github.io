@@ -40,7 +40,7 @@ Stanford University, Silicon Valley, California Use Stanford's own virtual visit
 
 Stanford’s admission office runs live online visits and has a recorded information session. [Open the Stanford visit page today](https://admission.stanford.edu/engage/)!
 
-**Visit a university in person.** The TIPS FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
+**Visit a university in person.** The FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
 
 ## Stanford Admission Requirements for CBSE and Cambridge A Level
 
@@ -105,7 +105,7 @@ The best known Indian Stanford story starts in Chennai. Sundar Pichai studied at
 
 ## Talk to the FP team
 
-To book a one to one Stanford session, please write to the TIPS FP (Future Pathway) team at fperdintl@tipseindia.com. We can cover SAT planning, essays, the REA or RD choice, the aid decision and your full US list. We will fix a time that suits you.
+To book a one to one Stanford session, please write to the FP (Future Pathway) team at fperdintl@tipseindia.com. We can cover SAT planning, essays, the REA or RD choice, the aid decision and your full US list. We will fix a time that suits you.
 
 ## Sources
 

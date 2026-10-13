@@ -40,11 +40,11 @@ ICL Campus Visit the YouTube tour to see the South Kensington campus and life in
 
 On-demand access to the Imperial College London virtual campus tour is available on YouTube. [Watch the ICL Campus Tour today](https://www.youtube.com/watch?v=aLzRv9F13KI)! This video was made by an independent creator, not by the university.
 
-**Visit a university in person.** The TIPS FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
+**Visit a university in person.** The FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
 
 ## ICL Admission Requirements — CBSE and Cambridge A Level
 
-The table below sets out what Imperial College London asks for from students in each pathway. Rules differ by course, so please read the course page as well. For subject advice and help with admissions tests, write to the TIPS FP (Future Pathway) team for a one to one session.
+The table below sets out what Imperial College London asks for from students in each pathway. Rules differ by course, so please read the course page as well. For subject advice and help with admissions tests, write to the FP (Future Pathway) team for a one to one session.
 
 | Requirement | CBSE Grade 12 | Cambridge A Level |
 |---|---|---|
@@ -103,7 +103,7 @@ The main award for 2027 entry is the Imperial Inspires Scholarship. It gives at 
 
 ## Talk to the FP team
 
-To book a counselling session on Imperial College London for your family, please write to the TIPS FP (Future Pathway) team at fperdintl@tipseindia.com. We can cover admissions tests, UCAS choices, ATAS and scholarships in one to one sessions at a time that suits you.
+To book a counselling session on Imperial College London for your family, please write to the FP (Future Pathway) team at fperdintl@tipseindia.com. We can cover admissions tests, UCAS choices, ATAS and scholarships in one to one sessions at a time that suits you.
 
 ## Sources
 

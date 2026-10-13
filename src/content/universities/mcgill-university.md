@@ -42,7 +42,7 @@ McGill Campus: Downtown Montreal, Quebec McGill's virtual campus tour page shows
 
 McGill hosts live virtual campus tours led by a student guide, who talks about campus, student life, academics and Montreal. [Open the official McGill Virtual Campus Tours page](https://future.mcgill.ca/portal/virtual_campus_tours) to see the latest. When we checked in October 2026, the page said live tours were on hold and would resume soon.
 
-**Visit a university in person.** The TIPS FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
+**Visit a university in person.** The FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
 
 ## McGill Admission Requirements, CBSE/State Boards and Cambridge A Level
 
@@ -103,7 +103,7 @@ Medicine is one of McGill's best known programmes, and McGill calls its Medicine
 
 ## Talk to the FP team
 
-To book a McGill counselling session for your family, please write to the TIPS FP (Future Pathway) team at fperdintl@tipseindia.com. We can cover the CAQ and study permit timeline, English test planning and grade targets for each programme. We can also compare McGill with Toronto and the other options in this series. We are happy to set up a one to one session at a time that suits you.
+To book a McGill counselling session for your family, please write to the FP (Future Pathway) team at fperdintl@tipseindia.com. We can cover the CAQ and study permit timeline, English test planning and grade targets for each programme. We can also compare McGill with Toronto and the other options in this series. We are happy to set up a one to one session at a time that suits you.
 
 ## Sources
 

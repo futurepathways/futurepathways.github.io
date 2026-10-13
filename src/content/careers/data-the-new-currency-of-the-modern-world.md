@@ -23,7 +23,7 @@ published_date: 2026-06-16
 > Session title: Data — The New Currency of the Modern World
 > Speaker: Pradeep Duraisamy, The Indian Public School (TIPS)
 > Audience: Grades 10, 11 & 12  ·  Duration: 75 minutes
-> Notes compiled by the TIPS FP (Future Pathway) team. Figures cited (salaries, “11 million by 2027”, per-minute internet stats) are illustrative as cited in the session — the direction of demand matters more than any exact number.
+> Notes compiled by the FP (Future Pathway) team. Figures cited (salaries, “11 million by 2027”, per-minute internet stats) are illustrative as cited in the session — the direction of demand matters more than any exact number.
 
 Seventy-five minutes. Six sections. One argument that kept coming back no matter which slide was on the screen: data is no longer a subject for computer scientists. It is the operating system of every career your child might choose.
 

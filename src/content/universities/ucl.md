@@ -41,7 +41,7 @@ UCL Portico, Bloomsbury, Central London See the UCL Portico and the Bloomsbury c
 
 You can watch a UCL campus tour on YouTube. [Watch the UCL Bloomsbury Campus Tour today](https://www.youtube.com/watch?v=aqD2tnnLrVY)! This video was made by an independent creator, not by the university. UCL also runs open events and tours. Please look on the UCL website, ucl.ac.uk, for current dates.
 
-**Visit a university in person.** The TIPS FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
+**Visit a university in person.** The FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
 
 ## UCL Admission Requirements for CBSE, State Boards and Cambridge A Level
 
@@ -101,7 +101,7 @@ UCL was founded in 1826 as London's first university and opened its doors to stu
 
 ## Talk to the FP team
 
-To set up a UCL counselling session for your family, please write to the TIPS FP (Future Pathway) team at fperdintl@tipseindia.com. We can help with test choice and dates, course selection, the Tamil Nadu State Board question, the Medicine route and scholarships. We are happy to arrange a one to one session at a time that suits you.
+To set up a UCL counselling session for your family, please write to the FP (Future Pathway) team at fperdintl@tipseindia.com. We can help with test choice and dates, course selection, the Tamil Nadu State Board question, the Medicine route and scholarships. We are happy to arrange a one to one session at a time that suits you.
 
 ## Sources
 

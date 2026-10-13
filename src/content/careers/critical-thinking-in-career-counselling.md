@@ -23,7 +23,7 @@ published_date: 2026-06-02
 
 > **Video Reference.**
 > ["Improve Your Critical Thinking With This"](https://youtu.be/01_kyKpfM20) — YouTube (Part 2: Top Soft Skills for Professionals)
-> Prepared by the TIPS FP (Future Pathway) team for career counsellors and guidance professionals
+> Prepared by the FP (Future Pathway) team for career counsellors and guidance professionals
 
 Critical thinking is one of the most cited soft skills in professional settings today — and yet, one of the least understood. As career counsellors, we ask students to think carefully about their futures. But do we apply the same rigour to our own reasoning: the assumptions we make about a student, the arguments we accept at face value, and the recommendations we offer? This note distils a structured framework you can both use in your practice and teach your students.
 

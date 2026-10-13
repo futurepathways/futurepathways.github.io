@@ -3,9 +3,11 @@
 export const site = {
   name: 'Future Pathways',
   tagline: 'Careers, courses, countries and opportunities, explained simply for TIPS students and parents.',
-  teamName: 'TIPS FP (Future Pathway) team',
+  teamName: 'FP (Future Pathway) team',
   contactEmail: 'fperdintl@tipseindia.com',
   schoolName: 'The Indian Public School',
+  builtBy: 'Madan Kumar PC',
+  builtByUrl: 'https://pcmadankumar.github.io/future-pathways.html',
   // GoatCounter is off until Madan decides (PRD Section 16, item 3).
   // When on, set this to the GoatCounter site code, e.g. 'futurepathways'.
   goatCounterCode: '',

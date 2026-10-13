@@ -40,11 +40,11 @@ Oxford, Radcliffe Camera and the Bodleian Library Visit the YouTube tour to see 
 
 On-demand access to the Oxford virtual campus tour is available on YouTube. [Watch the Oxford Campus Tour today](https://www.youtube.com/watch?v=IUOCz4AE1XE)! This video was made by an independent creator, not by the university.
 
-**Visit a university in person.** The TIPS FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
+**Visit a university in person.** The FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
 
 ## Oxford Admission Requirements for CBSE and Cambridge A Level
 
-> Important: Oxford accepts Class 12 results from CBSE (All India Senior School Certificate) and CISCE (ISC). It does not accept State Board results or NIOS Class 12. It also does not take JEE or NEET scores in place of Class 12. CBSE results come after the October deadline, so your school sends predicted grades. These are the marks the school expects your child to score. For course by course rules, please write to the TIPS FP (Future Pathway) team for a one to one session.
+> Important: Oxford accepts Class 12 results from CBSE (All India Senior School Certificate) and CISCE (ISC). It does not accept State Board results or NIOS Class 12. It also does not take JEE or NEET scores in place of Class 12. CBSE results come after the October deadline, so your school sends predicted grades. These are the marks the school expects your child to score. For course by course rules, please write to the FP (Future Pathway) team for a one to one session.
 
 | Requirement | CBSE Grade 12 (CBSE / CISCE only) | Cambridge A Level |
 |---|---|---|
@@ -105,7 +105,7 @@ Money for a first degree is very limited, but Oxford has real funding for later 
 
 ## Talk to the FP team
 
-To set up an Oxford counselling session for your family, please write to the TIPS FP (Future Pathway) team at fperdintl@tipseindia.com. We can help with test choice, the personal statement, college choice, the Oxford and Cambridge rule and funding. We are happy to arrange a one to one session at a time that suits you.
+To set up an Oxford counselling session for your family, please write to the FP (Future Pathway) team at fperdintl@tipseindia.com. We can help with test choice, the personal statement, college choice, the Oxford and Cambridge rule and funding. We are happy to arrange a one to one session at a time that suits you.
 
 ## Sources
 

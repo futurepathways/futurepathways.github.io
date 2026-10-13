@@ -40,7 +40,7 @@ Princeton University, Nassau Hall and campus Watch a student made campus video b
 
 A campus tour video made by the student newspaper, The Daily Princetonian, is on YouTube. [Watch the Princeton Campus Tour today](https://www.youtube.com/watch?v=OiCKM8mf-Mo)! It is not made by the university. Princeton’s admission office also has a page for international students at admission.princeton.edu/apply/international-students. For visits or live online sessions, please check the admission site for current options.
 
-**Visit a university in person.** The TIPS FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
+**Visit a university in person.** The FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
 
 ## Princeton Admission Requirements — CBSE/State Boards and Cambridge A Level
 
@@ -105,7 +105,7 @@ Princeton's Indian connections reach from economic policy to space science. Dr. 
 
 ## Talk to the FP team
 
-To book a Princeton counselling session, please write to the TIPS FP (Future Pathway) team at fperdintl@tipseindia.com. We can cover the test plan for your entry year, SCEA or RD, the graded written paper and the aid forms. We are happy to set up a one to one session at a time that suits you.
+To book a Princeton counselling session, please write to the FP (Future Pathway) team at fperdintl@tipseindia.com. We can cover the test plan for your entry year, SCEA or RD, the graded written paper and the aid forms. We are happy to set up a one to one session at a time that suits you.
 
 ## Sources
 
