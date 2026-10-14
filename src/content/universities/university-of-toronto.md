@@ -2,7 +2,7 @@
 title: "University Spotlight: University of Toronto"
 summary: "Canada's largest university and a home of AI. Programme-based entry, Standard Maths rule, PAL, study permit money, PGWP and Pearson scholarship."
 main_category: universities
-extra_categories: [countries, courses]
+extra_categories: [countries]
 grade_band: ["9-10", "11-12"]
 streams: [any]
 tags_subject: [study-abroad, university-guides, data-ai, scholarships-and-aid]
@@ -21,6 +21,22 @@ official_links:
     url: "https://tuitionexplorer.registrar.utoronto.ca/index.php?academicYear=2026-27&campus=UTSG&college=UC&faculty=ARTSC-UG&program=207&residency=INT&sessionType=1&studyLevel=UG"
   - label: "Lester B Pearson International Scholarships (Official)"
     url: "https://future.utoronto.ca/pearson-scholarships"
+key_dates:
+  - date: 2026-10-09
+    label: "Lester B. Pearson scholarship: school nomination closed"
+    note: "No TIPS campus nominated this year; plan early for 2028 entry"
+    url: "https://future.utoronto.ca/pearson-scholarships"
+  - date: 2026-11-07
+    label: "Apply by this date for first-round consideration"
+    note: "Finish documents by 1 December 2026"
+    url: "https://future.utoronto.ca/deadlines"
+  - date: 2027-01-15
+    label: "OUAC application deadline for most programmes"
+    note: "Engineering documents and Online Student Profile also due"
+    url: "https://future.utoronto.ca/deadlines"
+  - date: 2027-02-01
+    label: "Documents due; Computer Science and Rotman Commerce supplementary applications due"
+    url: "https://future.utoronto.ca/deadlines"
 author: "FP (Future Pathway) team"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11

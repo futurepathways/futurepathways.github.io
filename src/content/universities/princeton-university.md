@@ -2,7 +2,7 @@
 title: "University Spotlight: Princeton University"
 summary: "Aid as grants, never loans, and need-blind for all. Test-optional for 2027 only, graded paper, SCEA rules and what Princeton does not offer."
 main_category: universities
-extra_categories: [countries, courses]
+extra_categories: [countries]
 grade_band: ["9-10", "11-12"]
 streams: [any]
 tags_subject: [study-abroad, university-guides, science, scholarships-and-aid]
@@ -21,6 +21,21 @@ official_links:
     url: "https://admission.princeton.edu/apply/first-year-application-dates-deadlines"
   - label: "Standardized Testing, Princeton Admission (Official)"
     url: "https://admission.princeton.edu/how-apply/standardized-testing"
+key_dates:
+  - date: 2026-11-01
+    label: "Single-Choice Early Action deadline"
+    note: "Decision in mid December"
+    url: "https://admission.princeton.edu/apply/first-year-application-dates-deadlines"
+  - date: 2026-11-09
+    label: "Financial aid application due for Single-Choice Early Action"
+    url: "https://admission.princeton.edu/apply/first-year-application-dates-deadlines"
+  - date: 2027-01-01
+    label: "Regular Decision deadline"
+    note: "Decision in late March; reply by 1 May"
+    url: "https://admission.princeton.edu/apply/first-year-application-dates-deadlines"
+  - date: 2027-02-01
+    label: "Financial aid application due for Regular Decision"
+    url: "https://admission.princeton.edu/apply/first-year-application-dates-deadlines"
 author: "FP (Future Pathway) team"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11

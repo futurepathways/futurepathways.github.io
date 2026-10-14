@@ -59,6 +59,17 @@ const commonFields = {
     }),
   parent_summary: z.string().min(20, 'parent_summary needs 2 to 4 plain sentences'),
   official_links: z.array(z.object({ label: z.string(), url: z.string().url() })).default([]),
+  // Important dates for any post (PRD 9, extended 14 Oct 2026): shown on the post, the cards and the Deadlines page.
+  key_dates: z
+    .array(
+      z.object({
+        date: z.coerce.date(),
+        label: z.string().min(3),
+        note: z.string().optional(),
+        url: z.string().url().optional(),
+      }),
+    )
+    .default([]),
   cover_alt: z.string().optional(),
   image_credit: z.string().optional(),
   author: z.string().optional(),

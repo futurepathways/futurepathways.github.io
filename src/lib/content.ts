@@ -4,6 +4,7 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import type { CategoryKey } from '../content.config';
 import { categoryByKey } from '../config/site';
 import { tagBySlug, tagGroupOrder, countryBySlug, type Tag, type TagGroupKey } from './data';
+import { istTodayString } from './deadlines';
 
 export type AnyEntry =
   | CollectionEntry<'careers'>
@@ -23,6 +24,13 @@ export interface OpportunityInfo {
   applyLink?: string;
 }
 
+export interface KeyDate {
+  date: string; // YYYY-MM-DD (IST calendar date)
+  label: string;
+  note?: string;
+  url?: string;
+}
+
 export interface Post {
   entry: AnyEntry;
   slug: string;
@@ -38,6 +46,7 @@ export interface Post {
   countries: string[];
   parentSummary: string;
   officialLinks: { label: string; url: string }[];
+  keyDates: KeyDate[];
   coverImage: ImageMetadata | null;
   coverAlt: string;
   imageCredit?: string;
@@ -68,6 +77,7 @@ export interface CardData {
   lastChecked: string;
   deadline: string | null;
   rolling: boolean;
+  nextDate: string | null; // the opportunity deadline, or the nearest key date today or later
   opportunityType: string | null;
   mode: string | null;
   cost: string | null;
@@ -136,6 +146,9 @@ function normalise(entry: AnyEntry): Post {
     countries: (d.countries ?? []).filter((c: string) => countryBySlug[c]),
     parentSummary: d.parent_summary,
     officialLinks: d.official_links ?? [],
+    keyDates: ((d.key_dates ?? []) as { date: Date; label: string; note?: string; url?: string }[])
+      .map((k) => ({ date: toDateString(k.date), label: k.label, note: k.note, url: k.url }))
+      .sort((a, b) => a.date.localeCompare(b.date)),
     coverImage: d.cover_image ?? null,
     coverAlt: d.cover_alt ?? '',
     imageCredit: d.image_credit,
@@ -216,11 +229,40 @@ export function toCard(p: Post): CardData {
     lastChecked: toDateString(p.lastChecked),
     deadline: p.opportunity?.deadline ?? null,
     rolling: p.opportunity?.rolling ?? false,
+    nextDate: nextDateOf(p),
     opportunityType: p.opportunity?.type ?? null,
     mode: p.opportunity?.mode ?? null,
     cost: p.opportunity?.cost ?? null,
     draft: p.status === 'draft',
   };
+}
+
+/** The date a card should badge: the opportunity deadline, else the nearest key date today or later, else null. */
+export function nextDateOf(p: Post, today = istTodayString()): string | null {
+  if (p.opportunity?.deadline) return p.opportunity.deadline;
+  const upcoming = p.keyDates.filter((k) => k.date >= today);
+  return upcoming.length ? upcoming[0].date : null;
+}
+
+/** Every dated item on the site: opportunity deadlines plus key dates, for the Deadlines page and the home strip. */
+export interface DatedItem {
+  date: string;
+  label: string;
+  note?: string;
+  url?: string;
+  post: Post;
+  kind: 'deadline' | 'key-date';
+}
+
+export function allDatedItems(posts: Post[]): DatedItem[] {
+  const items: DatedItem[] = [];
+  for (const p of posts) {
+    if (p.opportunity?.deadline && !p.opportunity.rolling) {
+      items.push({ date: p.opportunity.deadline, label: 'Application deadline', note: p.opportunity.deadlineNote, url: p.opportunity.applyLink, post: p, kind: 'deadline' });
+    }
+    for (const k of p.keyDates) items.push({ ...k, post: p, kind: 'key-date' });
+  }
+  return items.sort((a, b) => a.date.localeCompare(b.date) || a.post.title.localeCompare(b.post.title));
 }
 
 /** Related posts (PRD 6.3, 7.5): shared category first, then most shared tags. */

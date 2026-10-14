@@ -2,7 +2,7 @@
 title: "University Spotlight: National University of Singapore (NUS)"
 summary: "Asia's top university: entry rules for CBSE and A Level, the MOE grant's 3-year work promise, fees, dates and what to check before applying."
 main_category: universities
-extra_categories: [countries, courses]
+extra_categories: [countries]
 grade_band: ["9-10", "11-12"]
 streams: [any]
 tags_subject: [study-abroad, university-guides, scholarships-and-aid]
@@ -21,6 +21,15 @@ official_links:
     url: "https://www.nus.edu.sg/oam/admissions/international-qualifications-for-foreigners/international-qualifications/indian-standard-12-cbse-and-isc"
   - label: "NUS Faculty Interviews and Test Dates"
     url: "https://nus.edu.sg/oam/faculty-interviews-and-test-dates"
+key_dates:
+  - date: 2026-12-16
+    label: "Applications open for 2027 entry (international qualifications)"
+    note: "NUS Undergraduate Admissions portal"
+    url: "https://nus.edu.sg/oam/apply-to-nus/application"
+  - date: 2027-02-17
+    label: "Application deadline for 2027 entry"
+    note: "Offers for most applicants by the third week of May 2027"
+    url: "https://nus.edu.sg/oam/apply-to-nus/application"
 author: "FP (Future Pathway) team"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11

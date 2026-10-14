@@ -2,7 +2,7 @@
 title: "University Spotlight: University of Oxford"
 summary: "THE #1 for 11 years. Boards accepted, A1 grade rules, October tests and deadline, tutorials, fees and why first-degree aid is scarce."
 main_category: universities
-extra_categories: [countries, courses]
+extra_categories: [countries]
 grade_band: ["9-10", "11-12"]
 streams: [any]
 tags_subject: [study-abroad, university-guides, humanities, scholarships-and-aid]
@@ -21,6 +21,22 @@ official_links:
     url: "https://www.ox.ac.uk/admissions/undergraduate/applying-to-oxford/for-international-students/ELR"
   - label: "Oxford Admissions Tests for 2027 Entry (Official)"
     url: "https://www.ox.ac.uk/admissions/undergraduate/applying-to-oxford/guide/admissions-tests"
+key_dates:
+  - date: 2026-10-12
+    label: "Admissions tests week begins (12 to 16 October)"
+    note: "Booking closed on 28 September 2026"
+    url: "https://www.ox.ac.uk/admissions/undergraduate/applying-to-oxford/guide/admissions-tests"
+  - date: 2026-10-15
+    label: "UCAS deadline for all Oxford courses"
+    note: "6 pm UK time, 10:30 pm in India"
+    url: "https://www.ox.ac.uk/admissions/undergraduate/applying/for-international-students"
+  - date: 2026-11-16
+    label: "Admissions test results released"
+    url: "https://www.ox.ac.uk/admissions/undergraduate/applying-to-oxford/guide/admissions-tests"
+  - date: 2026-12-01
+    label: "Online interviews during December"
+    note: "Shortlisted applicants only"
+    url: "https://www.ox.ac.uk/admissions/undergraduate/applying/for-international-students"
 author: "FP (Future Pathway) team"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11

@@ -4,20 +4,19 @@ import Icon from '../components/Icon.astro';
 import PostCard from '../components/PostCard.astro';
 import DeadlineBadge from '../components/DeadlineBadge.astro';
 import { site, categories, gradeBands } from '../config/site';
-import { getVisiblePosts, postsInCategory, byNewest } from '../lib/content';
+import { getVisiblePosts, byNewest, allDatedItems } from '../lib/content';
 import { istTodayString, daysLeft } from '../lib/deadlines';
 
 const all = await getVisiblePosts();
-const counts = Object.fromEntries(categories.map((c) => [c.key, postsInCategory(all, c.key).length]));
+// Main-category counts only, so the numbers match what a reader expects to find (14 Oct 2026).
+const counts = Object.fromEntries(categories.map((c) => [c.key, all.filter((p) => p.category === c.key).length]));
 const today = istTodayString();
-// "Closing soon": next 5 opportunities with deadlines within 14 days (PRD 6.1)
-const closingSoon = all
-  .filter((p) => p.opportunity?.deadline && !p.opportunity.rolling)
-  .filter((p) => {
-    const d = daysLeft(p.opportunity!.deadline!, today);
+// "Closing soon": the next 5 dated items (opportunity deadlines and key dates) within 14 days (PRD 6.1)
+const closingSoon = allDatedItems(all)
+  .filter((it) => {
+    const d = daysLeft(it.date, today);
     return d >= 0 && d <= 14;
   })
-  .sort((a, b) => a.opportunity!.deadline!.localeCompare(b.opportunity!.deadline!))
   .slice(0, 5);
 const newest = [...all].sort(byNewest).slice(0, 6);
 ---
@@ -77,10 +76,13 @@ const newest = [...all].sort(byNewest).slice(0, 6);
           <Icon name="calendar" size={24} /> Closing soon
         </h2>
         <ul class="closing-list">
-          {closingSoon.map((p) => (
+          {closingSoon.map((it) => (
             <li>
-              <a href={p.path}>{p.title}</a>
-              <DeadlineBadge deadline={p.opportunity!.deadline} rolling={false} showDate />
+              <span>
+                <a href={it.post.path}>{it.post.title}</a>
+                <span class="closing-label"> · {it.label}</span>
+              </span>
+              <DeadlineBadge deadline={it.date} rolling={false} showDate />
             </li>
           ))}
         </ul>
@@ -150,6 +152,10 @@ const newest = [...all].sort(byNewest).slice(0, 6);
   }
   .closing-list a {
     font-weight: 600;
+  }
+  .closing-label {
+    color: var(--text-muted);
+    font-size: 0.92rem;
   }
   .newest-grid {
     list-style: none;

@@ -122,6 +122,19 @@ const commonFields = (cat) => [
     ],
   },
   {
+    name: 'key_dates',
+    label: 'Key dates (optional)',
+    type: 'object',
+    list: true,
+    description: 'Important dates in this post: application windows, test dates, decisions. They appear on the post, on its card and on the Upcoming Deadlines page.',
+    fields: [
+      { name: 'date', label: 'Date', type: 'date', required: true },
+      { name: 'label', label: 'What happens', type: 'string', required: true, description: 'For example: UCAS deadline for Medicine' },
+      { name: 'note', label: 'Note (optional)', type: 'string', description: 'For example: 6 pm UK time, 10:30 pm in India' },
+      { name: 'url', label: 'Official page (optional)', type: 'string', pattern: '^https?://' },
+    ],
+  },
+  {
     name: 'cover_image',
     label: 'Cover image (optional)',
     type: 'image',

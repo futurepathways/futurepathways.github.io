@@ -2,7 +2,7 @@
 title: "University Spotlight: University College London (UCL)"
 summary: "Central London, January deadline, accepts the Tamil Nadu State Board. Which courses now need tests, fees, visa costs and scholarships."
 main_category: universities
-extra_categories: [countries, courses]
+extra_categories: [countries]
 grade_band: ["9-10", "11-12"]
 streams: [any]
 tags_subject: [study-abroad, university-guides, scholarships-and-aid]
@@ -20,6 +20,22 @@ official_links:
   - label: "Tests, Tasks and Interviews, 2027 cycle (Official)"
     url: "https://www.ucl.ac.uk/study/prospective-students/school-teachers-and-counsellors/tests-tasks-and-interviews"
   - label: "Computer Science and Mathematics MEng, 2027 entry (Official)"
+    url: "https://www.ucl.ac.uk/study/prospective-students/undergraduate/courses/computer-science-and-mathematics-meng"
+key_dates:
+  - date: 2026-10-15
+    label: "UCAS deadline for Medicine"
+    note: "6 pm UK time, 10:30 pm in India"
+    url: "https://www.ucl.ac.uk/medical-sciences/divisions/medical-school/study/undergraduate/mbbs-admissions"
+  - date: 2026-12-31
+    label: "LNAT must be taken by this date (Law)"
+    url: "https://www.ucl.ac.uk/study/prospective-students/school-teachers-and-counsellors/tests-tasks-and-interviews"
+  - date: 2027-01-04
+    label: "January admissions tests (4 to 8 January)"
+    note: "TARA, ESAT and TMUA; booking by 21 December 2026"
+    url: "https://www.ucl.ac.uk/study/prospective-students/school-teachers-and-counsellors/tests-tasks-and-interviews"
+  - date: 2027-01-13
+    label: "UCAS deadline for most courses"
+    note: "6 pm UK time, 11:30 pm in India"
     url: "https://www.ucl.ac.uk/study/prospective-students/undergraduate/courses/computer-science-and-mathematics-meng"
 author: "FP (Future Pathway) team"
 reviewed_by: "Madan Kumar PC"

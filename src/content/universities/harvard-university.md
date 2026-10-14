@@ -2,7 +2,7 @@
 title: "University Spotlight: Harvard University"
 summary: "Oldest US university. SAT or ACT required, need-blind aid, Common App dates, the liberal arts model and the court case to watch."
 main_category: universities
-extra_categories: [countries, courses]
+extra_categories: [countries]
 grade_band: ["9-10", "11-12"]
 streams: [any]
 tags_subject: [study-abroad, university-guides, humanities, scholarships-and-aid]
@@ -21,6 +21,18 @@ official_links:
     url: "https://college.harvard.edu/admissions/apply/international-applicants"
   - label: "Harvard College, Financial Aid: How Aid Works (Official)"
     url: "https://college.harvard.edu/financial-aid/how-aid-works"
+key_dates:
+  - date: 2026-11-01
+    label: "Restrictive Early Action deadline (aid forms too)"
+    note: "Answer in mid December"
+    url: "https://college.harvard.edu/admissions/apply/first-year-applicants"
+  - date: 2027-01-01
+    label: "Regular Decision deadline"
+    note: "Answer at the end of March; reply by early May"
+    url: "https://college.harvard.edu/admissions/apply/first-year-applicants"
+  - date: 2027-02-01
+    label: "Financial aid forms due for Regular Decision"
+    url: "https://college.harvard.edu/financial-aid/apply-financial-aid/prospective-students"
 author: "FP (Future Pathway) team"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11

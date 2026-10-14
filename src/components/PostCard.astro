@@ -7,7 +7,8 @@ import { categoryByKey } from '../config/site';
 import TagChips from './TagChips.astro';
 import DeadlineBadge from './DeadlineBadge.astro';
 import Icon from './Icon.astro';
-import { deadlineStatus } from '../lib/deadlines';
+import { deadlineStatus, formatDateString } from '../lib/deadlines';
+import { nextDateOf } from '../lib/content';
 
 interface Props {
   post: Post;
@@ -19,7 +20,8 @@ const { post, context, headingLevel = 'h3' } = Astro.props;
 const Heading = headingLevel;
 const main = categoryByKey[post.category];
 const alsoIn = context && context !== post.category && post.extraCategories.includes(context as any) ? categoryByKey[context as keyof typeof categoryByKey] : null;
-const status = post.opportunity ? deadlineStatus(post.opportunity.deadline, post.opportunity.rolling) : null;
+const nextDate = nextDateOf(post);
+const status = post.opportunity ? deadlineStatus(post.opportunity.deadline, post.opportunity.rolling) : nextDate ? deadlineStatus(nextDate, false) : null;
 ---
 
 <li
@@ -37,7 +39,7 @@ const status = post.opportunity ? deadlineStatus(post.opportunity.deadline, post
   data-type={post.opportunity?.type}
   data-mode={post.opportunity?.mode}
   data-cost={post.opportunity?.cost}
-  data-deadline-date={post.opportunity?.deadline ?? undefined}
+  data-deadline-date={nextDate ?? undefined}
   data-status={status ?? undefined}
 >
   <div class="post-card-top">
@@ -48,10 +50,17 @@ const status = post.opportunity ? deadlineStatus(post.opportunity.deadline, post
     {alsoIn && <span class="also-in">Also in {alsoIn.shortName}</span>}
     {post.status === 'draft' && <span class="badge badge--closed">Draft</span>}
     {
-      post.opportunity && (
+      post.opportunity ? (
         <span class="post-card-deadline">
           <DeadlineBadge deadline={post.opportunity.deadline} rolling={post.opportunity.rolling} />
         </span>
+      ) : (
+        nextDate && (
+          <span class="post-card-deadline" title={post.keyDates.find((k) => k.date === nextDate)?.label}>
+            <DeadlineBadge deadline={nextDate} rolling={false} />
+            <span class="post-card-nextdate">{formatDateString(nextDate)}</span>
+          </span>
+        )
       )
     }
   </div>
@@ -124,6 +133,13 @@ const status = post.opportunity ? deadlineStatus(post.opportunity.deadline, post
   }
   .post-card-deadline {
     margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .post-card-nextdate {
+    font-size: 0.8rem;
+    color: var(--text-muted);
   }
   .post-card-title {
     font-size: 1.2rem;

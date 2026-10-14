@@ -2,7 +2,7 @@
 title: "University Spotlight: University of Cambridge"
 summary: "Home of Cambridge A Levels. Which courses accept CBSE, the October tests and MCA form, supervisions, College fees and realistic aid."
 main_category: universities
-extra_categories: [countries, courses]
+extra_categories: [countries]
 grade_band: ["9-10", "11-12"]
 streams: [any]
 tags_subject: [study-abroad, university-guides, science, scholarships-and-aid]
@@ -21,6 +21,22 @@ official_links:
     url: "https://www.undergraduate.study.cam.ac.uk/apply/how/admission-tests"
   - label: "UAT-UK ESAT and TMUA (Official)"
     url: "https://esat-tmua.ac.uk/"
+key_dates:
+  - date: 2026-10-12
+    label: "Admissions tests week begins (12 to 16 October)"
+    note: "Booking closed on 28 September 2026"
+    url: "https://www.undergraduate.study.cam.ac.uk/apply/how/admission-tests"
+  - date: 2026-10-15
+    label: "UCAS deadline"
+    note: "6 pm UK time, 10:30 pm in India"
+    url: "https://www.undergraduate.study.cam.ac.uk/apply/application-dates-deadlines"
+  - date: 2026-10-22
+    label: "My Cambridge Application and transcript due"
+    note: "6 pm UK time"
+    url: "https://www.undergraduate.study.cam.ac.uk/apply/application-dates-deadlines"
+  - date: 2027-01-27
+    label: "Interview outcomes released"
+    url: "https://www.undergraduate.study.cam.ac.uk/apply/application-dates-deadlines"
 author: "FP (Future Pathway) team"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11

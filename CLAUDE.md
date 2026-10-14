@@ -62,6 +62,9 @@ Settled. Claude Code should not ask about these again.
 | 28 | Cover alt text [v1.4] | New `cover_alt` field, required when a cover image is set |
 | 29 | Filter engine [v1.4] | One shared engine: Pagefind for words, JSON index for filters and sort |
 | 30 | Phase 2 sample posts [v1.4] | Four temporary posts for testing; **[v1.5]** deleted once Phase 2 was checked |
+| 38 | Key dates [14 Oct 2026] | Any post may carry `key_dates`; the Deadlines page shows all dated items, upcoming then a full Past section; cards badge the next date |
+| 39 | Home counts [14 Oct 2026] | Main-category counts only; university guides have Countries as extra, not Courses |
+| 40 | Who runs the site [14 Oct 2026] | Built by Madan Kumar PC, run by the TIPS FP (Future Pathway) team; counsellors including Madan write posts |
 | 37 | Phase 6 built [12 Oct 2026] | Pages CMS config generated; tags and countries as per-entry files edited in the CMS; Word templates and publishing guide in `docs/` |
 | 36 | Blog import [12 Oct 2026] | 20 of Madan's blog articles imported under his name (PRD Section 20.2); four Skill tags added (Study habits, Focus, Critical thinking, Data literacy); mindset posts sit under Careers, no new category |
 | 35 | Universities category [12 Oct 2026] | Fifth top-level category. University guides use it as main category with Countries and Courses as extras |

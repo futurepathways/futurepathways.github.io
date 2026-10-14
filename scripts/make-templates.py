@@ -35,6 +35,7 @@ COMMON_FIELDS = [
     ("Countries (optional)", "For example: United Kingdom, Canada"),
     ("For Parents box (2 to 4 sentences)", "What this is, rough cost, the key date, and one question to ask the FP counsellor."),
     ("Official links", "Label and web address of each official page the reader should check."),
+    ("Key dates (optional)", "Each important date in the post: the date, what happens, a note such as the time zone, and the official page."),
     ("Cover image (optional)", "Only free stock (Unsplash, Pexels) or TIPS photos with permission. Add a one line description and the credit."),
     ("Written by", "Your name"),
     ("Checked by", "The counsellor who checked every fact, figure and link"),

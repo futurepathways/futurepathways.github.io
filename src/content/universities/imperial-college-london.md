@@ -2,7 +2,7 @@
 title: "University Spotlight: Imperial College London"
 summary: "London's STEM university: the 90% CBSE bar, ESAT and TMUA tests, UCAS dates, fees, visa money rules and the Imperial Inspires scholarship."
 main_category: universities
-extra_categories: [countries, courses]
+extra_categories: [countries]
 grade_band: ["9-10", "11-12"]
 streams: [science]
 tags_subject: [study-abroad, university-guides, engineering, scholarships-and-aid]
@@ -21,6 +21,19 @@ official_links:
     url: "https://www.imperial.ac.uk/study/apply/english-language/"
   - label: "Imperial College London, ESAT Requirements for 2027 Entry"
     url: "https://www.imperial.ac.uk/study/apply/undergraduate/process/admissions-tests/esat"
+key_dates:
+  - date: 2026-10-15
+    label: "UCAS deadline for Medicine"
+    note: "6 pm UK time, 10:30 pm in India"
+    url: "https://www.imperial.ac.uk/study/apply/undergraduate/process/deadlines/"
+  - date: 2026-12-21
+    label: "Booking closes for the January ESAT and TMUA sitting"
+    note: "6 pm UK time; the tests run 4 to 8 January 2027"
+    url: "https://esat-tmua.ac.uk/"
+  - date: 2027-01-13
+    label: "UCAS deadline for all other courses"
+    note: "6 pm UK time, 11:30 pm in India"
+    url: "https://www.imperial.ac.uk/study/apply/undergraduate/process/deadlines/"
 author: "FP (Future Pathway) team"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11

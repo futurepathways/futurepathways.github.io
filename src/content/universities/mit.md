@@ -2,7 +2,7 @@
 title: "University Spotlight: Massachusetts Institute of Technology (MIT)"
 summary: "QS #1. SAT or ACT required, need-blind aid for all, MIT's own portal, 2027 dates, and the visa changes every family should know."
 main_category: universities
-extra_categories: [countries, courses]
+extra_categories: [countries]
 grade_band: ["9-10", "11-12"]
 streams: [science]
 tags_subject: [study-abroad, university-guides, engineering, scholarships-and-aid]
@@ -21,6 +21,24 @@ official_links:
     url: "https://mitadmissions.org/apply/firstyear/tests-scores"
   - label: "MIT Admissions, International Applicants (Official)"
     url: "https://mitadmissions.org/apply/firstyear/international"
+key_dates:
+  - date: 2026-11-01
+    label: "Early Action deadline"
+    note: "Decision in mid December; non-binding"
+    url: "https://mitadmissions.org/apply/firstyear/deadlines-requirements"
+  - date: 2026-11-30
+    label: "SAT or ACT scores and CSS Profile due for Early Action"
+    url: "https://sfs.mit.edu/undergraduate-students/apply-for-aid/"
+  - date: 2026-12-31
+    label: "SAT or ACT scores due for Regular Action"
+    url: "https://mitadmissions.org/apply/firstyear/tests-scores"
+  - date: 2027-01-04
+    label: "Regular Action deadline"
+    note: "Decision in mid March; reply by 1 May 2027"
+    url: "https://mitadmissions.org/apply/firstyear/deadlines-requirements"
+  - date: 2027-02-15
+    label: "CSS Profile due for Regular Action"
+    url: "https://sfs.mit.edu/undergraduate-students/apply-for-aid/"
 author: "FP (Future Pathway) team"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11

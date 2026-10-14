@@ -2,7 +2,7 @@
 title: "University Spotlight: Yale University"
 summary: "Ivy League with strong humanities and law. SAT or ACT now required, need-blind aid, residential colleges, SCEA vs RD and visa rules."
 main_category: universities
-extra_categories: [countries, courses]
+extra_categories: [countries]
 grade_band: ["9-10", "11-12"]
 streams: [any]
 tags_subject: [study-abroad, university-guides, humanities, law, scholarships-and-aid]
@@ -21,6 +21,13 @@ official_links:
     url: "https://admissions.yale.edu/international"
   - label: "Yale Standardized Testing (Official)"
     url: "https://admissions.yale.edu/standardized-testing"
+key_dates:
+  - date: 2026-11-01
+    label: "Single-Choice Early Action deadline"
+    url: "https://admissions.yale.edu/apply"
+  - date: 2027-01-02
+    label: "Regular Decision deadline"
+    url: "https://admissions.yale.edu/apply"
 author: "FP (Future Pathway) team"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11

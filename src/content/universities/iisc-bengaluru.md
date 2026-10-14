@@ -2,7 +2,7 @@
 title: "University Spotlight: Indian Institute of Science (IISc), Bengaluru"
 summary: "India's top research university. JEE Advanced or IAT only, 125 seats, the five-subject rule for Cambridge students, new fees and 2026 dates."
 main_category: universities
-extra_categories: [countries, courses]
+extra_categories: [countries]
 grade_band: ["9-10", "11-12"]
 streams: [science]
 tags_subject: [science, university-guides, scholarships-and-aid]
@@ -21,6 +21,27 @@ official_links:
     url: "https://bs-ug.iisc.ac.in/admissions/important-dates"
   - label: "IISc BS (Research) News and Updates (Official)"
     url: "https://bs-ug.iisc.ac.in/admissions/news-and-updates"
+key_dates:
+  - date: 2026-05-01
+    label: "2026 cycle: BS (Research) application opened (to 7 June)"
+    note: "For reference; 2027 notice expected in February 2027"
+    url: "https://bs-ug.iisc.ac.in/admissions/important-dates"
+  - date: 2026-05-17
+    label: "2026 cycle: JEE Advanced exam"
+    note: "Result on 1 June 2026"
+    url: "https://jeeadv.ac.in/"
+  - date: 2026-06-07
+    label: "2026 cycle: IISER Aptitude Test (IAT)"
+    note: "Marksheet upload by 21 June 2026"
+    url: "https://iiseradmission.in/"
+  - date: 2026-06-30
+    label: "2026 cycle: BS (Research) in-person counselling at IISc"
+    note: "Report by 7:45 am; absence means no seat"
+    url: "https://bs-ug.iisc.ac.in/admissions/news-and-updates"
+  - date: 2026-12-15
+    label: "JEE Advanced 2027 brochure expected (approximate)"
+    note: "Watch jeeadv.ac.in"
+    url: "https://jeeadv.ac.in/"
 author: "FP (Future Pathway) team"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
@@ -81,7 +102,7 @@ The BS (Research) spends the first three semesters on a shared science course. T
 
 The B.Tech in Mathematics and Computing began in 2022-23 with 50 seats. From 2026-27 IISc added three more streams, Aerospace Engineering, Mechanics and Computing, and Materials Science and Engineering, with 25 seats each. In 2026, for the first time, these seats were filled through JoSAA alongside the IITs, on a JEE Advanced rank. A child who is set on JEE Advanced can now put IISc on the same choice list as the IITs. Tuition is INR 2,00,000 a year, with the same hostel charges as the BS (Research).
 
-### A Full Campus, Five Hours From Erode
+### A Full Campus, a Few Hours by Train
 
 The 400 acre campus houses nearly 3,000 students in hostels, including about 500 women, and a new undergraduate complex for over 1,000 students. The main library is open 24 hours on weekdays. The Health Centre has doctors on site round the clock, an ambulance, and group insurance cover of up to INR 3 lakhs a year. Group medical insurance is compulsory. Five messes and a food court feed the campus. A parent can reach the campus from Tamil Nadu in a morning.
 

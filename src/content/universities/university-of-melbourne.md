@@ -2,7 +2,7 @@
 title: "University Spotlight: University of Melbourne"
 summary: "Australia's top university. The Melbourne Model, February intake and dates by board, visa cost rises, automatic scholarships and work visa."
 main_category: universities
-extra_categories: [countries, courses]
+extra_categories: [countries]
 grade_band: ["9-10", "11-12"]
 streams: [any]
 tags_subject: [study-abroad, university-guides, medicine, scholarships-and-aid]
@@ -21,6 +21,15 @@ official_links:
     url: "https://study.unimelb.edu.au/how-to-apply/undergraduate-study/international-applications/applications"
   - label: "Bachelor of Biomedicine Fees (Official)"
     url: "https://study.unimelb.edu.au/find/courses/undergraduate/bachelor-of-biomedicine/fees/"
+key_dates:
+  - date: 2026-11-30
+    label: "Applications close for the February 2027 start"
+    note: "For students who have already finished school"
+    url: "https://study.unimelb.edu.au/how-to-apply/undergraduate-study/international-applications/applications"
+  - date: 2027-05-31
+    label: "Applications close for the July 2027 mid-year start"
+    note: "Some courses only"
+    url: "https://study.unimelb.edu.au/how-to-apply/undergraduate-study/international-applications/applications"
 author: "FP (Future Pathway) team"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11

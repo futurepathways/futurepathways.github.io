@@ -2,7 +2,7 @@
 title: "University Spotlight: Stanford University"
 summary: "Silicon Valley's university. SAT required, need-aware aid for international students, REA vs RD, seven Schools and the cost picture."
 main_category: universities
-extra_categories: [countries, courses]
+extra_categories: [countries]
 grade_band: ["9-10", "11-12"]
 streams: [science]
 tags_subject: [study-abroad, university-guides, computer-science, scholarships-and-aid]
@@ -21,6 +21,22 @@ official_links:
     url: "https://admission.stanford.edu/apply/international/index.html"
   - label: "Stanford Standardized Testing (Official)"
     url: "https://admission.stanford.edu/apply/first-year/testing.html"
+key_dates:
+  - date: 2026-10-15
+    label: "Restrictive Early Action deadline if adding an arts portfolio"
+    note: "Portfolio due 20 October"
+    url: "https://admission.stanford.edu/apply/first-year/"
+  - date: 2026-11-01
+    label: "Restrictive Early Action deadline"
+    note: "Decision by mid December"
+    url: "https://admission.stanford.edu/apply/first-year/"
+  - date: 2027-01-05
+    label: "Regular Decision deadline"
+    note: "Decision by early April; reply by 1 May"
+    url: "https://admission.stanford.edu/apply/first-year/"
+  - date: 2027-02-15
+    label: "CSS Profile priority date for international aid applicants"
+    url: "https://financialaid.stanford.edu/undergrad/apply/requirements/rd_international.html"
 author: "FP (Future Pathway) team"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11

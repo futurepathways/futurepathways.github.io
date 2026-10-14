@@ -2,7 +2,7 @@
 title: "University Spotlight: ETH Zurich"
 summary: "Einstein's university. Bachelor's in German or an English Master's later: two honest routes, low tuition, Zurich costs and Swiss visa rules."
 main_category: universities
-extra_categories: [countries, courses]
+extra_categories: [countries]
 grade_band: ["9-10", "11-12"]
 streams: [science]
 tags_subject: [study-abroad, university-guides, engineering, scholarships-and-aid]
@@ -21,6 +21,18 @@ official_links:
     url: "https://ethz.ch/content/dam/ethz/main/education/admission/bachelor/andere-qual/ETH-ZulassungsbedingungenHS2026_EN.pdf"
   - label: "ETH Entrance Examination (Official)"
     url: "https://ethz.ch/en/studies/bachelor/application/non-swiss-matriculation-certificate/eth-entrance-examination.html"
+key_dates:
+  - date: 2026-11-30
+    label: "Master's application deadline for autumn 2027 (window opens 1 November)"
+    note: "For degrees from outside Switzerland"
+    url: "https://ethz.ch/en/studies/master/application/dates.html"
+  - date: 2026-12-01
+    label: "Bachelor's applications open for autumn 2028 (eApply)"
+    url: "https://ethz.ch/en/studies/registration-application/bachelor/other-certificates/application.html"
+  - date: 2027-03-31
+    label: "Bachelor's application deadline and German C1 certificate due"
+    note: "23:59 Swiss time"
+    url: "https://ethz.ch/en/studies/bachelor/application/non-swiss-matriculation-certificate/language-requirements.html"
 author: "FP (Future Pathway) team"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11

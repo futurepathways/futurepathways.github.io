@@ -2,7 +2,7 @@
 title: "University Spotlight: Caltech"
 summary: "Tiny, intense, science-first. Need-aware aid with a strict rule, SAT required, core curriculum, SURF research and an honest note on fit."
 main_category: universities
-extra_categories: [countries, courses]
+extra_categories: [countries]
 grade_band: ["9-10", "11-12"]
 streams: [science]
 tags_subject: [study-abroad, university-guides, science, scholarships-and-aid]
@@ -21,6 +21,18 @@ official_links:
     url: "https://www.admissions.caltech.edu/apply/first-year-applicants/deadlines"
   - label: "Admission to the First-Year Class (Official Caltech Catalog)"
     url: "https://catalog.caltech.edu/current/information-for-undergraduate-students/admission-to-the-first-year-class/"
+key_dates:
+  - date: 2026-11-01
+    label: "Restrictive Early Action deadline"
+    note: "Other materials by 6 November; test scores by 30 November"
+    url: "https://www.admissions.caltech.edu/apply/first-year-applicants/deadlines"
+  - date: 2026-12-31
+    label: "SAT or ACT scores due for Regular Decision"
+    url: "https://www.admissions.caltech.edu/apply/first-year-applicants/deadlines"
+  - date: 2027-01-04
+    label: "Regular Decision deadline"
+    note: "Other materials by 10 January; decision in mid March; reply by 1 May"
+    url: "https://www.admissions.caltech.edu/apply/first-year-applicants/deadlines"
 author: "FP (Future Pathway) team"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11

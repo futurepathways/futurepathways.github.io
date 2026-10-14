@@ -2,7 +2,7 @@
 title: "University Spotlight: McGill University"
 summary: "Canada's #1 in QS. English classes in Quebec, the CAQ step, English test rule for CBSE, fees by faculty and the honest note on Medicine."
 main_category: universities
-extra_categories: [countries, courses]
+extra_categories: [countries]
 grade_band: ["9-10", "11-12"]
 streams: [any]
 tags_subject: [study-abroad, university-guides, medicine, scholarships-and-aid]
@@ -21,6 +21,14 @@ official_links:
     url: "https://www.mcgill.ca/undergraduate-admissions/french-proficiency"
   - label: "English Proficiency Requirements, Undergraduate Admissions (McGill)"
     url: "https://www.mcgill.ca/undergraduate-admissions/apply/english-proficiency"
+key_dates:
+  - date: 2026-10-01
+    label: "Applications opened for Fall 2027"
+    url: "https://www.mcgill.ca/undergraduate-admissions/"
+  - date: 2027-01-15
+    label: "Application deadline for international applicants (Fall 2027)"
+    note: "Entrance scholarship deadline about a week later"
+    url: "https://www.mcgill.ca/undergraduate-admissions/"
 author: "FP (Future Pathway) team"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11

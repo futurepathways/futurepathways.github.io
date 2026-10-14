@@ -1,8 +1,8 @@
 ---
 title: "University Spotlight: Vellore Institute of Technology (VIT)"
-summary: "Closest big university to home. VITEEE only, AS English for Cambridge students, fee by rank, hostel rules and placement numbers told straight."
+summary: "A few hours by train from our campuses. VITEEE only, AS English for Cambridge students, fee by rank, hostel rules and placement numbers told straight."
 main_category: universities
-extra_categories: [countries, courses]
+extra_categories: [countries]
 grade_band: ["9-10", "11-12"]
 streams: [science]
 tags_subject: [engineering, university-guides, scholarships-and-aid]
@@ -21,6 +21,19 @@ official_links:
     url: "https://vit.ac.in/admission/ug/fee-structure"
   - label: "VIT NRI and Foreign B.Tech Eligibility and Procedure (Official)"
     url: "https://vit.ac.in/admissions/international/btech-eligibilityandprocedure"
+key_dates:
+  - date: 2026-04-12
+    label: "2026 cycle: VITEEE applications closed"
+    note: "For reference; VITEEE 2027 not yet announced"
+    url: "https://viteee.vit.ac.in/"
+  - date: 2026-04-28
+    label: "2026 cycle: VITEEE exam (28 April to 3 May)"
+    note: "Result in the second week of May"
+    url: "https://viteee.vit.ac.in/"
+  - date: 2026-06-20
+    label: "2026 cycle: counselling ended"
+    note: "Final tuition by 4 July 2026"
+    url: "https://viteee.vit.ac.in/"
 author: "FP (Future Pathway) team"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
