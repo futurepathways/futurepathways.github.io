@@ -1675,6 +1675,150 @@ content:
         type: string
         list: true
         description: Other names, for example uk, britain, england.
+  - name: roadmaps
+    label: Career Roadmaps
+    type: file
+    path: src/data/roadmaps.yml
+    format: yaml
+    fields:
+      - name: credit
+        label: Credit line
+        type: text
+        options:
+          rows: 3
+      - name: compiled_by
+        label: Compiled by
+        type: string
+      - name: compiled
+        label: Compiled on
+        type: date
+      - name: source_url
+        label: Source address
+        type: string
+      - name: families
+        label: Families (groups of roles)
+        type: object
+        list: true
+        fields:
+          - name: key
+            label: Key (lowercase, hyphens)
+            type: string
+            required: true
+            pattern: ^[a-z0-9-]+$
+          - name: title
+            label: Title
+            type: string
+            required: true
+      - name: subjects
+        label: Subject filter options
+        type: object
+        list: true
+        fields:
+          - name: key
+            label: Key
+            type: string
+            required: true
+            pattern: ^[a-z0-9-]+$
+          - name: title
+            label: Title
+            type: string
+            required: true
+      - name: exams
+        label: Exam filter options
+        type: object
+        list: true
+        fields:
+          - name: key
+            label: Key
+            type: string
+            required: true
+            pattern: ^[a-z0-9-]+$
+          - name: title
+            label: Title
+            type: string
+            required: true
+      - name: roles
+        label: Roles
+        type: object
+        list: true
+        fields:
+          - name: slug
+            label: Slug (web address, never change)
+            type: string
+            required: true
+            pattern: ^[a-z0-9-]+$
+          - name: title
+            label: Role name
+            type: string
+            required: true
+          - name: family
+            label: Family key
+            type: string
+            required: true
+            description: One of the family keys above, for example data-ai.
+          - name: what
+            label: What they do (one sentence)
+            type: text
+            required: true
+            options:
+              rows: 2
+          - name: subjects
+            label: Subject keys
+            type: string
+            list: true
+            description: Keys from the subject list, for example maths, cs.
+          - name: subjects_note
+            label: Subjects, as shown
+            type: string
+            required: true
+          - name: degrees
+            label: Common degree in India
+            type: string
+            required: true
+          - name: exams
+            label: Exam keys
+            type: string
+            list: true
+            description: Keys from the exam list, for example jee, cuet.
+          - name: exams_note
+            label: Exams, as shown
+            type: string
+            required: true
+          - name: routes
+            label: Routes in India
+            type: text
+            required: true
+            options:
+              rows: 3
+          - name: phase1
+            label: Phase 1, basics
+            type: text
+            required: true
+            options:
+              rows: 2
+          - name: phase2
+            label: Phase 2, core
+            type: text
+            required: true
+            options:
+              rows: 2
+          - name: phase3
+            label: Phase 3, on the job
+            type: text
+            required: true
+            options:
+              rows: 2
+          - name: project
+            label: Starter project
+            type: text
+            required: true
+            options:
+              rows: 2
+          - name: source
+            label: Original roadmap address
+            type: string
+            required: true
+            pattern: ^https?://
   - name: start
     label: Start here by grade
     type: file

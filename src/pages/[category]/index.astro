@@ -33,6 +33,17 @@ const intro: Record<CategoryKey, string> = {
       <p class="category-intro">{intro[key]}</p>
     </div>
   </section>
+  {
+    key === 'careers' && (
+      <div class="container">
+        <a class="tool-callout" href="/roadmaps/">
+          <strong>Try the Career Roadmaps tool.</strong> 26 roles mapped to the school subjects to keep, the Indian
+          degrees and the entrance exams. Filter by a subject you are keeping.
+          <Icon name="arrow" size={20} />
+        </a>
+      </div>
+    )
+  }
   <div class="container section">
     <PostList
       posts={posts}
@@ -67,5 +78,27 @@ const intro: Record<CategoryKey, string> = {
     max-width: 60ch;
     margin: 0;
     color: var(--text);
+  }
+  .tool-callout {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 1.2rem;
+    padding: 0.9rem 1.1rem;
+    border: 1px solid var(--border);
+    border-left: 5px solid var(--gold);
+    border-radius: var(--radius);
+    background: var(--surface);
+    color: var(--text);
+    text-decoration: none;
+    box-shadow: var(--shadow);
+  }
+  .tool-callout:hover {
+    border-left-color: var(--blue);
+    color: var(--text);
+  }
+  .tool-callout :global(.icon) {
+    margin-left: auto;
+    color: var(--link);
   }
 </style>

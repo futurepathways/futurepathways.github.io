@@ -1,0 +1,648 @@
+# Career Roadmaps (PRD Section 21, 18 Oct 2026). Powers the /roadmaps/ page.
+# Edit in Pages CMS under "Career Roadmaps", or here. Keys:
+#   families: the groups shown on the page (key, title)
+#   subjects: the "subject you are keeping" filter (key, title)
+#   exams: the entrance exam filter (key, title)
+#   roles: one entry per role. subjects and exams hold keys from the lists above.
+#          subjects_note and exams_note are the human text shown in the table.
+credit: Roadmap structure and skill lists are drawn from Careermaxxing by Kungumavishnu (careermaxxing.kungumavishnu.com).
+  Summaries, India mapping and subject advice are by the TIPS FP (Future Pathway) team. Each role links back to
+  its original page.
+compiled_by: Madan Kumar PC
+compiled: '2026-10-18'
+source_url: https://careermaxxing.kungumavishnu.com/roadmap
+families:
+- key: software
+  title: Software Engineering
+- key: data-ai
+  title: Data and AI
+- key: cloud-security
+  title: Cloud, Infrastructure and Security
+- key: product-design
+  title: Product and Design
+- key: business
+  title: Business, Marketing and Sales
+- key: finance-consulting
+  title: Finance and Consulting
+- key: media
+  title: Media and Communication
+subjects:
+- key: maths
+  title: Mathematics
+- key: physics
+  title: Physics
+- key: cs
+  title: Computer Science
+- key: economics
+  title: Economics or Accounting
+- key: business
+  title: Business Studies
+- key: english
+  title: English
+- key: psychology
+  title: Psychology
+- key: art
+  title: Art, Design or Media
+- key: any
+  title: Any stream
+exams:
+- key: jee
+  title: JEE Main / JEE Advanced
+- key: bitsat
+  title: BITSAT
+- key: viteee
+  title: VITEEE
+- key: srmjeee
+  title: SRMJEEE
+- key: tnea
+  title: TNEA (Tamil Nadu, marks based)
+- key: cuet
+  title: CUET-UG
+- key: iitm-bs
+  title: IIT Madras BS qualifier
+- key: isi
+  title: ISI admission test
+- key: cmi
+  title: CMI entrance
+- key: ipmat
+  title: IPMAT / JIPMAT
+- key: npat
+  title: NPAT
+- key: set
+  title: SET
+- key: cat
+  title: CAT (for an MBA later)
+- key: uceed
+  title: UCEED
+- key: nid-dat
+  title: NID DAT
+- key: nift
+  title: NIFT entrance
+- key: ca-foundation
+  title: CA Foundation
+- key: portfolio
+  title: Portfolio or college test
+roles:
+- slug: backend-engineer
+  title: Backend Engineer
+  family: software
+  what: 'Build the hidden part of an app: the servers, databases and logic that run when you tap a button.'
+  subjects:
+  - maths
+  - physics
+  - cs
+  subjects_note: Maths, Physics, Computer Science
+  degrees: B.Tech / BE in CSE or IT; BCA
+  exams:
+  - jee
+  - bitsat
+  - viteee
+  - srmjeee
+  - tnea
+  exams_note: JEE Main, JEE Advanced, BITSAT, VITEEE, SRMJEEE, TNEA (Tamil Nadu, marks based)
+  routes: B.Tech / BE in CSE or IT through JEE Main, JEE Advanced, BITSAT, VITEEE, SRMJEEE or TNEA; BCA through
+    CUET-UG or college admission.
+  phase1: One programming language learned well (Python, Java, Go or JavaScript), how the internet works, Git.
+  phase2: Databases (SQL first, then NoSQL), building secure APIs, caching, servers, testing.
+  phase3: Containers and deployment pipelines, scaling large systems, monitoring, AI coding tools.
+  project: A link shortener that is deployed online with a proper README.
+  source: https://careermaxxing.kungumavishnu.com/roadmap/backend-engineer
+- slug: frontend-engineer
+  title: Frontend Engineer
+  family: software
+  what: Build everything you see and click on a website or app.
+  subjects:
+  - maths
+  - cs
+  subjects_note: Maths, Computer Science
+  degrees: B.Tech CSE / IT; BCA; B.Sc CS
+  exams:
+  - jee
+  - bitsat
+  - viteee
+  - tnea
+  - cuet
+  exams_note: JEE Main, BITSAT, VITEEE, TNEA; CUET-UG for BCA / B.Sc
+  routes: B.Tech CSE / IT (JEE Main, BITSAT, VITEEE, TNEA); BCA or B.Sc CS (CUET-UG).
+  phase1: HTML and CSS done properly, JavaScript in depth, TypeScript.
+  phase2: A framework such as React, managing app data, styling at scale, talking to APIs.
+  phase3: Accessibility for all users, speed and performance, testing, deployment, AI-assisted coding.
+  project: A fully responsive, accessible personal portfolio site.
+  source: https://careermaxxing.kungumavishnu.com/roadmap/frontend-engineer
+- slug: full-stack-engineer
+  title: Full-Stack Engineer
+  family: software
+  what: Work on both the visible front and the hidden back of an app.
+  subjects:
+  - maths
+  - physics
+  - cs
+  subjects_note: Maths, Physics, Computer Science
+  degrees: B.Tech CSE / IT; BCA
+  exams:
+  - jee
+  - bitsat
+  - viteee
+  - tnea
+  - cuet
+  exams_note: JEE Main, BITSAT, VITEEE, TNEA, CUET-UG
+  routes: B.Tech CSE / IT (JEE Main, BITSAT, VITEEE, TNEA); BCA (CUET-UG).
+  phase1: Programming fundamentals, how the web works, front and back essentials.
+  phase2: Databases, APIs, logins and security, teamwork with Git.
+  phase3: Testing across the whole app, deployment, scaling, monitoring, AI features.
+  project: A small complete app (for example a class notice board) with login, database and live link.
+  source: https://careermaxxing.kungumavishnu.com/roadmap/fullstack-engineer
+- slug: sdet-qa-engineer
+  title: SDET / QA Engineer
+  family: software
+  what: Make sure software works before customers see it, increasingly by writing code that tests code.
+  subjects:
+  - maths
+  - cs
+  subjects_note: Maths, Computer Science
+  degrees: B.Tech CSE / IT; BCA; B.Sc CS
+  exams:
+  - jee
+  - tnea
+  - cuet
+  exams_note: JEE Main, TNEA, CUET-UG
+  routes: B.Tech CSE / IT (JEE Main, TNEA); BCA or B.Sc CS (CUET-UG).
+  phase1: The testing mindset, designing good test cases, reporting bugs clearly.
+  phase2: A programming language, automating web and API tests, database checks, test frameworks.
+  phase3: Testing inside deployment pipelines, load testing, security and accessibility checks, quality strategy,
+    testing AI systems.
+  project: An automated test suite for a public demo website.
+  source: https://careermaxxing.kungumavishnu.com/roadmap/sdet-qa
+- slug: forward-deployed-engineer
+  title: Forward Deployed Engineer
+  family: software
+  what: An engineer who sits with a customer, understands their problem and builds the solution on site. Part engineer,
+    part consultant.
+  subjects:
+  - maths
+  - physics
+  - cs
+  subjects_note: Maths, Physics, Computer Science
+  degrees: B.Tech CSE / IT
+  exams:
+  - jee
+  - bitsat
+  - tnea
+  exams_note: JEE Main, JEE Advanced, BITSAT, TNEA
+  routes: B.Tech CSE / IT (JEE Main, JEE Advanced, BITSAT, TNEA).
+  phase1: Strong programming across front and back, data handling and APIs.
+  phase2: Deep product knowledge, understanding a customer's world, building quick working prototypes.
+  phase3: Client communication, deploying and handing over, feeding lessons back to the product team, deploying
+    AI tools.
+  project: Solve a real problem for a local shop or school club and document the whole journey.
+  source: https://careermaxxing.kungumavishnu.com/roadmap/forward-deployed-engineer
+- slug: data-analyst
+  title: Data Analyst
+  family: data-ai
+  what: Turn raw numbers into clear answers that help a business decide.
+  subjects:
+  - maths
+  - economics
+  - cs
+  subjects_note: Maths (essential), Economics or Computer Science
+  degrees: B.Sc Statistics / Maths / Data Science; B.Com; BBA (Analytics)
+  exams:
+  - cuet
+  - iitm-bs
+  - isi
+  exams_note: CUET-UG; IIT Madras BS qualifier; ISI admission test
+  routes: B.Sc Statistics / Maths / Data Science, B.Com or BBA Analytics (CUET-UG); the IIT Madras online BS in
+    Data Science (own qualifier, no JEE); ISI (own admission test).
+  phase1: Analytical thinking, Excel and Google Sheets, SQL.
+  phase2: Statistics, cleaning messy data, charts and dashboards (Power BI, Tableau), understanding business numbers.
+  phase3: Telling the story behind the data, Python or R, A/B tests, how data warehouses work, AI-assisted analysis.
+  project: Analyse a public dataset (cricket, weather, school results) and present three findings in a dashboard.
+  source: https://careermaxxing.kungumavishnu.com/roadmap/data-analyst
+- slug: data-engineer
+  title: Data Engineer
+  family: data-ai
+  what: Build the pipes that collect, clean and move data so analysts and AI teams can use it.
+  subjects:
+  - maths
+  - cs
+  subjects_note: Maths, Computer Science
+  degrees: B.Tech CSE / IT / Data Science
+  exams:
+  - jee
+  - bitsat
+  - tnea
+  exams_note: JEE Main, BITSAT, TNEA
+  routes: B.Tech CSE / IT / Data Science (JEE Main, BITSAT, TNEA).
+  phase1: Python, SQL in depth, Linux and Git.
+  phase2: Data modelling and warehouses, building data pipelines, big data tools like Spark.
+  phase3: Real-time data with Kafka, cloud data platforms, scheduling tools like Airflow, data quality, data for
+    AI.
+  project: A small pipeline that pulls daily weather data, stores it and refreshes a chart.
+  source: https://careermaxxing.kungumavishnu.com/roadmap/data-engineer
+- slug: data-scientist
+  title: Data Scientist
+  family: data-ai
+  what: Use statistics and machine learning to find patterns and make predictions.
+  subjects:
+  - maths
+  - cs
+  - economics
+  subjects_note: Maths (essential), Computer Science or Economics
+  degrees: B.Sc Statistics / Maths / Data Science; B.Tech
+  exams:
+  - isi
+  - cmi
+  - cuet
+  - iitm-bs
+  - jee
+  exams_note: ISI, CMI, CUET-UG, IIT Madras BS qualifier, JEE Main
+  routes: B.Sc Statistics / Maths / Data Science (CUET-UG); ISI B.Stat and CMI (own tests); IIT Madras BS qualifier;
+    B.Tech via JEE Main.
+  phase1: Python with pandas, statistics and maths, cleaning data.
+  phase2: Exploring data visually, hypothesis testing and experiments, machine learning basics, building models.
+  phase3: Deep learning, explaining results to non-experts, working with engineers to launch models, using LLMs
+    well.
+  project: Predict something real (for example house prices in a city) and explain how sure you are.
+  source: https://careermaxxing.kungumavishnu.com/roadmap/data-scientist
+- slug: ai-engineer
+  title: AI Engineer
+  family: data-ai
+  what: Build products that use AI models, such as chatbots, search tools and assistants.
+  subjects:
+  - maths
+  - physics
+  - cs
+  subjects_note: Maths (essential), Physics, Computer Science
+  degrees: B.Tech CSE / AI & DS; BS Data Science
+  exams:
+  - jee
+  - iitm-bs
+  exams_note: JEE Main, JEE Advanced, IIT Madras BS qualifier
+  routes: B.Tech CSE / AI & Data Science (JEE Main, JEE Advanced); IIT Madras BS qualifier.
+  phase1: Python and good coding habits, the maths behind ML, machine learning fundamentals.
+  phase2: Deep learning and transformers, working with large language models, building AI apps (search over documents,
+    agents).
+  phase3: Deploying and monitoring models, testing AI quality, safety and fairness, cost and speed trade-offs.
+  project: A question-answering bot over a set of school handbooks, with a simple test of how often it is right.
+  source: https://careermaxxing.kungumavishnu.com/roadmap/ai-engineer
+- slug: ml-engineer
+  title: ML Engineer
+  family: data-ai
+  what: Train machine learning models and keep them running reliably in real products.
+  subjects:
+  - maths
+  - physics
+  - cs
+  subjects_note: Maths (essential), Physics, Computer Science
+  degrees: B.Tech CSE / AI & ML; B.Stat / B.Math
+  exams:
+  - jee
+  - isi
+  - cmi
+  exams_note: JEE Main, JEE Advanced, ISI, CMI
+  routes: B.Tech CSE / AI & ML (JEE Main, JEE Advanced); ISI B.Stat / B.Math; CMI.
+  phase1: Python and software skills, maths for ML, preparing data.
+  phase2: ML algorithms, deep learning with PyTorch, training and tuning models, judging them fairly.
+  phase3: Deploying models, watching them for drift, scaling on GPUs, fine-tuning LLMs, responsible ML.
+  project: Train an image classifier, then deploy it as a small web app.
+  source: https://careermaxxing.kungumavishnu.com/roadmap/ml-engineer
+- slug: devops-engineer-sre
+  title: DevOps Engineer / SRE
+  family: cloud-security
+  what: Keep apps running smoothly and automate how code reaches users.
+  subjects:
+  - maths
+  - physics
+  - cs
+  subjects_note: Maths, Physics, Computer Science
+  degrees: B.Tech CSE / IT; BCA
+  exams:
+  - jee
+  - tnea
+  - cuet
+  exams_note: JEE Main, TNEA, CUET-UG
+  routes: B.Tech CSE / IT (JEE Main, TNEA); BCA (CUET-UG).
+  phase1: Linux, networking, scripting, Git.
+  phase2: Deployment pipelines, Docker and Kubernetes, infrastructure written as code (Terraform), cloud platforms.
+  phase3: Monitoring, reliability targets and incident handling, security, scaling, AI infrastructure.
+  project: Set up automatic testing and deployment for one of your own projects.
+  source: https://careermaxxing.kungumavishnu.com/roadmap/devops-sre
+- slug: cloud-engineer
+  title: Cloud Engineer / Solutions Architect
+  family: cloud-security
+  what: Design and run systems on AWS, Azure or Google Cloud.
+  subjects:
+  - maths
+  - physics
+  - cs
+  subjects_note: Maths, Physics, Computer Science
+  degrees: B.Tech CSE / IT; BCA
+  exams:
+  - jee
+  - tnea
+  - cuet
+  exams_note: JEE Main, TNEA, CUET-UG
+  routes: B.Tech CSE / IT (JEE Main, TNEA); BCA (CUET-UG). Cloud certifications come later.
+  phase1: What the cloud is, networking, core cloud services, Linux and the command line.
+  phase2: Infrastructure as code, identity and security, designing for reliability and scale.
+  phase3: Controlling cost, containers and serverless, weighing trade-offs, explaining designs to clients, cloud
+    AI services.
+  project: Host a simple website on a free cloud tier with a backup and a cost alert.
+  source: https://careermaxxing.kungumavishnu.com/roadmap/cloud-engineer
+- slug: cybersecurity-analyst
+  title: Cybersecurity Analyst
+  family: cloud-security
+  what: Watch for attacks, investigate incidents and protect an organisation's systems.
+  subjects:
+  - maths
+  - cs
+  subjects_note: Maths, Computer Science
+  degrees: B.Tech CSE (Cyber Security); B.Sc Cyber Security; BCA
+  exams:
+  - jee
+  - tnea
+  - cuet
+  exams_note: JEE Main, TNEA, CUET-UG
+  routes: B.Tech CSE (Cyber Security) via JEE Main or TNEA; B.Sc Cyber Security or BCA via CUET-UG.
+  phase1: Networking and IT basics, Windows and Linux, core security ideas.
+  phase2: Network security, how attackers think, monitoring tools (SIEM), responding to incidents.
+  phase3: Fixing vulnerabilities, identity and access control, rules and compliance, practice labs and certifications,
+    AI in security.
+  project: Build a home lab and take part in beginner Capture the Flag (CTF) challenges, always ethically.
+  source: https://careermaxxing.kungumavishnu.com/roadmap/cybersecurity-analyst
+- slug: product-manager
+  title: Product Manager
+  family: product-design
+  what: Decide what a product should do next and lead the team that builds it, without being anyone's boss.
+  subjects:
+  - maths
+  - any
+  subjects_note: Maths helps; any stream
+  degrees: B.Tech (most common), BBA, IPM, B.Des
+  exams:
+  - jee
+  - ipmat
+  - cuet
+  - cat
+  exams_note: JEE Main, IPMAT, JIPMAT, CUET-UG; later CAT for MBA
+  routes: 'Usually a first degree plus work experience. Common starts: B.Tech (JEE Main), IPM (IPMAT, JIPMAT), BBA
+    (CUET-UG), B.Des. Many later take an MBA through CAT.'
+  phase1: What a PM really does, understanding users and their problems.
+  phase2: Testing ideas with real users, prioritising, writing clear specs, working with engineers and designers.
+  phase3: Metrics and experiments, launching products, managing stakeholders, business sense, AI features.
+  project: Pick an app you use daily, find one real problem, interview five users and write a one-page proposal.
+  source: https://careermaxxing.kungumavishnu.com/roadmap/product-manager
+- slug: ai-product-manager
+  title: AI Product Manager
+  family: product-design
+  what: A product manager for AI products, where answers are not always the same twice.
+  subjects:
+  - maths
+  - cs
+  subjects_note: Maths, Computer Science
+  degrees: B.Tech CSE / AI; then work or MBA
+  exams:
+  - jee
+  - cat
+  exams_note: JEE Main; later CAT
+  routes: B.Tech CSE / AI (JEE Main) is the strongest start, then product work; MBA later (CAT).
+  phase1: Product management basics, how AI models actually work.
+  phase2: Designing for unpredictable answers, data and feedback loops, measuring AI quality.
+  phase3: AI user experience, safety and responsible AI, cost and speed trade-offs, build or buy decisions.
+  project: Compare two AI tools on the same ten tasks and write up which is better, for whom and why.
+  source: https://careermaxxing.kungumavishnu.com/roadmap/ai-product-manager
+- slug: ui-ux-designer
+  title: UI/UX Designer
+  family: product-design
+  what: Design how apps and websites look, feel and work for real people.
+  subjects:
+  - any
+  - art
+  subjects_note: Any stream; Art or Design helps
+  degrees: B.Des (Interaction / Communication)
+  exams:
+  - uceed
+  - nid-dat
+  - nift
+  exams_note: UCEED, NID DAT, NIFT entrance
+  routes: B.Des through UCEED (IITs), NID DAT, NIFT entrance and private design school tests. Portfolio and drawing
+    practice matter.
+  phase1: Design thinking, user research, organising information.
+  phase2: Interaction design, visual design (type, colour, layout), wireframes and prototypes in Figma.
+  phase3: Design systems, accessibility, usability testing, handing designs to developers, a strong portfolio, designing
+    for AI.
+  project: Redesign one screen of a school or local service app, with before and after and the reasons.
+  source: https://careermaxxing.kungumavishnu.com/roadmap/ui-ux-designer
+- slug: ux-researcher
+  title: UX Researcher
+  family: product-design
+  what: Study how people actually use products, so the team builds the right thing.
+  subjects:
+  - psychology
+  - english
+  - maths
+  subjects_note: Psychology, English; Maths helps
+  degrees: BA Psychology; B.Des; BA Sociology
+  exams:
+  - cuet
+  - uceed
+  - nid-dat
+  exams_note: CUET-UG, UCEED, NID DAT
+  routes: BA Psychology or Sociology (CUET-UG); B.Des (UCEED, NID DAT).
+  phase1: What research is for, interviews and observation.
+  phase2: Surveys and numbers, running research sessions, usability testing, making sense of findings.
+  phase3: Presenting insights that change decisions, research operations, strategy, AI for research.
+  project: Interview six classmates about how they revise for exams and turn it into three clear insights.
+  source: https://careermaxxing.kungumavishnu.com/roadmap/ux-researcher
+- slug: business-analyst
+  title: Business Analyst
+  family: business
+  what: Bridge the gap between business teams and tech teams by turning needs into clear requirements.
+  subjects:
+  - maths
+  - economics
+  - business
+  subjects_note: Maths, Economics or Business
+  degrees: BBA, B.Com, BMS, IPM
+  exams:
+  - ipmat
+  - npat
+  - set
+  - cuet
+  exams_note: IPMAT, NPAT, SET, CUET-UG
+  routes: BBA, B.Com or BMS (CUET-UG, NPAT, SET); IPM (IPMAT, JIPMAT).
+  phase1: What a BA does, how businesses run, gathering requirements.
+  phase2: Writing requirements, mapping processes, data analysis and SQL, reports and dashboards.
+  phase3: Business cases, managing stakeholders, Agile teams, AI in analysis.
+  project: Map how your school canteen handles orders today and propose a better process.
+  source: https://careermaxxing.kungumavishnu.com/roadmap/business-analyst
+- slug: digital-marketer
+  title: Digital Marketer
+  family: business
+  what: Grow a brand online through content, search, social media, ads and email.
+  subjects:
+  - any
+  - english
+  - business
+  subjects_note: Any stream; English, Business
+  degrees: BBA, BMS, B.Com, BA Mass Communication
+  exams:
+  - cuet
+  - ipmat
+  - npat
+  - set
+  exams_note: CUET-UG, IPMAT, NPAT, SET
+  routes: BBA, BMS, B.Com (CUET-UG, NPAT, SET, IPMAT); BA Mass Communication.
+  phase1: Marketing fundamentals, audience and customer journey, content.
+  phase2: SEO, social media, paid ads, email marketing, copywriting.
+  phase3: Analytics and tracking, improving conversions, budgeting, AI in marketing.
+  project: Grow a school club's Instagram page for one term and report what worked.
+  source: https://careermaxxing.kungumavishnu.com/roadmap/digital-marketer
+- slug: growth-marketer
+  title: Growth Marketer
+  family: business
+  what: Run constant experiments to bring in users, keep them and grow revenue.
+  subjects:
+  - maths
+  - economics
+  - business
+  subjects_note: Maths, Economics, Business
+  degrees: BBA, IPM, B.Com, B.Sc Economics
+  exams:
+  - ipmat
+  - npat
+  - set
+  - cuet
+  exams_note: IPMAT, NPAT, SET, CUET-UG
+  routes: BBA, IPM, B.Com, B.Sc Economics (IPMAT, NPAT, SET, CUET-UG). Comfort with numbers is key.
+  phase1: The growth mindset, the full funnel from first visit to referral.
+  phase2: Metrics and tracking, fast experiments, acquisition, onboarding.
+  phase3: Retention, pricing and referral loops, SQL and data analysis, AI personalisation.
+  project: Run two versions of a sign-up poster for an event and measure which gets more sign-ups.
+  source: https://careermaxxing.kungumavishnu.com/roadmap/growth-marketer
+- slug: b2b-sales
+  title: B2B Sales
+  family: business
+  what: Sell products and services to other businesses, often through long, careful conversations.
+  subjects:
+  - any
+  - business
+  - english
+  subjects_note: Any stream; Business, English
+  degrees: BBA, B.Com, BMS; engineering for tech sales
+  exams:
+  - cuet
+  - ipmat
+  - npat
+  exams_note: CUET-UG, IPMAT, NPAT
+  routes: BBA, B.Com, BMS (CUET-UG, IPMAT, NPAT). Engineers often move into tech sales.
+  phase1: How businesses buy, knowing the product and the ideal customer.
+  phase2: Finding leads, qualifying them, outreach by email and phone, discovery conversations.
+  phase3: Value selling, demos, handling objections, closing, managing a pipeline, AI for research.
+  project: Find sponsors for a school event and track every conversation in a simple sheet.
+  source: https://careermaxxing.kungumavishnu.com/roadmap/b2b-sales
+- slug: customer-success-manager
+  title: Customer Success Manager
+  family: business
+  what: Make sure business customers get real value from a product so they stay and grow.
+  subjects:
+  - any
+  - business
+  - english
+  subjects_note: Any stream; Business, English
+  degrees: BBA, BMS, B.Com
+  exams:
+  - cuet
+  - ipmat
+  - npat
+  exams_note: CUET-UG, IPMAT, NPAT
+  routes: BBA, BMS, B.Com (CUET-UG, IPMAT, NPAT).
+  phase1: What customer success is, product and industry knowledge.
+  phase2: Onboarding new customers, driving adoption, building relationships.
+  phase3: Health scores, renewals and growth, handling unhappy customers, sharing feedback with product teams, AI
+    tools.
+  project: Help a younger class adopt a new learning app and track how usage changes.
+  source: https://careermaxxing.kungumavishnu.com/roadmap/customer-success-manager
+- slug: financial-analyst
+  title: Financial Analyst
+  family: finance-consulting
+  what: Study a company's numbers to plan budgets, value businesses and guide investment decisions.
+  subjects:
+  - maths
+  - economics
+  - business
+  subjects_note: Maths, Economics, Accounting
+  degrees: B.Com, BBA (Finance), B.Sc Economics; CA
+  exams:
+  - cuet
+  - ipmat
+  - ca-foundation
+  exams_note: CUET-UG, IPMAT, CA Foundation
+  routes: B.Com, BBA Finance, B.Sc Economics (CUET-UG, IPMAT); CA through ICAI (CA Foundation). CFA can follow later.
+  phase1: Accounting (the three main statements), corporate finance ideas, reading annual reports.
+  phase2: Excel mastery, financial models, forecasting and budgeting, variance analysis.
+  phase3: Valuation, SQL and dashboards, clear business writing, AI in finance.
+  project: Read a listed Indian company's annual report and build a simple three-year forecast.
+  source: https://careermaxxing.kungumavishnu.com/roadmap/financial-analyst
+- slug: management-consultant
+  title: Management Consultant
+  family: finance-consulting
+  what: Help companies solve big business problems, usually in short, intense projects.
+  subjects:
+  - maths
+  - economics
+  subjects_note: Maths, Economics
+  degrees: B.Tech, B.Com, BA / B.Sc Economics, IPM
+  exams:
+  - ipmat
+  - jee
+  - cuet
+  - cat
+  exams_note: IPMAT, JEE Main, CUET-UG; later CAT
+  routes: IPM (IPMAT, JIPMAT), B.Tech (JEE Main), B.Com or Economics (CUET-UG). Top firms mostly hire after an MBA
+    (CAT) or from top undergraduate colleges.
+  phase1: What consultants do, structured problem solving, business fundamentals.
+  phase2: Numbers and market sizing, research, building a recommendation.
+  phase3: Storyline slides, influencing senior people, managing projects, case interviews, AI in consulting.
+  project: Estimate the size of the school stationery market in your city and present it in five slides.
+  source: https://careermaxxing.kungumavishnu.com/roadmap/management-consultant
+- slug: video-editor
+  title: Video Editor
+  family: media
+  what: Shape raw footage into a story people want to keep watching, for YouTube, ads, films or brands.
+  subjects:
+  - any
+  - art
+  subjects_note: Any stream; Media, Art
+  degrees: B.Sc / BA Visual Communication, Mass Media, Film
+  exams:
+  - cuet
+  - portfolio
+  exams_note: CUET-UG; college-level tests; portfolio matters most
+  routes: B.Sc / BA Visual Communication, Mass Media or Film Studies (CUET-UG or college-level admission). A showreel
+    matters more than the degree.
+  phase1: The language of editing (cuts, pacing, rhythm), editing software and the timeline.
+  phase2: Cutting and story structure, sound, colour correction, titles and motion graphics.
+  phase3: Effects, export formats for each platform, client workflow, a showreel, AI editing tools.
+  project: Edit a two-minute school event highlight video, once for YouTube and once as a vertical short.
+  source: https://careermaxxing.kungumavishnu.com/roadmap/video-editor
+- slug: technical-writer-developer-advocate
+  title: Technical Writer / Developer Advocate
+  family: media
+  what: Explain complex technology clearly through guides, tutorials, talks and community work.
+  subjects:
+  - english
+  - cs
+  subjects_note: English plus Computer Science
+  degrees: B.Tech, BCA, B.Sc CS, BA English
+  exams:
+  - jee
+  - cuet
+  exams_note: JEE Main, CUET-UG
+  routes: B.Tech, BCA or B.Sc CS (JEE Main, CUET-UG) with strong writing; or BA English with serious tech self-study.
+  phase1: How the two roles differ, technical literacy, clear writing.
+  phase2: Types of documentation, docs tools (Markdown, Git), writing code samples that work.
+  phase3: Community and public speaking, blogs and videos, measuring impact, a public portfolio, writing for AI
+    products.
+  project: Write a beginner's guide to a tool you know well and publish it on GitHub or a blog.
+  source: https://careermaxxing.kungumavishnu.com/roadmap/technical-writer-devrel

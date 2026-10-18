@@ -1,0 +1,425 @@
+---
+// Career Roadmaps (PRD Section 21): 26 roles mapped to school subjects, Indian degrees and
+// entrance exams. A filterable quick map, then one section per role. Data: src/data/roadmaps.yml.
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { roadmaps, familyByKey, subjectByKey, examByKey } from '../lib/roadmaps';
+import { site } from '../config/site';
+import { formatDate } from '../lib/content';
+
+const { families, subjects, exams, roles } = roadmaps;
+const examsUsed = exams.filter((e) => roles.some((r) => r.exams.includes(e.key)));
+const subjectsUsed = subjects.filter((s) => roles.some((r) => r.subjects.includes(s.key)));
+const description = `${roles.length} roles, from backend engineer to video editor, each mapped to the school subjects that keep the door open, the usual Indian degrees and the entrance exams.`;
+---
+
+<Base title="Career Roadmaps" description={description} image="/images/preview-careers.png">
+  <section class="rm-hero cat-careers">
+    <div class="container">
+      <p class="eyebrow"><Icon name="careers" size={22} /> Tool</p>
+      <h1>Career Roadmaps: {roles.length} roles, step by step</h1>
+      <p class="rm-lead">
+        Pick a role that interests you. See which school subjects keep that door open, which Indian degrees and entrance
+        exams lead there, and what to learn first. Built for Subject Choices Day and for anyone wondering "what next?".
+      </p>
+      <p class="rm-meta">
+        Compiled by {roadmaps.compiled_by} for the {site.teamName}, {formatDate(roadmaps.compiled)}. Read the
+        <a href="/careers/career-roadmaps-which-subjects-keep-which-doors-open/">short guide to this page</a>.
+      </p>
+    </div>
+  </section>
+
+  <div class="container section" data-pagefind-body>
+    <h2 class="visually-hidden" data-pagefind-meta="title">Career Roadmaps</h2>
+
+    <div class="note note--blue rm-warning">
+      <strong>The biggest door-closer is dropping Mathematics after IGCSE or Class 10.</strong> It shuts most routes
+      into engineering, data, AI, finance and consulting, in India and abroad. If you are unsure, keeping Maths to AS
+      Level or Class 12 is the safer choice. Entrance exam dates, eligibility and fees change every year, so always
+      check the official site. Cambridge students: some Indian exams and universities ask for a UGC equivalence
+      certificate (formerly AIU) or a minimum mark in specific subjects. Check this early, not in Grade 12.
+    </div>
+
+    <h2>Quick map: role to Indian route</h2>
+    <form class="rm-filters js-only" data-rm-filters aria-label="Filter the roles">
+      <div class="rm-filter-row">
+        <label class="rm-field">
+          <span>I am keeping</span>
+          <select name="subject">
+            <option value="">any subject</option>
+            {subjectsUsed.filter((s) => s.key !== 'any').map((s) => <option value={s.key}>{s.title}</option>)}
+          </select>
+        </label>
+        <label class="rm-field">
+          <span>Exam</span>
+          <select name="exam">
+            <option value="">any exam</option>
+            {examsUsed.map((e) => <option value={e.key}>{e.title}</option>)}
+          </select>
+        </label>
+        <label class="rm-field rm-field--grow">
+          <span>Search</span>
+          <input type="search" name="q" placeholder="role, degree or exam" autocomplete="off" />
+        </label>
+        <button type="button" class="btn btn--outline btn--small" data-rm-clear>Clear</button>
+      </div>
+      <div class="rm-families" role="group" aria-label="Family">
+        <button type="button" class="rm-chip" data-family="" aria-pressed="true">All families</button>
+        {
+          families.map((f) => (
+            <button type="button" class="rm-chip" data-family={f.key} aria-pressed="false">
+              {f.title}
+            </button>
+          ))
+        }
+      </div>
+      <p class="rm-count" data-rm-count aria-live="polite"></p>
+    </form>
+
+    <div class="rm-table-wrap">
+      <table class="rm-table" data-rm-table>
+        <thead>
+          <tr>
+            <th>Role</th>
+            <th>Keep these subjects</th>
+            <th>Common degree in India</th>
+            <th>Entrance exams to know</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            roles.map((r) => (
+              <tr
+                data-rm-row
+                data-family={r.family}
+                data-subjects={r.subjects.join(' ')}
+                data-exams={r.exams.join(' ')}
+                data-text={`${r.title} ${r.degrees} ${r.exams_note} ${r.subjects_note} ${familyByKey[r.family].title}`.toLowerCase()}
+              >
+                <td>
+                  <a href={`#${r.slug}`} class="rm-role-link">{r.title}</a>
+                  <span class="rm-family-tag">{familyByKey[r.family].title}</span>
+                </td>
+                <td>{r.subjects_note}</td>
+                <td>{r.degrees}</td>
+                <td>{r.exams_note}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+    <p class="rm-empty" data-rm-empty hidden>No role matches those filters. Try clearing one.</p>
+
+    <h2>How to read a roadmap</h2>
+    <ol class="prose">
+      <li><strong>Find a role that interests you.</strong> Roles are grouped into families below.</li>
+      <li><strong>Look at the subjects that keep the door open.</strong> This matters most in Grade 10 and before AS Level or Class 11 choices. Some subject combinations quietly close doors.</li>
+      <li><strong>Look at the routes in India.</strong> These are the usual degrees and entrance exams. Most of these jobs do not need one specific degree, but some routes make the start much easier.</li>
+      <li><strong>Read the three phases.</strong> Phase 1 is the basics you can start even in school. Phase 3 is what people learn on the job.</li>
+      <li><strong>Open the original roadmap</strong> for the full detail. Each role links to its page on Careermaxxing.</li>
+    </ol>
+
+    {
+      families.map((f) => (
+        <section class="rm-family" data-rm-family-section={f.key}>
+          <h2 id={`family-${f.key}`}>{f.title}</h2>
+          {roles
+            .filter((r) => r.family === f.key)
+            .map((r) => (
+              <details class="rm-role" id={r.slug} data-rm-role data-family={r.family}>
+                <summary>
+                  <span class="rm-role-title">{r.title}</span>
+                  <span class="rm-role-what">{r.what}</span>
+                </summary>
+                <div class="rm-role-body">
+                  <dl class="rm-facts">
+                    <div>
+                      <dt>Keep these subjects</dt>
+                      <dd>{r.subjects_note}</dd>
+                    </div>
+                    <div>
+                      <dt>Routes in India</dt>
+                      <dd>{r.routes}</dd>
+                    </div>
+                  </dl>
+                  <ol class="rm-phases">
+                    <li>
+                      <strong>Phase 1, basics:</strong> {r.phase1}
+                    </li>
+                    <li>
+                      <strong>Phase 2, core:</strong> {r.phase2}
+                    </li>
+                    <li>
+                      <strong>Phase 3, on the job:</strong> {r.phase3}
+                    </li>
+                  </ol>
+                  <p class="rm-project">
+                    <strong>Starter project:</strong> {r.project}
+                  </p>
+                  <p class="rm-links">
+                    <a href={r.source} target="_blank" rel="noopener">
+                      Original roadmap on Careermaxxing
+                    </a>
+                    <a href={`#${r.slug}`} class="rm-permalink" data-rm-copy={`#${r.slug}`}>
+                      Copy link to this role
+                    </a>
+                  </p>
+                </div>
+              </details>
+            ))}
+        </section>
+      ))
+    }
+
+    <h2>Practice resources on the same site</h2>
+    <p class="prose">
+      For students heading into software roles, Careermaxxing also offers two free coding practice sets:
+      <a href="https://careermaxxing.kungumavishnu.com/roadmap/dsa-75" target="_blank" rel="noopener">DSA 75</a> (75
+      data structures and algorithms problems) and
+      <a href="https://careermaxxing.kungumavishnu.com/roadmap/dsa-faq-150" target="_blank" rel="noopener">DSA FAQ 150</a>
+      (150 common interview questions). These are best started in the first or second year of college, not in school.
+    </p>
+
+    <h2>Official links for the exams named above</h2>
+    <p class="prose">Always confirm dates, eligibility and fees on the official site for the current year.</p>
+    <ul class="prose">
+      <li>JEE Main: <a href="https://jeemain.nta.nic.in/" target="_blank" rel="noopener">jeemain.nta.nic.in</a>; CUET-UG: <a href="https://cuet.nta.nic.in/" target="_blank" rel="noopener">cuet.nta.nic.in</a> (National Testing Agency)</li>
+      <li>IIT Madras BS in Data Science: <a href="https://onlinedegree.iitm.ac.in/admissions.html" target="_blank" rel="noopener">onlinedegree.iitm.ac.in</a></li>
+      <li>CA Foundation: <a href="https://www.icai.org/" target="_blank" rel="noopener">icai.org</a></li>
+      <li>UCEED: <a href="https://www.uceed.iitb.ac.in/" target="_blank" rel="noopener">uceed.iitb.ac.in</a>; NID DAT: <a href="https://admissions.nid.edu/" target="_blank" rel="noopener">admissions.nid.edu</a></li>
+      <li>IPMAT: <a href="https://www.iimidr.ac.in/" target="_blank" rel="noopener">iimidr.ac.in</a> and IIM Rohtak</li>
+      <li>ISI: <a href="https://www.isical.ac.in/" target="_blank" rel="noopener">isical.ac.in</a>; CMI: <a href="https://www.cmi.ac.in/admissions/" target="_blank" rel="noopener">cmi.ac.in/admissions</a></li>
+      <li>TNEA: <a href="https://www.tneaonline.org/" target="_blank" rel="noopener">tneaonline.org</a></li>
+    </ul>
+
+    <div class="note rm-credit">
+      <strong>Credit.</strong> {roadmaps.credit}
+      <a href={roadmaps.source_url} target="_blank" rel="noopener">careermaxxing.kungumavishnu.com/roadmap</a>
+    </div>
+
+    <p class="counsellor-note">
+      <strong>Talk to your FP counsellor.</strong> They can help you match a role to your subjects and plan the exams.
+      Write to <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a> or meet them at your campus.
+    </p>
+  </div>
+</Base>
+
+<script>
+  import '../scripts/roadmaps';
+</script>
+
+<style>
+  .rm-hero {
+    background: var(--bg-soft);
+    border-bottom: 4px solid var(--cat);
+    padding-block: 1.8rem;
+  }
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin: 0 0 0.3rem;
+    color: var(--cat);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.85rem;
+  }
+  .rm-lead {
+    max-width: 64ch;
+    font-size: 1.08rem;
+  }
+  .rm-meta {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+  }
+  .rm-warning {
+    margin-top: 0;
+  }
+  .rm-filters {
+    margin-bottom: 1rem;
+  }
+  .rm-filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    align-items: flex-end;
+  }
+  .rm-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .rm-field--grow {
+    flex: 1 1 200px;
+  }
+  .rm-field select,
+  .rm-field input {
+    font: inherit;
+    font-weight: 400;
+    min-height: 42px;
+    padding: 0.3rem 0.7rem;
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+    color: var(--text);
+  }
+  .rm-families {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.7rem;
+  }
+  .rm-chip {
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    min-height: 38px;
+    padding: 0.3rem 0.9rem;
+    border: 1.5px solid var(--border);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--text);
+    cursor: pointer;
+  }
+  .rm-chip[aria-pressed='true'] {
+    background: var(--blue);
+    border-color: var(--blue);
+    color: #fff;
+  }
+  .rm-count {
+    margin: 0.6rem 0 0;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+  }
+  .rm-table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .rm-table {
+    min-width: 720px;
+    font-size: 0.95rem;
+  }
+  .rm-table td,
+  .rm-table th {
+    vertical-align: top;
+  }
+  .rm-table tr[hidden] {
+    display: none;
+  }
+  .rm-role-link {
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .rm-role-link:hover {
+    text-decoration: underline;
+  }
+  .rm-family-tag {
+    display: block;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+  }
+  .rm-empty {
+    color: var(--text-muted);
+  }
+  .rm-family h2 {
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid var(--gold);
+  }
+  .rm-role {
+    border: 1px solid var(--border);
+    border-left: 5px solid var(--cat);
+    border-radius: var(--radius-sm);
+    margin-bottom: 0.7rem;
+    background: var(--surface);
+  }
+  .rm-role summary {
+    cursor: pointer;
+    padding: 0.8rem 1rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+  .rm-role summary::-webkit-details-marker {
+    display: none;
+  }
+  .rm-role summary::before {
+    content: '+';
+    float: right;
+    font-weight: 700;
+    color: var(--cat);
+  }
+  .rm-role[open] summary::before {
+    content: '−';
+  }
+  .rm-role-title {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--heading);
+  }
+  .rm-role-what {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+  }
+  .rm-role-body {
+    padding: 0 1rem 1rem;
+  }
+  .rm-facts {
+    margin: 0 0 0.8rem;
+    display: grid;
+    gap: 0.5rem;
+  }
+  .rm-facts div {
+    display: grid;
+    grid-template-columns: 10em 1fr;
+    gap: 0.5rem;
+  }
+  .rm-facts dt {
+    color: var(--text-muted);
+    font-weight: 600;
+  }
+  .rm-facts dd {
+    margin: 0;
+  }
+  .rm-phases {
+    padding-left: 1.2rem;
+    margin: 0 0 0.6rem;
+  }
+  .rm-phases li {
+    margin-bottom: 0.3rem;
+  }
+  .rm-project {
+    margin: 0 0 0.6rem;
+    padding: 0.6rem 0.8rem;
+    background: var(--bg-soft);
+    border-radius: var(--radius-sm);
+  }
+  .rm-links {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.2rem;
+    font-size: 0.92rem;
+  }
+  .rm-credit {
+    margin-top: 2rem;
+  }
+  .counsellor-note {
+    margin-top: 2rem;
+    padding: 1rem 1.2rem;
+    border: 1px dashed var(--blue);
+    border-radius: var(--radius);
+  }
+  @media (max-width: 480px) {
+    .rm-facts div {
+      grid-template-columns: 1fr;
+      gap: 0.1rem;
+    }
+  }
+</style>

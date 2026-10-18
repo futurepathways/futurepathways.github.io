@@ -82,6 +82,7 @@ export interface NavItem {
 // menu does not change shape between phases.
 export const mainNav: NavItem[] = [
   ...categories.map((c) => ({ label: c.shortName, path: c.path })),
+  { label: 'Roadmaps', path: '/roadmaps/' },
   { label: 'Deadlines', path: '/deadlines/' },
   { label: 'For Parents', path: '/parents/' },
   { label: 'Start here', path: '/start/' },

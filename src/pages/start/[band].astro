@@ -3,6 +3,7 @@
 import { load as loadYaml } from 'js-yaml';
 import startRaw from '../../data/start.yml?raw';
 import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
 import PostCard from '../../components/PostCard.astro';
 import PostList from '../../components/PostList.astro';
 import { getVisiblePosts, byNewest } from '../../lib/content';
@@ -47,6 +48,15 @@ const rest = all.filter((p) => !first.includes(p)).sort(byNewest);
   </section>
 
   <div class="container section">
+    {
+      key !== '6-8' && (
+        <a class="tool-callout" href="/roadmaps/">
+          <strong>Choosing subjects?</strong> The Career Roadmaps tool maps 26 roles to the subjects to keep, the
+          degrees and the entrance exams.
+          <Icon name="arrow" size={20} />
+        </a>
+      )
+    }
     {
       first.length > 0 && (
         <section>
@@ -109,5 +119,23 @@ const rest = all.filter((p) => !first.includes(p)).sort(byNewest);
   }
   h2 {
     margin-top: 1.2rem;
+  }
+  .tool-callout {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1.2rem;
+    padding: 0.9rem 1.1rem;
+    border: 1px solid var(--border);
+    border-left: 5px solid var(--gold);
+    border-radius: var(--radius);
+    background: var(--surface);
+    color: var(--text);
+    text-decoration: none;
+    box-shadow: var(--shadow);
+  }
+  .tool-callout :global(.icon) {
+    margin-left: auto;
+    color: var(--link);
   }
 </style>

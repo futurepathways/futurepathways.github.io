@@ -62,6 +62,7 @@ Settled. Claude Code should not ask about these again.
 | 28 | Cover alt text [v1.4] | New `cover_alt` field, required when a cover image is set |
 | 29 | Filter engine [v1.4] | One shared engine: Pagefind for words, JSON index for filters and sort |
 | 30 | Phase 2 sample posts [v1.4] | Four temporary posts for testing; **[v1.5]** deleted once Phase 2 was checked |
+| 42 | Career Roadmaps [18 Oct 2026] | `/roadmaps/` page from `src/data/roadmaps.yml` (edited in Pages CMS); companion Careers post carries tags and key dates; credit to Careermaxxing |
 | 41 | Counsellor posts [14 Oct 2026] | The four counsellor-facing blog posts were removed; the site is for students and parents only |
 | 38 | Key dates [14 Oct 2026] | Any post may carry `key_dates`; the Deadlines page shows all dated items, upcoming then a full Past section; cards badge the next date |
 | 39 | Home counts [14 Oct 2026] | Main-category counts only; university guides have Countries as extra, not Courses |
