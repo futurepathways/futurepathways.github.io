@@ -11,7 +11,7 @@ tags_skill: []
 tags_level: [undergraduate]
 tags_audience: [students, parents]
 countries: [united-states]
-parent_summary: "A student who plays a sport seriously can study in the US on an athletic scholarship, from partial awards of USD 10,000 to 20,000 a year to full rides. The process is driven by coaches, not admissions deadlines, and should start two years before entry. Academics still come first: an SAT of about 1100 and an English test are the floor. Ask the FP counsellor: is my child's level worth a free evaluation, and which subjects must not be dropped?"
+parent_summary: "A student who plays a sport seriously can study in the US on an athletic scholarship, from partial awards of USD 10,000 to 20,000 a year to full rides. The process is driven by coaches, not admissions deadlines, and should start two years before entry. Academics still come first: an SAT of about 1100 and an English test are the floor. A question to ask your child's counsellor: is my child's level worth a free evaluation, and which subjects must not be dropped?"
 official_links: []
 opportunity_type: scholarship
 rolling: true

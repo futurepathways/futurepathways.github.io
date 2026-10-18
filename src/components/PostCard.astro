@@ -74,6 +74,8 @@ const status = post.opportunity ? deadlineStatus(post.opportunity.deadline, post
     <span>{post.gradeBands.map((g) => gradeBandLabel[g]).join(' · ')}</span>
     <span aria-hidden="true">·</span>
     <span>{post.readingMinutes} min read</span>
+    <span aria-hidden="true">·</span>
+    <time datetime={toDateString(post.publishedDate)}>{formatDateString(toDateString(post.publishedDate))}</time>
     <button
       type="button"
       class="save-btn js-only"
@@ -91,110 +93,3 @@ const status = post.opportunity ? deadlineStatus(post.opportunity.deadline, post
   <TagChips tags={post.tags} limit={5} size="small" />
 </li>
 
-<style>
-  .post-card {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    border-top: 4px solid var(--cat);
-    padding-top: 0.9rem;
-  }
-  .post-card[hidden] {
-    display: none;
-  }
-  .post-card-top {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.88rem;
-  }
-  .cat-chip {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.3rem;
-    color: var(--cat);
-    font-weight: 700;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    font-size: 0.8rem;
-  }
-  .cat-chip:hover {
-    text-decoration: underline;
-  }
-  .also-in {
-    color: var(--text-muted);
-    font-size: 0.8rem;
-    background: var(--bg-soft);
-    border: 1px solid var(--border);
-    border-radius: 999px;
-    padding: 0.05em 0.6em;
-  }
-  .post-card-deadline {
-    margin-left: auto;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-  }
-  .post-card-nextdate {
-    font-size: 0.8rem;
-    color: var(--text-muted);
-  }
-  .post-card-title {
-    font-size: 1.2rem;
-    margin: 0;
-  }
-  .post-card-title a {
-    color: var(--heading);
-    text-decoration: none;
-  }
-  .post-card-title a:hover {
-    text-decoration: underline;
-    text-decoration-color: var(--gold);
-  }
-  .post-card-summary {
-    margin: 0;
-    color: var(--text);
-    font-size: 0.97rem;
-  }
-  .post-card-meta {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.45rem;
-    color: var(--text-muted);
-    font-size: 0.88rem;
-  }
-  .save-btn {
-    margin-left: auto;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.25rem;
-    min-height: 36px;
-    padding: 0.2rem 0.6rem;
-    border: 1.5px solid var(--border);
-    border-radius: 999px;
-    background: transparent;
-    color: var(--link);
-    font: inherit;
-    font-size: 0.88rem;
-    font-weight: 600;
-    cursor: pointer;
-  }
-  .save-btn:hover {
-    border-color: var(--blue);
-  }
-  .save-btn :global(.save-icon-filled),
-  .save-btn[aria-pressed='true'] :global(.save-icon-empty) {
-    display: none;
-  }
-  .save-btn[aria-pressed='true'] :global(.save-icon-filled) {
-    display: inline-block;
-  }
-  .save-btn[aria-pressed='true'] {
-    background: var(--tag-bg);
-    border-color: var(--tag-bg);
-    color: var(--tag-text);
-  }
-</style>

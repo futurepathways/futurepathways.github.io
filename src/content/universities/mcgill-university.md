@@ -11,7 +11,7 @@ tags_skill: [languages]
 tags_level: [undergraduate]
 tags_audience: [parents]
 countries: [canada]
-parent_summary: "Canada's top-ranked university, teaching in English in French-speaking Montreal. CBSE students must take an English test, and Quebec needs its own certificate (CAQ) before the study permit. Fees run from about ₹24 lakhs (Science) to ₹53 lakhs (Management). Ask the FP counsellor: when should we start the CAQ and English test?"
+parent_summary: "Canada's top-ranked university, teaching in English in French-speaking Montreal. CBSE students must take an English test, and Quebec needs its own certificate (CAQ) before the study permit. Fees run from about ₹24 lakhs (Science) to ₹53 lakhs (Management). A question to ask your child's counsellor: when should we start the CAQ and English test?"
 official_links:
   - label: "New international undergraduate degree students admitted 2026-27 (McGill Student Accounts)"
     url: "https://www.mcgill.ca/student-accounts/files/student-accounts/new_intl_ugrad_degree_students_admitted_2026-27_0.pdf"
@@ -29,7 +29,7 @@ key_dates:
     label: "Application deadline for international applicants (Fall 2027)"
     note: "Entrance scholarship deadline about a week later"
     url: "https://www.mcgill.ca/undergraduate-admissions/"
-author: "FP (Future Pathway) team"
+author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
 status: published
@@ -50,7 +50,7 @@ McGill Campus: Downtown Montreal, Quebec McGill's virtual campus tour page shows
 
 McGill hosts live virtual campus tours led by a student guide, who talks about campus, student life, academics and Montreal. [Open the official McGill Virtual Campus Tours page](https://future.mcgill.ca/portal/virtual_campus_tours) to see the latest. When we checked in October 2026, the page said live tours were on hold and would resume soon.
 
-**Visit a university in person.** The FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
+**Visit a university in person.** I strongly recommend that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to me at pcmadankumar@gmail.com.
 
 ## McGill Admission Requirements, CBSE/State Boards and Cambridge A Level
 
@@ -95,7 +95,7 @@ McGill's own 2026-27 table for new international undergraduates shows a wide ran
 
 ### One Honest Caution, Medicine
 
-Medicine is one of McGill's best known programmes, and McGill calls its Medicine faculty the first in Canada. Places for international students are very few, and Indian guides report that most successful Indian applicants apply after a Canadian bachelor's degree, not straight from Class 12. We could not confirm McGill's current number of places for international students. If Medicine is your goal, please do not treat direct entry as likely. A bachelor's degree at McGill or another Canadian university is a safer first step, and the FP team can talk it through with you.
+Medicine is one of McGill's best known programmes, and McGill calls its Medicine faculty the first in Canada. Places for international students are very few, and Indian guides report that most successful Indian applicants apply after a Canadian bachelor's degree, not straight from Class 12. We could not confirm McGill's current number of places for international students. If Medicine is your goal, please do not treat direct entry as likely. A bachelor's degree at McGill or another Canadian university is a safer first step, and I can talk it through with you.
 
 ## What parents should know
 
@@ -109,9 +109,9 @@ Medicine is one of McGill's best known programmes, and McGill calls its Medicine
 - PGWP: after a degree you can get up to 3 years of work permission. You need CLB 7 on an accepted English test, so plan the test near the end of the degree.
 - McGill is marks based. A steady record in Class 11 and 12 matters more than a polished essay or a long list of activities.
 
-## Talk to the FP team
+## Talk to me
 
-To book a McGill counselling session for your family, please write to the FP (Future Pathway) team at fperdintl@tipseindia.com. We can cover the CAQ and study permit timeline, English test planning and grade targets for each programme. We can also compare McGill with Toronto and the other options in this series. We are happy to set up a one to one session at a time that suits you.
+To book a McGill counselling session for your family, write to me at pcmadankumar@gmail.com or use my [contact page](https://pcmadankumar.github.io/contact.html). I can cover the CAQ and study permit timeline, English test planning and grade targets for each programme. I can also compare McGill with Toronto and the other options in this series. I am happy to set up a one to one session at a time that suits you.
 
 ## Sources
 

@@ -71,6 +71,8 @@ export interface CardData {
   gradeBands: string[];
   streams: string[];
   tags: string[];
+  tagNames: string[];
+  searchWords: string;
   countries: string[];
   readingMinutes: number;
   publishedDate: string; // YYYY-MM-DD
@@ -223,6 +225,8 @@ export function toCard(p: Post): CardData {
     gradeBands: p.gradeBands,
     streams: p.streams,
     tags: p.tags.map((t) => t.slug),
+    tagNames: p.tags.map((t) => t.name),
+    searchWords: [categoryByKey[p.category].name, ...p.extraCategories.map((c) => categoryByKey[c].name), ...p.tags.flatMap((t) => [t.name, ...t.search])].join(' ').toLowerCase(),
     countries: p.countries,
     readingMinutes: p.readingMinutes,
     publishedDate: toDateString(p.publishedDate),

@@ -1,5 +1,5 @@
 // Writes .pages.yml, the Pages CMS configuration (PRD Section 4, Phase 6).
-// Run `npm run cms` after changing the fields below. Niranjan never needs to run this:
+// Run `npm run cms` after changing the fields below. Editors never need to run this:
 // tags and countries are edited inside Pages CMS as collections, so no regeneration is needed.
 import { writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
@@ -30,7 +30,7 @@ const tagRef = (group, label, description, extra = {}) => ({
   },
 });
 
-// Fields every post has (PRD 7.1), in the order Niranjan should fill them.
+// Fields every post has (PRD 7.1), in the order an editor should fill them.
 const commonFields = (cat) => [
   { name: 'title', label: 'Title', type: 'string', required: true, description: 'The heading of the post. Plain and clear.' },
   {
@@ -107,7 +107,7 @@ const commonFields = (cat) => [
     type: 'text',
     required: true,
     description:
-      '2 to 4 plain sentences for parents: what this is, rough cost, the key date, and one question to ask the FP counsellor.',
+      '2 to 4 plain sentences for parents: what this is, rough cost, the key date, and one question for the family to ask a career counsellor.',
     options: { rows: 4 },
   },
   {
@@ -138,7 +138,7 @@ const commonFields = (cat) => [
     name: 'cover_image',
     label: 'Cover image (optional)',
     type: 'image',
-    description: 'Only free stock photos (Unsplash, Pexels) or TIPS photos with permission. Leave empty to use the category picture.',
+    description: 'Only free stock photos (Unsplash, Pexels) or your own photos. Leave empty to use the category picture.',
     options: { media: 'images', path: 'posts', extensions: ['jpg', 'jpeg', 'png', 'webp'] },
   },
   {

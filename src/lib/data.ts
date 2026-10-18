@@ -1,5 +1,5 @@
 // Loads the fixed lists (PRD 7.3): one YAML file per tag (grouped by folder) and per country.
-// Pages CMS edits these folders as collections, so Niranjan can add a tag or country without code.
+// Pages CMS edits these folders as collections, so a tag or country can be added without code.
 import { load as loadYaml } from 'js-yaml';
 
 export type TagGroupKey = 'subject' | 'exam' | 'skill' | 'level' | 'audience';

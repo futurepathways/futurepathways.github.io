@@ -26,8 +26,8 @@ const newest = [...all].sort(byNewest).slice(0, 6);
     <div class="container">
       <h1>Find your path, one step at a time.</h1>
       <p class="hero-lead">
-        Clear, friendly guides on careers, courses, countries and opportunities, written by the {site.teamName} for
-        every TIPS student and parent.
+        Clear, friendly guides on careers, courses, countries and opportunities, written by career counsellor
+        {site.ownerName} for students and parents in India.
       </p>
       <form class="hero-search" action="/search/" method="get" role="search" data-suggest-wrap>
         <label for="home-search" class="visually-hidden">Search the site</label>
@@ -196,6 +196,11 @@ const newest = [...all].sort(byNewest).slice(0, 6);
     font: inherit;
     color: #1b2a3a;
     background: #fff;
+  }
+  @media (max-width: 799px) {
+    .hero-search {
+      display: none;
+    }
   }
   .hero-search input:focus {
     outline: none;

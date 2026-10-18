@@ -1,6 +1,6 @@
 # Future Pathways
 
-A free, read-only website where TIPS students and their parents find clear guides on careers, courses, countries and opportunities. Run by the TIPS FP (Future Pathway) team.
+A free, read-only website where students and parents in India find clear guides on careers, courses, countries, universities and opportunities. Built and run by Madan Kumar PC, career counsellor.
 
 Live address (once deployed): https://futurepathways.github.io
 
@@ -24,7 +24,7 @@ All commands work in Windows PowerShell, from this folder.
 | `src/config/site.ts` | Site name, team name, contact email, menu |
 | `astro.config.mjs` | Live URL and base path only |
 | `public/images/` | Logo, category default images, link preview images |
-| `docs/` | Word templates and the publishing guide for the FP team |
+| `docs/` | Word templates for guest writers and the publishing guide |
 | `.pages.yml` | Pages CMS editor configuration |
 | `.github/workflows/deploy.yml` | Build and deploy on every change, plus daily at 05:00 IST |
 
@@ -34,6 +34,6 @@ Drop a file at `public/images/logo.svg` (or `logo.png`). The header switches fro
 
 ## Who does what
 
-- Counsellors write posts in Word using the templates in `docs/templates/`.
-- Niranjan enters them through Pages CMS. See `docs/PUBLISHING_GUIDE.md`.
+- Posts are written in Pages CMS or in Markdown. Guest writers can draft in Word using the templates in `docs/templates/`.
+- See `docs/PUBLISHING_GUIDE.md` for the steps.
 - Nobody needs to touch this code to publish a post.

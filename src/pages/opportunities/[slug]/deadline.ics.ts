@@ -36,7 +36,7 @@ export const GET: APIRoute = async ({ props, site }) => {
   const lines = [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
-    'PRODID:-//Future Pathways//TIPS FP team//EN',
+    'PRODID:-//Future Pathways//Madan Kumar PC//EN',
     'CALSCALE:GREGORIAN',
     'METHOD:PUBLISH',
     'BEGIN:VEVENT',

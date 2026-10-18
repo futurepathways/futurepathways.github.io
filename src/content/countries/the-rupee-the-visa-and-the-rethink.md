@@ -11,7 +11,7 @@ tags_skill: []
 tags_level: [undergraduate, postgraduate]
 tags_audience: [parents, students]
 countries: [united-kingdom, united-states, canada, australia, germany, ireland, italy]
-parent_summary: "Studying abroad has become heavier, costlier and slower than five years ago, not impossible. The rupee has fallen 35 to 47 percent against the main study currencies since 2019, and the UK, US, Canada and Australia have tightened visas. Germany, Ireland and Italy are rising for value. Ask the FP counsellor: have we costed the whole degree in rupees at today's rate?"
+parent_summary: "Studying abroad has become heavier, costlier and slower than five years ago, not impossible. The rupee has fallen 35 to 47 percent against the main study currencies since 2019, and the UK, US, Canada and Australia have tightened visas. Germany, Ireland and Italy are rising for value. A question to ask your child's counsellor: have we costed the whole degree in rupees at today's rate?"
 official_links: []
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"

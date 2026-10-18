@@ -11,7 +11,7 @@ tags_skill: []
 tags_level: [undergraduate]
 tags_audience: [parents]
 countries: [united-kingdom]
-parent_summary: "London's leading science, engineering and medicine university. CBSE students need 90% and most courses need an ESAT or TMUA test booked months early. Fees are about ₹54 to 58 lakhs a year plus ₹21 lakhs living, more for Medicine. Ask the FP counsellor: has my child booked the right test?"
+parent_summary: "London's leading science, engineering and medicine university. CBSE students need 90% and most courses need an ESAT or TMUA test booked months early. Fees are about ₹54 to 58 lakhs a year plus ₹21 lakhs living, more for Medicine. A question to ask your child's counsellor: has my child booked the right test?"
 official_links:
   - label: "Imperial College London, About"
     url: "https://www.imperial.ac.uk/about/"
@@ -34,7 +34,7 @@ key_dates:
     label: "UCAS deadline for all other courses"
     note: "6 pm UK time, 11:30 pm in India"
     url: "https://www.imperial.ac.uk/study/apply/undergraduate/process/deadlines/"
-author: "FP (Future Pathway) team"
+author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
 status: published
@@ -53,18 +53,18 @@ ICL Campus Visit the YouTube tour to see the South Kensington campus and life in
 
 On-demand access to the Imperial College London virtual campus tour is available on YouTube. [Watch the ICL Campus Tour today](https://www.youtube.com/watch?v=aLzRv9F13KI)! This video was made by an independent creator, not by the university.
 
-**Visit a university in person.** The FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
+**Visit a university in person.** I strongly recommend that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to me at pcmadankumar@gmail.com.
 
 ## ICL Admission Requirements — CBSE and Cambridge A Level
 
-The table below sets out what Imperial College London asks for from students in each pathway. Rules differ by course, so please read the course page as well. For subject advice and help with admissions tests, write to the FP (Future Pathway) team for a one to one session.
+The table below sets out what Imperial College London asks for from students in each pathway. Rules differ by course, so please read the course page as well. For subject advice and help with admissions tests, write to me for a one to one session.
 
 | Requirement | CBSE Grade 12 | Cambridge A Level |
 |---|---|---|
-| Qualification | Indian Class 12 (CBSE or CISCE) is on Imperial’s accepted list | Imperial accepts A level grades and equivalents. Its page does not name Cambridge International A Level, so the FP team will confirm this with Imperial |
+| Qualification | Indian Class 12 (CBSE or CISCE) is on Imperial’s accepted list | Imperial accepts A level grades and equivalents. Its page does not name Cambridge International A Level, so I will confirm this with Imperial |
 | Minimum to Apply | 90% overall across five subjects and 90% in the relevant subjects. Some departments ask for more | Standard offers run from AAA to A*A*A, depending on the course |
 | Competitive Benchmark | Many courses need marks well above 90% in Maths, Physics or Chemistry | A*A*A is the offer for Computing, Mathematics, Physics and Electrical Engineering. Check each course page |
-| Predicted or Class 11 marks | Imperial’s table lists Class 12 only. It does not say how predicted marks or Class 11 results are used, so the FP team will confirm this with Imperial | Most applicants apply on predicted grades. Final grades are needed only if you hold an offer |
+| Predicted or Class 11 marks | Imperial’s table lists Class 12 only. It does not say how predicted marks or Class 11 results are used, so I will confirm this with Imperial | Most applicants apply on predicted grades. Final grades are needed only if you hold an offer |
 | English Proficiency | Class 12 English at 70% meets both levels. Or IELTS 6.5 (6.0 in each part) for the standard level, 7.0 (6.5 in each part) for the higher level | Same tests. TOEFL iBT 92 or 100, Duolingo 115 or 125. Check which level your course needs |
 | Admissions Tests | ESAT for Aeronautics, Chemical, Civil, Electrical and Mechanical Engineering, Design Engineering, Life Sciences and Physics. TMUA for Computing, Mathematics and Economics, Finance and Data Science. UCAT for Medicine | Same for all applicants |
 | Personal Statement | Written in UCAS as answers to guided questions. One statement is used for all your choices | Same |
@@ -106,7 +106,7 @@ The main award for 2027 entry is the Imperial Inspires Scholarship. It gives at 
 
 - CRITICAL: Imperial’s Class 12 bar for CBSE is now 90% overall across five subjects and 90% in the relevant subjects. Older guides say 85%. Some departments ask for more, so read the course page before you plan.
 - CRITICAL: Tests come first. Booking for the October ESAT and TMUA closed on 28 September 2026. Imperial lists a January sitting from 4 to 8 January 2027, with booking from 26 October to 21 December 2026 (6 pm UK time). If your course needs a test and you skip it, Imperial cannot consider your application. Each test costs about GBP 133 (~INR 17,000) outside the UK and Ireland.
-- Medicine: the deadline is 15 October 2026, 6 pm UK time. The UCAT testing period on Imperial’s page ended on 24 September 2026. If your child has not sat it, tell the FP team at once and we will ask Imperial. Medicine is the most expensive course. The FP team will ask Imperial whether CBSE applicants face any extra Medicine rule.
+- Medicine: the deadline is 15 October 2026, 6 pm UK time. The UCAT testing period on Imperial’s page ended on 24 September 2026. If your child has not sat it, tell me at once and we will ask Imperial. Medicine is the most expensive course. I will ask Imperial whether CBSE applicants face any extra Medicine rule.
 - Tuition for new overseas students in 2026-27 is GBP 45,500 a year for Engineering, Physics, Chemistry and Life Sciences, and GBP 42,700 for Mathematics and the Business School. That is a range of GBP 42,700 to 45,500 (~INR 54–58 lakhs at ~GBP 127/INR, October 2026). Medicine is GBP 58,600 (~INR 74 lakhs). The 2027 entry fee is not yet published, and fees usually rise a little each year.
 - Imperial’s living cost estimate for London is about GBP 16,400 to 17,000 for nine months (~INR 21–22 lakhs), plus flights and insurance. Fees and living together come to roughly GBP 59,000 to 63,000 a year (~INR 75–80 lakhs), or about GBP 76,000 (~INR 97 lakhs) for Medicine. This is our own sum from Imperial’s figures. Medicine is a six year course and most Engineering courses run four years, so the total is higher than for a three year degree.
 - Money for the visa. Until 29 November 2026 the London savings rule is GBP 1,529 a month for up to 9 months. From 30 November 2026 it is reported to rise to GBP 1,570 a month, which is GBP 14,130 (~INR 18 lakhs). The money must sit in the account for 28 days in a row. This is only proof for the visa, not the full cost.
@@ -114,9 +114,9 @@ The main award for 2027 entry is the Imperial Inspires Scholarship. It gives at 
 - Results timing. CBSE and Cambridge A Level (March series) results both come in May. UCAS applications are due before either, so Imperial works from predicted marks. Keep final marksheets ready for the offer stage. The Cambridge November series results are due on 7 January 2027, just before the main deadline.
 - Do not count on an offer for good marks alone. We could not confirm a current offer rate for overseas applicants, so please treat every Imperial course as very competitive and apply with a spread of other universities.
 
-## Talk to the FP team
+## Talk to me
 
-To book a counselling session on Imperial College London for your family, please write to the FP (Future Pathway) team at fperdintl@tipseindia.com. We can cover admissions tests, UCAS choices, ATAS and scholarships in one to one sessions at a time that suits you.
+To book a counselling session on Imperial College London for your family, write to me at pcmadankumar@gmail.com or use my [contact page](https://pcmadankumar.github.io/contact.html). I can cover admissions tests, UCAS choices, ATAS and scholarships in one to one sessions at a time that suits you.
 
 ## Sources
 

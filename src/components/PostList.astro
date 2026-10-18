@@ -61,10 +61,25 @@ const tagsPresent: Record<TagGroupKey, { slug: string; name: string }[]> = {
   for (const g of tagGroupOrder) tagsPresent[g].sort((a, b) => a.name.localeCompare(b.name));
 }
 const listId = `list-${Math.random().toString(36).slice(2, 8)}`;
+// Long lists: only the first 12 cards go in the HTML; the rest are built in the browser from /index.json (decision 43).
+const LAZY_AFTER = 12;
+const lazy = posts.length > 24;
+const shownPosts = lazy ? posts.slice(0, LAZY_AFTER) : posts;
+const restSlugs = lazy ? posts.slice(LAZY_AFTER).map((p) => p.slug) : [];
 const modeLabel: Record<string, string> = { online: 'Online', 'in-person': 'In person', hybrid: 'Hybrid' };
 ---
 
-<div class="listing" data-listing data-page-size={pageSize} data-sort-default={sortDefault} id={listId}>
+<div
+  class="listing"
+  data-listing
+  data-page-size={pageSize}
+  data-sort-default={sortDefault}
+  data-total={posts.length}
+  data-context={context}
+  data-heading-level={headingLevel}
+  data-rest-slugs={restSlugs.join(' ')}
+  id={listId}
+>
   <form class="filters js-only" data-filters aria-label="Filter and sort posts">
     <div class="filters-row">
       {
@@ -212,8 +227,18 @@ const modeLabel: Record<string, string> = { online: 'Online', 'in-person': 'In p
   </form>
 
   <ul class="post-grid grid grid--2" data-list>
-    {posts.map((p) => <PostCard post={p} context={context} headingLevel={headingLevel} />)}
+    {shownPosts.map((p) => <PostCard post={p} context={context} headingLevel={headingLevel} />)}
   </ul>
+  {
+    lazy && (
+      <p class="show-more">
+        <button type="button" class="btn btn--outline js-only" data-show-more>
+          Show all {posts.length} posts
+        </button>
+        <noscript>Showing the first {LAZY_AFTER} of {posts.length} posts. Turn on JavaScript, or use the category and tag pages, to see the rest.</noscript>
+      </p>
+    )
+  }
   <p class="empty" data-empty hidden>{emptyMessage}</p>
   {posts.length === 0 && <p class="empty">Nothing here yet. Check back soon.</p>}
   <nav class="pagination js-only" data-pagination aria-label="More pages"></nav>
@@ -339,6 +364,10 @@ const modeLabel: Record<string, string> = { online: 'Online', 'in-person': 'In p
   .empty {
     color: var(--text-muted);
     padding: 1rem 0;
+  }
+  .show-more {
+    text-align: center;
+    margin-top: 1rem;
   }
   .pagination {
     display: flex;

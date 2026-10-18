@@ -11,7 +11,7 @@ tags_skill: []
 tags_level: [undergraduate]
 tags_audience: [parents]
 countries: [australia]
-parent_summary: "Australia's top university with a February start, so a child finishing Class 12 in 2027 starts in 2028. Medicine, Law and Dentistry come only after a three-year first degree. Visa fees have risen to about ₹4.8 lakhs combined; tuition is roughly ₹37 to 41 lakhs a year. Ask the FP counsellor: does the longer Melbourne Model suit our plan?"
+parent_summary: "Australia's top university with a February start, so a child finishing Class 12 in 2027 starts in 2028. Medicine, Law and Dentistry come only after a three-year first degree. Visa fees have risen to about ₹4.8 lakhs combined; tuition is roughly ₹37 to 41 lakhs a year. A question to ask your child's counsellor: does the longer Melbourne Model suit our plan?"
 official_links:
   - label: "University of Melbourne Facts and Figures (Official)"
     url: "https://about.unimelb.edu.au/facts-and-figures"
@@ -30,7 +30,7 @@ key_dates:
     label: "Applications close for the July 2027 mid-year start"
     note: "Some courses only"
     url: "https://study.unimelb.edu.au/how-to-apply/undergraduate-study/international-applications/applications"
-author: "FP (Future Pathway) team"
+author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
 status: published
@@ -49,7 +49,7 @@ Melbourne Campus, Parkville, Victoria Walk the historic Parkville campus, close 
 
 A tour of the campus is available on YouTube. [Watch the University of Melbourne Campus Tour](https://www.youtube.com/watch?v=DHgvF1dpk_g). This video was made by an independent creator, not by the university. It shows the research buildings, the lecture spaces and student life. The university also offers a self-guided tour and a live walking tour with student ambassadors. Check the campus tour page on unimelb.edu.au for the current options.
 
-**Visit a university in person.** The FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
+**Visit a university in person.** I strongly recommend that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to me at pcmadankumar@gmail.com.
 
 ## Melbourne Admission Requirements for CBSE/State Boards and Cambridge A Level
 
@@ -65,7 +65,7 @@ A tour of the campus is available on YouTube. [Watch the University of Melbourne
 | English Proficiency | Melbourne asks for proof of English, either from earlier study in English or from an approved test. Many undergraduate courses ask for about IELTS 6.5 overall, but some courses ask for more. A Class 12 English mark does not always replace the test, so check before you assume. | A Level English Language, English Literature or English Language and Literature at grade C or higher meets the English rule. Check the course page for any extra condition. |
 | Standardised Tests | No SAT or ACT is asked for most courses, and no Indian entrance exam such as JEE is needed. Some courses ask for extra selection tasks, such as a portfolio, so read the course page. | Same rule for A Level students. |
 | Application Portal | Apply online through the University of Melbourne’s international applicant page. There is no shared system like UCAS or the Common App. Upload transcripts, predicted or final results and English test results if needed. | Same portal and same steps. |
-| Intake and Deadlines | The main intake starts in February or March. A smaller mid year intake starts in July for some courses. For 2027, the closing dates were 30 November 2026 (start of year) and 31 May 2027 (mid year). Melbourne accepts applications while results are still pending and can give a conditional offer. The offer becomes unconditional only after final results are sent. CBSE results come out about May. For a student finishing Class 12 in 2027, this means results are in hand well before a likely late 2027 closing date for February 2028, a gap of about nine months. Mid year entry in July is hard, since results and visa steps must all fit in a few weeks. | Same intake and dates. TIPS Cambridge students sit the March series, so A Level results come in May, like CBSE. A student finishing in 2027 can apply with predicted grades for a conditional offer, and the start is February 2028, a gap of about nine months. A July 2027 start is as hard as for CBSE, since results and visa steps must all fit in a few weeks. |
+| Intake and Deadlines | The main intake starts in February or March. A smaller mid year intake starts in July for some courses. For 2027, the closing dates were 30 November 2026 (start of year) and 31 May 2027 (mid year). Melbourne accepts applications while results are still pending and can give a conditional offer. The offer becomes unconditional only after final results are sent. CBSE results come out about May. For a student finishing Class 12 in 2027, this means results are in hand well before a likely late 2027 closing date for February 2028, a gap of about nine months. Mid year entry in July is hard, since results and visa steps must all fit in a few weeks. | Same intake and dates. Cambridge students in India usually sit the March series, so A Level results come in May, like CBSE. A student finishing in 2027 can apply with predicted grades for a conditional offer, and the start is February 2028, a gap of about nine months. A July 2027 start is as hard as for CBSE, since results and visa steps must all fit in a few weeks. |
 | Student Visa (Subclass 500) | The visa application charge is AUD 2,500 (~INR 1.7 lakhs at ~AUD 67/INR, October 2026) from 1 July 2026, up from AUD 2,000. Since 23 March 2024 every applicant must also pass the Genuine Student requirement, a set of questions about your child’s study plan and circumstances. The visa rules also ask for proof of living costs, about AUD 29,710 for twelve months (~INR 20 lakhs), on top of fees and travel. The visa needs a Confirmation of Enrolment (CoE) from Melbourne. | Same visa rules and costs for every international student, whichever board they studied. |
 | Post-Study Work Visa (Temporary Graduate, Subclass 485) | The fee rose to AUD 4,600 (~INR 3.1 lakhs) on 1 March 2026. The applicant must be 35 or younger. A bachelor’s graduate can usually stay up to 2 years. Indian passport holders may have different stay lengths under the India Australia trade agreement, so ask FP to check before you plan. This visa is not permanent residency. It is a work period, and later steps need separate visas. | Same rules and fee for every international graduate. |
 
@@ -107,9 +107,9 @@ About 46 percent of Melbourne’s students are international, from over 150 nati
 - Check English rules early. A Class 12 English mark may not replace an English test.
 - Post-study work: the Temporary Graduate visa needs the applicant to be 35 or younger, and a bachelor’s graduate usually gets up to 2 years. It is a work visa, not permanent residency.
 
-## Talk to the FP team
+## Talk to me
 
-To book a Melbourne counselling session for your family, please write to the FP (Future Pathway) team at fperdintl@tipseindia.com. We will cover the Melbourne Model, course choice, visa costs, dates by board and scholarships. We will also compare Melbourne with the UK and US options in this series.
+To book a Melbourne counselling session for your family, write to me at pcmadankumar@gmail.com or use my [contact page](https://pcmadankumar.github.io/contact.html). I will cover the Melbourne Model, course choice, visa costs, dates by board and scholarships. I will also compare Melbourne with the UK and US options in this series.
 
 ## Sources
 

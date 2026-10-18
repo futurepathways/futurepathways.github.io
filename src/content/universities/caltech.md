@@ -11,7 +11,7 @@ tags_skill: []
 tags_level: [undergraduate]
 tags_audience: [parents]
 countries: [united-states]
-parent_summary: "A tiny, intense science university near Los Angeles with under 1,000 undergraduates. Aid is generous but need-aware, and a family must ask for aid at the first application or never. Full cost is about ₹95 lakhs a year. Ask the FP counsellor: is this the right fit for my child, honestly?"
+parent_summary: "A tiny, intense science university near Los Angeles with under 1,000 undergraduates. Aid is generous but need-aware, and a family must ask for aid at the first application or never. Full cost is about ₹95 lakhs a year. A question to ask your child's counsellor: is this the right fit for my child, honestly?"
 official_links:
   - label: "Caltech at a Glance (Official)"
     url: "https://www.caltech.edu/about/at-a-glance"
@@ -33,7 +33,7 @@ key_dates:
     label: "Regular Decision deadline"
     note: "Other materials by 10 January; decision in mid March; reply by 1 May"
     url: "https://www.admissions.caltech.edu/apply/first-year-applicants/deadlines"
-author: "FP (Future Pathway) team"
+author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
 status: published
@@ -52,7 +52,7 @@ Caltech Campus, Pasadena, California A 124-acre campus near Los Angeles. See it 
 
 Caltech has its own YouTube playlist, “Caltech Student Campus Tour”. [Watch the Caltech Student Campus Tour today](https://www.youtube.com/playlist?list=PL8_xPU5epJdeldrDuOifUTLDKIT56J2rH)! The admissions website also has a visit page with online chats with current students: admissions.caltech.edu/visit.
 
-**Visit a university in person.** The FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
+**Visit a university in person.** I strongly recommend that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to me at pcmadankumar@gmail.com.
 
 ## Is Caltech Right for Your Child? Read This First
 
@@ -64,7 +64,7 @@ Caltech is a very small and very demanding place. Its core course asks every stu
 |---|---|---|
 | Boards Accepted | CBSE, ICSE and State Board students apply in the same way as everyone else. We found no list of accepted boards and no fixed percentage on Caltech’s pages. | A Level students apply in the same way. We found no list of accepted boards or fixed grades on Caltech’s pages. Ask your school counsellor to send a full set of results. |
 | Academic Bar | Caltech sets no official minimum. In practice, strong marks in Maths, Physics and Chemistry matter most, because the course is built on them. | Strong A Level Maths, Physics and Chemistry match what Caltech asks for. Caltech names no grade, so please do not rely on old advice about a fixed A Level grade. |
-| Required Coursework | The catalog lists four years of maths, including one year of calculus, plus one year of physics and one year of chemistry. If your school cannot offer a course, the FP team will ask Caltech how to cover the gap. The catalog names a score of 5 on an AP exam as one way. | The same list applies. A Level Maths, Physics and Chemistry usually cover it, but the FP team will ask Caltech to confirm that your subject combination counts. |
+| Required Coursework | The catalog lists four years of maths, including one year of calculus, plus one year of physics and one year of chemistry. If your school cannot offer a course, I will ask Caltech how to cover the gap. The catalog names a score of 5 on an AP exam as one way. | The same list applies. A Level Maths, Physics and Chemistry usually cover it, but I will ask Caltech to confirm that your subject combination counts. |
 | Standardised Tests | SAT or ACT is required. Caltech says there is no preferred exam and no cut-off score. Even so, plan for a very strong score, especially in Maths. Caltech’s requirement pages do not list JEE or NEET, so do not count on them. | The same rule applies. A Level results do not replace the SAT or ACT. |
 | English Proficiency | Required unless your first language is English, or English is the main language of teaching at your school. If you need a test, the minimum is IELTS 7 overall and 7 in each part, TOEFL (new format) 5 overall and 5 in each part, or Duolingo 130 overall and in each part. | The same rule applies. A Level schools that teach in English usually qualify for the exemption, but please confirm with Caltech before you skip the test. |
 | Essays | The main Common App essay plus Caltech’s own short essays. Write about real curiosity in science, maths or engineering, in your child’s own voice. | The same essays apply to every applicant. |
@@ -110,16 +110,16 @@ Caltech does not publish a list of accepted Indian boards that we could find. CB
 - Older guides say that applying Restrictive Early Action (1 November) cancels aid for international students. Caltech’s current pages say REA and RD applicants can both ask for aid. Please check the rule again on Caltech’s international page before you choose your round
 - Total cost for 2026-27 on campus is USD 98,622 a year (~INR 95 lakhs at ~USD 96/INR, October 2026). The average grant for the fall 2026 class was just under USD 69,000. No merit scholarships exist. Aid is need based only
 - Dates for 2027 entry: REA is due 1 November 2026 and RD is due 4 January 2027. Test scores are due 30 November (REA) and 31 December 2026 (RD). Book the SAT or ACT early
-- Calendar: CBSE and Cambridge A Level (March series) results both come in May, after the March decision. November 2026 A Level results come on 7 January 2027, after the RD deadline. The FP team will ask Caltech how it wants final results sent
+- Calendar: CBSE and Cambridge A Level (March series) results both come in May, after the March decision. November 2026 A Level results come on 7 January 2027, after the RD deadline. I will ask Caltech how it wants final results sent
 - Caltech asks for the SAT or ACT and sets no cut-off score. Your child still needs a very strong score, mainly in Maths. Caltech’s requirement pages do not list JEE or NEET
 - It is a long shot. For the class of 2029, Caltech had 11,285 applicants and a first-year class of 248. Apply to other universities as well
 - Fit matters. The core is heavy in maths, physics and chemistry, and the campus is small. This is right for a child who loves those subjects, not for a broad all rounder
 - US visa rules are changing. Social media accounts of the past five years must be listed and set to public. Since 15 September 2026, students are admitted for a fixed period of up to 4 years and must apply to extend. India is not on the US travel ban list, as far as we could find
 - After the degree, OPT lets a student work in the US for 12 months, and STEM OPT adds 24 months. The US government says it is reviewing OPT, but we found no published rule to end it. The USD 100,000 fee on new H-1B work visas is in court and currently blocked. Check before you rely on either
 
-## Talk to the FP team
+## Talk to me
 
-To book a Caltech counselling session for your family, please write to the FP (Future Pathway) team at fperdintl@tipseindia.com. We can talk through the aid decision, SAT preparation, essay writing and an honest conversation about fit. We are happy to set up a one to one session at a time that suits you.
+To book a Caltech counselling session for your family, write to me at pcmadankumar@gmail.com or use my [contact page](https://pcmadankumar.github.io/contact.html). I can talk through the aid decision, SAT preparation, essay writing and an honest conversation about fit. I am happy to set up a one to one session at a time that suits you.
 
 ## Sources
 

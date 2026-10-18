@@ -1,5 +1,5 @@
 ---
-// Hidden /review page (PRD 13, 5.4): posts due for checking, oldest first, for Madan and Niranjan.
+// Hidden /review page (PRD 13, 5.4): posts due for checking, oldest first, for the site owner.
 // noindex, and listed under Disallow in robots.txt. Includes drafts so they can be tracked too.
 import Base from '../layouts/Base.astro';
 import { getAllPosts, formatDate, monthsSince, istToday, toDateString } from '../lib/content';
@@ -19,7 +19,7 @@ const drafts = all.filter((p) => p.status === 'draft');
   <div class="container section">
     <h1>Review list</h1>
     <p class="prose">
-      For the FP team. Built on {formatDate(toDateString(today))} (the site rebuilds every day at 05:00 IST). A post is
+      For the site owner. Built on {formatDate(toDateString(today))} (the site rebuilds every day at 05:00 IST). A post is
       due when <code>last_checked</code> is 6 months or older.
     </p>
 

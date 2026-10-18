@@ -11,7 +11,7 @@ tags_skill: [problem-solving, portfolio]
 tags_level: [school]
 tags_audience: [students]
 countries: []
-parent_summary: "Large companies use psychometric tests of reasoning, judgement and work style in their internship and apprenticeship programmes, some open to Grade 12 leavers. They reward self-knowledge and practice, which Unifrog's quizzes and guides support. No cost. Ask the FP counsellor: which Unifrog guides should my child complete before applying for internships?"
+parent_summary: "Large companies use psychometric tests of reasoning, judgement and work style in their internship and apprenticeship programmes, some open to Grade 12 leavers. They reward self-knowledge and practice, which Unifrog's quizzes and guides support. No cost. A question to ask your child's counsellor: which Unifrog guides should my child complete before applying for internships?"
 official_links: []
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"

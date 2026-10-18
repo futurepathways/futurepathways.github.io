@@ -11,7 +11,7 @@ tags_skill: []
 tags_level: [undergraduate]
 tags_audience: [students, parents]
 countries: [india]
-parent_summary: "A new page on this site maps 26 modern careers to the school subjects a child must keep, the usual Indian degrees and the entrance exams. The most important message: dropping Mathematics after Grade 10 closes most routes into engineering, data, AI, finance and consulting. Free to use; the exam dates below are the ones confirmed so far for 2027. Ask the FP counsellor: which three roles should we look at before Subject Choices Day?"
+parent_summary: "A new page on this site maps 26 modern careers to the school subjects a child must keep, the usual Indian degrees and the entrance exams. The most important message: dropping Mathematics after Grade 10 closes most routes into engineering, data, AI, finance and consulting. Free to use; the exam dates below are the ones confirmed so far for 2027. A question to ask your child's counsellor: which three roles should we look at before Subject Choices Day?"
 official_links:
   - label: "Career Roadmaps tool on this site"
     url: "https://futurepathways.github.io/roadmaps/"
@@ -84,16 +84,16 @@ The roles cover seven families: software engineering, data and AI, cloud and sec
 - Pick three roles that sound interesting, even vaguely. Open each one on the Roadmaps page.
 - Write down the subjects each role wants. If a subject appears in all three, that is your answer.
 - Look at the entrance exams. Some, like UCEED for design, accept any stream. Others, like JEE, need Physics, Chemistry and Maths.
-- Bring the list to your FP counsellor. They can tell you which routes fit your marks and your family's plans.
+- Bring the list to a career counsellor. They can tell you which routes fit your marks and your family's plans.
 
 ## Entrance exam dates confirmed so far for 2027
 
-The Key dates box above lists the dates that are confirmed on official sites as of 18 October 2026: UCEED, NID DAT, CA Foundation, CMI, and the NTA calendar for JEE Main Session 1. Not yet announced: JEE Main registration, CUET-UG, IPMAT, BITSAT, ISI and TNEA 2027. The FP team will add them to this post and to the [Upcoming Deadlines](/deadlines/) page as they come out.
+The Key dates box above lists the dates that are confirmed on official sites as of 18 October 2026: UCEED, NID DAT, CA Foundation, CMI, and the NTA calendar for JEE Main Session 1. Not yet announced: JEE Main registration, CUET-UG, IPMAT, BITSAT, ISI and TNEA 2027. I will add them to this post and to the [Upcoming Deadlines](/deadlines/) page as they come out.
 
 ## A note for Cambridge students
 
-Most Indian entrance exams and universities accept A Level, but some ask for a UGC equivalence certificate (formerly issued by the AIU) or a minimum mark in specific subjects. Check this early, not in Grade 12. The FP team arranges the certificate for students who need it.
+Most Indian entrance exams and universities accept A Level, but some ask for a UGC equivalence certificate (formerly issued by the AIU) or a minimum mark in specific subjects. Check this early, not in Grade 12. I arrange the certificate for students who need it.
 
 ## Credit
 
-The roadmap structure and skill lists are drawn from Careermaxxing by Kungumavishnu ([careermaxxing.kungumavishnu.com/roadmap](https://careermaxxing.kungumavishnu.com/roadmap)). The summaries, the India mapping and the subject advice are by the TIPS FP (Future Pathway) team. Every role on the page links back to its original roadmap, which goes much deeper.
+The roadmap structure and skill lists are drawn from Careermaxxing by Kungumavishnu ([careermaxxing.kungumavishnu.com/roadmap](https://careermaxxing.kungumavishnu.com/roadmap)). The summaries, the India mapping and the subject advice are mine. Every role on the page links back to its original roadmap, which goes much deeper.

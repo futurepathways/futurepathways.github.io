@@ -11,7 +11,7 @@ tags_skill: []
 tags_level: [undergraduate]
 tags_audience: [parents]
 countries: [united-states]
-parent_summary: "An Ivy League university strong in law, history and the arts, need-blind with full need met. SAT or ACT is now compulsory, a change many guides miss. Full cost is about ₹94 lakhs before aid; deadlines are 1 November and 2 January. Ask the FP counsellor: what would our family actually pay?"
+parent_summary: "An Ivy League university strong in law, history and the arts, need-blind with full need met. SAT or ACT is now compulsory, a change many guides miss. Full cost is about ₹94 lakhs before aid; deadlines are 1 November and 2 January. A question to ask your child's counsellor: what would our family actually pay?"
 official_links:
   - label: "Yale Affordability Details (Official)"
     url: "https://admissions.yale.edu/affordability-details"
@@ -28,7 +28,7 @@ key_dates:
   - date: 2027-01-02
     label: "Regular Decision deadline"
     url: "https://admissions.yale.edu/apply"
-author: "FP (Future Pathway) team"
+author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
 status: published
@@ -46,7 +46,7 @@ Yale Campus: New Haven, Connecticut Watch Yale’s own admissions video on YouTu
 
 You can see Yale on video at any time. [Watch “That’s Why I Chose Yale” here](https://www.youtube.com/watch?v=64ujJviaPzQ). This is Yale’s own admissions video on YouTube. Yale’s admissions office also lists student led campus tours and virtual tour options on admissions.yale.edu.
 
-**Visit a university in person.** The FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
+**Visit a university in person.** I strongly recommend that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to me at pcmadankumar@gmail.com.
 
 ## Yale Admission Requirements — CBSE/State Boards and Cambridge A Level
 
@@ -103,12 +103,12 @@ About 24% of Yale’s students are international, so a student from India will n
 - Competition is very high. For the Class of 2030, Yale admitted 2,328 students from 54,919 applicants, about 4.2%. International students have no special route, and a strong application still may not succeed
 - The alumni interview is by invitation only. You cannot request one, and not being invited does not harm an application
 - Student visa: F-1 applicants must list social media accounts from the past five years and set them to public before the interview. Visa and SEVIS fees apply, and a new visa integrity fee may be added. Check the State Department page for the current amounts. India is not on the US travel ban list
-- New rule from 15 September 2026: the US has ended “duration of status” for F-1 students. A student is now admitted for a fixed period tied to the programme, with 4 years as the most. If the degree takes longer, the student must apply to extend. The time allowed to leave after the course is reported to fall from 60 to 30 days. The FP team will ask Yale’s international office how this affects your child
+- New rule from 15 September 2026: the US has ended “duration of status” for F-1 students. A student is now admitted for a fixed period tied to the programme, with 4 years as the most. If the degree takes longer, the student must apply to extend. The time allowed to leave after the course is reported to fall from 60 to 30 days. I will ask Yale’s international office how this affects your child
 - Work after graduation: the USD 100,000 H-1B employer fee is currently blocked by US courts, but the rules are changing fast. Do not plan a child’s career around any one US visa rule. Check again before the application and before the visa interview
 
-## Talk to the FP team
+## Talk to me
 
-To book a Yale counselling session for your family, please write to the FP (Future Pathway) team at fperdintl@tipseindia.com. We can cover SAT or ACT planning, SCEA or RD, the aid forms and essays. We are happy to set up a one to one session at a time that suits you.
+To book a Yale counselling session for your family, write to me at pcmadankumar@gmail.com or use my [contact page](https://pcmadankumar.github.io/contact.html). I can cover SAT or ACT planning, SCEA or RD, the aid forms and essays. I am happy to set up a one to one session at a time that suits you.
 
 ## Sources
 

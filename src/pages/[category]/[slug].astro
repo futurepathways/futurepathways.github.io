@@ -34,7 +34,8 @@ const extras = post.extraCategories.map((k) => categoryByKey[k]);
 const opp = post.opportunity;
 const outOfDate = monthsSince(post.lastChecked) >= 6;
 const previewImage = post.coverImage ? post.coverImage.src : `/images/preview-${post.category}.png`;
-const { Content } = await render(post.entry);
+const { Content, headings } = await render(post.entry);
+const toc = headings.filter((h) => h.depth === 2).slice(0, 14);
 const modeLabel: Record<string, string> = { online: 'Online', 'in-person': 'In person', hybrid: 'Online and in person' };
 ---
 
@@ -81,6 +82,12 @@ const modeLabel: Record<string, string> = { online: 'Online', 'in-person': 'In p
           <div>
             <dt>Reading time</dt>
             <dd>{post.readingMinutes} min</dd>
+          </div>
+          <div>
+            <dt>Published</dt>
+            <dd>
+              <time datetime={post.publishedDate.toISOString().slice(0, 10)}>{formatDate(post.publishedDate)}</time>
+            </dd>
           </div>
           {
             post.author && (
@@ -224,6 +231,26 @@ const modeLabel: Record<string, string> = { online: 'Online', 'in-person': 'In p
         </aside>
 
         {
+          toc.length >= 4 && (
+            <nav class="toc" aria-label="On this page">
+              <p class="toc-title">On this page</p>
+              <ul>
+                {toc.map((h) => (
+                  <li>
+                    <a href={`#${h.slug}`}>{h.text}</a>
+                  </li>
+                ))}
+                {post.officialLinks.length > 0 && (
+                  <li>
+                    <a href="#official-links">Official links</a>
+                  </li>
+                )}
+              </ul>
+            </nav>
+          )
+        }
+
+        {
           outOfDate && (
             <p class="note">
               <strong>May be out of date.</strong> This post was last checked on {formatDate(post.lastChecked)}. Please
@@ -247,13 +274,13 @@ const modeLabel: Record<string, string> = { online: 'Online', 'in-person': 'In p
                 <strong>Last checked</strong> {formatDate(post.lastChecked)}.
               </>
             )
-          }
+          }{' '}
           Fees, dates and rules change. Always check the official link before applying.
         </p>
 
         {
           post.officialLinks.length > 0 && (
-            <section class="official-links" data-pagefind-ignore>
+            <section class="official-links" id="official-links" data-pagefind-ignore>
               <h2>Official links</h2>
               <ul>
                 {post.officialLinks.map((l) => (
@@ -305,8 +332,9 @@ const modeLabel: Record<string, string> = { online: 'Online', 'in-person': 'In p
         }
 
         <p class="counsellor-note" data-pagefind-ignore>
-          <strong>Talk to your FP counsellor.</strong> They can help you work out what this means for you. Write to
-          <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a> or meet them at your campus.
+          <strong>Talk to a career counsellor.</strong> A good counsellor can help you work out what this means for you.
+          You can also write to me at <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a> or use my
+          <a href={site.contactUrl}>contact page</a>.
         </p>
 
         {post.imageCredit && <p class="image-credit" data-pagefind-ignore>{post.imageCredit}</p>}
@@ -317,6 +345,13 @@ const modeLabel: Record<string, string> = { online: 'Online', 'in-person': 'In p
 
 <script>
   import '../../scripts/deadlines';
+  // Every external link in the post body opens in a new tab.
+  document.querySelectorAll<HTMLAnchorElement>('.post-body a[href^="http"]').forEach((a) => {
+    if (a.hostname !== location.hostname) {
+      a.target = '_blank';
+      a.rel = 'noopener';
+    }
+  });
   const btn = document.querySelector<HTMLButtonElement>('[data-copy-link]');
   btn?.addEventListener('click', async () => {
     try {
@@ -534,6 +569,38 @@ const modeLabel: Record<string, string> = { online: 'Online', 'in-person': 'In p
   }
   .post-body :global(li) {
     margin-bottom: 0.3em;
+  }
+
+  .toc {
+    margin-bottom: 1.4rem;
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    font-size: 0.95rem;
+  }
+  .toc-title {
+    margin: 0 0 0.3rem;
+    font-weight: 700;
+    color: var(--heading);
+    font-family: var(--font-heading);
+  }
+  .toc ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem 1rem;
+  }
+  .toc a {
+    text-decoration: none;
+  }
+  .toc a:hover {
+    text-decoration: underline;
+  }
+  .post-body :global(h2) {
+    scroll-margin-top: 1rem;
   }
 
   .checked-line {

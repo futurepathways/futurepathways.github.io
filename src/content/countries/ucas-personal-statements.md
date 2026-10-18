@@ -11,7 +11,7 @@ tags_skill: [writing, portfolio]
 tags_level: [undergraduate]
 tags_audience: [students]
 countries: [united-kingdom]
-parent_summary: "For UK applications, the personal statement is the part of the application a student can still improve after grades are set, and research shows it changes outcomes for equally qualified applicants. The piece explains what admissions tutors look for and the mistakes to avoid. Ask the FP counsellor: when should my child start drafting, and who will give honest feedback?"
+parent_summary: "For UK applications, the personal statement is the part of the application a student can still improve after grades are set, and research shows it changes outcomes for equally qualified applicants. The piece explains what admissions tutors look for and the mistakes to avoid. A question to ask your child's counsellor: when should my child start drafting, and who will give honest feedback?"
 official_links: []
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"

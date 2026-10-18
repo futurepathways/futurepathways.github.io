@@ -11,7 +11,7 @@ tags_skill: [critical-thinking, data-literacy]
 tags_level: [school]
 tags_audience: [students]
 countries: []
-parent_summary: "A short story about the NFT bubble, written to teach one habit: ask whether a trend solves a real problem, who actually uses it, and whether the price is rising because of value or belief. Free to read and good to discuss at home. Ask the FP counsellor: how do we help my child judge online claims and 'guaranteed' opportunities?"
+parent_summary: "A short story about the NFT bubble, written to teach one habit: ask whether a trend solves a real problem, who actually uses it, and whether the price is rising because of value or belief. Free to read and good to discuss at home. A question to ask your child's counsellor: how do we help my child judge online claims and 'guaranteed' opportunities?"
 official_links: []
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"

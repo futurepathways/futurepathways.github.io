@@ -11,7 +11,7 @@ tags_skill: [languages]
 tags_level: [undergraduate, diploma-vocational]
 tags_audience: [parents, students]
 countries: [germany]
-parent_summary: "Most German public universities charge no tuition, even to international students, but living costs are about ₹13 lakhs a year and must be shown in a blocked account. There are four routes after Class 12, two of which pay a training allowance. New 2026 rule: at least 70 percent in Class 12. Ask the FP counsellor: should my child start German now, and is the APS exemption for Cambridge students confirmed?"
+parent_summary: "Most German public universities charge no tuition, even to international students, but living costs are about ₹13 lakhs a year and must be shown in a blocked account. There are four routes after Class 12, two of which pay a training allowance. New 2026 rule: at least 70 percent in Class 12. A question to ask your child's counsellor: should my child start German now, and is the APS exemption for Cambridge students confirmed?"
 official_links: []
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
@@ -23,7 +23,7 @@ What every counsellor & parent should know — the 2026 requirements, real costs
 
 > **Session Reference.**
 > Session: “Germany: Your Gateway to Global Education” (Future Pathways)
-> Speaker: Dr. Ranjithkumar Rajendran, Liebig Institute  ·  Held at TIPS, 24 June 2026
+> Speaker: Dr. Ranjithkumar Rajendran, Liebig Institute  ·  Held in Tamil Nadu, 24 June 2026
 > I’ve distilled the session into a counselling-ready reference and fact-checked every 2026 figure so families can be advised with clear eyes. The tuition story is genuinely strong — the planning is where a counsellor adds the most value.
 
 Fewer than 5% of Indian students currently go abroad for their undergraduate degree — and that number is rising fast. Germany has quietly become one of the most affordable serious UG destinations in the world: most public universities charge no tuition, even for international students. The differentiator for a family is precision — understanding the four pathways, taking a head-start on German, and budgeting honestly for living costs gives a child a genuine advantage. This is the requirements map behind that advantage.

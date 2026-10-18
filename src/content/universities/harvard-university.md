@@ -11,7 +11,7 @@ tags_skill: []
 tags_level: [undergraduate]
 tags_audience: [parents]
 countries: [united-states]
-parent_summary: "The oldest US university, need-blind with full need met, so families under about ₹96 lakhs income may pay nothing. SAT or ACT is required and applications close 1 November or 1 January. Watch the court case about international students. Ask the FP counsellor: should we apply early or regular?"
+parent_summary: "The oldest US university, need-blind with full need met, so families under about ₹96 lakhs income may pay nothing. SAT or ACT is required and applications close 1 November or 1 January. Watch the court case about international students. A question to ask your child's counsellor: should we apply early or regular?"
 official_links:
   - label: "Harvard College, Application Requirements (Official)"
     url: "https://college.harvard.edu/admissions/apply/application-requirements"
@@ -33,7 +33,7 @@ key_dates:
   - date: 2027-02-01
     label: "Financial aid forms due for Regular Decision"
     url: "https://college.harvard.edu/financial-aid/apply-financial-aid/prospective-students"
-author: "FP (Future Pathway) team"
+author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
 status: published
@@ -52,11 +52,11 @@ Harvard Yard & Campus Visit the YouTube tour to explore Harvard Yard, Widener Li
 
 On-demand access to the Harvard campus tour is available on YouTube. [Watch the Harvard Campus Tour today](https://www.youtube.com/watch?v=GyZd6tABvto)!
 
-**Visit a university in person.** The FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
+**Visit a university in person.** I strongly recommend that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to me at pcmadankumar@gmail.com.
 
 ## Harvard Admission Requirements, CBSE and Cambridge A Level
 
-Harvard looks at the whole student. Marks matter, but they are only the starting point. Essays, teacher letters, activities and a student's own story count too. No two successful applications look the same. Please reach out to the FP (Future Pathway) team for a one on one counselling session.
+Harvard looks at the whole student. Marks matter, but they are only the starting point. Essays, teacher letters, activities and a student's own story count too. No two successful applications look the same. Please reach out to me for a one on one counselling session.
 
 | Requirement | CBSE Grade 12 | Cambridge A Level |
 |---|---|---|
@@ -67,7 +67,7 @@ Harvard looks at the whole student. Marks matter, but they are only the starting
 | English Proficiency | NOT required. Harvard does not ask for TOEFL, IELTS or Duolingo. You may send a score if you wish, but it will not replace the SAT or ACT | Same. Students taught in English do not need an English test |
 | Essays | Five short answers of about 150 words each, in the Harvard section of the Common Application. They ask about your background, a time you disagreed with someone, your activities, how you will use your Harvard education, and what your roommates should know about you | Same |
 | Teacher Recommendations | Two teacher letters from two different academic subjects. The school also sends a school report with a counsellor letter and the transcript. Harvard cannot take a transcript as an email attachment | Same |
-| Midyear Report | The school sends first term Class 12 grades after the first term. Restrictive Early Action students may send them in February. Harvard gives its Regular Decision answer at the end of March, and you reply by early May. CBSE Class 12 results come around May, after that answer. So Harvard decides on school marks, pre board marks and predicted results. Harvard will want your final results once they are out. Please ask the FP team to check the date it gives CBSE students | The school sends the midyear report in the same way. Harvard says it expects final A Level results by mid August. TIPS students sit the March series, with results in May (19 May in 2026), so the timing is comfortable |
+| Midyear Report | The school sends first term Class 12 grades after the first term. Restrictive Early Action students may send them in February. Harvard gives its Regular Decision answer at the end of March, and you reply by early May. CBSE Class 12 results come around May, after that answer. So Harvard decides on school marks, pre board marks and predicted results. Harvard will want your final results once they are out. Please ask me to check the date it gives CBSE students | The school sends the midyear report in the same way. Harvard says it expects final A Level results by mid August. students in India sit the March series, with results in May (19 May in 2026), so the timing is comfortable |
 | Alumni Interview | Some applicants may be offered an interview with a local Harvard graduate. We could not confirm this on Harvard's current pages, so please treat it as a possible extra and not a requirement | Same |
 | JEE / Olympiads | JEE is not asked for. Olympiad and competition results can go in the activities section as proof of strong interest | Not applicable |
 | Application Portal | Common Application (commonapp.org). The Harvard page tells all first year applicants, Indian and US, to use it. Harvard does not run its own portal | Same |
@@ -92,7 +92,7 @@ Harvard was founded in 1636. It is the oldest university in the United States. I
 
 ### Liberal Arts Education, With Time to Explore
 
-Harvard College teaches the liberal arts. Your child can try courses across many fields before choosing a main subject. Harvard calls the main subject a concentration. It offers more than 2,900 courses across 50 concentrations. This suits a student who is strong in several subjects, or who is curious and has not yet settled on one. It can feel less direct than a course such as Engineering or Medicine at a UK university. Please ask the FP team when a student must choose a concentration, because we could not confirm the time on Harvard's pages.
+Harvard College teaches the liberal arts. Your child can try courses across many fields before choosing a main subject. Harvard calls the main subject a concentration. It offers more than 2,900 courses across 50 concentrations. This suits a student who is strong in several subjects, or who is curious and has not yet settled on one. It can feel less direct than a course such as Engineering or Medicine at a UK university. Please ask me when a student must choose a concentration, because we could not confirm the time on Harvard's pages.
 
 ### Need Blind, and Harvard Meets 100 Percent of Need
 
@@ -100,7 +100,7 @@ Harvard is one of six US universities that are need blind for international stud
 
 ### Harvard and Indian Families
 
-Harvard says about 16 percent of the Class of 2029 are international students. Cambridge, Massachusetts is also home to MIT, so the area has a very large student community. We could not confirm a current number of Indian students at Harvard, so please ask the FP team or check Harvard's own pages.
+Harvard says about 16 percent of the Class of 2029 are international students. Cambridge, Massachusetts is also home to MIT, so the area has a very large student community. We could not confirm a current number of Indian students at Harvard, so please ask me or check Harvard's own pages.
 
 ## What parents should know
 
@@ -113,9 +113,9 @@ Harvard says about 16 percent of the Class of 2029 are international students. C
 - US visa rules have changed. Since June 2025, F-1 visa applicants must list their social media accounts of the past five years and set them to public. India is not on the US travel ban list. Appointment waits change by month and by city, so check the US State Department page and apply as soon as the I-20 arrives. Budget about USD 185 for the visa fee and USD 350 for the SEVIS fee. A further USD 250 "visa integrity fee" exists in US law. We could not confirm whether Indian consulates charge it yet.
 - Stay length and work after study. From 15 September 2026 the US ends "duration of status" for F-1 students. A student is now admitted for the length of the programme, up to a maximum of 4 years, and must apply to extend if more time is needed. A four year Harvard degree fits inside that limit. OPT (work for 12 months after study, and 24 months more for STEM subjects) still exists. The US government says it is reviewing it, and we found no published rule to end it. Harvard has also said it approves CPT, which is work during study, only when an internship is a degree requirement. Harvard College students are therefore generally not eligible. The USD 100,000 fee on new H-1B work visas has been challenged in court and is blocked for now. Rules here are moving fast, so please check again before your child applies.
 
-## Talk to the FP team
+## Talk to me
 
-To book a Harvard counselling session for your family, please write to the FP (Future Pathway) team at fperdintl@tipseindia.com. We cover SAT preparation, essay help, the Restrictive Early Action or Regular Decision choice, financial aid planning and the application itself. We are happy to set up a one on one session at a time that suits you.
+To book a Harvard counselling session for your family, write to me at pcmadankumar@gmail.com or use my [contact page](https://pcmadankumar.github.io/contact.html). I cover SAT preparation, essay help, the Restrictive Early Action or Regular Decision choice, financial aid planning and the application itself. I am happy to set up a one on one session at a time that suits you.
 
 ## Sources
 

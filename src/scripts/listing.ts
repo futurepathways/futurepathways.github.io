@@ -1,6 +1,8 @@
 // Filters, sorts and paginates post cards in the browser (PRD 8, decision 15).
 // Filter choices live in the page address (?grade=9-10&tags=neet&page=2).
 import { refreshDeadlines } from './deadlines';
+import { loadIndex, renderCard } from './cards';
+import { refreshSaveButtons } from './bookmarks';
 
 const GROUPS = ['cat', 'grade', 'stream', 'country', 'tags', 'type', 'mode', 'cost', 'status'] as const;
 type Group = (typeof GROUPS)[number];
@@ -40,7 +42,31 @@ function initListing(root: HTMLElement) {
   const count = root.querySelector<HTMLElement>('[data-count]');
   const pagination = root.querySelector<HTMLElement>('[data-pagination]');
   if (!form || !list) return;
-  const cards = Array.from(list.querySelectorAll<HTMLElement>('[data-card]'));
+  let cards = Array.from(list.querySelectorAll<HTMLElement>('[data-card]'));
+  const total = Number(root.dataset.total || cards.length);
+  const restSlugs = (root.dataset.restSlugs || '').split(' ').filter(Boolean);
+  let allLoaded = restSlugs.length === 0;
+  const showMore = root.querySelector<HTMLElement>('[data-show-more]');
+
+  /** Build the cards that were left out of the HTML, once, from the JSON index. */
+  async function ensureAll() {
+    if (allLoaded) return;
+    allLoaded = true;
+    const index = await loadIndex();
+    const ctx = root.dataset.context || '';
+    const level = (root.dataset.headingLevel as 'h2' | 'h3') || 'h3';
+    for (const slug of restSlugs) {
+      const data = index.get(slug);
+      if (!data) continue;
+      const el = renderCard(data, ctx, level);
+      el.hidden = true;
+      list!.appendChild(el);
+      cards.push(el);
+    }
+    refreshDeadlines(list!);
+    refreshSaveButtons(list!);
+    showMore?.closest('.show-more')?.remove();
+  }
   const pageSize = Number(root.dataset.pageSize || 12);
   const sortDefault = root.dataset.sortDefault || 'newest';
   let page = 1;
@@ -93,7 +119,7 @@ function initListing(root: HTMLElement) {
       return (b.dataset.date || '').localeCompare(a.dataset.date || '');
     });
 
-    const pages = Math.max(1, Math.ceil(visible.length / pageSize));
+    const pages = allLoaded ? Math.max(1, Math.ceil(visible.length / pageSize)) : 1;
     if (page > pages) page = pages;
     const start = (page - 1) * pageSize;
     const shown = new Set(visible.slice(start, start + pageSize));
@@ -104,10 +130,11 @@ function initListing(root: HTMLElement) {
     if (empty) empty.hidden = visible.length > 0;
     if (count) {
       const anyFilter = GROUPS.some((g) => wanted[g].length);
+      const all = allLoaded ? cards.length : total;
       count.textContent =
         visible.length === cards.length && !anyFilter
-          ? `${cards.length} post${cards.length === 1 ? '' : 's'}`
-          : `${visible.length} of ${cards.length} post${cards.length === 1 ? '' : 's'} match`;
+          ? `${all} post${all === 1 ? '' : 's'}`
+          : `${visible.length} of ${all} post${all === 1 ? '' : 's'} match`;
     }
     renderPagination(pages);
 
@@ -137,7 +164,8 @@ function initListing(root: HTMLElement) {
       if (opts.aria) b.setAttribute('aria-label', opts.aria);
       if (opts.current) b.setAttribute('aria-current', 'page');
       b.disabled = Boolean(opts.disabled);
-      b.addEventListener('click', () => {
+      b.addEventListener('click', async () => {
+        await ensureAll();
         page = target;
         apply();
         root.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -159,8 +187,20 @@ function initListing(root: HTMLElement) {
     mk('Next ›', page + 1, { disabled: page === pages, aria: 'Next page' });
   }
 
-  form.addEventListener('change', () => {
+  form.querySelectorAll<HTMLDetailsElement>('details.filter').forEach((d) => {
+    const sum = d.querySelector('summary');
+    sum?.setAttribute('role', 'button');
+    sum?.setAttribute('aria-expanded', String(d.open));
+    d.addEventListener('toggle', () => sum?.setAttribute('aria-expanded', String(d.open)));
+  });
+
+  form.addEventListener('change', async () => {
+    await ensureAll();
     page = 1;
+    apply();
+  });
+  showMore?.addEventListener('click', async () => {
+    await ensureAll();
     apply();
   });
   form.addEventListener('submit', (e) => e.preventDefault());
@@ -178,12 +218,19 @@ function initListing(root: HTMLElement) {
   });
 
   (root as any).__listing = {
-    setMatches(ranks: Map<string, number> | null) {
+    async setMatches(ranks: Map<string, number> | null) {
+      await ensureAll();
       matches = ranks;
       page = 1;
       apply(false);
     },
   };
 
-  apply(false);
+  // A shared link with filters, a sort or a later page needs every card before the first draw.
+  const needsAll = GROUPS.some((g) => params.getAll(g).length) || page > 1 || (sortSel && sortSel.value !== sortDefault);
+  if (needsAll && !allLoaded) {
+    ensureAll().then(() => apply(false));
+  } else {
+    apply(false);
+  }
 }

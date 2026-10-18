@@ -11,7 +11,7 @@ tags_skill: [study-habits, focus, leadership]
 tags_level: [school]
 tags_audience: [students, parents]
 countries: []
-parent_summary: "A plain guide to the mindset behind good results: a table of unhelpful beliefs and their accurate replacements, five things that drive success, and five habits that set students apart. Nothing to buy. It is written for the student but worth reading together. Ask the FP counsellor: which one belief in the left column is holding my child back?"
+parent_summary: "A plain guide to the mindset behind good results: a table of unhelpful beliefs and their accurate replacements, five things that drive success, and five habits that set students apart. Nothing to buy. It is written for the student but worth reading together. A question to ask your child's counsellor: which one belief in the left column is holding my child back?"
 official_links: []
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"

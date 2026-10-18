@@ -2,10 +2,13 @@
 
 export const site = {
   name: 'Future Pathways',
-  tagline: 'Careers, courses, countries and opportunities, explained simply for TIPS students and parents.',
-  teamName: 'FP (Future Pathway) team',
-  contactEmail: 'fperdintl@tipseindia.com',
-  schoolName: 'The Indian Public School',
+  tagline: 'Careers, courses, countries and opportunities, explained simply for students and parents in India.',
+  ownerName: 'Madan Kumar PC',
+  ownerTitle: 'career counsellor',
+  ownerCredentials: 'CAP Accredited Counsellor and International Certified Career Coach (ICCC)',
+  ownerSite: 'https://pcmadankumar.github.io',
+  contactEmail: 'pcmadankumar@gmail.com',
+  contactUrl: 'https://pcmadankumar.github.io/contact.html',
   builtBy: 'Madan Kumar PC',
   builtByUrl: 'https://pcmadankumar.github.io/future-pathways.html',
   // GoatCounter is off until Madan decides (PRD Section 16, item 3).

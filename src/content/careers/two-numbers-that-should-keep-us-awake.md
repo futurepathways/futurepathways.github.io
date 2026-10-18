@@ -11,7 +11,7 @@ tags_skill: [critical-thinking]
 tags_level: [school]
 tags_audience: [students, parents]
 countries: [india]
-parent_summary: "A reflection on two numbers: 69 percent of promoted Class 5 children cannot do simple division, and 93 percent of teenagers know only about seven careers. It lists real, paid, reachable careers most families have never heard of. No cost, just a conversation at home. Ask the FP counsellor: which three careers should my child learn about this year?"
+parent_summary: "A reflection on two numbers: 69 percent of promoted Class 5 children cannot do simple division, and 93 percent of teenagers know only about seven careers. It lists real, paid, reachable careers most families have never heard of. No cost, just a conversation at home. A question to ask your child's counsellor: which three careers should my child learn about this year?"
 official_links: []
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"

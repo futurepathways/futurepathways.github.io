@@ -11,7 +11,7 @@ tags_skill: []
 tags_level: [undergraduate]
 tags_audience: [parents]
 countries: [united-kingdom]
-parent_summary: "A top-10 London university that accepts the Tamil Nadu State Board directly and closes in January. Several popular courses now need a test, and Medicine closes in October with only 24 overseas places. Fees are about ₹42 to 62 lakhs plus London living. Ask the FP counsellor: does my child's course need a test?"
+parent_summary: "A top-10 London university that accepts the Tamil Nadu State Board directly and closes in January. Several popular courses now need a test, and Medicine closes in October with only 24 overseas places. Fees are about ₹42 to 62 lakhs plus London living. A question to ask your child's counsellor: does my child's course need a test?"
 official_links:
   - label: "UCL India Entry Requirements (Official)"
     url: "https://www.ucl.ac.uk/prospective-students/international/india"
@@ -37,7 +37,7 @@ key_dates:
     label: "UCAS deadline for most courses"
     note: "6 pm UK time, 11:30 pm in India"
     url: "https://www.ucl.ac.uk/study/prospective-students/undergraduate/courses/computer-science-and-mathematics-meng"
-author: "FP (Future Pathway) team"
+author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
 status: published
@@ -57,7 +57,7 @@ UCL Portico, Bloomsbury, Central London See the UCL Portico and the Bloomsbury c
 
 You can watch a UCL campus tour on YouTube. [Watch the UCL Bloomsbury Campus Tour today](https://www.youtube.com/watch?v=aqD2tnnLrVY)! This video was made by an independent creator, not by the university. UCL also runs open events and tours. Please look on the UCL website, ucl.ac.uk, for current dates.
 
-**Visit a university in person.** The FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
+**Visit a university in person.** I strongly recommend that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to me at pcmadankumar@gmail.com.
 
 ## UCL Admission Requirements for CBSE, State Boards and Cambridge A Level
 
@@ -100,12 +100,12 @@ UCL offers well over 100 undergraduate courses, from Engineering and Computer Sc
 
 ### A Long Link With India, and the Tamil Nadu Board Is Accepted
 
-UCL was founded in 1826 as London's first university and opened its doors to students of any faith. Gandhi and Tagore are among the Indian names on UCL's India page. Today UCL has more than 1,000 Indian students. For TIPS families in Tamil Nadu, the most useful fact is simple. UCL says it accepts the Tamil Nadu State Board directly, with the same marks it asks of CBSE. A student does not need to switch to CBSE to apply.
+UCL was founded in 1826 as London's first university and opened its doors to students of any faith. Gandhi and Tagore are among the Indian names on UCL's India page. Today UCL has more than 1,000 Indian students. For families in Tamil Nadu, the most useful fact is simple. UCL says it accepts the Tamil Nadu State Board directly, with the same marks it asks of CBSE. A student does not need to switch to CBSE to apply.
 
 ## What parents should know
 
-- CRITICAL, tests: Computer Science and Mechanical Engineering need TARA. Electronic and Electrical Engineering needs ESAT. Economics needs TMUA. Law needs LNAT by 31 December 2026, as UCL states. Medicine needs UCAT. The October test booking closed on 28 September 2026. The January test days are 4 to 8 January 2027, and UCL's page for its ESAT course gives 21 December 2026 as the booking date. Each of the first three tests costs about GBP 133 outside the UK (~INR 17,000). Please speak to the FP team now if your child is applying to any of these courses.
-- CRITICAL, Medicine: the deadline is 15 October 2026 at 6 pm UK time, which is 10:30 pm in India. UCL has only 24 places for overseas fee paying students. The UCAT must be taken in the year of application, and interviews are online. UCL's 2027 entry page for Medicine lists A Levels, IB and a few other qualifications. It does not list Indian boards. The FP team will ask UCL whether CBSE is accepted before you apply.
+- CRITICAL, tests: Computer Science and Mechanical Engineering need TARA. Electronic and Electrical Engineering needs ESAT. Economics needs TMUA. Law needs LNAT by 31 December 2026, as UCL states. Medicine needs UCAT. The October test booking closed on 28 September 2026. The January test days are 4 to 8 January 2027, and UCL's page for its ESAT course gives 21 December 2026 as the booking date. Each of the first three tests costs about GBP 133 outside the UK (~INR 17,000). Please speak to me now if your child is applying to any of these courses.
+- CRITICAL, Medicine: the deadline is 15 October 2026 at 6 pm UK time, which is 10:30 pm in India. UCL has only 24 places for overseas fee paying students. The UCAT must be taken in the year of application, and interviews are online. UCL's 2027 entry page for Medicine lists A Levels, IB and a few other qualifications. It does not list Indian boards. I will ask UCL whether CBSE is accepted before you apply.
 - CRITICAL, main deadline: 13 January 2027 at 6 pm UK time, which is 11:30 pm in India. Earlier UCL pages showed 14 January for the 2026 cycle, so please use the new date. Your school must send the reference and predicted grades before then, so ask your teachers early.
 - Marks for CBSE and ISC: for an ABB offer UCL asks for 90, 85, 85, 85 and 85 in five subjects. For A*, UCL expects 95. Courses such as Computer Science and Medicine ask for the top level in their key subjects. A score of 85 in CBSE English Core or ISC English also meets UCL's English rule.
 - Tamil Nadu, Karnataka, Maharashtra and West Bengal State Boards are accepted. Other State Boards are not on UCL's list. Please confirm your board with UCL before you apply.
@@ -115,9 +115,9 @@ UCL was founded in 1826 as London's first university and opened its doors to stu
 - Some integrated Master's courses in science and engineering may need an ATAS certificate, a UK security check. UCL says it can take a long time, so ask early. Students can work up to 20 hours a week in term time and full time in holidays.
 - UCL Global Undergraduate Scholarship: up to 33 awards for 2026/27 entry, with three full tuition awards for students from India. The last deadline was 27 April 2026. UCL has not posted 2027 entry dates, so check in early 2027. UCL generally treats a family income of GBP 42,875 or less (~INR 54 lakhs) as a guide to low income.
 
-## Talk to the FP team
+## Talk to me
 
-To set up a UCL counselling session for your family, please write to the FP (Future Pathway) team at fperdintl@tipseindia.com. We can help with test choice and dates, course selection, the Tamil Nadu State Board question, the Medicine route and scholarships. We are happy to arrange a one to one session at a time that suits you.
+To set up a UCL counselling session for your family, write to me at pcmadankumar@gmail.com or use my [contact page](https://pcmadankumar.github.io/contact.html). I can help with test choice and dates, course selection, the Tamil Nadu State Board question, the Medicine route and scholarships. I am happy to arrange a one to one session at a time that suits you.
 
 ## Sources
 

@@ -11,7 +11,7 @@ tags_skill: []
 tags_level: [undergraduate]
 tags_audience: [parents]
 countries: [singapore]
-parent_summary: "Singapore's top university, teaching in English, accepting CBSE and Cambridge A Level. The lower fee (about ₹16 lakhs a year) comes with a 3-year promise to work in Singapore; without it, about ₹30 lakhs. Students still sitting exams cannot apply for Medicine, Law or Dentistry. Ask the FP counsellor: does the work bond suit our family's plans?"
+parent_summary: "Singapore's top university, teaching in English, accepting CBSE and Cambridge A Level. The lower fee (about ₹16 lakhs a year) comes with a 3-year promise to work in Singapore; without it, about ₹30 lakhs. Students still sitting exams cannot apply for Medicine, Law or Dentistry. A question to ask your child's counsellor: does the work bond suit our family's plans?"
 official_links:
   - label: "NUS Important Dates, AY2027/28"
     url: "https://nus.edu.sg/oam/apply-to-nus/application"
@@ -30,7 +30,7 @@ key_dates:
     label: "Application deadline for 2027 entry"
     note: "Offers for most applicants by the third week of May 2027"
     url: "https://nus.edu.sg/oam/apply-to-nus/application"
-author: "FP (Future Pathway) team"
+author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
 status: published
@@ -50,11 +50,11 @@ NUS Campus, Kent Ridge, Singapore Watch the YouTube tour to see the campus, stud
 
 On-demand access to the NUS virtual campus tour is available on YouTube. [Watch the NUS Campus Tour today](https://www.youtube.com/watch?v=DYhF88rJjlw)! This video was made by an independent creator, not by the university.
 
-**Visit a university in person.** The FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
+**Visit a university in person.** I strongly recommend that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to me at pcmadankumar@gmail.com.
 
 ## NUS Admission Requirements for CBSE and Cambridge A Level
 
-The table below sums up what NUS states on its own pages. Please read the rows on Application Dates, Tests for SAT, ACT and AP and Courses Closed While Exams Are Pending first. NUS wrote most of these pages for the 2026 entry, and it has not yet updated every one for 2027 entry. Please ask the FP team to check the latest wording with you before you plan.
+The table below sums up what NUS states on its own pages. Please read the rows on Application Dates, Tests for SAT, ACT and AP and Courses Closed While Exams Are Pending first. NUS wrote most of these pages for the 2026 entry, and it has not yet updated every one for 2027 entry. Please ask me to check the latest wording with you before you plan.
 
 | Requirement | CBSE Grade 12 | Cambridge A Level |
 |---|---|---|
@@ -95,7 +95,7 @@ International students can apply for the MOE Tuition Grant. It cuts the tuition 
 
 ## What parents should know
 
-- CRITICAL, exams and eligibility: NUS says students who are still finishing their exams when they apply cannot apply for Dentistry, Law, Medicine (and Nursing, for CBSE students). Almost every CBSE or Cambridge student in Grade 12 is in this position in February. NUS also asks Cambridge students with pending exams for an SAT, ACT with Writing or AP score. Please speak to the FP team in Grade 11 if your child is thinking of Medicine, Law or Dentistry, and book the SAT or ACT early. Some of this wording is still from the 2026 entry page.
+- CRITICAL, exams and eligibility: NUS says students who are still finishing their exams when they apply cannot apply for Dentistry, Law, Medicine (and Nursing, for CBSE students). Almost every CBSE or Cambridge student in Grade 12 is in this position in February. NUS also asks Cambridge students with pending exams for an SAT, ACT with Writing or AP score. Please speak to me in Grade 11 if your child is thinking of Medicine, Law or Dentistry, and book the SAT or ACT early. Some of this wording is still from the 2026 entry page.
 - CRITICAL, the 3 year work promise: the 2026-27 yearly fee with the MOE Tuition Grant is SGD 21,400 for Computing, Humanities and Sciences (~INR 16 lakhs at ~SGD 75/INR, October 2026), and SGD 22,200 for Business (~INR 17 lakhs). Without the grant it is SGD 39,700 for Computing and Engineering (~INR 30 lakhs), SGD 36,650 for Humanities and Sciences (~INR 27 lakhs) and SGD 33,400 for Business (~INR 25 lakhs). These are yearly fees and include GST. The grant is a bond, not a gift. The student signs it in September or February, and a student who misses the signing pays the higher fee. We did not confirm the grant fee for Engineering, so please ask us.
 - Yearly cost with the grant: about SGD 31,000 to 38,500 (~INR 23–29 lakhs). This adds the grant fee to two NUS figures. One is a living estimate of SGD 6,000 a year for food, travel and books. The other is on-campus housing of SGD 4,000 to 10,290. Without the grant it is about SGD 43,000 to 56,000 (~INR 32–42 lakhs). Flights, insurance and small student fees are extra. NUS calls its living estimate a "reasonably comfortable lifestyle", and it excludes the long break.
 - Housing: NUS says international first year undergraduates are prioritised for campus housing, in the first year only. That is not a written promise of a bed. NUS also says students who do not qualify under a hall's scheme are not prioritised, and that Student Residences do not take first years. Please apply on the hostel portal the moment NUS opens it, and keep a plan for a rented room.
@@ -103,9 +103,9 @@ International students can apply for the MOE Tuition Grant. It cuts the tuition 
 - Jobs: NUS's 2025 Graduate Employment Survey, run by the Ministry of Education, shows results that differ a lot by degree. Employment ranges from 60 to 100 percent, and average monthly pay from SGD 3,949 to SGD 6,962 (~INR 3–5.2 lakhs). Computing and business degrees pay at the top of that range. This is a real job market, not a promise of a job, so please look at the figure for your child's degree.
 - Acceptance is competitive. NUS does not publish an acceptance rate for international applicants. Grades alone do not decide it, and the record outside class and a well written application also matter.
 
-## Talk to the FP team
+## Talk to me
 
-To book a counselling session for your family on NUS admissions, scholarships, tests and subject choice, please write to the FP (Future Pathway) team at fperdintl@tipseindia.com. We are happy to set up a one to one session at a time that suits you.
+To book a counselling session for your family on NUS admissions, scholarships, tests and subject choice, write to me at pcmadankumar@gmail.com or use my [contact page](https://pcmadankumar.github.io/contact.html). I am happy to set up a one to one session at a time that suits you.
 
 ## Sources
 

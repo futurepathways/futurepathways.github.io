@@ -11,7 +11,7 @@ tags_skill: [critical-thinking]
 tags_level: [school]
 tags_audience: [students, parents]
 countries: [india]
-parent_summary: "India's sports economy reached 18,864 crore rupees in 2025 and the 2026-27 Budget gave sport its highest allocation yet. The post lists six career areas beyond playing (management, analytics, sports science, media, law, sports technology), warns that cricket still takes most of the money, and gives five things to do at home. Ask the FP counsellor: which school subject links to the part of sport my child enjoys?"
+parent_summary: "India's sports economy reached 18,864 crore rupees in 2025 and the 2026-27 Budget gave sport its highest allocation yet. The post lists six career areas beyond playing (management, analytics, sports science, media, law, sports technology), warns that cricket still takes most of the money, and gives five things to do at home. A question to ask your child's counsellor: which school subject links to the part of sport my child enjoys?"
 official_links: []
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"

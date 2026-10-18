@@ -11,7 +11,7 @@ tags_skill: [writing, portfolio]
 tags_level: [school]
 tags_audience: [students]
 countries: []
-parent_summary: "Ten short pieces of advice a career counsellor gives every student: understand yourself first, explore early, choose IGCSE and A Level subjects with university prerequisites in mind, commit deeply to two or three activities, and build a relationship with the counsellor before Grade 11. Ask the FP counsellor: which of these ten is the right next step for my child?"
+parent_summary: "Ten short pieces of advice a career counsellor gives every student: understand yourself first, explore early, choose IGCSE and A Level subjects with university prerequisites in mind, commit deeply to two or three activities, and build a relationship with the counsellor before Grade 11. A question to ask your child's counsellor: which of these ten is the right next step for my child?"
 official_links: []
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"

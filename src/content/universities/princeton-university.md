@@ -11,7 +11,7 @@ tags_skill: []
 tags_level: [undergraduate]
 tags_audience: [parents]
 countries: [united-states]
-parent_summary: "Gives aid only as grants, never loans, and is need-blind for international students. Test-optional for 2027 entry only; from 2028 the SAT or ACT is required. No business, law or medical school. Ask the FP counsellor: which entry year is my child aiming for, and what does that mean for tests?"
+parent_summary: "Gives aid only as grants, never loans, and is need-blind for international students. Test-optional for 2027 entry only; from 2028 the SAT or ACT is required. No business, law or medical school. A question to ask your child's counsellor: which entry year is my child aiming for, and what does that mean for tests?"
 official_links:
   - label: "International Students, Princeton Admission (Official)"
     url: "https://admission.princeton.edu/apply/international-students"
@@ -36,7 +36,7 @@ key_dates:
   - date: 2027-02-01
     label: "Financial aid application due for Regular Decision"
     url: "https://admission.princeton.edu/apply/first-year-application-dates-deadlines"
-author: "FP (Future Pathway) team"
+author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
 status: published
@@ -55,7 +55,7 @@ Princeton University, Nassau Hall and campus Watch a student made campus video b
 
 A campus tour video made by the student newspaper, The Daily Princetonian, is on YouTube. [Watch the Princeton Campus Tour today](https://www.youtube.com/watch?v=OiCKM8mf-Mo)! It is not made by the university. Princeton’s admission office also has a page for international students at admission.princeton.edu/apply/international-students. For visits or live online sessions, please check the admission site for current options.
 
-**Visit a university in person.** The FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
+**Visit a university in person.** I strongly recommend that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to me at pcmadankumar@gmail.com.
 
 ## Princeton Admission Requirements — CBSE/State Boards and Cambridge A Level
 
@@ -72,7 +72,7 @@ A campus tour video made by the student newspaper, The Daily Princetonian, is on
 | Single-Choice Early Action (SCEA) | Deadline: 1 November 2026. Decision: mid December. Reply by 1 May. It does not bind you to attend. But your child cannot apply early to any other private college or university in the USA. Public universities, service academies and international schools stay open. | The same rule applies. Early applicants will send school marks and predicted grades, because A Level results come later. |
 | Regular Decision (RD) | Deadline: 1 January 2027. Decision: late March. Reply by 1 May. CBSE Class 12 results come in about May, so the offer is based on the school record up to the midyear report. | The same dates. The November 2026 series AS and A Level results are due on 7 January 2027, after the deadline. |
 | Financial Aid for International Students — CRITICAL | Princeton says its admission is need-blind, and that the full need of admitted international students is met the same way as for US students. Aid forms are due on 9 November 2026 for SCEA, and 1 February 2027 for RD. You cannot apply for aid before you apply for admission. | The same policy for all international applicants. |
-| If Admitted With Need | Princeton meets 100% of demonstrated need with grants, not loans. Since 2001, grants have replaced loans for all aid recipients. Families who earn under USD 100,000 a year have full tuition, room and board covered. Most families earning up to USD 150,000 pay nothing for tuition, room and board. These figures were published for US families. The FP team will ask Princeton how it will assess a family in India. | The same for all admitted international students. |
+| If Admitted With Need | Princeton meets 100% of demonstrated need with grants, not loans. Since 2001, grants have replaced loans for all aid recipients. Families who earn under USD 100,000 a year have full tuition, room and board covered. Most families earning up to USD 150,000 pay nothing for tuition, room and board. These figures were published for US families. I will ask Princeton how it will assess a family in India. | The same for all admitted international students. |
 | Visa | F-1 student visa. After admission, the university issues the I-20 form. Since June 2025, F-1 applicants must list their social media accounts and make them public. India is not on the current US travel ban list. | The same process. |
 
 ## Common to both pathways
@@ -112,15 +112,15 @@ Princeton's Indian connections reach from economic policy to space science. Dr. 
 - CRITICAL — Princeton is test optional for fall 2027 entry only. From fall 2028 entry, it will require the SAT or ACT. If your child is in Class 11 now, plan SAT or ACT dates this academic year.
 - Aid forms have their own dates. For SCEA, the aid application is due on 9 November 2026, not 1 November. For RD, it is due on 1 February 2027. You cannot apply for aid before you apply for admission.
 - Total cost for 2026-27: USD 90,574 a year (~INR 87 lakhs at ~USD 96/INR, October 2026) for tuition, fees, housing and food. Tuition alone is USD 68,140. Books, personal costs and travel are extra. Princeton lists an average grant of about USD 83,000 for aid recipients, but these averages are mostly for US families.
-- The income figures (full cover under USD 100,000, most costs covered up to USD 150,000) were published for US families. Need-blind does not mean free, and only about 12.9% of the Class of 2030 are international citizens. The FP team will ask the Princeton aid office how it assesses an Indian family.
+- The income figures (full cover under USD 100,000, most costs covered up to USD 150,000) were published for US families. Need-blind does not mean free, and only about 12.9% of the Class of 2030 are international citizens. I will ask the Princeton aid office how it assesses an Indian family.
 - SCEA (1 November 2026) does not bind you, but it stops your child from applying early to any other private US university. RD (1 January 2027) has no such limit.
 - CBSE and Cambridge A Level (March series) results both come in May. November 2026 series results come on 7 January 2027. Princeton decides before either. It reads the school record, midyear report and predicted marks. Your child also needs two teacher recommendations from different subjects. The school sends these, so ask your school now.
 - Visa rules are moving fast. From 15 September 2026, F-1 students get a fixed stay of up to 4 years, tied to the programme, and must apply to extend it. A four year degree fits, but a delay means an extension request. Social media accounts must be public for the visa interview and a new visa fee may apply. India is not on the US travel ban list.
 - After the degree, OPT (12 months, and 24 more for STEM subjects) still exists. The US government says it is reviewing it, and we found no published rule to end it. Rules on work visas change often, so check again before you rely on them.
 
-## Talk to the FP team
+## Talk to me
 
-To book a Princeton counselling session, please write to the FP (Future Pathway) team at fperdintl@tipseindia.com. We can cover the test plan for your entry year, SCEA or RD, the graded written paper and the aid forms. We are happy to set up a one to one session at a time that suits you.
+To book a Princeton counselling session, write to me at pcmadankumar@gmail.com or use my [contact page](https://pcmadankumar.github.io/contact.html). I can cover the test plan for your entry year, SCEA or RD, the graded written paper and the aid forms. I am happy to set up a one to one session at a time that suits you.
 
 ## Sources
 

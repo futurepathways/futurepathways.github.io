@@ -159,6 +159,7 @@ ol {
 }
 
 a {
+  overflow-wrap: anywhere;
   color: var(--link);
   text-decoration: underline;
   text-underline-offset: 0.15em;
@@ -522,3 +523,159 @@ html:not(.js) .js-only {
     min-width: 9em;
   }
 }
+
+/* ---------- Post cards (shared by PostCard.astro and the JS card builder) ---------- */
+  .post-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-top: 4px solid var(--cat);
+    padding-top: 0.9rem;
+  }
+  .post-card[hidden] {
+    display: none;
+  }
+  .post-card-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.88rem;
+  }
+  .cat-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: var(--cat);
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 0.8rem;
+  }
+  .cat-chip:hover {
+    text-decoration: underline;
+  }
+  .also-in {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0.05em 0.6em;
+  }
+  .post-card-deadline {
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .post-card-nextdate {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+  .post-card-title {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  .post-card-title a {
+    color: var(--heading);
+    text-decoration: none;
+  }
+  .post-card-title a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+  }
+  .post-card-summary {
+    margin: 0;
+    color: var(--text);
+    font-size: 0.97rem;
+  }
+  .post-card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.45rem;
+    color: var(--text-muted);
+    font-size: 0.88rem;
+  }
+  .save-btn {
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    min-height: 36px;
+    padding: 0.2rem 0.6rem;
+    border: 1.5px solid var(--border);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--link);
+    font: inherit;
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .save-btn:hover {
+    border-color: var(--blue);
+  }
+  .save-btn .save-icon-filled,
+  .save-btn[aria-pressed='true'] .save-icon-empty {
+    display: none;
+  }
+  .save-btn[aria-pressed='true'] .save-icon-filled {
+    display: inline-block;
+  }
+  .save-btn[aria-pressed='true'] {
+    background: var(--tag-bg);
+    border-color: var(--tag-bg);
+    color: var(--tag-text);
+  }
+
+/* ---------- Tag chips ---------- */
+  .tag-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+  .tag-list--small {
+    font-size: 0.92rem;
+  }
+  .tag-more {
+    color: var(--text-muted);
+    font-size: 0.85em;
+    align-self: center;
+  }
+  .tag-groups {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .tag-group {
+    display: grid;
+    grid-template-columns: 9.5em 1fr;
+    gap: 0.4rem 0.8rem;
+    align-items: baseline;
+  }
+  .tag-group dt {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .tag-group dd {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+  @media (max-width: 480px) {
+    .tag-group {
+      grid-template-columns: 1fr;
+      gap: 0.2rem;
+    }
+  }

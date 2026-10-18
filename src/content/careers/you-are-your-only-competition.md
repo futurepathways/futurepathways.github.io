@@ -11,7 +11,7 @@ tags_skill: [study-habits, focus]
 tags_level: [school]
 tags_audience: [students]
 countries: []
-parent_summary: "A short piece on self-competition: measuring progress against yesterday's self rather than classmates or social media. It suggests a growth log, personal bests, defining your own success and muting the noise. Good for any age. Ask the FP counsellor: how can we praise effort and progress at home, not just marks?"
+parent_summary: "A short piece on self-competition: measuring progress against yesterday's self rather than classmates or social media. It suggests a growth log, personal bests, defining your own success and muting the noise. Good for any age. A question to ask your child's counsellor: how can we praise effort and progress at home, not just marks?"
 official_links: []
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"

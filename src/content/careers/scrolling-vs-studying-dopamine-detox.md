@@ -11,7 +11,7 @@ tags_skill: [study-habits, focus]
 tags_level: [school]
 tags_audience: [students, parents]
 countries: []
-parent_summary: "Explains in plain words why scrolling is so hard to stop and studying so hard to start, then gives a five-step plan: notice triggers, make scrolling harder, work in 25-minute sprints, reward finished work, and schedule phone time. A section for parents covers modelling behaviour and phone-free zones. Ask the FP counsellor: what study routine suits my child's age?"
+parent_summary: "Explains in plain words why scrolling is so hard to stop and studying so hard to start, then gives a five-step plan: notice triggers, make scrolling harder, work in 25-minute sprints, reward finished work, and schedule phone time. A section for parents covers modelling behaviour and phone-free zones. A question to ask your child's counsellor: what study routine suits my child's age?"
 official_links: []
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"

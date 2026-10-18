@@ -11,7 +11,7 @@ tags_skill: []
 tags_level: [undergraduate]
 tags_audience: [parents]
 countries: [united-kingdom]
-parent_summary: "Ranked first in the world by THE. Accepts CBSE, ISC and A Level only, with an October deadline, an October test and a December interview. A year costs roughly ₹67 lakhs to ₹1.1 crore and first-degree aid is very limited. Ask the FP counsellor: is my child on the right board and subjects for Oxford?"
+parent_summary: "Ranked first in the world by THE. Accepts CBSE, ISC and A Level only, with an October deadline, an October test and a December interview. A year costs roughly ₹67 lakhs to ₹1.1 crore and first-degree aid is very limited. A question to ask your child's counsellor: is my child on the right board and subjects for Oxford?"
 official_links:
   - label: "Oxford named best university in the world for a record 11 years in a row (Official Oxford "
     url: "https://www.ox.ac.uk/news/2026-09-30-oxford-named-best-university-in-the-world-for-record-11-years-in-a-row"
@@ -37,7 +37,7 @@ key_dates:
     label: "Online interviews during December"
     note: "Shortlisted applicants only"
     url: "https://www.ox.ac.uk/admissions/undergraduate/applying/for-international-students"
-author: "FP (Future Pathway) team"
+author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
 status: published
@@ -56,24 +56,24 @@ Oxford, Radcliffe Camera and the Bodleian Library Visit the YouTube tour to see 
 
 On-demand access to the Oxford virtual campus tour is available on YouTube. [Watch the Oxford Campus Tour today](https://www.youtube.com/watch?v=IUOCz4AE1XE)! This video was made by an independent creator, not by the university.
 
-**Visit a university in person.** The FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
+**Visit a university in person.** I strongly recommend that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to me at pcmadankumar@gmail.com.
 
 ## Oxford Admission Requirements for CBSE and Cambridge A Level
 
-> Important: Oxford accepts Class 12 results from CBSE (All India Senior School Certificate) and CISCE (ISC). It does not accept State Board results or NIOS Class 12. It also does not take JEE or NEET scores in place of Class 12. CBSE results come after the October deadline, so your school sends predicted grades. These are the marks the school expects your child to score. For course by course rules, please write to the FP (Future Pathway) team for a one to one session.
+> Important: Oxford accepts Class 12 results from CBSE (All India Senior School Certificate) and CISCE (ISC). It does not accept State Board results or NIOS Class 12. It also does not take JEE or NEET scores in place of Class 12. CBSE results come after the October deadline, so your school sends predicted grades. These are the marks the school expects your child to score. For course by course rules, please write to me for a one to one session.
 
 | Requirement | CBSE Grade 12 (CBSE / CISCE only) | Cambridge A Level |
 |---|---|---|
 | Boards Accepted | CBSE and CISCE (ISC) only. State Boards and NIOS Class 12 are not accepted | Cambridge International AS and A Level |
 | Minimum to Apply | CBSE grades in five subjects, with A1 in every subject linked to the course. For AAA courses, A1 A1 A2 A2 A2. For A*AA courses, A1 A1 A1 A2 A2. For A*A*A courses, A1 A1 A1 A1 A2. CISCE (ISC) needs 90 percent overall, with 95 percent or more in two, three or four subjects, depending on the level, and 85 percent or more in the others. Your school gives predicted grades through UCAS | Offers run from AAA to A*A*A for most degree courses. Chemistry, Mathematics and Engineering Science sit at A*A*A. Biology, Physics, Materials Science, Psychology (Experimental) and Geography sit at A*AA. Foundation year courses ask for less |
 | Competitive Benchmark | Oxford's published rule is the floor, not a promise. The course page may ask for A1 in particular subjects. Your child is also judged on the test, the interview and the school reference | The offer level on the course page is the target. Check each course page for the subjects that must carry an A*. The test, the interview and the school reference count as well |
-| English Proficiency | IELTS Academic 7.5 overall and 7.0 in each part. TOEFL iBT 110, but only for tests taken up to 20 January 2026. Oxford does not accept TOEFL tests taken from 21 January 2026. Oxford Test of English Advanced 165, with 155 in each part. C1 Advanced or C2 Proficiency 191, with 185 in each part. PTE Academic 76, with 66 in each skill. All parts must come from one sitting. You show proof by 31 July of the year of the offer, not when you apply. Students taught fully in English for at least three recent years may qualify for an exemption. The FP team will check with the college | Same rules. Students taught fully in English for at least three recent years may qualify for an exemption. The FP team will check with the college |
+| English Proficiency | IELTS Academic 7.5 overall and 7.0 in each part. TOEFL iBT 110, but only for tests taken up to 20 January 2026. Oxford does not accept TOEFL tests taken from 21 January 2026. Oxford Test of English Advanced 165, with 155 in each part. C1 Advanced or C2 Proficiency 191, with 185 in each part. PTE Academic 76, with 66 in each skill. All parts must come from one sitting. You show proof by 31 July of the year of the offer, not when you apply. Students taught fully in English for at least three recent years may qualify for an exemption. I will check with the college | Same rules. Students taught fully in English for at least three recent years may qualify for an exemption. I will check with the college |
 | Admissions Tests | Test needed by course. ESAT for Biomedical Sciences, Engineering Science and Physics. TMUA for Computer Science, Mathematics and their joint courses. TARA for PPE, Economics and Management, History and Economics, History and Politics, Human Sciences and the Psychology courses. LNAT for Law. UCAT for Medicine. Not every course has a test, so check yours. Everyone sits in October 2026, on 12 to 16 October. Booking closed on 28 September 2026 at 6 pm UK time. Results come on 16 November 2026. The fee is GBP 133 (~INR 17,000) for each UAT-UK test outside the UK. Oxford no longer uses its older tests such as MAT and TSA | Same rules for every qualification |
 | Interview | Shortlisted applicants get an online interview in December 2026. It is an academic talk about the subject, like a short tutorial. It checks how your child thinks and meets new ideas | Same. The interview is the same for every qualification |
 | Personal Statement | Written through UCAS. It should show real interest in the subject and wider reading. Please check UCAS for the current format | Same |
 | Teacher Reference | One reference through UCAS. The school adds predicted grades | Same |
 | SAT / ACT / JEE | JEE and NEET scores are not accepted in place of Class 12. The Oxford pages we read do not ask for SAT or ACT | Not applicable |
-| ATAS Certificate | Some science and engineering courses may need an ATAS certificate, a UK security check, after the offer and before the visa. The FP team will check with the college | Same |
+| ATAS Certificate | Some science and engineering courses may need an ATAS certificate, a UK security check, after the offer and before the visa. I will check with the college | Same |
 | Application Portal | UCAS (ucas.com), Oxford code O33. Deadline: 15 October 2026 at 6 pm UK time, which is 10:30 pm in India. Everyone has the same deadline | Same. All applicants use UCAS |
 | Decision Timeline | Interviews in December 2026 and decisions in January 2027. Offers depend on your final results | Same |
 | Visa Requirement | UK Student visa. Oxford gives a CAS (Confirmation of Acceptance for Studies) after you accept the offer | Same |
@@ -119,9 +119,9 @@ Money for a first degree is very limited, but Oxford has real funding for later 
 - UK visa costs: the Immigration Health Surcharge (IHS) pays for NHS care. It is GBP 776 a year, so about GBP 2,716 for a 3 year degree (~INR 3.4 lakhs). You pay it when you apply for the visa. A four year course costs more. The Graduate Route is the UK work visa after a degree. It is 2 years for those who apply on or before 31 December 2026, and only 18 months on or after 1 January 2027. Students starting in 2027 will graduate after that date.
 - How hard is it? Oxford is very competitive, and we could not confirm a current success rate for Indian applicants. A strong school record is only the start. The test and the interview decide who is shortlisted and who receives an offer.
 
-## Talk to the FP team
+## Talk to me
 
-To set up an Oxford counselling session for your family, please write to the FP (Future Pathway) team at fperdintl@tipseindia.com. We can help with test choice, the personal statement, college choice, the Oxford and Cambridge rule and funding. We are happy to arrange a one to one session at a time that suits you.
+To set up an Oxford counselling session for your family, write to me at pcmadankumar@gmail.com or use my [contact page](https://pcmadankumar.github.io/contact.html). I can help with test choice, the personal statement, college choice, the Oxford and Cambridge rule and funding. I am happy to arrange a one to one session at a time that suits you.
 
 ## Sources
 

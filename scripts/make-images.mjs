@@ -17,7 +17,7 @@ const categories = [
   { key: 'courses', name: 'Courses', accent: '#7FD3C4' },
   { key: 'countries', name: 'Countries', accent: '#CFA6EA' },
   { key: 'universities', name: 'Universities', accent: '#F0A5A5' },
-  { key: 'default', name: 'For every TIPS student and parent', accent: '#C9A84C' },
+  { key: 'default', name: 'For students and parents in India', accent: '#C9A84C' },
 ];
 
 const esc = (s) => s.replace(/&/g, '&amp;');
@@ -37,7 +37,7 @@ function svg({ name, accent }) {
   <rect x="80" y="372" width="120" height="10" rx="5" fill="${accent}"/>
   <text x="80" y="300" font-family="Georgia, 'DejaVu Serif', serif" font-size="92" font-weight="700" fill="#FFFFFF">Future Pathways</text>
   <text x="80" y="450" font-family="Georgia, 'DejaVu Serif', serif" font-size="52" fill="${accent}">${esc(name)}</text>
-  <text x="80" y="560" font-family="Arial, 'DejaVu Sans', sans-serif" font-size="30" fill="#E8F0FA" fill-opacity="0.9">by the TIPS FP (Future Pathway) team</text>
+  <text x="80" y="560" font-family="Arial, 'DejaVu Sans', sans-serif" font-size="30" fill="#E8F0FA" fill-opacity="0.9">by Madan Kumar PC, career counsellor</text>
 </svg>`;
 }
 

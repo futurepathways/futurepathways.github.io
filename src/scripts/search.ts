@@ -85,6 +85,7 @@ async function run() {
   const initial = new URLSearchParams(location.search).get('q') || '';
   input.value = initial;
   await search(initial, false);
+  document.querySelector<HTMLElement>('[data-search-results]')?.setAttribute('data-ready', '1');
 }
 
 run();

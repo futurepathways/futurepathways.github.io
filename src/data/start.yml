@@ -1,6 +1,5 @@
 # "Start here by grade" pages (PRD 6.10). For each grade band: a short intro and
-# up to 6 post slugs to read first (the file name without .md). Lists are empty until
-# posts exist. Madan edits the intros; Niranjan updates the lists.
+# up to 6 post slugs to read first (the file name without .md). Madan edits both.
 # A slug that does not exist or is not published is skipped quietly.
 
 bands:
@@ -10,22 +9,40 @@ bands:
       This is the time to be curious, not to decide. Find out what jobs exist, try things
       you have never tried, and notice what you enjoy. Nothing you read here is a commitment.
       Pick a post that sounds interesting and talk about it at home.
-    read_first: []
+    read_first:
+      - built-for-this
+      - you-are-your-only-competition
+      - scrolling-vs-studying-dopamine-detox
+      - your-digital-stuff-is-a-mess
+      - getting-started-with-cambridge-curriculum
 
   - key: "9-10"
     title: "Grades 9 and 10"
     intro: >-
       Two big things happen now: you choose your subjects and stream for Grades 11 and 12,
       and your first real opportunities open up, such as competitions, summer programmes and
-      volunteering. Read about choosing a stream first, then explore two or three careers
-      that interest you. Your FP counsellor can help you narrow it down.
-    read_first: []
+      volunteering. Start with the Career Roadmaps, which show which subjects keep which doors
+      open, then explore two or three careers that interest you. A career counsellor can help
+      you narrow it down.
+    read_first:
+      - career-roadmaps-which-subjects-keep-which-doors-open
+      - 10-career-counselling-tips
+      - two-numbers-that-should-keep-us-awake
+      - data-the-new-currency-of-the-modern-world
+      - chemical-engineering-and-why-research-matters
+      - psychometric-tests
 
   - key: "11-12"
     title: "Grades 11 and 12"
     intro: >-
       Now it gets practical: courses, entrance tests, countries, applications and deadlines.
       Read about the courses that lead to the careers you like, check which tests they need,
-      and keep an eye on the Upcoming Deadlines page. Talk to your FP counsellor early in
+      and keep an eye on the Upcoming Deadlines page. Talk to a career counsellor early in
       Grade 11, not late in Grade 12.
-    read_first: []
+    read_first:
+      - career-roadmaps-which-subjects-keep-which-doors-open
+      - the-rupee-the-visa-and-the-rethink
+      - ucas-personal-statements
+      - inside-iit-bombay
+      - germany-undergraduate-admissions
+      - iisc-bengaluru

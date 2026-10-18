@@ -182,8 +182,8 @@ content:
         type: text
         required: true
         description: >-
-          2 to 4 plain sentences for parents: what this is, rough cost, the key date, and one question to ask the FP
-          counsellor.
+          2 to 4 plain sentences for parents: what this is, rough cost, the key date, and one question for the family to
+          ask a career counsellor.
         options:
           rows: 4
       - name: official_links
@@ -229,9 +229,7 @@ content:
       - name: cover_image
         label: Cover image (optional)
         type: image
-        description: >-
-          Only free stock photos (Unsplash, Pexels) or TIPS photos with permission. Leave empty to use the category
-          picture.
+        description: Only free stock photos (Unsplash, Pexels) or your own photos. Leave empty to use the category picture.
         options:
           media: images
           path: posts
@@ -516,8 +514,8 @@ content:
         type: text
         required: true
         description: >-
-          2 to 4 plain sentences for parents: what this is, rough cost, the key date, and one question to ask the FP
-          counsellor.
+          2 to 4 plain sentences for parents: what this is, rough cost, the key date, and one question for the family to
+          ask a career counsellor.
         options:
           rows: 4
       - name: official_links
@@ -563,9 +561,7 @@ content:
       - name: cover_image
         label: Cover image (optional)
         type: image
-        description: >-
-          Only free stock photos (Unsplash, Pexels) or TIPS photos with permission. Leave empty to use the category
-          picture.
+        description: Only free stock photos (Unsplash, Pexels) or your own photos. Leave empty to use the category picture.
         options:
           media: images
           path: posts
@@ -790,8 +786,8 @@ content:
         type: text
         required: true
         description: >-
-          2 to 4 plain sentences for parents: what this is, rough cost, the key date, and one question to ask the FP
-          counsellor.
+          2 to 4 plain sentences for parents: what this is, rough cost, the key date, and one question for the family to
+          ask a career counsellor.
         options:
           rows: 4
       - name: official_links
@@ -837,9 +833,7 @@ content:
       - name: cover_image
         label: Cover image (optional)
         type: image
-        description: >-
-          Only free stock photos (Unsplash, Pexels) or TIPS photos with permission. Leave empty to use the category
-          picture.
+        description: Only free stock photos (Unsplash, Pexels) or your own photos. Leave empty to use the category picture.
         options:
           media: images
           path: posts
@@ -1064,8 +1058,8 @@ content:
         type: text
         required: true
         description: >-
-          2 to 4 plain sentences for parents: what this is, rough cost, the key date, and one question to ask the FP
-          counsellor.
+          2 to 4 plain sentences for parents: what this is, rough cost, the key date, and one question for the family to
+          ask a career counsellor.
         options:
           rows: 4
       - name: official_links
@@ -1111,9 +1105,7 @@ content:
       - name: cover_image
         label: Cover image (optional)
         type: image
-        description: >-
-          Only free stock photos (Unsplash, Pexels) or TIPS photos with permission. Leave empty to use the category
-          picture.
+        description: Only free stock photos (Unsplash, Pexels) or your own photos. Leave empty to use the category picture.
         options:
           media: images
           path: posts
@@ -1338,8 +1330,8 @@ content:
         type: text
         required: true
         description: >-
-          2 to 4 plain sentences for parents: what this is, rough cost, the key date, and one question to ask the FP
-          counsellor.
+          2 to 4 plain sentences for parents: what this is, rough cost, the key date, and one question for the family to
+          ask a career counsellor.
         options:
           rows: 4
       - name: official_links
@@ -1385,9 +1377,7 @@ content:
       - name: cover_image
         label: Cover image (optional)
         type: image
-        description: >-
-          Only free stock photos (Unsplash, Pexels) or TIPS photos with permission. Leave empty to use the category
-          picture.
+        description: Only free stock photos (Unsplash, Pexels) or your own photos. Leave empty to use the category picture.
         options:
           media: images
           path: posts

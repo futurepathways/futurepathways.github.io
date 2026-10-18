@@ -38,7 +38,9 @@ const posts = (await getVisiblePosts()).sort(byNewest);
       <p class="note">Search needs JavaScript. Without it, every post is listed below, or try <a href="/tags/">Browse All Tags</a>.</p>
     </noscript>
 
-    <PostList posts={posts} showCategoryFilter sortDefault="relevance" headingLevel="h2" emptyMessage="No posts match. Try another word or clear a filter." />
+    <div class="search-results" data-search-results>
+      <PostList posts={posts} showCategoryFilter sortDefault="relevance" headingLevel="h2" emptyMessage="No posts match. Try another word or clear a filter." />
+    </div>
   </div>
 </Base>
 
@@ -72,6 +74,9 @@ const posts = (await getVisiblePosts()).sort(byNewest);
     outline: none;
     border-color: var(--blue);
     box-shadow: 0 0 0 3px rgb(24 95 165 / 0.18);
+  }
+  html.js .search-results:not([data-ready]) {
+    visibility: hidden;
   }
   .search-status {
     color: var(--text-muted);

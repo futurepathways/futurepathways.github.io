@@ -11,7 +11,7 @@ tags_skill: []
 tags_level: [undergraduate]
 tags_audience: [parents]
 countries: [united-states]
-parent_summary: "Silicon Valley's university, costing about ₹94 lakhs a year before aid. It is need-aware for international students, so asking for aid can lower the chance of admission, and the choice cannot be changed later. SAT or ACT is required. Ask the FP counsellor: should we apply for aid or not?"
+parent_summary: "Silicon Valley's university, costing about ₹94 lakhs a year before aid. It is need-aware for international students, so asking for aid can lower the chance of admission, and the choice cannot be changed later. SAT or ACT is required. A question to ask your child's counsellor: should we apply for aid or not?"
 official_links:
   - label: "Stanford Facts (Official)"
     url: "https://facts.stanford.edu/"
@@ -37,7 +37,7 @@ key_dates:
   - date: 2027-02-15
     label: "CSS Profile priority date for international aid applicants"
     url: "https://financialaid.stanford.edu/undergrad/apply/requirements/rd_international.html"
-author: "FP (Future Pathway) team"
+author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
 status: published
@@ -56,7 +56,7 @@ Stanford University, Silicon Valley, California Use Stanford's own virtual visit
 
 Stanford’s admission office runs live online visits and has a recorded information session. [Open the Stanford visit page today](https://admission.stanford.edu/engage/)!
 
-**Visit a university in person.** The FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
+**Visit a university in person.** I strongly recommend that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to me at pcmadankumar@gmail.com.
 
 ## Stanford Admission Requirements for CBSE and Cambridge A Level
 
@@ -117,11 +117,11 @@ The best known Indian Stanford story starts in Chennai. Sundar Pichai studied at
 - Stanford is hard to enter. The rate is very low and it has been reported at about 4 percent in recent years. We did not confirm a current figure in October 2026. Marks are the starting point. Essays, activities and teacher letters matter just as much
 - Visa rules are changing. F-1 applicants must set their social media accounts to public. From 15 September 2026, the old "duration of status" is gone, so your child gets a fixed stay of up to 4 years and must apply to extend. OPT (12 months) and STEM OPT (24 months) still exist. Rules about work visas after study, including the H-1B fee, are in court and move fast, so check before you rely on them. India is not on the US travel ban list
 - Extra visa costs: budget for the US visa fee, the SEVIS fee and a possible new "visa integrity fee". We could not confirm how much each costs in India this month. Check the US State Department and ICE pages
-- Application fee: USD 100 (~INR 9,600). Fee waivers are available. Write to fperdintl@tipseindia.com for help
+- Application fee: USD 100 (~INR 9,600). Fee waivers are available. Write to pcmadankumar@gmail.com for help
 
-## Talk to the FP team
+## Talk to me
 
-To book a one to one Stanford session, please write to the FP (Future Pathway) team at fperdintl@tipseindia.com. We can cover SAT planning, essays, the REA or RD choice, the aid decision and your full US list. We will fix a time that suits you.
+To book a one to one Stanford session, write to me at pcmadankumar@gmail.com or use my [contact page](https://pcmadankumar.github.io/contact.html). I can cover SAT planning, essays, the REA or RD choice, the aid decision and your full US list. I will fix a time that suits you.
 
 ## Sources
 

@@ -1,6 +1,6 @@
 ---
 title: "Chemical Engineering and Why Research Matters"
-summary: "What chemical engineers do, where the jobs are, the research frontiers, and a seven-step way to start research at school. Notes from a TIPS session."
+summary: "What chemical engineers do, where the jobs are, the research frontiers, and a seven-step way to start research at school. Notes from a school session."
 main_category: careers
 extra_categories: [courses]
 grade_band: ["9-10", "11-12"]
@@ -11,7 +11,7 @@ tags_skill: [research]
 tags_level: [undergraduate]
 tags_audience: [students, parents]
 countries: [india]
-parent_summary: "Chemical engineering is behind almost every product in your home, not just oil refineries. The session covers careers in India and abroad with indicative salaries, the research areas that matter now, and a seven-step method any student can use to start a research project. Entry is through JEE or university tests after Class 12 with PCM. Ask the FP counsellor: does my child's subject combination keep this door open?"
+parent_summary: "Chemical engineering is behind almost every product in your home, not just oil refineries. The session covers careers in India and abroad with indicative salaries, the research areas that matter now, and a seven-step method any student can use to start a research project. Entry is through JEE or university tests after Class 12 with PCM. A question to ask your child's counsellor: does my child's subject combination keep this door open?"
 official_links: []
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
@@ -22,7 +22,7 @@ published_date: 2026-06-12
 > **Session Reference.**
 > Chemical Engineering & Why Research Matters — A Science & Engineering Awareness Session for IGCSE Students
 > Speaker: Prof. Kannan Kandasamy, Dean (IIPC), Department of Chemical Engineering, Kongu Engineering College
-> Host: The Indian Public School (TIPS)  ·  Audience: IGCSE Grades 10, 11 & 12  ·  Duration: ≈75 minutes
+> Audience: IGCSE Grades 10, 11 & 12  ·  Duration: ≈75 minutes
 
 Research is not a mystery reserved for professors — and chemical engineering is not just about oil refineries. This session, delivered by Prof. Kannan Kandasamy to IGCSE students, answered one underlying question: why should a young person care about science, engineering and research? It moved from broad ideas to a concrete discipline, then to careers, live research frontiers, and a practical do-it-yourself roadmap for starting research while still at school.
 

@@ -11,7 +11,7 @@ tags_skill: [data-literacy, problem-solving]
 tags_level: [school]
 tags_audience: [students, parents]
 countries: [india]
-parent_summary: "Global companies such as GitLab, Cursor, DigiKey and Johnson & Johnson are opening offices and hiring in India, and most of the new roles need AI, data or automation skills. The post explains what a Global Capability Centre is, why these jobs are selective, and five skills a child can start building in school. Ask the FP counsellor: which of these five skills does my child already have evidence of, and which needs a project this year?"
+parent_summary: "Global companies such as GitLab, Cursor, DigiKey and Johnson & Johnson are opening offices and hiring in India, and most of the new roles need AI, data or automation skills. The post explains what a Global Capability Centre is, why these jobs are selective, and five skills a child can start building in school. A question to ask your child's counsellor: which of these five skills does my child already have evidence of, and which needs a project this year?"
 official_links: []
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
@@ -69,7 +69,7 @@ When a company like GitLab chooses to shrink its global footprint but grow in In
 
 For our students, that is a door opening. The question is whether they will have the skills to walk through it when the time comes. The good news is that the preparation can start now, in school, with the right subject choices, the right exposure and the right guidance.
 
-If you are a parent wondering how your child can prepare for these opportunities, or a student unsure which path fits you best, talk to the FP counsellor at your campus, and let us work out the next step together.
+If you are a parent wondering how your child can prepare for these opportunities, or a student unsure which path fits you best, talk to a career counsellor at your campus, and let us work out the next step together.
 
 ## References
 

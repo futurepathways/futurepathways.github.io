@@ -11,7 +11,7 @@ tags_skill: []
 tags_level: [school]
 tags_audience: [parents, students]
 countries: []
-parent_summary: "A five-minute explainer of the Cambridge programme your child's school follows: the stages from Cambridge Primary to AS and A Level, the learner attributes, and the emphasis on understanding over memorising. Ask the FP counsellor: how do Cambridge qualifications translate into university entry in India and abroad?"
+parent_summary: "A five-minute explainer of the Cambridge programme your child's school follows: the stages from Cambridge Primary to AS and A Level, the learner attributes, and the emphasis on understanding over memorising. A question to ask your child's counsellor: how do Cambridge qualifications translate into university entry in India and abroad?"
 official_links: []
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"

@@ -11,7 +11,7 @@ tags_skill: []
 tags_level: [undergraduate]
 tags_audience: [students]
 countries: [india]
-parent_summary: "Notes from IIT Bombay's open house for JEE Advanced qualifiers. The branch a student enters no longer locks them in: 40 percent of the degree is free to shape through minors, honours and dual degrees. Up to a quarter of students get merit-cum-means support, and the parental income certificate must be ready before registration. Ask the FP counsellor: what does my child want to build in four years there, beyond a placement?"
+parent_summary: "Notes from IIT Bombay's open house for JEE Advanced qualifiers. The branch a student enters no longer locks them in: 40 percent of the degree is free to shape through minors, honours and dual degrees. Up to a quarter of students get merit-cum-means support, and the parental income certificate must be ready before registration. A question to ask your child's counsellor: what does my child want to build in four years there, beyond a placement?"
 official_links: []
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"

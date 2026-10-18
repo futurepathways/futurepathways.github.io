@@ -1,5 +1,5 @@
 """Makes the Word draft templates in docs/templates/ (PRD Section 4, Phase 6), one per category,
-in the TIPS house style: Georgia headings, Calibri body, navy and gold, branded header and footer,
+in the site's house style: Georgia headings, Calibri body, navy and gold, branded header and footer,
 borderless modern tables. Run: python scripts/make-templates.py
 """
 import os
@@ -33,10 +33,10 @@ COMMON_FIELDS = [
     ("Tags: Study level (optional)", "School / Undergraduate / Postgraduate / Diploma and vocational"),
     ("Tags: Audience (optional)", "Students / Parents / Middle school. 3 to 8 tags in total across all groups."),
     ("Countries (optional)", "For example: United Kingdom, Canada"),
-    ("For Parents box (2 to 4 sentences)", "What this is, rough cost, the key date, and one question to ask the FP counsellor."),
+    ("For Parents box (2 to 4 sentences)", "What this is, rough cost, the key date, and one question for the family to ask a career counsellor."),
     ("Official links", "Label and web address of each official page the reader should check."),
     ("Key dates (optional)", "Each important date in the post: the date, what happens, a note such as the time zone, and the official page."),
-    ("Cover image (optional)", "Only free stock (Unsplash, Pexels) or TIPS photos with permission. Add a one line description and the credit."),
+    ("Cover image (optional)", "Only free stock (Unsplash, Pexels) or your own photos. Add a one line description and the credit."),
     ("Written by", "Your name"),
     ("Checked by", "The counsellor who checked every fact, figure and link"),
     ("Last checked", "Date, for example 11 October 2026"),
@@ -81,7 +81,7 @@ BODIES = {
         ("What you will do or gain", ""),
         ("How to apply, step by step", "Numbered steps with dates."),
         ("Cost and any scholarship", "Mark figures approximate; link the official fee page."),
-        ("Tips from the FP team", ""),
+        ("Tips from the author", ""),
     ]),
     'countries': ("Countries", [
         ("Why students choose this country", ""),
@@ -102,7 +102,7 @@ BODIES = {
         ("Voices from the university", "Only quotes you can check on an official page, with the source."),
         ("Why should your child consider this university?", "Three or four numbered reasons."),
         ("What parents should know", "Bullets. Start the most important ones with CRITICAL."),
-        ("Talk to the FP team", "Invite families to book a one to one session at fperdintl@tipseindia.com."),
+        ("Talk to me", "Invite families to write to pcmadankumar@gmail.com or use the contact page."),
         ("Sources", "Numbered list: what the page says, and its web address."),
     ]),
 }
@@ -228,8 +228,8 @@ def make(key, label, sections):
     pPr.append(pbdr)
     fp = section.footer.paragraphs[0]
     fp.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    run(fp, "Future Pathways, by the TIPS FP (Future Pathway) team  ·  fperdintl@tipseindia.com  ·  "
-            "When the draft is ready, send it to Niranjan.", size=9, color=GREY)
+    run(fp, "Future Pathways, by Madan Kumar PC  ·  pcmadankumar@gmail.com  ·  "
+            "When the draft is ready, send it to Madan.", size=9, color=GREY)
 
     # title block
     p = doc.add_paragraph()
@@ -267,7 +267,7 @@ def make(key, label, sections):
     for line in (
         "Every figure is marked approximate and has a year.",
         "Every official claim has a link to the official page, not a news article or an agent's site.",
-        "No campus specific arrangement is mentioned. The site speaks to all TIPS students equally.",
+        "Nothing in the draft is specific to one school. The site speaks to students across India.",
         "A second counsellor has checked the facts and their name is in \"Checked by\".",
         "No private information anywhere in the draft.",
     ):

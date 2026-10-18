@@ -11,7 +11,7 @@ tags_skill: []
 tags_level: [undergraduate]
 tags_audience: [parents]
 countries: [canada]
-parent_summary: "Canada's largest university and a leader in AI. Admission is to a named programme, Standard Maths is compulsory for science and business, and a government letter (PAL) is needed before the study permit. First year costs about ₹56 to 72 lakhs. Ask the FP counsellor: can our school nominate for the Pearson scholarship next year?"
+parent_summary: "Canada's largest university and a leader in AI. Admission is to a named programme, Standard Maths is compulsory for science and business, and a government letter (PAL) is needed before the study permit. First year costs about ₹56 to 72 lakhs. A question to ask your child's counsellor: can our school nominate for the Pearson scholarship next year?"
 official_links:
   - label: "2027 Deadlines for International Applicants (Official)"
     url: "https://future.utoronto.ca/deadlines"
@@ -24,7 +24,7 @@ official_links:
 key_dates:
   - date: 2026-10-09
     label: "Lester B. Pearson scholarship: school nomination closed"
-    note: "No TIPS campus nominated this year; plan early for 2028 entry"
+    note: "Schools nominate one student each; plan early for 2028 entry"
     url: "https://future.utoronto.ca/pearson-scholarships"
   - date: 2026-11-07
     label: "Apply by this date for first-round consideration"
@@ -37,7 +37,7 @@ key_dates:
   - date: 2027-02-01
     label: "Documents due; Computer Science and Rotman Commerce supplementary applications due"
     url: "https://future.utoronto.ca/deadlines"
-author: "FP (Future Pathway) team"
+author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
 status: published
@@ -57,9 +57,7 @@ U of T Campus: St. George, Downtown Toronto Walk the historic St. George campus.
 
 You can watch a University of Toronto campus tour on YouTube. [Watch the University of Toronto St. George Campus Tour today](https://www.youtube.com/watch?v=waNhX6O6JmE)! This video was made by an independent creator, not by the university. U of T also lists campus tours on its admissions website, future.utoronto.ca. Please check that site for the current options.
 
-Representatives of the University of Toronto visited TIPS in September 2026. If your family could not attend, please ask the FP team for the follow-up notes.
-
-**Visit a university in person.** The FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
+**Visit a university in person.** I strongly recommend that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to me at pcmadankumar@gmail.com.
 
 ## U of T Admission Requirements for CBSE/State Boards and Cambridge A Level
 
@@ -99,7 +97,7 @@ Canada's Post-Graduation Work Permit (PGWP) lets a graduate of a degree longer t
 
 ### India and Canada Relations, and What Families Should Know
 
-Several TIPS families have asked us about the tension between India and Canada in recent years. We want to be honest. We have no new official statement to share, and we cannot promise how relations will look in 2027. What we can say is that study permit rules are set by the Canadian government for all international students. Please read the current government advisories when your child applies.
+Several families have asked me about the tension between India and Canada in recent years. We want to be honest. We have no new official statement to share, and we cannot promise how relations will look in 2027. What we can say is that study permit rules are set by the Canadian government for all international students. Please read the current government advisories when your child applies.
 
 ### Programme Based Admission, a Difference Worth Understanding
 
@@ -107,7 +105,7 @@ Unlike the UK system (UCAS) or the single US application, U of T admits students
 
 ## What parents should know
 
-- CRITICAL, Lester B. Pearson International Scholarship: this covers tuition, books, fees and residence for four years, but a student cannot apply alone. The school must nominate its one best candidate, and each school can nominate only one student a year. For 2027 entry the school nomination closed on 9 October 2026. No TIPS campus put a student forward this year, so this scholarship is not open to a child now in Class 12. Families with a child in Class 11 should speak to the FP team early in the next academic year. U of T sends the forms to schools in July, and the school must choose its nominee by early October 2027.
+- CRITICAL, Lester B. Pearson International Scholarship: this covers tuition, books, fees and residence for four years, but a student cannot apply alone. The school must nominate its one best candidate, and each school can nominate only one student a year. For 2027 entry the school nomination closed on 9 October 2026. No the school campus put a student forward this year, so this scholarship is not open to a child now in Class 12. Families with a child in Class 11 should speak to me early in the next academic year. U of T sends the forms to schools in July, and the school must choose its nominee by early October 2027.
 - CRITICAL, Mathematics: Class 12 Standard Mathematics is needed for business, engineering and science programmes. U of T says Applied Mathematics does not meet the calculus requirement. Please check your child's subject choice now.
 - CRITICAL, PAL: most newly admitted undergraduates need a Provincial Attestation Letter before the study permit. It is issued after you accept the offer and pay the deposit. Places are limited, so accept and pay quickly.
 - CRITICAL, PGWP language test: since 1 November 2024 you need CLB 7 on an accepted test, and the result is valid for 2 years. Take it near the end of the degree, not in the first year.
@@ -118,9 +116,9 @@ Unlike the UK system (UCAS) or the single US application, U of T admits students
 - English test: IELTS Academic 6.5 with no part below 6.0. Grade 12 English alone does not give an exemption.
 - State Board students are judged one by one and are not treated as equal to CBSE or ISC. Confirm your board with U of T before you apply.
 
-## Talk to the FP team
+## Talk to me
 
-To set up a University of Toronto counselling session for your family, please write to the FP (Future Pathway) team at fperdintl@tipseindia.com. We can cover programme choice, the PAL and PGWP rules, and the extra applications for Computer Science and Engineering. We are happy to arrange a one to one session at a time that suits you.
+To set up a University of Toronto counselling session for your family, write to me at pcmadankumar@gmail.com or use my [contact page](https://pcmadankumar.github.io/contact.html). I can cover programme choice, the PAL and PGWP rules, and the extra applications for Computer Science and Engineering. I am happy to arrange a one to one session at a time that suits you.
 
 ## Sources
 

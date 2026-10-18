@@ -11,7 +11,7 @@ tags_skill: [study-habits, focus]
 tags_level: [school]
 tags_audience: [students]
 countries: []
-parent_summary: "A friendly guide to organising files, email, calendar and passwords, built on Tiago Forte's PARA method. It ends with three 15-minute challenges a student can do today. Good digital habits reduce stress and protect schoolwork. Ask the FP counsellor: should my child use a password manager and two-factor login?"
+parent_summary: "A friendly guide to organising files, email, calendar and passwords, built on Tiago Forte's PARA method. It ends with three 15-minute challenges a student can do today. Good digital habits reduce stress and protect schoolwork. A question to ask your child's counsellor: should my child use a password manager and two-factor login?"
 official_links: []
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"

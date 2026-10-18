@@ -1,6 +1,6 @@
 ---
 title: "Data: The New Currency of the Modern World"
-summary: "Notes from a TIPS session: what data is, how every career now uses it, data careers that need no coding, and six habits to protect your identity."
+summary: "Notes from a school session: what data is, how every career now uses it, data careers that need no coding, and six habits to protect your identity."
 main_category: careers
 extra_categories: [courses]
 grade_band: ["9-10", "11-12"]
@@ -11,7 +11,7 @@ tags_skill: [data-literacy]
 tags_level: [school]
 tags_audience: [students]
 countries: [india]
-parent_summary: "A full record of a 75-minute student session on data. The key message for families: data literacy is not data science. Commerce, humanities and arts students have well-paid data careers open to them without heavy coding. It also covers six simple habits for protecting a child's digital identity. Ask the FP counsellor: which data role fits my child's stream?"
+parent_summary: "A full record of a 75-minute school session on data. The key message for families: data literacy is not data science. Commerce, humanities and arts students have well-paid data careers open to them without heavy coding. It also covers six simple habits for protecting a child's digital identity. A question to ask your child's counsellor: which data role fits my child's stream?"
 official_links: []
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
@@ -21,13 +21,13 @@ published_date: 2026-06-16
 ---
 > **Session Reference.**
 > Session title: Data — The New Currency of the Modern World
-> Speaker: Pradeep Duraisamy, The Indian Public School (TIPS)
+> Speaker: Pradeep Duraisamy
 > Audience: Grades 10, 11 & 12  ·  Duration: 75 minutes
-> Notes compiled by the FP (Future Pathway) team. Figures cited (salaries, “11 million by 2027”, per-minute internet stats) are illustrative as cited in the session — the direction of demand matters more than any exact number.
+> Notes compiled by Madan Kumar PC. Figures cited (salaries, “11 million by 2027”, per-minute internet stats) are illustrative as cited in the session — the direction of demand matters more than any exact number.
 
 Seventy-five minutes. Six sections. One argument that kept coming back no matter which slide was on the screen: data is no longer a subject for computer scientists. It is the operating system of every career your child might choose.
 
-Pradeep Duraisamy’s session at TIPS did something rare — it made data feel personal before it made it feel technical. That order matters. These notes reconstruct the full session so that anyone who missed it can follow the same thread.
+Pradeep Duraisamy’s session did something rare — it made data feel personal before it made it feel technical. That order matters. These notes reconstruct the full session so that anyone who missed it can follow the same thread.
 
 ## How the 75 Minutes Flowed
 

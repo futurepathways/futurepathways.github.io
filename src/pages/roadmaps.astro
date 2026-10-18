@@ -23,7 +23,7 @@ const description = `${roles.length} roles, from backend engineer to video edito
         exams lead there, and what to learn first. Built for Subject Choices Day and for anyone wondering "what next?".
       </p>
       <p class="rm-meta">
-        Compiled by {roadmaps.compiled_by} for the {site.teamName}, {formatDate(roadmaps.compiled)}. Read the
+        Compiled by {roadmaps.compiled_by}, {formatDate(roadmaps.compiled)}. Read the{' '}
         <a href="/careers/career-roadmaps-which-subjects-keep-which-doors-open/">short guide to this page</a>.
       </p>
     </div>
@@ -194,13 +194,14 @@ const description = `${roles.length} roles, from backend engineer to video edito
     </ul>
 
     <div class="note rm-credit">
-      <strong>Credit.</strong> {roadmaps.credit}
-      <a href={roadmaps.source_url} target="_blank" rel="noopener">careermaxxing.kungumavishnu.com/roadmap</a>
+      <strong>Credit.</strong> {roadmaps.credit}{' '}
+      <a href={roadmaps.source_url} target="_blank" rel="noopener">Open the Careermaxxing roadmap page</a>.
     </div>
 
     <p class="counsellor-note">
-      <strong>Talk to your FP counsellor.</strong> They can help you match a role to your subjects and plan the exams.
-      Write to <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a> or meet them at your campus.
+      <strong>Talk to a career counsellor.</strong> A good counsellor can help you match a role to your subjects and plan
+      the exams. You can also write to me at <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a> or use my
+      <a href={site.contactUrl}>contact page</a>.
     </p>
   </div>
 </Base>

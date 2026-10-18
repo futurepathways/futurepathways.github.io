@@ -4,14 +4,14 @@ import Icon from '../components/Icon.astro';
 import { site, categories } from '../config/site';
 ---
 
-<Base title="About" description={`What ${site.name} is, who runs it, and how to contact the ${site.teamName}.`}>
+<Base title="About" description={`What ${site.name} is, who runs it, and how to get in touch.`}>
   <div class="container section">
     <div class="prose">
       <h1>About {site.name}</h1>
 
       <p>
-        {site.name} is a free website for students of {site.schoolName} (TIPS) and their parents. It brings together
-        clear, friendly guides on five things:
+        {site.name} is a free website for school students in India and their parents. It brings together clear,
+        friendly guides on five things:
       </p>
       <ul>
         {
@@ -22,39 +22,45 @@ import { site, categories } from '../config/site';
           ))
         }
       </ul>
+      <p>
+        It also has the <a href="/roadmaps/">Career Roadmaps</a> tool, which maps modern roles to the school subjects to
+        keep, the Indian degrees and the entrance exams, and an <a href="/deadlines/">Upcoming Deadlines</a> page.
+      </p>
 
       <h2>Who runs it</h2>
       <p>
-        The site is run by the {site.teamName}, the counsellors who help TIPS students across all campuses with
-        subject choices, careers, college applications and opportunities. It was built, and most posts so far were
-        written, by {site.builtBy}, Cambridge Programme Coordinator and FP counsellor. Counsellors from every campus
-        add posts, and every post names who wrote it and who checked it.
+        I am {site.ownerName}, a {site.ownerTitle} in Tamil Nadu, India: {site.ownerCredentials}, with more than ten
+        years in education after a first career in IT consulting. I built this site and I write and check the posts.
+        Every post names who wrote it, who checked the facts, and when.
       </p>
       <p>
         Counsellors answer the same questions many times over. Writing the answers down once, in one trusted place,
-        means every student gets the same quality of information, and parents can read it at home.
+        means every student gets the same quality of information, and parents can read it at home. More about my work is
+        on <a href={site.ownerSite}>my portfolio site</a>.
       </p>
 
       <h2>How to use it</h2>
       <ul>
-        <li>Use the search box to look for a career, a course, a test or a country.</li>
+        <li>Use the search box to look for a career, a course, a test, a university or a country.</li>
         <li>Not sure where to start? Go to <a href="/start/">Start here by grade</a>.</li>
+        <li>Choosing subjects? Open the <a href="/roadmaps/">Career Roadmaps</a>.</li>
         <li>Every post has a short <strong>For Parents</strong> box near the top.</li>
         <li>Tap <strong>Save</strong> on any post to keep it in <a href="/saved/">My Saved Posts</a> on this device.</li>
         <li>Check <a href="/deadlines/">Upcoming Deadlines</a> so you never miss an application date.</li>
       </ul>
 
-      <h2>Contact the FP team</h2>
+      <h2>Get in touch</h2>
       <p>
-        Have a question, spotted a mistake, or want a topic covered? Write to us at
-        <a href={`mailto:${site.contactEmail}`}><Icon name="mail" size={18} /> {site.contactEmail}</a>, or talk to the
-        FP counsellor at your campus.
+        Have a question, spotted a mistake, or want a topic covered? Write to me at
+        <a href={`mailto:${site.contactEmail}`}><Icon name="mail" size={18} /> {site.contactEmail}</a> or use my
+        <a href={site.contactUrl}>contact page</a>. Families who would like a one to one counselling session can book one
+        the same way.
       </p>
 
       <div class="note">
         <strong>Please note.</strong> Everything on this site is for guidance only. Fees, dates, cut-offs and rules
         change often. Always check the official link given in each post before you apply or pay for anything, and talk
-        to your FP counsellor before making a big decision.
+        to a career counsellor before making a big decision.
       </div>
 
       <h2>Your privacy</h2>

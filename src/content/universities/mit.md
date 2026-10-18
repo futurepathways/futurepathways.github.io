@@ -11,7 +11,7 @@ tags_skill: []
 tags_level: [undergraduate]
 tags_audience: [parents]
 countries: [united-states]
-parent_summary: "The world's top-ranked university for science and engineering. Full cost is about ₹89 lakhs a year before aid, but MIT is need-blind and meets full need for every admitted student. SAT or ACT is compulsory and the deadlines fall in November and January. Ask the FP counsellor: can we get a personal aid estimate before deciding?"
+parent_summary: "The world's top-ranked university for science and engineering. Full cost is about ₹89 lakhs a year before aid, but MIT is need-blind and meets full need for every admitted student. SAT or ACT is compulsory and the deadlines fall in November and January. A question to ask your child's counsellor: can we get a personal aid estimate before deciding?"
 official_links:
   - label: "MIT Facts (Official)"
     url: "https://facts.mit.edu/"
@@ -39,7 +39,7 @@ key_dates:
   - date: 2027-02-15
     label: "CSS Profile due for Regular Action"
     url: "https://sfs.mit.edu/undergraduate-students/apply-for-aid/"
-author: "FP (Future Pathway) team"
+author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
 status: published
@@ -58,18 +58,18 @@ MIT Campus Watch the YouTube tour to see the MIT Dome, the Infinite Corridor and
 
 On demand, a campus tour of MIT is available on YouTube. [Watch the MIT Campus Tour today](https://www.youtube.com/watch?v=p6NbLA5-K6g)! This video was made by an independent creator, not by the university.
 
-**Visit a university in person.** The FP (Future Pathway) team strongly recommends that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to us at fperdintl@tipseindia.com.
+**Visit a university in person.** I strongly recommend that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to me at pcmadankumar@gmail.com.
 
 ## MIT Admission Requirements for CBSE and Cambridge A Level
 
-The table below sums up what MIT says it needs from applicants in each pathway. MIT publishes no cut-off marks, so we do not give a magic number. For subject plans and application strategy, please write to the FP (Future Pathway) team for a one to one session.
+The table below sums up what MIT says it needs from applicants in each pathway. MIT publishes no cut-off marks, so we do not give a magic number. For subject plans and application strategy, please write to me for a one to one session.
 
 | Requirement | CBSE Grade 12 | Cambridge A Level |
 |---|---|---|
 | Qualification | Indian Standard 12, CBSE board. Your school sends a Secondary School Report with your transcript. MIT asks for at least three years of grades. | Cambridge International AS and A Level. Your school sends the transcript and your external exam results, as MIT asks for results from exams such as A Levels. |
 | Competitive Benchmark | MIT gives no minimum marks. Marks are the starting point only. In the last cycle MIT admitted 1,299 of 28,349 applicants, which is 4.6 percent. | Same. MIT gives no minimum A Level grades. Strong marks do not guarantee a place. |
 | SAT / ACT | REQUIRED for entry in fall 2027. MIT publishes no minimum score. It looks at scores in the context of each applicant. It uses your best score in each section across sittings (a superscore). Scores must be taken by 30 November 2026 for Early Action and 31 December 2026 for Regular Action. | Same for everyone. You report your A Level scores yourself in the application. Official reports are needed only if you enrol. |
-| English Proficiency | MIT strongly encourages an English test (TOEFL, IELTS, Duolingo, PTE or Cambridge English) if you have used English for fewer than five years or do not study in English. TIPS students study in English, so most are unlikely to need one. Please read MIT's rule and ask us. Regular Action English tests must be done by 31 January. | Same rule. |
+| English Proficiency | MIT strongly encourages an English test (TOEFL, IELTS, Duolingo, PTE or Cambridge English) if you have used English for fewer than five years or do not study in English. Students at English medium schools are unlikely to need one. Please read MIT's rule and ask us. Regular Action English tests must be done by 31 January. | Same rule. |
 | Essays | Written answers inside MIT's own application form. We did not re-check how many questions there are or how long each answer should be. Please read the current questions on MIT's page. | Same. |
 | Teacher Recommendations | Two teacher letters. MIT prefers one from a maths or science teacher and one from a humanities, social science or language teacher. | Same. |
 | Interview | Many applicants are invited to talk with a volunteer MIT Educational Counselor. If MIT cannot offer you one, the interview is waived and your application is not hurt. | Same. |
@@ -104,8 +104,8 @@ MIT is one of six US universities that are both need-blind for international stu
 
 ## What parents should know
 
-- CRITICAL: Do not plan around the USD 10,268 figure or the "families under USD 100,000 pay nothing" line. MIT's page says families with income below USD 100,000 have no parent contribution and families below USD 200,000 typically attend tuition free. It does not say how these levels apply to families living in India. The FP team can ask MIT for a net price estimate based on your own papers. Aid is worked out from your CSS Profile and tax return, not from a rule of thumb
-- CRITICAL: "No loans" is not the full story. MIT builds the offer so that you should not need to borrow. Loans are still available, though. MIT also expects a student contribution from summer savings and term time work. Our counsellors will ask MIT how this works for an international student on an F-1 visa
+- CRITICAL: Do not plan around the USD 10,268 figure or the "families under USD 100,000 pay nothing" line. MIT's page says families with income below USD 100,000 have no parent contribution and families below USD 200,000 typically attend tuition free. It does not say how these levels apply to families living in India. I can ask MIT for a net price estimate based on your own papers. Aid is worked out from your CSS Profile and tax return, not from a rule of thumb
+- CRITICAL: "No loans" is not the full story. MIT builds the offer so that you should not need to borrow. Loans are still available, though. MIT also expects a student contribution from summer savings and term time work. I will ask MIT how this works for an international student on an F-1 visa
 - CRITICAL: One application a year, and an Early Action rejection is final for that year. If MIT turns down your child in Early Action, MIT does not allow a Regular Action application.
 - Cost for 2026-27, as MIT lists it. Tuition is USD 66,720 (~INR 64 lakhs). Housing is USD 14,090 (~INR 14 lakhs) and food is USD 8,104 (~INR 7.8 lakhs). Fees, books and personal costs add the rest. The total is USD 92,760 (~INR 89 lakhs). Flights are extra, because MIT works out travel separately. This is the price before any aid
 - Calendar: Early Action is 1 November 2026 and Regular Action is 4 January 2027. Both fall before CBSE and Cambridge A Level results, which both come in May. You reply by 1 May, which is before CBSE results come out. Plan SAT or ACT dates early. Scores are due by 30 November (EA) or 31 December (RA). Final school marks come later, and an offer depends on them
@@ -115,9 +115,9 @@ MIT is one of six US universities that are both need-blind for international stu
 - Visa rules are changing. F-1 applicants must set social media accounts to public. From 15 September 2026, the old "duration of status" is gone. Your child gets a fixed stay of up to 4 years and must apply to extend it. OPT (work after the degree) and the STEM extension still exist, and we found no published rule to end them. A large fee on H-1B work visas is in court right now. India is not on the US travel ban list. Budget for the US visa fee, the SEVIS fee and a possible new "visa integrity fee". We could not confirm the amounts in India this month. Rules move fast, so check the State Department and ICE pages
 - We did not confirm the South Asian student groups, Olympiad rules or any programme for Indian students for this edition, so we make no claim about them. Ask us and we will check with MIT
 
-## Talk to the FP team
+## Talk to me
 
-To book a one to one MIT session for your family, please write to the FP (Future Pathway) team at fperdintl@tipseindia.com. We can cover SAT planning, application strategy, the aid forms and your full US list. We will fix a time that suits you.
+To book a one to one MIT session for your family, write to me at pcmadankumar@gmail.com or use my [contact page](https://pcmadankumar.github.io/contact.html). I can cover SAT planning, application strategy, the aid forms and your full US list. I will fix a time that suits you.
 
 ## Sources
 
