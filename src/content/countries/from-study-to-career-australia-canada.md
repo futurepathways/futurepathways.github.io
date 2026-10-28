@@ -27,7 +27,7 @@ Notes and reflections from an IACAC webinar on how universities in Australia and
 
 Almost every family I counsel about studying abroad asks the same thing in the end. Not "Is it a good university?" but "Will my child get a job after this?"
 
-It is a fair question. So when International ACAC held a webinar called *From Study to Career: Supporting International Student Success in Australia and Canada* [1], I signed up. Four people who have spent years recruiting international students spoke:
+It is a fair question. So when International ACAC, the association of school counsellors and admission professionals I am a member of, held a webinar called *From Study to Career: Supporting International Student Success in Australia and Canada* [1], I signed up. Four people who have spent years recruiting international students spoke:
 
 - **Lauren Cullen**, Saint Mary's University, Halifax, Canada
 - **Emily Mancuso**, Wilfrid Laurier University, Ontario, Canada
