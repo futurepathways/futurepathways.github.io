@@ -20,7 +20,7 @@ status: published
 published_date: 2026-03-18
 ---
 > **Webinar Reference.**
-> ["Personal Statement Writing"](https://www.unifrog.org/student/webinars/past) — Unifrog Webinar (pre-recorded) | Three UK university representatives discuss focus, authenticity, and the most common mistakes students make in UCAS applications.
+> ["Personal Statement Writing"](https://www.unifrog.org/student/webinars) — Unifrog Webinar (pre-recorded) | Three UK university representatives discuss focus, authenticity, and the most common mistakes students make in UCAS applications.
 
 Three university representatives from the United Kingdom came together for a Unifrog webinar to discuss one of the most consequential pieces of writing a school leaver will ever produce: the UCAS personal statement. This post captures the key takeaways — what admissions teams are really looking for, the pitfalls students consistently fall into, and the concrete resources available to counsellors and students through Unifrog.
 
@@ -99,4 +99,4 @@ As counsellors, the opportunity — and the responsibility — is to start this 
 
 > "The best personal statements do not describe a student who will be a good fit for a course. They introduce a person whose curiosity already belongs there."
 
-Reference: ["Personal Statement Writing"](https://www.unifrog.org/student/webinars/past) | Unifrog Webinar (pre-recorded) | Three UK University Representatives
+Reference: ["Personal Statement Writing"](https://www.unifrog.org/student/webinars) | Unifrog Webinar (pre-recorded) | Three UK University Representatives

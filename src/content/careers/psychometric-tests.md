@@ -20,7 +20,7 @@ status: published
 published_date: 2026-03-17
 ---
 > **Webinar Reference.**
-> ["What Is Psychometric Testing?"](https://www.unifrog.org/teacher/webinars/past) — Unifrog Webinar (pre-recorded) | Topics: Nestlé, Rolls-Royce, verbal reasoning, job simulation tests, and how to perform well in assessments.
+> ["What Is Psychometric Testing?"](https://www.unifrog.org/teacher/webinars) — Unifrog Webinar (pre-recorded) | Topics: Nestlé, Rolls-Royce, verbal reasoning, job simulation tests, and how to perform well in assessments.
 
 Psychometric assessments are becoming a standard part of the hiring and internship application process at major global companies. Yet for most high school students — and many counsellors — they remain unfamiliar territory. This post summarises the key takeaways from a Unifrog webinar on psychometric testing, with practical action points for both students and counsellors.
 
@@ -87,4 +87,4 @@ As counsellors, our role is to ensure students know these assessments exist, und
 
 > "Know yourself. Build yourself. Then show yourself — clearly and confidently."
 
-Reference: ["What Is Psychometric Testing?"](https://www.unifrog.org/teacher/webinars/past) | Unifrog Webinar (pre-recorded)
+Reference: ["What Is Psychometric Testing?"](https://www.unifrog.org/teacher/webinars) | Unifrog Webinar (pre-recorded)

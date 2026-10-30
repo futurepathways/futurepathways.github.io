@@ -108,7 +108,7 @@ Figures about individual universities (Deakin, Griffith, Laurier, Saint Mary's) 
 1. International ACAC. (2026). *From Study to Career: Supporting International Student Success in Australia and Canada* [Webinar recording]. Speakers: Lauren Cullen, Emily Mancuso, Freya Krebs, Tom Kiefer. YouTube. <https://www.youtube.com/watch?v=s1_Nv4vISSI>
 2. World Economic Forum. (2025). *The Future of Jobs Report 2025*. <https://www.weforum.org/publications/the-future-of-jobs-report-2025/>
 3. Quality Indicators for Learning and Teaching (QILT), Australian Government. *ComparED: compare Australian universities*. <https://qilt.edu.au/comparED>
-4. EduNova. *Study and Stay Nova Scotia: Capstone Program*. <https://studynovascotia.ca/our-programs/study-and-stay/capstone/>
+4. EduNova. *Study and Stay Nova Scotia: Capstone Program*. <https://studynovascotia.ca/our-programs/study-and-stay/>
 5. Study Australia, Australian Government. *Student visa (subclass 500)*. <https://studyaustralia.gov.au/en/plan-your-move/your-guide-to-visas/student-visa-subclass-500>
 6. Study Australia, Australian Government. *Temporary Graduate visa (subclass 485)*. <https://studyaustralia.gov.au/en/plan-your-move/your-guide-to-visas/temporary-graduate-visa-subclass-485>
 7. Department of Home Affairs, Australian Government. *Temporary Graduate visa (subclass 485)*. <https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485>
