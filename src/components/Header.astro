@@ -118,7 +118,7 @@ const isCurrent = (path: string) => (path === '/' ? currentPath === '/' : curren
   }
   .header-inner {
     display: grid;
-    grid-template-columns: 1fr auto auto;
+    grid-template-columns: minmax(0, 1fr) auto auto;
     grid-template-areas:
       'brand saved menu'
       'search search search';
@@ -158,9 +158,19 @@ const isCurrent = (path: string) => (path === '/' ? currentPath === '/' : curren
     text-transform: uppercase;
     margin-top: 0.15rem;
   }
+  @media (max-width: 359px) {
+    .wordmark-name {
+      font-size: 1.2rem;
+    }
+    .wordmark-by {
+      font-size: 0.68rem;
+      letter-spacing: 0.05em;
+    }
+  }
 
   .search {
     grid-area: search;
+    min-width: 0;
     display: flex;
     align-items: stretch;
     border: 1.5px solid var(--border);
