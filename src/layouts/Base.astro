@@ -28,7 +28,7 @@ const imageUrl = new URL(image, Astro.site);
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -38,8 +38,15 @@ const imageUrl = new URL(image, Astro.site);
     {noindex && <meta name="robots" content="noindex, nofollow" />}
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <meta name="generator" content={Astro.generator} />
-    <meta name="theme-color" content="#0C447C" />
-    <script is:inline>document.documentElement.classList.add("js");</script>
+    <meta name="theme-color" content="#050912" />
+    <script is:inline>
+      (function () {
+        var d = document.documentElement, t = null;
+        d.classList.add('js');
+        try { t = localStorage.getItem('fp-theme'); } catch (e) {}
+        d.setAttribute('data-theme', t === 'light' ? 'light' : 'dark');
+      })();
+    </script>
 
     <!-- Link previews (PRD 6.8) -->
     <meta property="og:site_name" content={site.name} />

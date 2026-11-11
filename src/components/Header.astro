@@ -1,6 +1,6 @@
 ---
 import { existsSync } from 'node:fs';
-import { site, mainNav } from '../config/site';
+import { site, mainNav, sisterSite } from '../config/site';
 import Icon from './Icon.astro';
 
 // Logo rule (PRD Section 1): text wordmark until a logo file is dropped in at
@@ -19,16 +19,32 @@ const isCurrent = (path: string) => (path === '/' ? currentPath === '/' : curren
         logoSrc ? (
           <img src={logoSrc} alt={site.name} class="brand-logo" width="160" height="48" />
         ) : (
-          <span class="wordmark">
-            <span class="wordmark-name">{site.name}</span>
-            <span class="wordmark-by">by Madan Kumar PC</span>
-          </span>
+          <>
+            <svg class="brand-glyph" viewBox="0 0 40 40" width="36" height="36" aria-hidden="true">
+              <defs>
+                <linearGradient id="fp-glyph" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#5ee7ff" />
+                  <stop offset="0.55" stop-color="#818cf8" />
+                  <stop offset="1" stop-color="#c084fc" />
+                </linearGradient>
+              </defs>
+              <circle cx="20" cy="20" r="17" fill="none" stroke="url(#fp-glyph)" stroke-width="1.6" opacity="0.55" />
+              <ellipse cx="20" cy="20" rx="17" ry="6.5" fill="none" stroke="url(#fp-glyph)" stroke-width="1.6" transform="rotate(-28 20 20)" />
+              <circle cx="20" cy="20" r="5" fill="url(#fp-glyph)" />
+              <circle class="brand-glyph-dot" cx="34.2" cy="12.6" r="2.4" fill="#5ee7ff" />
+            </svg>
+            <span class="wordmark">
+              <span class="wordmark-name">{site.name}</span>
+              <span class="wordmark-by">by Madan Kumar PC</span>
+            </span>
+          </>
         )
       }
     </a>
 
     <form class="search" action="/search/" method="get" role="search" data-suggest-wrap>
       <label for="site-search" class="visually-hidden">Search the site</label>
+      <Icon name="search" size={18} class="search-icon" />
       <input
         id="site-search"
         type="search"
@@ -39,46 +55,88 @@ const isCurrent = (path: string) => (path === '/' ? currentPath === '/' : curren
         data-suggest
       />
       <button type="submit" class="search-btn" aria-label="Search">
-        <Icon name="search" size={20} />
+        <Icon name="arrow" size={18} />
       </button>
     </form>
 
-    <a href="/saved/" class="saved-link" data-saved-link aria-label="My saved posts">
-      <Icon name="bookmark" size={20} />
-      <span class="saved-word">Saved</span><span class="saved-count" data-saved-count></span>
-    </a>
-
-    <button
-      class="menu-btn"
-      type="button"
-      aria-expanded="false"
-      aria-controls="main-nav"
-      aria-label="Menu"
-      data-menu-btn
-    >
-      <Icon name="menu" size={22} class="menu-icon-open" />
-      <Icon name="close" size={22} class="menu-icon-close" />
-      <span class="menu-label">Menu</span>
-    </button>
+    <div class="header-actions">
+      <button type="button" class="icon-btn theme-btn js-only" data-theme-toggle aria-label="Switch to light theme" title="Switch theme">
+        <Icon name="sun" size={19} class="theme-icon-sun" />
+        <Icon name="moon" size={19} class="theme-icon-moon" />
+      </button>
+      <a href="/saved/" class="icon-btn saved-link" data-saved-link aria-label="My saved posts">
+        <Icon name="bookmark" size={19} />
+        <span class="saved-word">Saved</span><span class="saved-count" data-saved-count></span>
+      </a>
+      <button
+        class="icon-btn menu-btn"
+        type="button"
+        aria-expanded="false"
+        aria-controls="main-nav"
+        aria-label="Menu"
+        data-menu-btn
+      >
+        <Icon name="menu" size={21} class="menu-icon-open" />
+        <Icon name="close" size={21} class="menu-icon-close" />
+      </button>
+    </div>
   </div>
 
   <nav id="main-nav" class="main-nav" aria-label="Main menu" data-main-nav>
-    <ul class="container nav-list">
-      {
-        mainNav.map((item) => (
-          <li>
-            <a href={item.path} aria-current={isCurrent(item.path) ? 'page' : undefined}>
-              {item.label}
-            </a>
-          </li>
-        ))
-      }
-    </ul>
+    <div class="container nav-row">
+      <ul class="nav-list">
+        {
+          mainNav.map((item) => (
+            <li>
+              <a href={item.path} aria-current={isCurrent(item.path) ? 'page' : undefined}>
+                {item.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <a class="nav-sister" href={sisterSite.url} target="_blank" rel="noopener" title={sisterSite.title}>
+        <span class="nav-sister-dot" aria-hidden="true"></span>
+        {sisterSite.label}
+        <Icon name="external" size={14} />
+      </a>
+      <button type="button" class="nav-theme js-only" data-theme-toggle aria-label="Switch to light theme">
+        <Icon name="sun" size={18} class="theme-icon-sun" />
+        <Icon name="moon" size={18} class="theme-icon-moon" />
+        <span>Switch light / dark theme</span>
+      </button>
+    </div>
   </nav>
 </header>
 
 <script>
   import '../scripts/suggest';
+
+  // Theme toggle. The early script in Base.astro sets data-theme before paint.
+  const root = document.documentElement;
+  const syncThemeButtons = () => {
+    const light = root.getAttribute('data-theme') === 'light';
+    document.querySelectorAll<HTMLButtonElement>('[data-theme-toggle]').forEach((b) => {
+      b.setAttribute('aria-label', light ? 'Switch to dark theme' : 'Switch to light theme');
+      b.setAttribute('aria-pressed', String(light));
+    });
+    const meta = document.querySelector<HTMLMetaElement>('meta[name="theme-color"]');
+    if (meta) meta.content = light ? '#f4f7fd' : '#050912';
+  };
+  document.querySelectorAll<HTMLButtonElement>('[data-theme-toggle]').forEach((b) =>
+    b.addEventListener('click', () => {
+      const next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      root.setAttribute('data-theme', next);
+      try {
+        localStorage.setItem('fp-theme', next);
+      } catch (e) {
+        /* private mode: theme lasts for this page only */
+      }
+      syncThemeButtons();
+    }),
+  );
+  syncThemeButtons();
+
   // Mobile menu toggle. Without JavaScript the menu is always shown (see <noscript> CSS).
   const btn = document.querySelector<HTMLButtonElement>('[data-menu-btn]');
   const nav = document.querySelector<HTMLElement>('[data-main-nav]');
@@ -111,76 +169,130 @@ const isCurrent = (path: string) => (path === '/' ? currentPath === '/' : curren
 
 <style>
   .site-header {
-    background: var(--surface);
-    border-bottom: 1px solid var(--border);
     position: relative;
     z-index: 20;
+    background: color-mix(in srgb, var(--bg) 78%, transparent);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    backdrop-filter: blur(14px) saturate(140%);
+    border-bottom: 1px solid var(--border);
   }
+  .site-header::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, var(--cyan) 30%, var(--violet) 70%, transparent 100%);
+    opacity: 0.55;
+  }
+  @media (min-width: 800px) {
+    .site-header {
+      position: sticky;
+      top: 0;
+    }
+  }
+
   .header-inner {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) auto auto;
+    grid-template-columns: minmax(0, 1fr) auto;
     grid-template-areas:
-      'brand saved menu'
-      'search search search';
+      'brand actions'
+      'search search';
     align-items: center;
-    gap: 0.6rem 0.75rem;
-    padding-block: 0.7rem;
+    gap: 0.6rem 0.6rem;
+    padding-block: 0.65rem;
   }
+
+  /* Brand */
   .brand {
     grid-area: brand;
-    text-decoration: none;
-    color: inherit;
+    min-width: 0;
     display: inline-flex;
     align-items: center;
+    gap: 0.6rem;
     min-height: 44px;
+    text-decoration: none;
+    color: inherit;
+  }
+  .brand:hover {
+    color: inherit;
   }
   .brand-logo {
     height: 44px;
     width: auto;
   }
+  .brand-glyph {
+    flex: 0 0 auto;
+    width: 34px;
+    height: 34px;
+    filter: drop-shadow(0 0 8px rgb(94 231 255 / 0.35));
+  }
+  .brand-glyph-dot {
+    transform-origin: 20px 20px;
+    animation: fp-orbit 14s linear infinite;
+  }
+  @keyframes fp-orbit {
+    to {
+      transform: rotate(360deg);
+    }
+  }
   .wordmark {
     display: flex;
     flex-direction: column;
+    min-width: 0;
     line-height: 1.05;
   }
   .wordmark-name {
     font-family: var(--font-heading);
     font-weight: 700;
-    font-size: 1.45rem;
+    font-size: 1.28rem;
+    letter-spacing: -0.02em;
     white-space: nowrap;
     color: var(--heading);
-    letter-spacing: 0.01em;
   }
   .wordmark-by {
-    font-size: 0.78rem;
-    color: var(--text-muted);
-    letter-spacing: 0.08em;
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.16em;
     text-transform: uppercase;
-    margin-top: 0.15rem;
+    color: var(--text-muted);
+    margin-top: 0.25rem;
+    white-space: nowrap;
   }
   @media (max-width: 359px) {
+    .brand-glyph {
+      width: 28px;
+      height: 28px;
+    }
     .wordmark-name {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
     .wordmark-by {
-      font-size: 0.68rem;
-      letter-spacing: 0.05em;
+      font-size: 0.56rem;
+      letter-spacing: 0.1em;
     }
   }
 
+  /* Search */
   .search {
     grid-area: search;
+    position: relative;
     min-width: 0;
     display: flex;
-    align-items: stretch;
-    border: 1.5px solid var(--border);
+    align-items: center;
+    border: 1px solid var(--border-strong);
     border-radius: 999px;
-    background: var(--bg);
-    overflow: hidden;
+    background: color-mix(in srgb, var(--surface) 80%, transparent);
+    transition: border-color 0.2s, box-shadow 0.2s;
   }
   .search:focus-within {
-    border-color: var(--blue);
-    box-shadow: 0 0 0 3px rgb(24 95 165 / 0.18);
+    border-color: var(--accent);
+    box-shadow: var(--glow);
+  }
+  .search :global(.search-icon) {
+    margin-left: 0.9rem;
+    color: var(--text-muted);
   }
   .search input {
     flex: 1 1 auto;
@@ -189,55 +301,112 @@ const isCurrent = (path: string) => (path === '/' ? currentPath === '/' : curren
     background: transparent;
     color: var(--text);
     font: inherit;
-    padding: 0.55rem 0.4rem 0.55rem 1rem;
+    font-size: 0.95rem;
+    padding: 0.55rem 0.5rem 0.55rem 0.55rem;
     outline: none;
   }
   .search input::placeholder {
     color: var(--text-muted);
   }
   .search-btn {
-    border: 0;
-    background: var(--blue);
-    color: #fff;
-    padding: 0 0.95rem;
-    cursor: pointer;
+    flex: 0 0 auto;
     display: inline-flex;
     align-items: center;
-    min-width: 44px;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    margin: 3px;
+    border: 0;
+    border-radius: 50%;
+    background: var(--grad-btn);
+    color: #fff;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
   }
   .search-btn:hover {
-    background: var(--deep);
+    box-shadow: var(--glow);
   }
 
-  .saved-link {
-    grid-area: saved;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35rem;
-    min-height: 44px;
-    padding: 0 0.6rem;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: var(--radius-sm);
-  }
-  .saved-link:hover {
-    background: var(--bg-soft);
-  }
-
-  .menu-btn {
-    grid-area: menu;
-    display: inline-flex;
+  /* Actions */
+  .header-actions {
+    grid-area: actions;
+    display: flex;
     align-items: center;
     gap: 0.4rem;
-    min-height: 44px;
-    padding: 0 0.7rem;
-    border: 1.5px solid var(--border);
-    border-radius: var(--radius-sm);
-    background: var(--bg);
+  }
+  .icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    min-width: 42px;
+    min-height: 42px;
+    padding: 0 0.55rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: color-mix(in srgb, var(--surface) 70%, transparent);
     color: var(--text);
     font: inherit;
+    font-size: 0.92rem;
     font-weight: 600;
+    text-decoration: none;
     cursor: pointer;
+    transition: border-color 0.15s, color 0.15s, box-shadow 0.15s;
+  }
+  .icon-btn:hover {
+    color: var(--heading);
+    border-color: var(--accent);
+    box-shadow: var(--glow);
+  }
+  .theme-btn :global(.theme-icon-moon),
+  .nav-theme :global(.theme-icon-moon) {
+    display: none;
+  }
+  :global(:root[data-theme='light']) .theme-btn :global(.theme-icon-sun),
+  :global(:root[data-theme='light']) .nav-theme :global(.theme-icon-sun) {
+    display: none;
+  }
+  :global(:root[data-theme='light']) .theme-btn :global(.theme-icon-moon),
+  :global(:root[data-theme='light']) .nav-theme :global(.theme-icon-moon) {
+    display: inline-block;
+  }
+  /* Small phones: the theme switch moves from the header row into the menu panel */
+  .nav-theme {
+    display: none;
+  }
+  @media (max-width: 419px) {
+    .theme-btn {
+      display: none;
+    }
+    .nav-theme {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      width: 100%;
+      min-height: 44px;
+      margin-top: 0.5rem;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: color-mix(in srgb, var(--surface) 60%, transparent);
+      color: var(--text);
+      font: inherit;
+      font-size: 0.95rem;
+      cursor: pointer;
+    }
+  }
+  .saved-count {
+    font-family: var(--font-mono);
+    font-weight: 600;
+    color: var(--accent);
+  }
+  .saved-word {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
   }
   .menu-btn :global(.menu-icon-close),
   .menu-btn[aria-expanded='true'] :global(.menu-icon-open) {
@@ -246,71 +415,106 @@ const isCurrent = (path: string) => (path === '/' ? currentPath === '/' : curren
   .menu-btn[aria-expanded='true'] :global(.menu-icon-close) {
     display: inline-block;
   }
-  .saved-count {
-    font-weight: 700;
-  }
-  @media (max-width: 519px) {
-    .saved-word,
-    .menu-label {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      overflow: hidden;
-      clip: rect(0 0 0 0);
-      white-space: nowrap;
-    }
-    .saved-link,
-    .menu-btn {
-      padding-inline: 0.55rem;
-      min-width: 44px;
-      justify-content: center;
-    }
+  .menu-btn[aria-expanded='true'] {
+    border-color: var(--accent);
+    color: var(--accent);
   }
 
+  /* Menu (mobile: panel; desktop: row) */
   .main-nav {
     display: none;
     border-top: 1px solid var(--border);
-    background: var(--surface);
   }
   .main-nav[data-open] {
     display: block;
   }
+  .nav-row {
+    padding-block: 0.6rem 0.9rem;
+  }
   .nav-list {
     list-style: none;
     margin: 0;
-    padding-block: 0.4rem;
-    display: flex;
-    flex-direction: column;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.35rem;
   }
   .nav-list a {
-    display: block;
-    padding: 0.7rem 0.4rem;
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: color-mix(in srgb, var(--surface) 60%, transparent);
     text-decoration: none;
+    font-family: var(--font-heading);
     font-weight: 500;
+    font-size: 0.98rem;
     color: var(--text);
-    border-bottom: 1px solid var(--border);
-    border-left: 4px solid transparent;
-  }
-  .nav-list li:last-child a {
-    border-bottom: 0;
+    transition: color 0.15s, border-color 0.15s, background 0.15s;
   }
   .nav-list a:hover,
   .nav-list a[aria-current='page'] {
-    color: var(--link);
-    border-left-color: var(--gold);
-    background: var(--bg-soft);
+    color: var(--heading);
+    border-color: var(--accent);
+    background: var(--tag-bg);
+  }
+  .nav-sister {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    min-height: 44px;
+    margin-top: 0.5rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    background:
+      linear-gradient(var(--surface), var(--surface)) padding-box,
+      linear-gradient(120deg, #f6e3a6, #c9a84c) border-box;
+    color: var(--heading);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .nav-sister:hover {
+    color: var(--heading);
+    box-shadow: 0 0 0 1px rgb(240 214 138 / 0.45), 0 8px 26px -10px rgb(240 214 138 / 0.5);
+  }
+  .nav-sister-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #f0d68a;
+    box-shadow: 0 0 10px #f0d68a;
+  }
+
+  @media (min-width: 520px) {
+    .saved-word {
+      position: static;
+      width: auto;
+      height: auto;
+      overflow: visible;
+      clip: auto;
+    }
+    .nav-list {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
   }
 
   @media (min-width: 800px) {
     .header-inner {
-      grid-template-columns: auto 1fr auto;
-      grid-template-areas: 'brand search saved';
+      grid-template-columns: auto minmax(0, 1fr) auto;
+      grid-template-areas: 'brand search actions';
       gap: 1.5rem;
     }
     .search {
-      max-width: 520px;
-      justify-self: center;
+      max-width: 500px;
       width: 100%;
+      justify-self: center;
     }
     .menu-btn {
       display: none;
@@ -318,25 +522,65 @@ const isCurrent = (path: string) => (path === '/' ? currentPath === '/' : curren
     .main-nav {
       display: block;
     }
-    .nav-list {
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 0.1rem;
+    .nav-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
       padding-block: 0;
     }
-    .nav-list a {
-      padding: 0.65rem 0.75rem;
-      border-bottom: 3px solid transparent;
-      border-left: 0;
+    .nav-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.1rem;
     }
-    .nav-list li:last-child a {
-      border-bottom: 3px solid transparent;
+    .nav-list a {
+      position: relative;
+      min-height: 42px;
+      padding: 0.3rem 0.7rem;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      font-size: 0.92rem;
+      color: var(--text-muted);
+    }
+    .nav-list a::after {
+      content: '';
+      position: absolute;
+      left: 0.7rem;
+      right: 0.7rem;
+      bottom: 6px;
+      height: 2px;
+      border-radius: 2px;
+      background: var(--grad);
+      transform: scaleX(0);
+      transition: transform 0.2s;
+      box-shadow: 0 0 10px rgb(94 231 255 / 0.6);
     }
     .nav-list a:hover,
     .nav-list a[aria-current='page'] {
-      border-left: 0;
-      border-bottom-color: var(--gold);
       background: transparent;
+      color: var(--heading);
+    }
+    .nav-list a:hover::after,
+    .nav-list a[aria-current='page']::after {
+      transform: scaleX(1);
+    }
+    .nav-sister {
+      margin: 0 0 0 auto;
+      min-height: 34px;
+      padding: 0.2rem 0.8rem;
+      border-radius: 999px;
+      font-size: 0.86rem;
+    }
+  }
+  @media (min-width: 800px) and (max-width: 1099px) {
+    .nav-list a {
+      padding-inline: 0.5rem;
+      font-size: 0.88rem;
+    }
+    .nav-list a::after {
+      left: 0.5rem;
+      right: 0.5rem;
     }
   }
 </style>

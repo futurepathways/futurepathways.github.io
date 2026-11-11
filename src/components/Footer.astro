@@ -1,5 +1,6 @@
 ---
-import { site, categories } from '../config/site';
+import { site, categories, sisterSite } from '../config/site';
+import Icon from './Icon.astro';
 const year = new Date().getFullYear();
 ---
 
@@ -7,7 +8,7 @@ const year = new Date().getFullYear();
   <div class="container footer-inner">
     <div class="footer-brand">
       <p class="footer-name">{site.name}</p>
-      <p class="footer-by">{site.name}, by {site.ownerName}, {site.ownerTitle}</p>
+      <p class="footer-by">by {site.ownerName} · {site.ownerTitle}</p>
       <p class="footer-note">
         Information here is for guidance. Fees, dates and rules change. Always check the official link before applying,
         and talk to a career counsellor.
@@ -28,13 +29,19 @@ const year = new Date().getFullYear();
       <p class="footer-heading">More</p>
       <ul>
         <li><a href="/start/">Start here by grade</a></li>
-        <li><a href="/tags/">Browse All Tags</a></li>
-        <li><a href="/saved/">My Saved Posts</a></li>
+        <li><a href="/tags/">Browse all tags</a></li>
+        <li><a href="/saved/">My saved posts</a></li>
         <li><a href="/search/">Search</a></li>
         <li><a href="/about/">About</a></li>
         <li><a href={site.contactUrl}>Contact Madan</a></li>
       </ul>
     </nav>
+
+    <a class="sister-card" href={sisterSite.url} target="_blank" rel="noopener" title={sisterSite.title}>
+      <span class="sister-kicker">Also by Madan</span>
+      <span class="sister-name">{sisterSite.label} <Icon name="external" size={16} /></span>
+      <span class="sister-desc">Portfolio, teacher training for schools, and the blog on teaching, AI and learning.</span>
+    </a>
   </div>
   <div class="container footer-bottom">
     <p>© {year} {site.ownerName}. Made for students and parents in India.</p>
@@ -44,45 +51,75 @@ const year = new Date().getFullYear();
 
 <style>
   .site-footer {
+    position: relative;
+    margin-top: 4rem;
     background: var(--footer-bg);
     color: var(--footer-text);
-    margin-top: 3rem;
-    border-top: 4px solid var(--gold);
+  }
+  .site-footer::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #5ee7ff 25%, #a78bfa 75%, transparent);
   }
   .footer-inner {
     display: grid;
-    gap: 1.5rem;
-    grid-template-columns: 1fr;
-    padding-block: 2rem 1rem;
+    gap: 1.8rem;
+    grid-template-columns: minmax(0, 1fr);
+    padding-block: 2.6rem 1.4rem;
   }
-  @media (min-width: 700px) {
+  @media (min-width: 600px) {
     .footer-inner {
-      grid-template-columns: 2fr 1fr 1fr;
-      gap: 2rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .footer-brand,
+    .sister-card {
+      grid-column: 1 / -1;
+    }
+  }
+  @media (min-width: 1000px) {
+    .footer-inner {
+      grid-template-columns: 1.6fr 1fr 1fr 1.4fr;
+      gap: 2.2rem;
+    }
+    .footer-brand,
+    .sister-card {
+      grid-column: auto;
     }
   }
   .footer-name {
     font-family: var(--font-heading);
-    font-size: 1.4rem;
+    font-size: 1.45rem;
     font-weight: 700;
+    letter-spacing: -0.02em;
     margin: 0 0 0.2rem;
     color: #fff;
   }
   .footer-by {
-    margin: 0 0 0.8rem;
-    color: var(--gold);
-    font-weight: 500;
+    margin: 0 0 0.9rem;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #5ee7ff;
   }
   .footer-note {
-    font-size: 0.93rem;
-    max-width: 48ch;
-    opacity: 0.9;
+    font-size: 0.92rem;
+    max-width: 46ch;
+    opacity: 0.85;
+    margin: 0;
   }
   .footer-heading {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    color: #fff;
-    margin: 0 0 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #8f9bb6;
+    margin: 0 0 0.7rem;
   }
   .footer-links ul {
     list-style: none;
@@ -90,23 +127,70 @@ const year = new Date().getFullYear();
     padding: 0;
   }
   .footer-links li {
-    margin-bottom: 0.35rem;
+    margin-bottom: 0.4rem;
   }
   .site-footer a {
     color: var(--footer-text);
-    text-decoration-color: rgb(255 255 255 / 0.4);
+    text-decoration: none;
   }
   .site-footer a:hover {
     color: #fff;
-    text-decoration-color: var(--gold);
+    text-decoration: underline;
+    text-decoration-color: #5ee7ff;
+  }
+  .sister-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    align-self: start;
+    padding: 1.1rem 1.2rem;
+    border-radius: 16px;
+    border: 1px solid transparent;
+    background:
+      linear-gradient(#0a0f1c, #0a0f1c) padding-box,
+      linear-gradient(120deg, #f6e3a6, #c9a84c 50%, #5ee7ff) border-box;
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .site-footer a.sister-card:hover {
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 0 0 1px rgb(240 214 138 / 0.4), 0 14px 40px -14px rgb(240 214 138 / 0.5);
+  }
+  .sister-kicker {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #f0d68a;
+  }
+  .sister-name {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  .sister-desc {
+    font-size: 0.9rem;
+    opacity: 0.85;
   }
   .footer-bottom {
-    border-top: 1px solid rgb(255 255 255 / 0.15);
-    padding-block: 0.9rem;
-    font-size: 0.88rem;
-    opacity: 0.85;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.3rem 1.5rem;
+    border-top: 1px solid rgb(255 255 255 / 0.08);
+    padding-block: 1rem;
+    font-size: 0.85rem;
+    opacity: 0.8;
   }
   .footer-bottom p {
     margin: 0;
+  }
+  .footer-bottom a {
+    text-decoration: underline;
+    text-decoration-color: rgb(255 255 255 / 0.3);
   }
 </style>

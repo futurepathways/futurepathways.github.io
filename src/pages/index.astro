@@ -3,66 +3,135 @@ import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
 import PostCard from '../components/PostCard.astro';
 import DeadlineBadge from '../components/DeadlineBadge.astro';
-import { site, categories, gradeBands } from '../config/site';
+import { site, categories, gradeBands, sisterSite } from '../config/site';
 import { getVisiblePosts, byNewest, allDatedItems } from '../lib/content';
-import { istTodayString, daysLeft } from '../lib/deadlines';
+import { istTodayString, daysLeft, formatDateString } from '../lib/deadlines';
+import { roadmaps } from '../lib/roadmaps';
 
 const all = await getVisiblePosts();
 // Main-category counts only, so the numbers match what a reader expects to find (14 Oct 2026).
 const counts = Object.fromEntries(categories.map((c) => [c.key, all.filter((p) => p.category === c.key).length]));
 const today = istTodayString();
+const upcoming = allDatedItems(all).filter((it) => daysLeft(it.date, today) >= 0);
 // "Closing soon": the next 5 dated items (opportunity deadlines and key dates) within 14 days (PRD 6.1)
-const closingSoon = allDatedItems(all)
-  .filter((it) => {
-    const d = daysLeft(it.date, today);
-    return d >= 0 && d <= 14;
-  })
-  .slice(0, 5);
+const closingSoon = upcoming.filter((it) => daysLeft(it.date, today) <= 14).slice(0, 5);
 const newest = [...all].sort(byNewest).slice(0, 6);
+const roleCount = roadmaps.roles.length;
+
+// Short lines for the grade cards, taken from the intros in src/data/start.yml.
+const gradeLines: Record<string, string> = {
+  '6-8': 'Time to be curious, not to decide. Find out what jobs exist and notice what you enjoy.',
+  '9-10': 'Choose your subjects and stream, and take up your first competitions and summer programmes.',
+  '11-12': 'Courses, entrance tests, countries, applications and deadlines. Time to get practical.',
+};
+const pad = (n: number) => String(n).padStart(2, '0');
 ---
 
 <Base title={site.name} description={site.tagline}>
-  <section class="hero">
-    <div class="container">
-      <h1>Find your path, one step at a time.</h1>
-      <p class="hero-lead">
-        Clear, friendly guides on careers, courses, countries and opportunities, written by career counsellor
-        {site.ownerName} for students and parents in India.
-      </p>
-      <form class="hero-search" action="/search/" method="get" role="search" data-suggest-wrap>
-        <label for="home-search" class="visually-hidden">Search the site</label>
-        <input
-          id="home-search"
-          type="search"
-          name="q"
-          placeholder="Try “engineering”, “NEET” or “study in Canada”"
-          autocomplete="off"
-          enterkeyhint="search"
-          data-suggest
-        />
-        <button type="submit" class="btn btn--gold">
-          <Icon name="search" size={20} />
-          Search
-        </button>
-      </form>
+  <section class="home-hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="kicker">Career guidance · students &amp; parents · India</p>
+        <h1>Find your path, <span class="grad-text">one step at a time.</span></h1>
+        <p class="hero-lead">
+          Clear, friendly guides on careers, courses, countries and opportunities, written by career counsellor{' '}
+          {site.ownerName} for students and parents in India.
+        </p>
+        <form class="hero-search" action="/search/" method="get" role="search" data-suggest-wrap>
+          <label for="home-search" class="visually-hidden">Search the site</label>
+          <Icon name="search" size={20} class="hero-search-icon" />
+          <input
+            id="home-search"
+            type="search"
+            name="q"
+            placeholder="Try “engineering”, “NEET” or “study in Canada”"
+            autocomplete="off"
+            enterkeyhint="search"
+            data-suggest
+          />
+          <button type="submit" class="btn">Search</button>
+        </form>
+        <dl class="hero-stats">
+          <div><dt>Guides</dt><dd>{pad(all.length)}</dd></div>
+          <div><dt>Career roadmaps</dt><dd>{pad(roleCount)}</dd></div>
+          <div><dt>Dates tracked</dt><dd>{pad(upcoming.length)}</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 400 400" class="orbit-svg">
+          <defs>
+            <radialGradient id="core-glow" cx="50%" cy="50%" r="50%">
+              <stop offset="0" stop-color="#5ee7ff" stop-opacity="0.9" />
+              <stop offset="0.45" stop-color="#818cf8" stop-opacity="0.35" />
+              <stop offset="1" stop-color="#818cf8" stop-opacity="0" />
+            </radialGradient>
+            <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#5ee7ff" />
+              <stop offset="1" stop-color="#c084fc" />
+            </linearGradient>
+          </defs>
+          <circle cx="200" cy="200" r="70" fill="url(#core-glow)" />
+          <circle cx="200" cy="200" r="92" class="ring" />
+          <circle cx="200" cy="200" r="136" class="ring ring--dash" />
+          <circle cx="200" cy="200" r="180" class="ring" />
+          <g class="spin spin--a"><circle cx="292" cy="200" r="5" fill="#5ee7ff" /></g>
+          <g class="spin spin--b"><circle cx="200" cy="64" r="4" fill="#c4b5fd" /></g>
+          <g class="spin spin--c"><circle cx="20" cy="200" r="4.5" fill="#f0d68a" /></g>
+          <circle cx="200" cy="200" r="22" class="core" stroke="url(#ring)" stroke-width="2" />
+          <text x="200" y="205" text-anchor="middle" class="core-label">YOU</text>
+          <g class="node"><circle cx="200" cy="20" r="5" /><text x="214" y="24">Careers</text></g>
+          <g class="node"><circle cx="356" cy="110" r="5" /><text x="290" y="96">Courses</text></g>
+          <g class="node"><circle cx="356" cy="290" r="5" /><text x="266" y="320">Countries</text></g>
+          <g class="node"><circle cx="105" cy="327" r="5" /><text x="20" y="360">Universities</text></g>
+          <g class="node"><circle cx="72" cy="138" r="5" /><text x="10" y="118">Opportunities</text></g>
+        </svg>
+      </div>
     </div>
   </section>
 
   <section class="container section">
-    <h2 class="section-title">What do you want to explore?</h2>
-    <div class="grid grid--2 category-grid">
+    <div class="section-head">
+      <p class="kicker">Start here</p>
+      <h2>Pick your grade</h2>
+      <p class="section-lead">Not sure where to begin? Each grade has its own starting page with the posts to read first.</p>
+    </div>
+    <div class="grid grid--3 grade-grid">
       {
-        categories.map((c) => (
-          <a href={c.path} class={`card category-card cat-${c.key}`}>
-            <span class="category-icon">
-              <Icon name={c.key} size={30} />
+        gradeBands.map((g, i) => (
+          <a href={g.path} class={`card grade-card grade-card--${i + 1}`}>
+            <span class="grade-num">{g.short.replace('–', '—')}</span>
+            <span class="grade-label">{g.label}</span>
+            <span class="grade-line">{gradeLines[g.key]}</span>
+            <span class="grade-go">
+              Start <Icon name="arrow" size={18} />
             </span>
-            <span class="category-text">
-              <span class="category-name">{c.name}</span>
-              <span class="category-blurb">{c.blurb}</span>
-              <span class="category-count">{counts[c.key]} post{counts[c.key] === 1 ? '' : 's'}</span>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="container section">
+    <div class="section-head">
+      <p class="kicker">Explore</p>
+      <h2>What do you want to explore?</h2>
+    </div>
+    <div class="bento">
+      {
+        categories.map((c, i) => (
+          <a href={c.path} class={`card bento-card cat-${c.key} ${i === 0 ? 'bento-card--wide' : ''}`}>
+            <span class="bento-icon">
+              <Icon name={c.key} size={26} />
             </span>
-            <Icon name="arrow" size={22} class="category-arrow" />
+            <span class="bento-name">{c.name}</span>
+            <span class="bento-blurb">{c.blurb}</span>
+            <span class="bento-foot">
+              <span class="bento-count">
+                {pad(counts[c.key])} post{counts[c.key] === 1 ? '' : 's'}
+              </span>
+              <Icon name="arrow" size={20} class="bento-arrow" />
+            </span>
           </a>
         ))
       }
@@ -71,24 +140,28 @@ const newest = [...all].sort(byNewest).slice(0, 6);
 
   {
     closingSoon.length > 0 && (
-      <section class="container section closing">
-        <h2 class="section-title">
-          <Icon name="calendar" size={24} /> Closing soon
-        </h2>
-        <ul class="closing-list">
+      <section class="container section">
+        <div class="section-head section-head--row">
+          <div>
+            <p class="kicker">Countdown</p>
+            <h2>Closing soon</h2>
+          </div>
+          <a class="btn btn--outline btn--small" href="/deadlines/">
+            All deadlines <Icon name="arrow" size={16} />
+          </a>
+        </div>
+        <ol class="timeline">
           {closingSoon.map((it) => (
-            <li>
-              <span>
+            <li class={`cat-${it.post.category}`}>
+              <span class="timeline-date">{formatDateString(it.date)}</span>
+              <span class="timeline-body">
                 <a href={it.post.path}>{it.post.title}</a>
-                <span class="closing-label"> · {it.label}</span>
+                <span class="timeline-label">{it.label}</span>
               </span>
-              <DeadlineBadge deadline={it.date} rolling={false} showDate />
+              <DeadlineBadge deadline={it.date} rolling={false} />
             </li>
           ))}
-        </ul>
-        <p>
-          <a href="/deadlines/">See all upcoming deadlines</a>
-        </p>
+        </ol>
       </section>
     )
   }
@@ -96,7 +169,10 @@ const newest = [...all].sort(byNewest).slice(0, 6);
   {
     newest.length > 0 && (
       <section class="container section">
-        <h2 class="section-title">New this month</h2>
+        <div class="section-head">
+          <p class="kicker">Latest</p>
+          <h2>New this month</h2>
+        </div>
         <ul class="grid grid--3 newest-grid">
           {newest.map((p) => (
             <PostCard post={p} headingLevel="h3" />
@@ -107,16 +183,48 @@ const newest = [...all].sort(byNewest).slice(0, 6);
   }
 
   <section class="container section">
-    <h2 class="section-title">Start here by grade</h2>
-    <p>Not sure where to begin? Pick your grade and we will show you what matters right now.</p>
-    <div class="grade-buttons">
-      {
-        gradeBands.map((g) => (
-          <a href={g.path} class="btn btn--outline">
-            {g.label}
-          </a>
-        ))
-      }
+    <div class="section-head">
+      <p class="kicker">Toolkit</p>
+      <h2>Tools for planning</h2>
+    </div>
+    <div class="grid grid--4 tools-grid">
+      <a class="card tool-card" href="/roadmaps/">
+        <Icon name="route" size={24} />
+        <span class="tool-name">Career Roadmaps</span>
+        <span class="tool-desc">{roleCount} roles mapped to subjects, degrees and entrance exams.</span>
+      </a>
+      <a class="card tool-card" href="/deadlines/">
+        <Icon name="calendar" size={24} />
+        <span class="tool-name">Upcoming Deadlines</span>
+        <span class="tool-desc">Every application date and key date in one list.</span>
+      </a>
+      <a class="card tool-card" href="/parents/">
+        <Icon name="parents" size={24} />
+        <span class="tool-name">For Parents</span>
+        <span class="tool-desc">Short summaries and a question to ask at home.</span>
+      </a>
+      <a class="card tool-card" href="/saved/">
+        <Icon name="bookmark" size={24} />
+        <span class="tool-name">My Saved Posts</span>
+        <span class="tool-desc">Save posts on this device and come back to them.</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="container section">
+    <div class="author-strip">
+      <div class="author-text">
+        <p class="kicker">Who writes this</p>
+        <p class="author-line">
+          Every guide is written and checked by <strong>{site.ownerName}</strong>, {site.ownerCredentials}.
+        </p>
+      </div>
+      <div class="author-actions">
+        <a class="btn btn--outline" href="/about/">About Future Pathways</a>
+        <a class="btn btn--gold" href={sisterSite.url} target="_blank" rel="noopener" title={sisterSite.title}>
+          Visit Madan's portfolio <Icon name="external" size={16} />
+        </a>
+      </div>
     </div>
   </section>
 </Base>
@@ -127,136 +235,480 @@ const newest = [...all].sort(byNewest).slice(0, 6);
 </script>
 
 <style>
-  .category-count {
-    font-size: 0.85rem;
+  /* ---------- Hero ---------- */
+  .home-hero {
+    position: relative;
+    padding-block: 3rem 2.4rem;
+    overflow: hidden;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: center;
+    gap: 2rem;
+  }
+  @media (min-width: 960px) {
+    .home-hero {
+      padding-block: 4.5rem 3.5rem;
+    }
+    .hero-grid {
+      grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+    }
+  }
+  .home-hero h1 {
+    font-size: clamp(2.3rem, 1.3rem + 4vw, 4rem);
+    line-height: 1.04;
+    letter-spacing: -0.035em;
+    max-width: 14ch;
+    margin-bottom: 1rem;
+  }
+  .hero-lead {
+    max-width: 54ch;
+    font-size: 1.12rem;
     color: var(--text-muted);
-    margin-top: 0.15rem;
+    margin-bottom: 1.6rem;
   }
-  .closing-list {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 0.8rem;
+  .hero-search {
+    position: relative;
     display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+    align-items: center;
+    gap: 0.4rem;
+    max-width: 600px;
+    padding: 6px 6px 6px 1rem;
+    border: 1px solid var(--border-strong);
+    border-radius: 999px;
+    background: var(--surface-glass);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    transition: border-color 0.2s, box-shadow 0.2s;
   }
-  .closing-list li {
+  .hero-search:focus-within {
+    border-color: var(--accent);
+    box-shadow: var(--glow);
+  }
+  .hero-search :global(.hero-search-icon) {
+    color: var(--accent);
+  }
+  .hero-search input {
+    flex: 1 1 auto;
+    min-width: 0;
+    min-height: 44px;
+    border: 0;
+    background: transparent;
+    color: var(--text);
+    font: inherit;
+    outline: none;
+  }
+  .hero-search input::placeholder {
+    color: var(--text-muted);
+  }
+  @media (max-width: 799px) {
+    /* the header already shows a search box on phones */
+    .hero-search {
+      display: none;
+    }
+  }
+  .hero-stats {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 0.4rem 1rem;
-    padding: 0.7rem 1rem;
-    background: var(--bg-soft);
-    border-left: 4px solid var(--gold);
-    border-radius: var(--radius-sm);
+    gap: 0.8rem 2.2rem;
+    margin: 2rem 0 0;
   }
-  .closing-list a {
-    font-weight: 600;
+  .hero-stats div {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 0.9rem;
+    border-left: 1px solid var(--border-strong);
   }
-  .closing-label {
+  .hero-stats dt {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
     color: var(--text-muted);
-    font-size: 0.92rem;
   }
+  .hero-stats dd {
+    margin: 0;
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--heading);
+  }
+
+  /* Orbit visual */
+  .hero-visual {
+    display: none;
+  }
+  @media (min-width: 960px) {
+    .hero-visual {
+      display: block;
+      max-width: 440px;
+      justify-self: end;
+      width: 100%;
+    }
+  }
+  .orbit-svg {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+  .ring {
+    fill: none;
+    stroke: url(#ring);
+    stroke-width: 1;
+    opacity: 0.45;
+  }
+  .ring--dash {
+    stroke-dasharray: 3 7;
+    opacity: 0.6;
+  }
+  .spin {
+    transform-origin: 200px 200px;
+    animation: spin 24s linear infinite;
+  }
+  .spin--b {
+    animation-duration: 36s;
+    animation-direction: reverse;
+  }
+  .spin--c {
+    animation-duration: 52s;
+  }
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .core {
+    fill: var(--surface);
+  }
+  .core-label {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    fill: var(--heading);
+  }
+  .node circle {
+    fill: var(--bg);
+    stroke: #5ee7ff;
+    stroke-width: 2;
+    filter: drop-shadow(0 0 6px rgb(94 231 255 / 0.8));
+  }
+  .node text {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    fill: var(--text-muted);
+  }
+
+  /* ---------- Section heads ---------- */
+  .section-head {
+    margin-bottom: 1.4rem;
+  }
+  .section-head h2 {
+    margin: 0;
+  }
+  .section-lead {
+    margin: 0.5rem 0 0;
+    color: var(--text-muted);
+    max-width: 60ch;
+  }
+  .section-head--row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 0.8rem 1rem;
+  }
+
+  /* ---------- Grade cards ---------- */
+  .grade-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    min-height: 210px;
+    text-decoration: none;
+    color: var(--text);
+    overflow: hidden;
+  }
+  .grade-card::before {
+    content: '';
+    position: absolute;
+    inset: auto -30% -60% auto;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--g), transparent 70%);
+    opacity: 0.22;
+    transition: opacity 0.25s;
+  }
+  .grade-card--1 {
+    --g: #5ee7ff;
+  }
+  .grade-card--2 {
+    --g: #818cf8;
+  }
+  .grade-card--3 {
+    --g: #c084fc;
+  }
+  .grade-card:hover {
+    color: var(--text);
+    transform: translateY(-3px);
+    border-color: var(--g);
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--g) 40%, transparent), 0 18px 44px -18px var(--g);
+  }
+  .grade-card:hover::before {
+    opacity: 0.4;
+  }
+  .grade-num {
+    font-family: var(--font-mono);
+    font-size: 2.3rem;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: var(--g);
+    text-shadow: 0 0 24px color-mix(in srgb, var(--g) 60%, transparent);
+  }
+  :global(:root[data-theme='light']) .grade-card--1 {
+    --g: #0e7490;
+  }
+  :global(:root[data-theme='light']) .grade-card--2 {
+    --g: #4f46e5;
+  }
+  :global(:root[data-theme='light']) .grade-card--3 {
+    --g: #7c3aed;
+  }
+  .grade-label {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    font-weight: 650;
+    color: var(--heading);
+    margin-top: 0.4rem;
+  }
+  .grade-line {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+  }
+  .grade-go {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-top: auto;
+    padding-top: 0.6rem;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--g);
+  }
+
+  /* ---------- Bento categories ---------- */
+  .bento {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  @media (min-width: 600px) {
+    .bento {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .bento-card--wide {
+      grid-column: 1 / -1;
+    }
+  }
+  @media (min-width: 960px) {
+    .bento {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.2rem;
+    }
+    .bento-card--wide {
+      grid-column: span 2;
+    }
+  }
+  .bento-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    min-height: 190px;
+    text-decoration: none;
+    color: var(--text);
+    overflow: hidden;
+  }
+  .bento-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(420px 200px at 100% 0%, color-mix(in srgb, var(--cat) 16%, transparent), transparent 70%);
+    pointer-events: none;
+  }
+  .bento-card:hover {
+    color: var(--text);
+    transform: translateY(-3px);
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--cat) 45%, transparent), 0 18px 44px -20px var(--cat);
+  }
+  .bento-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 14px;
+    color: var(--cat);
+    background: color-mix(in srgb, var(--cat) 12%, transparent);
+    border: 1px solid color-mix(in srgb, var(--cat) 35%, transparent);
+    box-shadow: 0 0 22px -6px var(--cat);
+    margin-bottom: 0.4rem;
+  }
+  .bento-name {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    font-weight: 650;
+    letter-spacing: -0.01em;
+    color: var(--heading);
+  }
+  .bento-card--wide .bento-name {
+    font-size: clamp(1.4rem, 1.1rem + 1.2vw, 2rem);
+  }
+  .bento-blurb {
+    color: var(--text-muted);
+    font-size: 0.96rem;
+    max-width: 44ch;
+  }
+  .bento-foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    padding-top: 0.8rem;
+  }
+  .bento-count {
+    font-family: var(--font-mono);
+    font-size: 0.76rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--cat);
+  }
+  .bento-card :global(.bento-arrow) {
+    color: var(--cat);
+    transition: transform 0.2s;
+  }
+  .bento-card:hover :global(.bento-arrow) {
+    transform: translateX(4px);
+  }
+
+  /* ---------- Closing soon timeline ---------- */
+  .timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .timeline li {
+    display: grid;
+    grid-template-columns: 6.8rem minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 0.4rem 1rem;
+    padding: 0.85rem 1.1rem;
+    border: 1px solid var(--border);
+    border-left: 2px solid var(--cat);
+    border-radius: var(--radius-sm);
+    background: var(--surface-glass);
+  }
+  .timeline-date {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--cat);
+  }
+  .timeline-body {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+  .timeline-body a {
+    font-weight: 600;
+    color: var(--heading);
+    text-decoration: none;
+  }
+  .timeline-body a:hover {
+    text-decoration: underline;
+  }
+  .timeline-label {
+    color: var(--text-muted);
+    font-size: 0.88rem;
+  }
+  @media (max-width: 560px) {
+    .timeline li {
+      grid-template-columns: minmax(0, 1fr) auto;
+    }
+    .timeline-body {
+      grid-column: 1 / -1;
+      grid-row: 2;
+    }
+  }
+
   .newest-grid {
     list-style: none;
     padding: 0;
     margin: 0;
   }
-  .section-title :global(.icon) {
-    color: var(--gold-text);
-  }
-  .hero {
-    background: linear-gradient(160deg, var(--deep), var(--blue));
-    color: #fff;
-    padding-block: 2.5rem 2.75rem;
-  }
-  .hero h1 {
-    color: #fff;
-    max-width: 18ch;
-    margin-bottom: 0.6rem;
-  }
-  .hero-lead {
-    max-width: 58ch;
-    font-size: 1.08rem;
-    opacity: 0.95;
-    margin-bottom: 1.5rem;
-  }
-  .hero-search {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-    max-width: 640px;
-  }
-  .hero-search input {
-    flex: 1 1 240px;
-    min-height: 48px;
-    border: 2px solid transparent;
-    border-radius: 999px;
-    padding: 0.5rem 1.1rem;
-    font: inherit;
-    color: #1b2a3a;
-    background: #fff;
-  }
-  @media (max-width: 799px) {
-    .hero-search {
-      display: none;
-    }
-  }
-  .hero-search input:focus {
-    outline: none;
-    border-color: var(--gold);
-    box-shadow: 0 0 0 3px rgb(201 168 76 / 0.45);
-  }
 
-  .section-title {
-    margin-top: 0;
-  }
-
-  .category-card {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    gap: 1rem;
-    text-decoration: none;
-    color: inherit;
-    border-top: 4px solid var(--cat);
-    transition: transform 0.15s, box-shadow 0.15s;
-  }
-  .category-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgb(12 68 124 / 0.14);
-    color: inherit;
-  }
-  .category-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 54px;
-    height: 54px;
-    border-radius: 50%;
-    background: var(--tag-bg);
-    color: var(--cat);
-  }
-  .category-text {
+  /* ---------- Tools ---------- */
+  .tool-card {
     display: flex;
     flex-direction: column;
-    gap: 0.2rem;
+    gap: 0.4rem;
+    text-decoration: none;
+    color: var(--text);
   }
-  .category-name {
+  .tool-card :global(.icon) {
+    color: var(--accent);
+    margin-bottom: 0.3rem;
+  }
+  .tool-card:hover {
+    color: var(--text);
+    transform: translateY(-2px);
+    box-shadow: var(--glow);
+  }
+  .tool-name {
     font-family: var(--font-heading);
-    font-size: 1.25rem;
-    font-weight: 700;
+    font-weight: 650;
+    font-size: 1.08rem;
     color: var(--heading);
   }
-  .category-blurb {
+  .tool-desc {
+    font-size: 0.92rem;
     color: var(--text-muted);
-    font-size: 0.96rem;
-  }
-  .category-arrow {
-    color: var(--cat);
   }
 
-  .grade-buttons {
+  /* ---------- Author strip ---------- */
+  .author-strip {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.2rem 2rem;
+    padding: 1.6rem 1.6rem;
+    border-radius: var(--radius);
+    border: 1px solid transparent;
+    background:
+      linear-gradient(var(--surface), var(--surface)) padding-box,
+      linear-gradient(120deg, rgb(94 231 255 / 0.6), rgb(167 139 250 / 0.6), rgb(240 214 138 / 0.6)) border-box;
+  }
+  .author-text {
+    flex: 1 1 360px;
+  }
+  .author-line {
+    margin: 0;
+    font-size: 1.05rem;
+  }
+  .author-line strong {
+    color: var(--heading);
+  }
+  .author-actions {
     display: flex;
     flex-wrap: wrap;
     gap: 0.6rem;

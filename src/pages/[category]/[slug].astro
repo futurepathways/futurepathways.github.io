@@ -43,7 +43,7 @@ const modeLabel: Record<string, string> = { online: 'Online', 'in-person': 'In p
   {post.status === 'draft' && <p class="draft-banner">Draft. This post is not on the live site yet.</p>}
 
   <article class={`post cat-${post.category}`} data-pagefind-body data-pagefind-meta={`slug:${post.slug}`} data-post-slug={post.slug}>
-    <header class="post-header">
+    <header class="post-header page-hero">
       <div class="container post-header-inner">
         <p class="post-cats">
           <a class="cat-chip" href={main.path} data-pagefind-filter="category"><Icon name={post.category} size={18} /> {main.name}</a>
@@ -366,9 +366,7 @@ const modeLabel: Record<string, string> = { online: 'Online', 'in-person': 'In p
 
 <style>
   .post-header {
-    background: var(--bg-soft);
-    border-bottom: 4px solid var(--cat);
-    padding-block: 1.6rem;
+    padding-block: 2.4rem 1.8rem;
   }
   .post-header-inner {
     max-width: 860px;
@@ -400,9 +398,9 @@ const modeLabel: Record<string, string> = { online: 'Online', 'in-person': 'In p
     text-decoration: underline;
   }
   .post-summary {
-    font-size: 1.12rem;
-    color: var(--text);
-    max-width: 60ch;
+    font-size: 1.14rem;
+    color: var(--text-muted);
+    max-width: 62ch;
   }
   .post-facts {
     display: flex;
@@ -416,7 +414,12 @@ const modeLabel: Record<string, string> = { online: 'Online', 'in-person': 'In p
     gap: 0.4rem;
   }
   .post-facts dt {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
     color: var(--text-muted);
+    align-self: center;
   }
   .post-facts dd {
     margin: 0;
@@ -444,7 +447,7 @@ const modeLabel: Record<string, string> = { online: 'Online', 'in-person': 'In p
 
   .keydates-box {
     border: 1px solid var(--border);
-    border-left: 5px solid var(--gold);
+    border-left: 3px solid var(--gold);
     border-radius: var(--radius);
     padding: 1rem 1.2rem;
     margin-bottom: 1.4rem;
@@ -511,10 +514,10 @@ const modeLabel: Record<string, string> = { online: 'Online', 'in-person': 'In p
     background: var(--surface);
   }
   .deadline-box {
-    border-left: 5px solid var(--gold);
+    border-left: 3px solid var(--gold);
   }
   .parents-box {
-    border-left: 5px solid var(--blue);
+    border-left: 3px solid var(--accent-2);
     background: var(--bg-soft);
   }
   .deadline-box h2,
@@ -556,6 +559,7 @@ const modeLabel: Record<string, string> = { online: 'Online', 'in-person': 'In p
   .post-body :global(h2) {
     padding-top: 0.4rem;
     border-top: 1px solid var(--border);
+    scroll-margin-top: 7rem;
     margin-top: 1.8rem;
     padding-top: 1.2rem;
   }
@@ -634,7 +638,7 @@ const modeLabel: Record<string, string> = { online: 'Online', 'in-person': 'In p
   .counsellor-note {
     margin-top: 2rem;
     padding: 1rem 1.2rem;
-    border: 1px dashed var(--blue);
+    border: 1px dashed var(--accent);
     border-radius: var(--radius);
   }
   .image-credit {

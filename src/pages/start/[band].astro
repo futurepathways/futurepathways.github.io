@@ -29,11 +29,11 @@ const rest = all.filter((p) => !first.includes(p)).sort(byNewest);
 ---
 
 <Base title={`Start here: ${band.title}`} description={band.intro.slice(0, 155)}>
-  <section class="band-hero">
+  <section class="page-hero band-hero">
     <div class="container">
-      <p class="eyebrow">Start here</p>
+      <p class="kicker">Start here</p>
       <h1>{band.title}</h1>
-      <p class="band-intro">{band.intro}</p>
+      <p class="page-hero-lead band-intro">{band.intro}</p>
       <p class="band-switch">
         Not your grade?
         {
@@ -81,26 +81,6 @@ const rest = all.filter((p) => !first.includes(p)).sort(byNewest);
 </script>
 
 <style>
-  .band-hero {
-    background: linear-gradient(160deg, var(--deep), var(--blue));
-    color: #fff;
-    padding-block: 2rem;
-  }
-  .eyebrow {
-    margin: 0 0 0.2rem;
-    color: var(--gold);
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-size: 0.85rem;
-  }
-  .band-hero h1 {
-    color: #fff;
-  }
-  .band-intro {
-    max-width: 62ch;
-    font-size: 1.08rem;
-  }
   .band-switch {
     margin: 0;
     font-size: 0.95rem;
@@ -108,9 +88,15 @@ const rest = all.filter((p) => !first.includes(p)).sort(byNewest);
     flex-wrap: wrap;
     gap: 0.4rem 1rem;
   }
+  .band-switch {
+    margin-top: 1rem !important;
+    font-family: var(--font-mono);
+    font-size: 0.8rem !important;
+    letter-spacing: 0.04em;
+    color: var(--text-muted);
+  }
   .band-switch a {
-    color: #fff;
-    text-decoration-color: var(--gold);
+    color: var(--link);
   }
   .first-grid {
     list-style: none;
@@ -137,5 +123,8 @@ const rest = all.filter((p) => !first.includes(p)).sort(byNewest);
   .tool-callout :global(.icon) {
     margin-left: auto;
     color: var(--link);
+  }
+  .band-hero {
+    --cat: var(--violet);
   }
 </style>

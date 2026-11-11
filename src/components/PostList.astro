@@ -303,11 +303,26 @@ const modeLabel: Record<string, string> = { online: 'Online', 'in-person': 'In p
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius-sm);
-    box-shadow: var(--shadow);
+    box-shadow: 0 18px 50px -12px rgb(0 0 0 / 0.6);
     padding: 0.6rem 0.8rem;
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
+  }
+  /* Phones: open each dropdown under the whole filter row, full width, so it never runs off-screen */
+  @media (max-width: 599px) {
+    .filters-row {
+      position: relative;
+    }
+    .filter {
+      position: static;
+    }
+    .filter-options {
+      left: 0;
+      right: 0;
+      min-width: 0;
+      max-width: none;
+    }
   }
   .filter-options label {
     display: flex;

@@ -89,6 +89,13 @@ export const mainNav: NavItem[] = [
   { label: 'Deadlines', path: '/deadlines/' },
   { label: 'For Parents', path: '/parents/' },
   { label: 'Start here', path: '/start/' },
-  { label: 'Tags', path: '/tags/' },
   { label: 'About', path: '/about/' },
 ];
+// "Browse all tags" now lives in the footer and on every tag chip, so the menu stays on one row.
+
+// Sister site: Madan's portfolio (cross-linked from the menu and the footer).
+export const sisterSite = {
+  label: 'Madan Kumar PC',
+  title: "Madan Kumar PC: Madan's portfolio, training and blog (opens in a new tab)",
+  url: 'https://pcmadankumar.github.io/',
+};

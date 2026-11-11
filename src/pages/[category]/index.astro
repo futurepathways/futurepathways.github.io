@@ -26,11 +26,11 @@ const intro: Record<CategoryKey, string> = {
 ---
 
 <Base title={cat.name} description={intro[key]} image={`/images/preview-${key}.png`}>
-  <section class={`category-hero cat-${key}`}>
+  <section class={`page-hero cat-${key}`}>
     <div class="container">
-      <p class="eyebrow"><Icon name={key} size={22} /> Category</p>
+      <p class="kicker"><Icon name={key} size={22} /> Category</p>
       <h1>{cat.name}</h1>
-      <p class="category-intro">{intro[key]}</p>
+      <p class="page-hero-lead">{intro[key]}</p>
     </div>
   </section>
   {
@@ -54,51 +54,3 @@ const intro: Record<CategoryKey, string> = {
   </div>
 </Base>
 
-<style>
-  .category-hero {
-    background: var(--bg-soft);
-    border-bottom: 4px solid var(--cat);
-    padding-block: 1.8rem;
-  }
-  .eyebrow {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    margin: 0 0 0.3rem;
-    color: var(--cat);
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-size: 0.85rem;
-  }
-  .category-hero h1 {
-    margin-bottom: 0.4rem;
-  }
-  .category-intro {
-    max-width: 60ch;
-    margin: 0;
-    color: var(--text);
-  }
-  .tool-callout {
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-    margin-top: 1.2rem;
-    padding: 0.9rem 1.1rem;
-    border: 1px solid var(--border);
-    border-left: 5px solid var(--gold);
-    border-radius: var(--radius);
-    background: var(--surface);
-    color: var(--text);
-    text-decoration: none;
-    box-shadow: var(--shadow);
-  }
-  .tool-callout:hover {
-    border-left-color: var(--blue);
-    color: var(--text);
-  }
-  .tool-callout :global(.icon) {
-    margin-left: auto;
-    color: var(--link);
-  }
-</style>

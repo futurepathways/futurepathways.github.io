@@ -14,11 +14,11 @@ const description = `${roles.length} roles, from backend engineer to video edito
 ---
 
 <Base title="Career Roadmaps" description={description} image="/images/preview-careers.png">
-  <section class="rm-hero cat-careers">
+  <section class="page-hero cat-careers">
     <div class="container">
-      <p class="eyebrow"><Icon name="careers" size={22} /> Tool</p>
+      <p class="kicker">Tool</p>
       <h1>Career Roadmaps: {roles.length} roles, step by step</h1>
-      <p class="rm-lead">
+      <p class="page-hero-lead rm-lead">
         Pick a role that interests you. See which school subjects keep that door open, which Indian degrees and entrance
         exams lead there, and what to learn first. Built for Subject Choices Day and for anyone wondering "what next?".
       </p>
@@ -211,26 +211,6 @@ const description = `${roles.length} roles, from backend engineer to video edito
 </script>
 
 <style>
-  .rm-hero {
-    background: var(--bg-soft);
-    border-bottom: 4px solid var(--cat);
-    padding-block: 1.8rem;
-  }
-  .eyebrow {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    margin: 0 0 0.3rem;
-    color: var(--cat);
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-size: 0.85rem;
-  }
-  .rm-lead {
-    max-width: 64ch;
-    font-size: 1.08rem;
-  }
   .rm-meta {
     margin: 0;
     color: var(--text-muted);
@@ -414,7 +394,7 @@ const description = `${roles.length} roles, from backend engineer to video edito
   .counsellor-note {
     margin-top: 2rem;
     padding: 1rem 1.2rem;
-    border: 1px dashed var(--blue);
+    border: 1px dashed var(--accent);
     border-radius: var(--radius);
   }
   @media (max-width: 480px) {
