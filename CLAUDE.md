@@ -21,6 +21,8 @@ Future Pathways (https://futurepathways.github.io) is Madan Kumar PC's own guida
 - Claude drafts content for Madan's review and fact-checks every figure and date against the official source first, noting anything it could not verify (decision 47).
 - Verify changes with `npm run build`, then a preview at 360 px wide and at desktop width, before committing. Use `npx astro preview stop` if a stale preview blocks a port.
 - Commit from Madan's personal account; push to `main` deploys.
+- Tech stack icons: any programming-language, framework or developer-tool logo comes only from skill-icons (`tandpfun/skill-icons`): `<img src="https://skillicons.dev/icons?i=<ids>&theme=dark&perline=15" alt="Tech stack: …">`. Use only IDs in that repo's Icons List (`py`, `js`, `ts`, `cs`, `cpp`, `tailwind`, …); never invent one. Ship a `theme=dark` and a `theme=light` copy and show the one matching the light/dark toggle. A tool with no ID stays a text tag. UI controls (arrows, search, menu, close) use the site's UI icon set, never skill-icons.
+- Badges (status, version, platform) are static SVGs made with `badge-maker` (installed under `C:\Users\madan\node_modules`, ESM-only) and saved into the site, not loaded from shields.io.
 
 ## Decisions log (summary)
 
