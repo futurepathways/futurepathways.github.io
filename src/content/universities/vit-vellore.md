@@ -114,6 +114,8 @@ VIT's own data to NIRF 2026 covers 11,913 four year undergraduates who finished 
 
 To book a VIT counselling session for your family, write to me at pcmadankumar@gmail.com or use my [contact page](https://pcmadankumar.github.io/contact.html). I will cover VITEEE preparation, the board rules for Cambridge students, the fee categories and the 2027 dates as VIT announces them.
 
+If a university or counselling body asks for an equivalence or eligibility certificate, I can guide you through the process. The certificate itself is issued by the UGC or the university, not by me.
+
 ## Sources
 
 - [VITEEE Official Site (Official)](https://viteee.vit.ac.in/) — Dates, eligibility, exam pattern, FAQ, fake website warning, helpline.

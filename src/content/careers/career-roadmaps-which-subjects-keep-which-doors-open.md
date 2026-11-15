@@ -46,9 +46,13 @@ key_dates:
     label: "UCEED 2027 exam"
     note: "9 am to 12 noon"
     url: "https://www.uceed.iitb.ac.in/"
-  - date: 2027-01-22
-    label: "JEE Main 2027 Session 1 (22 to 30 January, tentative)"
-    note: "From the NTA exam calendar of 16 September 2026; registration not yet announced"
+  - date: 2026-11-22
+    label: "JEE Main 2027 Session 1: applications close"
+    note: "11:50 PM. Late fee of ₹500 from 23 to 26 November 2026"
+    url: "https://jeemain.nta.nic.in/"
+  - date: 2027-01-20
+    label: "JEE Main 2027 Session 1 exam (20 to 24 and 28 January)"
+    note: "Dates from the JEE Main 2027 information bulletin; confirm on the NTA site"
     url: "https://jeemain.nta.nic.in/"
   - date: 2027-03-01
     label: "CMI entrance 2027: applications expected to open"
@@ -92,7 +96,7 @@ The Key dates box above lists the dates that are confirmed on official sites as 
 
 ## A note for Cambridge students
 
-Most Indian entrance exams and universities accept A Level, but some ask for a UGC equivalence certificate (formerly issued by the AIU) or a minimum mark in specific subjects. Check this early, not in Grade 12. I arrange the certificate for students who need it.
+Most Indian entrance exams and universities accept A Level, but some ask for a UGC equivalence certificate (formerly issued by the AIU) or a minimum mark in specific subjects. Check this early, not in Grade 12. I do not issue or arrange the certificate, but I can guide students through the process.
 
 ## Credit
 

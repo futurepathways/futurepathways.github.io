@@ -122,6 +122,8 @@ The 400 acre campus houses nearly 3,000 students in hostels, including about 500
 
 To book an IISc counselling session for your family, write to me at pcmadankumar@gmail.com or use my [contact page](https://pcmadankumar.github.io/contact.html). I will cover the JEE Advanced and IAT routes, the board rules for Cambridge students, the fees and the dates for the 2027 cycle as they are announced.
 
+If a university or counselling body asks for an equivalence or eligibility certificate, I can guide you through the process. The certificate itself is issued by the UGC or the university, not by me.
+
 ## Sources
 
 - [IISc Admission Notice for the Academic Year 2026-27 (Official, PDF)](https://www.iisc.ac.in/wp-content/uploads/2026/02/Admission-Notice_2026-27.pdf) — Eligibility, modes of entry, year of passing, application fees for all programmes.

@@ -11,7 +11,7 @@ tags_skill: []
 tags_level: [undergraduate]
 tags_audience: [parents]
 countries: [australia]
-parent_summary: "Australia's top university with a February start, so a child finishing Class 12 in 2027 starts in 2028. Medicine, Law and Dentistry come only after a three-year first degree. Visa fees have risen to about ₹4.8 lakhs combined; tuition is roughly ₹37 to 41 lakhs a year. A question to ask your child's counsellor: does the longer Melbourne Model suit our plan?"
+parent_summary: "Australia's top university with a February start, so a child finishing Class 12 in 2027 starts in 2028. Medicine, Law and Dentistry come only after a three-year first degree. Visa fees have risen to about ₹5.3 lakhs combined; tuition is roughly ₹37 to 41 lakhs a year. A question to ask your child's counsellor: does the longer Melbourne Model suit our plan?"
 official_links:
   - label: "University of Melbourne Facts and Figures (Official)"
     url: "https://about.unimelb.edu.au/facts-and-figures"
@@ -32,7 +32,7 @@ key_dates:
     url: "https://study.unimelb.edu.au/how-to-apply/undergraduate-study/international-applications/applications"
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
-last_checked: 2026-10-11
+last_checked: 2026-11-15
 status: published
 published_date: 2026-09-11
 ---
@@ -66,8 +66,8 @@ A tour of the campus is available on YouTube. [Watch the University of Melbourne
 | Standardised Tests | No SAT or ACT is asked for most courses, and no Indian entrance exam such as JEE is needed. Some courses ask for extra selection tasks, such as a portfolio, so read the course page. | Same rule for A Level students. |
 | Application Portal | Apply online through the University of Melbourne’s international applicant page. There is no shared system like UCAS or the Common App. Upload transcripts, predicted or final results and English test results if needed. | Same portal and same steps. |
 | Intake and Deadlines | The main intake starts in February or March. A smaller mid year intake starts in July for some courses. For 2027, the closing dates were 30 November 2026 (start of year) and 31 May 2027 (mid year). Melbourne accepts applications while results are still pending and can give a conditional offer. The offer becomes unconditional only after final results are sent. CBSE results come out about May. For a student finishing Class 12 in 2027, this means results are in hand well before a likely late 2027 closing date for February 2028, a gap of about nine months. Mid year entry in July is hard, since results and visa steps must all fit in a few weeks. | Same intake and dates. Cambridge students in India usually sit the March series, so A Level results come in May, like CBSE. A student finishing in 2027 can apply with predicted grades for a conditional offer, and the start is February 2028, a gap of about nine months. A July 2027 start is as hard as for CBSE, since results and visa steps must all fit in a few weeks. |
-| Student Visa (Subclass 500) | The visa application charge is AUD 2,500 (~INR 1.7 lakhs at ~AUD 67/INR, October 2026) from 1 July 2026, up from AUD 2,000. Since 23 March 2024 every applicant must also pass the Genuine Student requirement, a set of questions about your child’s study plan and circumstances. The visa rules also ask for proof of living costs, about AUD 29,710 for twelve months (~INR 20 lakhs), on top of fees and travel. The visa needs a Confirmation of Enrolment (CoE) from Melbourne. | Same visa rules and costs for every international student, whichever board they studied. |
-| Post-Study Work Visa (Temporary Graduate, Subclass 485) | The fee rose to AUD 4,600 (~INR 3.1 lakhs) on 1 March 2026. The applicant must be 35 or younger. A bachelor’s graduate can usually stay up to 2 years. Indian passport holders may have different stay lengths under the India Australia trade agreement, so ask FP to check before you plan. This visa is not permanent residency. It is a work period, and later steps need separate visas. | Same rules and fee for every international graduate. |
+| Student Visa (Subclass 500) | The visa application charge is AUD 2,500 (about INR 1.6 lakhs at ~AUD 64/INR, November 2026) from 1 July 2026, up from AUD 2,000. Since 23 March 2024 every applicant must also pass the Genuine Student requirement, a set of questions about your child’s study plan and circumstances. The visa rules also ask for proof of living costs, about AUD 29,710 for twelve months (~INR 20 lakhs), on top of fees and travel. The visa needs a Confirmation of Enrolment (CoE) from Melbourne. | Same visa rules and costs for every international student, whichever board they studied. |
+| Post-Study Work Visa (Temporary Graduate, Subclass 485) | The fee rose to AUD 5,750 (about INR 3.7 lakhs at ~AUD 64/INR, November 2026) on 1 July 2026, up from AUD 4,600 on 1 March 2026. The applicant must be 35 or younger. Graduates can usually stay between 2 and 3 years, depending on their qualification. Indian passport holders may have different stay lengths under the India Australia trade agreement, so ask FP to check before you plan. This visa is not permanent residency. It is a work period, and later steps need separate visas. | Same rules and fee for every international graduate. |
 
 ## Common to both pathways
 
@@ -97,7 +97,7 @@ About 46 percent of Melbourne’s students are international, from over 150 nati
 
 ## What parents should know
 
-- CRITICAL. Visa costs have risen quickly. The student visa is AUD 2,500 (~INR 1.7 lakhs) from 1 July 2026. The post-study work visa is AUD 4,600 (~INR 3.1 lakhs) since 1 March 2026. The two together are about AUD 7,100 (~INR 4.8 lakhs) in government fees, before health cover and any agent or test costs.
+- CRITICAL. Visa costs have risen quickly. The student visa is AUD 2,500 (about INR 1.6 lakhs) from 1 July 2026. The post-study work visa is AUD 5,750 (about INR 3.7 lakhs) since 1 July 2026. The two together are about AUD 8,250 (about INR 5.3 lakhs at ~AUD 64/INR, November 2026) in government fees, before health cover and any agent or test costs.
 - CRITICAL. Dates differ by board. For the February 2027 start the closing date was 30 November 2026, so it is for students who finished school in 2026. A child finishing Class 12 or A Level in 2027 should plan for February 2028. Melbourne has not yet published 2028 dates, so watch its page from mid 2027.
 - Tuition is high. Melbourne’s own page shows the 2026 first year fee for Biomedicine at AUD 54,780 to 61,460 (~INR 37–41 lakhs at ~AUD 67/INR, October 2026). Fees for 2027 are in Melbourne’s fee tables but we could not confirm them, and fees usually rise each year. Other degrees have their own fee, so check the course page.
 - Living costs: the visa rules ask for about AUD 29,710 a year (~INR 20 lakhs) as proof of funds for the student. Real costs depend on housing and lifestyle. Melbourne also asks for a deposit and health cover when you accept an offer, so keep money ready.
@@ -105,7 +105,7 @@ About 46 percent of Melbourne’s students are international, from over 150 nati
 - National Planning Level: Australia has set 295,000 new international students for 2027, the same as 2026. It is a planning level and not a hard cap. Melbourne’s own share is 10,500 new overseas students across all courses. No university gets less than in 2026. Visa applications get priority handling until a university reaches 80 percent of its share. After that they are still accepted but processed more slowly, so apply early and do not leave the visa to the last month.
 - No SAT, ACT or Indian entrance exam is asked for most courses. Some courses add selection tasks, so read each course page.
 - Check English rules early. A Class 12 English mark may not replace an English test.
-- Post-study work: the Temporary Graduate visa needs the applicant to be 35 or younger, and a bachelor’s graduate usually gets up to 2 years. It is a work visa, not permanent residency.
+- Post-study work: the Temporary Graduate visa needs the applicant to be 35 or younger, and graduates usually get between 2 and 3 years, depending on their qualification. It is a work visa, not permanent residency.
 
 ## Talk to me
 
@@ -125,4 +125,6 @@ To book a Melbourne counselling session for your family, write to me at pcmadank
 - [Student and Temporary Graduate Visa Changes 2024 (Study Australia, Government)](https://www.studyaustralia.gov.au/id/tools-and-resources/news/student-and-temporary-graduate-visa-changes-2024) — Genuine Student requirement from 23 March 2024; Temporary Graduate age limit 35.
 - [Australia Student Visa Fee Increase, July 2026 (Fragomen)](https://www.fragomen.com/insights/australia-fees-increase-for-certain-visa-types-and-citizenship-applications-effective-july-1-2026.html) — Student visa application charge AUD 2,500 from 1 July 2026.
 - [Australia Doubles Post-Study Work Visa Application Fee (ICEF Monitor)](https://monitor.icef.com/2026/03/australia-doubles-post-study-work-visa-application-fee/) — Temporary Graduate visa fee AUD 4,600 from 1 March 2026.
+- [Temporary Graduate visa (subclass 485) (Department of Home Affairs, Government)](https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485) — Cost from AUD 5,750 for the Post-Higher Education Work stream; age 35 or under (checked 15 November 2026).
+- [Student Visa Changes: October 2026 Update (Study Australia, Government)](https://www.studyaustralia.gov.au/en/tools-and-resources/news/student-visa-changes-october-2026) — Temporary Graduate visa application charge rose to A$5,750 on 1 July 2026.
 - [Australia Student Visa Fee 2026 (Migratio, third party)](https://migratio.com.au/blog/australia-student-visa-fee-2026) — Proof of living costs AUD 29,710 for twelve months for the main student.
