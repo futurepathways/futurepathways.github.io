@@ -1,0 +1,476 @@
+---
+// University Finder (15 Nov 2026): one compact, filterable table built from each profile's
+// `glance` facts, plus (16 Nov 2026) rows for institutions without a profile yet, from
+// src/data/finder-extra.json (facts from the FP University Database; they link to the official site).
+// Without JavaScript every row shows; with it, filters narrow the table.
+import { z } from 'astro/zod';
+import type { Post } from '../lib/content';
+import { nextDateOf, glanceKindLabel, glanceRouteLabel, glanceFeeLabel, glanceCambridgeLabel } from '../lib/content';
+import { formatDateString } from '../lib/deadlines';
+import { glanceFeeBands, glanceRoutes, glanceKinds } from '../content.config';
+import extraRaw from '../data/finder-extra.json';
+
+interface Props {
+  posts: Post[]; // university profiles with glance data
+}
+
+// Rows without a profile: checked at build time so a bad entry fails loudly.
+const extraSchema = z.array(
+  z.object({
+    vault: z.number().int(),
+    name: z.string().min(3).max(90),
+    where: z.string().min(3).max(80),
+    region: z.string().min(2).max(40),
+    kind: z.enum(glanceKinds),
+    cambridge: z.enum(['yes', 'with-conditions', 'check']),
+    cambridge_note: z.string().min(10).max(170),
+    entry: z.string().min(10).max(170),
+    routes: z.array(z.enum(glanceRoutes)).min(1),
+    cost: z.string().min(5).max(130),
+    fee_band: z.enum([...glanceFeeBands, 'unknown']),
+    url: z.string().url(),
+    checked: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  }),
+);
+const extra = extraSchema.parse(extraRaw);
+
+type Row = {
+  name: string;
+  href: string;
+  external: boolean;
+  next: string | null;
+  india: boolean;
+  g: { kind: string; where: string; region: string; cambridge: string; routes: string[]; cost: string; fee_band: string };
+};
+const profileRows: Row[] = Astro.props.posts
+  .filter((p) => p.glance)
+  .map((p) => {
+    const g = p.glance!;
+    return {
+      name: p.title.replace(/^University Spotlight:\s*/i, ''),
+      href: p.path,
+      external: false,
+      next: nextDateOf(p),
+      india: !g.kind.startsWith('foreign'),
+      g,
+    };
+  });
+const extraRows: Row[] = extra.map((e) => ({
+  name: e.name,
+  href: e.url,
+  external: true,
+  next: null,
+  india: !e.kind.startsWith('foreign'),
+  g: e,
+}));
+// Full profiles first (they have the most detail), then everything else; A to Z within each.
+const byName = (a: Row, b: Row) => a.name.localeCompare(b.name);
+const rows = [...profileRows.sort(byName), ...extraRows.sort(byName)];
+const feeIndex = (b: string) => (b === 'unknown' ? 99 : glanceFeeBands.indexOf(b as any));
+const regions = Array.from(new Set(rows.map((r) => r.g.region))).sort((a, b) => a.localeCompare(b));
+const indiaRegions = regions.filter((r) => rows.some((x) => x.india && x.g.region === r));
+const abroadRegions = regions.filter((r) => rows.some((x) => !x.india && x.g.region === r));
+const routes = glanceRoutes.filter((r) => rows.some((x) => x.g.routes.includes(r)));
+const kinds = Object.keys(glanceKindLabel).filter((k) => rows.some((x) => x.g.kind === k));
+const bands = glanceFeeBands.filter((b) => rows.some((x) => x.g.fee_band === b));
+const nProfiles = profileRows.length;
+---
+
+<section class="finder" data-finder aria-labelledby="finder-heading">
+  <h2 id="finder-heading">University Finder</h2>
+  <p class="finder-lead">
+    Search <strong>{rows.length} universities and colleges</strong> in India and abroad. {nProfiles} have a full profile
+    here; the others link to their official websites. Until you search or filter, you see five picked at random.
+  </p>
+
+  <form class="finder-filters js-only" data-finder-form aria-label="Filter universities">
+    <label class="finder-search">
+      <span>Search</span>
+      <input type="search" name="q" placeholder={`Search all ${rows.length} by name or city`} autocomplete="off" />
+    </label>
+    <label>
+      <span>Where</span>
+      <select name="region">
+        <option value="">Anywhere</option>
+        <option value="@india">All of India</option>
+        <option value="@abroad">All abroad</option>
+        <optgroup label="India">{indiaRegions.map((r) => <option value={r}>{r}</option>)}</optgroup>
+        <optgroup label="Abroad">{abroadRegions.map((r) => <option value={r}>{r}</option>)}</optgroup>
+      </select>
+    </label>
+    <label>
+      <span>Type</span>
+      <select name="kind">
+        <option value="">Any type</option>
+        {kinds.map((k) => <option value={k}>{glanceKindLabel[k]}</option>)}
+      </select>
+    </label>
+    <label>
+      <span>Way in</span>
+      <select name="route">
+        <option value="">Any</option>
+        {routes.map((r) => <option value={r}>{glanceRouteLabel[r]}</option>)}
+      </select>
+    </label>
+    <label>
+      <span>Cost a year, up to</span>
+      <select name="fee">
+        <option value="">Any cost</option>
+        {bands.map((b) => <option value={String(feeIndex(b))}>{glanceFeeLabel[b]}</option>)}
+      </select>
+    </label>
+    <label class="finder-check">
+      <input type="checkbox" name="cambridge" value="1" />
+      <span>Accepts A Levels without extra conditions</span>
+    </label>
+    <label class="finder-check">
+      <input type="checkbox" name="profile" value="1" />
+      <span>Has a full profile here</span>
+    </label>
+    <button type="button" class="btn btn--outline btn--small" data-finder-clear>Clear</button>
+  </form>
+  <p class="finder-count" data-finder-count aria-live="polite"></p>
+
+  <div class="finder-table-wrap">
+    <table class="finder-table">
+      <thead>
+        <tr>
+          <th scope="col">University</th>
+          <th scope="col">How you get in</th>
+          <th scope="col">Cost a year</th>
+          <th scope="col">Cambridge A Level</th>
+          <th scope="col">Next date</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          rows.map((r) => (
+            <tr
+              data-row
+              data-name={`${r.name} ${r.g.where}`.toLowerCase()}
+              data-region={r.g.region}
+              data-india={r.india ? '1' : '0'}
+              data-kind={r.g.kind}
+              data-routes={r.g.routes.join(' ')}
+              data-fee={String(feeIndex(r.g.fee_band))}
+              data-cambridge={r.g.cambridge}
+              data-profile={r.external ? '0' : '1'}
+            >
+              <th scope="row" data-label="University">
+                {
+                  r.external ? (
+                    <a href={r.href} target="_blank" rel="noopener">
+                      {r.name} <span class="finder-ext" aria-label="(official site, opens in a new tab)">↗</span>
+                    </a>
+                  ) : (
+                    <a href={r.href}>{r.name}</a>
+                  )
+                }
+                <span class="finder-sub">
+                  {glanceKindLabel[r.g.kind]} · {r.g.where}
+                  {!r.external && <span class="finder-profile"> · Full profile</span>}
+                </span>
+              </th>
+              <td data-label="How you get in">
+                {r.g.routes.map((x) => glanceRouteLabel[x] ?? x).join(', ')}
+              </td>
+              <td data-label="Cost a year">
+                <span class="finder-band">{glanceFeeLabel[r.g.fee_band]}</span>
+                <span class="finder-sub">{r.g.cost}</span>
+              </td>
+              <td data-label="Cambridge A Level">
+                <span class={`finder-cam finder-cam--${r.g.cambridge}`}>{glanceCambridgeLabel[r.g.cambridge]}</span>
+              </td>
+              <td data-label="Next date">
+                {r.next ? (
+                  formatDateString(r.next)
+                ) : (
+                  <span class="finder-sub">{r.external ? 'See official site' : 'Not announced'}</span>
+                )}
+              </td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+  <p class="finder-more js-only" data-finder-more-wrap hidden>
+    <button type="button" class="btn btn--outline" data-finder-more>Browse all {rows.length}</button>
+  </p>
+  <p class="finder-empty" data-finder-empty hidden>No universities match. Try clearing a filter.</p>
+  <p class="finder-note">
+    Costs are approximate yearly figures for the cycle shown, taken from each profile or from the official sources in my
+    university research notes; "third-party figure" means no official fee was published. "Next date" comes from a full
+    profile's key dates. Always check the official site before you apply.
+  </p>
+</section>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-finder]').forEach((root) => {
+    const form = root.querySelector<HTMLFormElement>('[data-finder-form]')!;
+    const rows = Array.from(root.querySelectorAll<HTMLTableRowElement>('[data-row]'));
+    const count = root.querySelector<HTMLElement>('[data-finder-count]')!;
+    const empty = root.querySelector<HTMLElement>('[data-finder-empty]')!;
+    const moreWrap = root.querySelector<HTMLElement>('[data-finder-more-wrap]')!;
+    // Default view (15 Nov 2026 decision): five full profiles picked at random, 3 in India and 2 abroad,
+    // so the page is short; search, filters and "Browse all" always cover every row.
+    const shuffle = <T,>(a: T[]) => a.map((x) => [Math.random(), x] as const).sort((x, y) => x[0] - y[0]).map((x) => x[1]);
+    const profiles = rows.filter((r) => r.dataset.profile === '1');
+    const pick = new Set([
+      ...shuffle(profiles.filter((r) => r.dataset.india === '1')).slice(0, 3),
+      ...shuffle(profiles.filter((r) => r.dataset.india === '0')).slice(0, 2),
+    ]);
+    let expanded = false;
+    root.querySelector('[data-finder-more]')!.addEventListener('click', () => {
+      expanded = true;
+      apply();
+    });
+    const params = new URLSearchParams(location.search);
+    for (const el of Array.from(form.elements) as HTMLInputElement[]) {
+      const v = params.get(el.name);
+      if (v === null) continue;
+      if (el.type === 'checkbox') el.checked = v === el.value;
+      else el.value = v;
+    }
+    function apply() {
+      const f = new FormData(form);
+      const q = String(f.get('q') || '').trim().toLowerCase();
+      const region = String(f.get('region') || '');
+      const kind = String(f.get('kind') || '');
+      const route = String(f.get('route') || '');
+      const fee = String(f.get('fee') || '');
+      const cam = f.get('cambridge') === '1';
+      const prof = f.get('profile') === '1';
+      const filtered = !!(q || region || kind || route || fee || cam || prof);
+      let shown = 0;
+      let matched = 0;
+      for (const r of rows) {
+        const d = r.dataset;
+        const ok =
+          (!q || (d.name || '').includes(q)) &&
+          (!region ||
+            (region === '@india' ? d.india === '1' : region === '@abroad' ? d.india === '0' : d.region === region)) &&
+          (!kind || d.kind === kind) &&
+          (!route || (d.routes || '').split(' ').includes(route)) &&
+          (!fee || Number(d.fee) <= Number(fee)) &&
+          (!cam || d.cambridge === 'yes') &&
+          (!prof || d.profile === '1');
+        if (ok) matched++;
+        // With no filter set, show only the random five until "Browse all" is pressed.
+        const visible = ok && (filtered || expanded || pick.has(r));
+        r.hidden = !visible;
+        if (visible) shown++;
+      }
+      moreWrap.hidden = filtered || expanded;
+      count.textContent =
+        shown === rows.length
+          ? `Showing all ${rows.length}`
+          : filtered
+            ? `${matched} of ${rows.length} match`
+            : `Showing ${shown} of ${rows.length}, picked at random. Search or filter to find any of the ${rows.length}.`;
+      empty.hidden = matched > 0;
+      const out = new URLSearchParams();
+      f.forEach((v, k) => v && out.set(k, String(v)));
+      const qs = out.toString();
+      history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
+    }
+    form.addEventListener('input', apply);
+    form.addEventListener('submit', (e) => e.preventDefault());
+    root.querySelector('[data-finder-clear]')!.addEventListener('click', () => {
+      form.reset();
+      apply();
+    });
+    apply();
+  });
+</script>
+
+<style>
+  .finder {
+    margin-bottom: 2.4rem;
+  }
+  .finder h2 {
+    margin: 0 0 0.3rem;
+  }
+  .finder-lead {
+    margin: 0 0 1rem;
+    color: var(--text-muted);
+  }
+  .finder-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 0.8rem;
+    align-items: flex-end;
+    margin-bottom: 0.5rem;
+  }
+  .finder-filters label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    font-weight: 600;
+    font-size: 0.85rem;
+  }
+  .finder-filters label > span {
+    color: var(--text-muted);
+  }
+  .finder-filters select,
+  .finder-filters input[type='search'] {
+    font: inherit;
+    font-weight: 400;
+    font-size: 0.95rem;
+    min-height: 40px;
+    padding: 0.3rem 0.6rem;
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+    color: var(--text);
+  }
+  .finder-search {
+    flex: 1 1 100%;
+  }
+  .finder-search input {
+    width: 100%;
+    font-size: 1.05rem;
+    min-height: 46px;
+  }
+  .finder-filters .finder-check {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.45rem;
+    min-height: 40px;
+  }
+  .finder-check input {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--blue);
+  }
+  .finder-count {
+    margin: 0.3rem 0 0.6rem;
+    color: var(--text-muted);
+    font-size: 0.92rem;
+  }
+  .finder-table-wrap {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .finder-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+  }
+  .finder-table thead th {
+    text-align: left;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    background: var(--bg-soft);
+    padding: 0.6rem 0.8rem;
+  }
+  .finder-table td,
+  .finder-table tbody th {
+    text-align: left;
+    vertical-align: top;
+    padding: 0.7rem 0.8rem;
+    border-top: 1px solid var(--border);
+    font-weight: 400;
+  }
+  .finder-table tbody th a {
+    font-weight: 700;
+  }
+  .finder-table tbody tr:hover {
+    background: var(--bg-soft);
+  }
+  .finder-sub {
+    display: block;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+  }
+  .finder-ext {
+    font-size: 0.85em;
+    opacity: 0.75;
+  }
+  .finder-profile {
+    color: var(--link);
+    font-weight: 600;
+  }
+  .finder-band {
+    font-weight: 600;
+  }
+  .finder-cam {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 0.05rem 0.55rem;
+    border-radius: 999px;
+    border: 1px solid var(--border-strong);
+  }
+  .finder-cam--yes {
+    color: var(--tag-text);
+    background: var(--tag-bg);
+    border-color: transparent;
+  }
+  .finder-cam--with-conditions {
+    color: var(--gold-text);
+    border-color: var(--gold);
+  }
+  .finder-more {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .finder-empty {
+    color: var(--text-muted);
+    padding: 1rem 0;
+  }
+  .finder-note {
+    margin-top: 0.8rem;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+  }
+  /* Phones: each row becomes a small card */
+  @media (max-width: 760px) {
+    .finder-table thead {
+      display: none;
+    }
+    .finder-table,
+    .finder-table tbody,
+    .finder-table tr,
+    .finder-table td,
+    .finder-table tbody th {
+      display: block;
+      width: 100%;
+    }
+    .finder-table tr {
+      border-top: 1px solid var(--border);
+      padding: 0.6rem 0.2rem;
+    }
+    .finder-table tr[hidden] {
+      display: none;
+    }
+    .finder-table td,
+    .finder-table tbody th {
+      border: 0;
+      padding: 0.2rem 0.8rem;
+    }
+    .finder-table td::before {
+      content: attr(data-label);
+      display: block;
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+    .finder-search input {
+      min-width: 0;
+      width: 100%;
+    }
+    .finder-filters label {
+      flex: 1 1 45%;
+    }
+    .finder-filters .finder-search {
+      flex: 1 1 100%;
+    }
+  }
+</style>

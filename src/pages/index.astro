@@ -25,9 +25,38 @@ const gradeLines: Record<string, string> = {
   '11-12': 'Courses, entrance tests, countries, applications and deadlines. Time to get practical.',
 };
 const pad = (n: number) => String(n).padStart(2, '0');
+// Structured data (16 Nov 2026): what the site is, and the person behind it.
+const siteUrl = new URL('/', Astro.site).href;
+const person = {
+  '@type': 'Person',
+  '@id': `${site.ownerSite}/#person`,
+  name: site.ownerName,
+  url: site.ownerSite,
+  jobTitle: 'Career counsellor and Cambridge Programme Coordinator',
+  description: site.ownerCredentials,
+};
+const homeSchema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${siteUrl}#website`,
+    name: site.name,
+    url: siteUrl,
+    description: site.tagline,
+    inLanguage: 'en-IN',
+    publisher: person,
+    author: person,
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: `${siteUrl}search/?q={search_term_string}`,
+      'query-input': 'required name=search_term_string',
+    },
+  },
+  { '@context': 'https://schema.org', ...person },
+];
 ---
 
-<Base title={site.name} description={site.tagline}>
+<Base title={site.name} fullTitle={site.homeTitle} description={site.tagline} schema={homeSchema}>
   <section class="home-hero">
     <div class="container hero-grid">
       <div class="hero-copy">

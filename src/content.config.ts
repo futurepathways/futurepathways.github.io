@@ -75,6 +75,12 @@ const commonFields = {
   author: z.string().optional(),
   reviewed_by: z.string().optional(),
   last_checked: z.coerce.date(),
+  // Fold the post's sections into open-and-close panels (src/lib/rehype-sections.mjs). Courses and
+  // Countries guides with 5+ sections fold by default; set true to opt in, false to opt out.
+  fold: z.boolean().optional(),
+  // Questions and answers shown at the end of the post and marked up as FAQPage (16 Nov 2026).
+  // Answers use only facts already in the post. University profiles also get questions built from `glance`.
+  faq: z.array(z.object({ q: z.string().min(8).max(160), a: z.string().min(20).max(700) })).max(8).default([]),
   status: z.enum(['draft', 'published']).default('draft'),
   published_date: z.coerce.date(),
 };
@@ -155,10 +161,35 @@ function makeCollection(category: CategoryKey, extra: Record<string, z.ZodTypeAn
   });
 }
 
+// University quick facts (added 15 Nov 2026): the "At a glance" card at the top of a profile
+// and the University Finder. Every value must come from the profile itself.
+export const glanceKinds = ['government', 'private', 'deemed', 'national-institute', 'foreign-public', 'foreign-private'] as const;
+export const glanceRoutes = [
+  'class-12-marks', 'own-test', 'interview', 'jee-main', 'jee-advanced', 'neet', 'cuet', 'sat-act', 'lnat',
+  'ucas', 'common-app', 'portfolio', 'other',
+] as const;
+export const glanceFeeBands = ['under-1l', '1-3l', '3-6l', '6-15l', '15-40l', 'over-40l'] as const;
+const universityFields = {
+  glance: z
+    .object({
+      kind: z.enum(glanceKinds),
+      where: z.string().min(3).max(80),
+      region: z.string().min(2).max(40),
+      cambridge: z.enum(['yes', 'with-conditions', 'check']),
+      cambridge_note: z.string().min(10).max(170),
+      entry: z.string().min(10).max(170),
+      routes: z.array(z.enum(glanceRoutes)).min(1),
+      cost: z.string().min(5).max(130),
+      fee_band: z.enum(glanceFeeBands),
+      watch: z.string().min(10).max(200),
+    })
+    .optional(),
+};
+
 export const collections = {
   careers: makeCollection('careers'),
   opportunities: makeCollection('opportunities', opportunityFields),
   courses: makeCollection('courses'),
   countries: makeCollection('countries'),
-  universities: makeCollection('universities'),
+  universities: makeCollection('universities', universityFields),
 };

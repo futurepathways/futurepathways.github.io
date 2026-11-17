@@ -22,6 +22,10 @@ official_links:
   - label: "PES University Admissions Portal (Official)"
     url: "https://admissions.pes.edu/"
 key_dates:
+  - date: 2027-02-01
+    label: "PES B.Tech 2027: EAC merit list on JEE Main session 1 (February 2027, tentative)"
+    note: "PES gives the month only; the seat fee for an EAC seat is due by March 2027 (as on 18 Oct 2026)"
+    url: "https://pes.edu/important-dates/"
   - date: 2027-06-01
     label: "PES B.Tech 2027: last month to register (June 2027, tentative)"
     note: "PES gives the month only; JEE Main first-round counselling is also in June"
@@ -30,6 +34,17 @@ key_dates:
     label: "PES 2027: last day to register for other UG programmes (tentative)"
     note: "PES Entrance Process runs from 2 November 2026 to 30 July 2027"
     url: "https://pes.edu/important-dates/"
+glance:
+  kind: private
+  where: "Bengaluru, Karnataka"
+  region: "Karnataka"
+  cambridge: with-conditions
+  cambridge_note: "Yes, with at least three A Levels. For B.Tech these must be Physics, Chemistry and Mathematics at 60 percent, plus a JEE Main score."
+  entry: "B.Tech only on a JEE Main or KCET score; other courses through the PES Entrance Process."
+  routes: [jee-main, own-test, other]
+  cost: "₹5.7 lakh a year in tuition for B.Tech CSE on the JEE Main quota (2027-28); hostel extra"
+  fee_band: 3-6l
+  watch: "KCET seats are for Karnataka candidates, so most others need JEE Main. A weaker JEE rank means a much higher fee, and there are no entry scholarships."
 author: "Madan Kumar PC"
 last_checked: 2026-11-15
 status: published
@@ -44,11 +59,11 @@ published_date: 2026-11-15
 - **How you get in (B.Tech):** Only on a JEE Main or KCET score. PES no longer uses its own PESSAT test for B.Tech.
 - **Other courses:** BBA, B.Com, BCA, B.Des, law, psychology and more, through the PES Entrance Process, the university's own admission process.
 
-## Popular courses
+## Which courses are most popular?
 
 At the Ring Road campus for 2027-28, B.Tech Computer Science and Engineering and B.Tech CSE (Artificial Intelligence and Machine Learning) have 720 seats each, and Electronics and Communication 480. Mechanical, Electrical and Electronics, and Biotechnology have 60 each. Outside engineering, BBA (General or Honours), B.Com (General or Honours) and B.Com (Honours) with ACCA have 360 seats each, and Psychology 300.
 
-## How to get in
+## How do you get in?
 
 ### For CBSE and other Indian board students
 
@@ -65,15 +80,15 @@ At the Ring Road campus for 2027-28, B.Tech Computer Science and Engineering and
 4. **Documents.** A migration certificate is needed from any board other than the Karnataka PU Board.
 5. **Timing.** Cambridge March-series results came out on 19 May 2026, in time for PES's June and July counselling rounds. Keep every subject in the March series.
 
-## Application window and fee
+## When do applications open, and what is the fee?
 
 For 2027 entry, registration on admissions.pes.edu opened on 3 September 2026. The registration fee is ₹1,200. All dates below are PES's own and are marked tentative.
 
-- **B.Tech:** a first merit list (the EAC round) in February 2027 on JEE Main session 1 scores; the PESU JEE rank list in May 2027; JEE counselling rounds in June and July; KCET counselling in July or August. Registration closes in June 2027.
+- **B.Tech:** a first merit list (the EAC round) in February 2027 on JEE Main session 1 scores, with the seat fee due by March 2027 (as on 18 Oct 2026); the PESU JEE rank list in May 2027; JEE counselling rounds in June and July; KCET counselling in July or August. Registration closes in June 2027.
 - **Other undergraduate courses:** slot booking opened on 16 October 2026. The PES Entrance Process runs from 2 November 2026 to 30 July 2027, with results three days after each test. Registration closes on 30 July 2027.
 - **Classes** begin in August 2027.
 
-## Approximate annual cost
+## How much does it cost a year?
 
 PES's own fees for 2027-28 (tuition a year), plus a one-time ₹10,000 administrative charge that is not refunded:
 
@@ -93,20 +108,21 @@ Management, NRI, foreign, sponsored, OCI and PIO seats have higher fees that PES
 
 So for B.Tech CSE on the JEE Main quota, a family should budget about **₹7.4 to ₹7.5 lakh for the first year** (2027-28 tuition with 2026-27 hostel rates), before books and travel.
 
-## Scholarships
+## Are there scholarships?
 
-PES gives **no scholarship at admission**. Its awards are for results after joining:
+PES gives **no scholarship at admission**. Its merit awards are for results after joining, and one fee concession applies at entry:
 
 - **Prof. MRD Scholarship:** the top 5 percent by CGPA get 50 percent of tuition refunded.
 - **Prof. CNR Rao Scholarship:** the next 20 percent by SGPA get 40 percent of tuition refunded.
 - **Distinction Award:** a certificate for SGPA 7.75 or above.
-- These three are not given in the final year, and a student can hold only one award at a time. Final-year students can apply for corporate scholarships, and there are paid teaching and research assistantships.
+- **Loyalty Program:** a 10 to 30 percent tuition concession for children of PES staff, alumni of PES schools and siblings (see the Loyalty Program page for who counts). It is not given on government-quota seats (as on 18 Oct 2026). This is a fee concession, not a merit scholarship.
+- The three merit awards are not given in the final year, and a student can hold only one award at a time. Final-year students can apply for corporate scholarships, and there are paid teaching and research assistantships.
 
-## NRI, OCI and foreign-national routes
+## Can NRI, OCI and foreign students apply?
 
 For B.Tech, NRI, OCI, PIO, foreign and sponsored students come in on separate higher-fee seats. They still need a JEE Main or KCET score, and they register on the same portal. PES lists an "Eligibility Certificate from AIU" for NRI, OCI and PIO candidates from a 10+2 grade system. Equivalence for foreign qualifications is now issued by the University Grants Commission (UGC) through its equivalence portal, so confirm with PES which certificate it wants. Foreign nationals need a passport and a valid visa. OCI holders show the OCI card instead of a visa. For other courses, these students take the same PES Entrance Process.
 
-## Things families should know
+## What should families know before applying?
 
 - **JEE Main is the door to B.Tech.** PESSAT is gone for B.Tech, and PES uses only JEE Main and KCET. Do not plan around any other exam.
 - **A weaker JEE rank means a much higher fee.** The ₹5.7 lakh CSE fee is for the JEE Main quota. Management seats cost more, and PES does not publish how much.
@@ -148,3 +164,4 @@ If a university or counselling body asks for an equivalence or eligibility certi
 15. [Cambridge International, March series results (Official)](https://www.cambridgeinternational.org/exam-administration/march-series/march-results/) — March 2026 results on 19 May 2026.
 16. [UGC Public Notice on Equivalence Regulations 2025 (Official, PDF)](https://www.ugc.gov.in/pdfnews/0775288_Public-Notice---Equivalence-Regulations.pdf) — UGC now grants equivalence.
 17. [PES University home page (Official)](https://pes.edu/) — "PES University is NAAC A+ accredited" banner, checked 15 November 2026.
+18. [PES University Loyalty Program (Official)](https://pes.edu/loyalty/) — 10 to 30 percent tuition concession for staff children, PES school alumni and siblings; not for government quota.

@@ -41,6 +41,17 @@ key_dates:
     label: "CHRIST final selection list for 2027 entry"
     note: "Year 1 fee due within seven days of the result"
     url: "https://christuniversity.in/admission/ugpg-selection-process-dates-2027"
+glance:
+  kind: deemed
+  where: "Bengaluru, Karnataka (also Delhi NCR and Pune Lavasa)"
+  region: "Karnataka"
+  cambridge: with-conditions
+  cambridge_note: "Needs at least three A Levels at grade C or better; AS Levels alone do not count. No grade conversion is published."
+  entry: "Own CHRIST Entrance Test (for courses such as BBA and BCom), then skill assessment, micro presentation and interview."
+  routes: [own-test, interview]
+  cost: "About ₹2.66 to ₹3.54 lakh a year in tuition by fee category (BBA Hons, Central Campus, 2027 entry)"
+  fee_band: 1-3l
+  watch: "The first round for 2027 entry closes by early December 2026. A foreign-syllabus student may be charged the higher NRI fee in Year 1, so confirm it."
 author: "Madan Kumar PC"
 last_checked: 2026-11-15
 status: published
@@ -53,18 +64,18 @@ published_date: 2026-11-15
 - **Quality marks:** NAAC A+ (2022). NAAC is the national body that grades colleges. In India's NIRF 2025 rankings it is 63rd among universities, 96th overall, 24th for Law and 57th for Management. NIRF 2026 had not been published on 15 November 2026.
 - **Teaching style:** Courses, fees and even eligibility can differ from campus to campus, so always read the page for your exact course and campus.
 
-## Popular courses
+## Which courses are most popular?
 
 CHRIST is best known for commerce and business (BCom, BBA and their honours versions), economics, psychology, English and media, law (BA LLB and BBA LLB), and computer applications (BCA). It also offers science, engineering (BTech) and architecture.
 
-## How to get in: CBSE and other Indian boards
+## How do CBSE and other Indian board students get in?
 
 - **Minimum marks:** Many courses ask only for a pass in Class 12. Some ask for more. CHRIST's eligibility page gives examples: 45 percent for BA LLB and BBA LLB, 55 percent for some BA and BBA courses, and 60 percent for BCom (Honours) and some BCom courses. Check your course page.
 - **Apply before your Class 12 exams.** Students who will sit Class 12 in March to May 2027 can apply with their Class 10 and Class 11 marks.
 - **Entrance test:** Many popular courses (such as BBA and BCom) have the CHRIST Entrance Test, which is online. Some arts and science courses have no test. CHRIST does not use CUET or JEE for these courses.
 - **Selection:** After the test (if your course has one) comes a Skill Assessment, a short Micro Presentation and a Personal Interview. Your school marks are checked too.
 
-## How to get in: Cambridge AS & A Level students
+## How do Cambridge AS & A Level students get in?
 
 - **Minimum:** At least three A Levels, each at grade C or better. AS Levels alone do not meet this rule. Your course may also need certain subjects.
 - **Grade conversion:** CHRIST does not publish a way to turn Cambridge grades into percentages. Ask the admissions office which figure they will use for courses with a percentage rule.
@@ -72,13 +83,13 @@ CHRIST is best known for commerce and business (BCom, BBA and their honours vers
 - **Check the first-year fee:** CHRIST's course pages have said that a student who studied a foreign syllabus pays the NRI fee in the first year, and the "Other Indian States" fee after that. This was the rule at one point, so cross-check it with the admissions team before you plan your budget.
 - **Same test and interview** as everyone else.
 
-## Application window and fee (2027 entry)
+## When do applications open for 2027 entry, and what is the fee?
 
 - **First selection round:** Applications opened on 15 October 2026. Courses with an entrance test close on 25 November 2026, and the test is on 5 December 2026. Courses without a test close on 6 December 2026. Assessments and interviews run from 11 to 13 December 2026. The final list comes out on 21 December 2026.
 - **Application fee:** It depends on the course, up to about ₹1,800 per application, and is not refunded (CHRIST FAQ). Each course needs its own application.
 - **After selection:** A registration fee of ₹8,000, not refunded, plus the Year 1 fee within seven days of the result.
 
-## Approximate annual cost
+## How much does it cost a year?
 
 Example: BBA (Honours) at the Bangalore Central Campus, for students joining in 2027.
 
@@ -91,16 +102,21 @@ Example: BBA (Honours) at the Bangalore Central Campus, for students joining in 
 
 Tuition only. On top of this: the ₹8,000 registration fee, plus hostel and food. CHRIST's main campus hostel page does not list current hostel fees. It says rooms go first come, first served after admission is confirmed, hostel places are for one year at a time, and the residence halls have no mess, so food is extra. Fees may rise a little each year.
 
-## Scholarships
+As a rough guide only, and an old figure: CHRIST Hall at the Yeshwanthpur campus cost ₹55,000 for 2024-25 (₹50,000 fee plus a ₹5,000 refundable deposit, triple sharing, meals paid separately at the cafeteria). This was still the latest rate posted on 18 Oct 2026. A third-party figure for the Central Campus is about ₹1.19 lakh a year for hostel and mess (2026 cycle), but CHRIST does not publish its own.
+
+## Are there scholarships?
 
 CHRIST's Scholarship and Fellowship Support Cell handles its own scholarships and freeships (fee waivers), fee concessions and instalments, and helps students apply for government schemes such as the National Scholarship Portal. Most of its own awards are based on marks in earlier semesters, so they usually come after you join. CHRIST does not publish a big merit scholarship at entry for most courses.
 
-## NRI, OCI and foreign nationals
+- **Merit Scholarship 2027-28:** up to a 50 percent fee waiver for outstanding Class 12 marks, but listed only for some Central Campus BSc science combinations (such as Physics, Chemistry and Maths, and Computer Science with Maths or Statistics) and Music. You apply with your marksheets before admission (as on 18 Oct 2026).
+- **KECISS, for foreign passport holders only:** up to 50 percent of tuition and hostel fees, for 80 percent aggregate or IB 32 out of 42, with 20 awards a year. The scheme document is from 2024, so check it is still offered (as on 18 Oct 2026).
+
+## Can NRI, OCI and foreign students apply?
 
 - **Indian passport holders living abroad** apply as NRI and pay NRI fees in rupees. For 2027 entry, the NRI round uses the same dates, with assessments and interviews held in Dubai, Bahrain, Oman, Qatar and Kuwait.
-- **Foreign nationals, OCI and PIO card holders** apply in the International Student category and pay fees in US dollars. Students from non-English-speaking countries must show English-medium schooling, or IELTS 6.0 (no band below 5.5), or TOEFL iBT 79.
+- **Foreign nationals, OCI and PIO card holders** apply in the International Student category and pay fees in US dollars. If they studied in the Indian system and apply as Indian students, CHRIST says they still pay the international fee (as on 18 Oct 2026). Students from non-English-speaking countries must show English-medium schooling, or IELTS 6.0 (no band below 5.5), or TOEFL iBT 79.
 
-## Things families should know
+## What should families know before applying?
 
 - **The first round closes early.** Most families think of applying after board results. At CHRIST the first round for 2027 entry is over by December 2026.
 - **Three full A Levels.** A Cambridge student with two A Levels and some AS Levels may not meet the rule.
@@ -135,3 +151,7 @@ If a university or counselling body asks for an equivalence or eligibility certi
 10. [CHRIST Scholarship and Fellowship Support Cell (Official)](https://christuniversity.in/center/C/Scholarship-and-Fellowship-Support-Cell) — Scholarships, freeships, concessions, government schemes.
 11. [CHRIST International Student Category (Official)](https://christuniversity.in/international-student-category) — Who applies as international, documents, English rules.
 12. [UGC Public Notice on the Equivalence Regulations, 4 April 2025 (Official)](https://www.ugc.gov.in/pdfnews/0775288_Public-Notice---Equivalence-Regulations.pdf) — UGC grants equivalence through equivalence.ugc.ac.in.
+13. [CHRIST Merit Scholarship 2027-28 (Official)](https://christuniversity.in/admission/merit-scholarship-2026) — Up to 50 percent waiver, eligible BSc and Music programmes, apply before admission.
+14. [KECISS International Student Scholarship (Official, PDF, 2024)](https://wpke.christuniversity.in/wp-content/uploads/2024/07/schlarship_international.pdf) — Up to 50 percent of tuition and hostel for foreign passport holders, 80 percent or IB 32/42, 20 awards.
+15. [CHRIST Student Accommodation, Yeshwanthpur (Official)](https://wpcu.christuniversity.in/?p=19379) — CHRIST Hall fee 2024-25, ₹50,000 plus ₹5,000 deposit, triple sharing, meals extra.
+16. [Collegedunia, CHRIST BBA (Hons) (Third party)](https://collegedunia.com/university/25598-christ-university-bangalore/bachelor-of-business-administration-bba-hons-1217) — Central Campus hostel and mess about ₹59,280 a semester, 2026 cycle.

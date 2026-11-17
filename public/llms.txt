@@ -1,0 +1,29 @@
+# Future Pathways
+
+> Free career, course and university guides for school students and parents in India, written by career counsellor Madan Kumar PC. Every guide links to official sources, gives a short summary for parents, and lists the key dates for the current admission cycle. Facts are checked against official sites; each page shows when it was last updated.
+
+Written by Madan Kumar PC, a CAP Accredited Counsellor and International Certified Career Coach (ICCC) and Cambridge Programme Coordinator in Tamil Nadu, India: https://pcmadankumar.github.io
+
+Audience: students in Grades 6 to 12 (Indian boards and Cambridge IGCSE / AS & A Level) and their parents.
+
+## Sections
+
+- [Careers](https://futurepathways.github.io/careers/): what a career is, how to get into it and what to study.
+- [Internships & Opportunities](https://futurepathways.github.io/opportunities/): internships, summer programmes, competitions and webinars, with deadlines.
+- [Courses](https://futurepathways.github.io/courses/): degree courses and where they lead.
+- [Countries](https://futurepathways.github.io/countries/): studying abroad, including costs, tests, visas and scholarships.
+- [Universities](https://futurepathways.github.io/universities/): one university at a time, with entry rules, fees, dates and what parents should know. Includes the University Finder: a filterable table of 135 universities and colleges, 32 with a full profile here and the rest linking to their official websites.
+
+## Most useful pages
+
+- [University Finder](https://futurepathways.github.io/universities/): compare 135 universities and colleges in India and abroad by region, type, way in, cost and Cambridge A Level acceptance.
+- [Upcoming Deadlines](https://futurepathways.github.io/deadlines/): every application deadline and key date on the site, soonest first.
+- [Career Roadmaps](https://futurepathways.github.io/roadmaps/): 26 roles mapped to the school subjects to keep, Indian degrees and entrance exams.
+- [Cambridge A Levels in India](https://futurepathways.github.io/courses/cambridge-a-levels-in-india/): equivalence, eligibility certificates, JEE, NEET and CUET, and how grades become a percentage.
+- [For Parents](https://futurepathways.github.io/parents/): a starting point for parents.
+- [Start here by grade](https://futurepathways.github.io/start/): what to do in Grades 6 to 8, 9 and 10, and 11 and 12.
+
+## Notes
+
+- Fees, dates and rules change every year. Each guide names the admission cycle it describes and links to the official page; check it before applying.
+- Sitemap: https://futurepathways.github.io/sitemap-index.xml

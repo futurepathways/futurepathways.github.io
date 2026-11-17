@@ -62,9 +62,21 @@ key_dates:
     label: "CMI entrance exam 2027"
     note: "2 pm, Saturday"
     url: "https://www.cmi.ac.in/admissions/"
+faq:
+  - q: "Which school subject should I keep if I am unsure about my career?"
+    a: "Mathematics. Dropping it after IGCSE or Class 10 shuts most routes into engineering, data, AI, finance and consulting, in India and abroad. Keeping Maths to AS Level or Class 12 is the safer choice."
+  - q: "How do I use the Career Roadmaps page on Subject Choices Day?"
+    a: "Pick three roles that sound interesting and open each one on the Roadmaps page. Write down the subjects each role wants; if a subject appears in all three, that is your answer. Then bring the list to a career counsellor."
+  - q: "Can students from any stream take UCEED for design?"
+    a: "Yes, UCEED accepts any stream. The UCEED 2027 exam is on 17 January 2027, from 9 am to 12 noon."
+  - q: "When is the NID DAT 2027 prelims exam?"
+    a: "The NID DAT 2027 prelims are on 20 December 2026. Registration closes on 30 November 2026 at 11:59 PM."
+  - q: "Do Indian entrance exams accept Cambridge A Levels?"
+    a: "Most Indian entrance exams and universities accept A Level. Some ask for a UGC equivalence certificate (formerly issued by the AIU) or a minimum mark in specific subjects, so check this early, not in Grade 12."
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-18
+fold: true
 status: published
 published_date: 2026-10-18
 ---
@@ -79,11 +91,11 @@ Most students can name about seven careers. The world of work has hundreds, and 
 
 The roles cover seven families: software engineering, data and AI, cloud and security, product and design, business, marketing and sales, finance and consulting, and media. You can filter the page by a subject you are keeping, by an entrance exam, or by family, and send a classmate a link straight to one role.
 
-## The one rule to remember
+## Which school subject should you not drop?
 
 **The biggest door-closer is dropping Mathematics after IGCSE or Class 10.** It shuts most routes into engineering, data, AI, finance and consulting, in India and abroad. If you are unsure, keeping Maths to AS Level or Class 12 is the safer choice. A student who keeps Maths and later chooses design or media has lost nothing. A student who drops it and later wants data science has a hard climb.
 
-## How to use it on Subject Choices Day
+## How do you use Career Roadmaps on Subject Choices Day?
 
 - Pick three roles that sound interesting, even vaguely. Open each one on the Roadmaps page.
 - Write down the subjects each role wants. If a subject appears in all three, that is your answer.
@@ -92,12 +104,12 @@ The roles cover seven families: software engineering, data and AI, cloud and sec
 
 ## Entrance exam dates confirmed so far for 2027
 
-The Key dates box above lists the dates that are confirmed on official sites as of 18 October 2026: UCEED, NID DAT, CA Foundation, CMI, and the NTA calendar for JEE Main Session 1. Not yet announced: JEE Main registration, CUET-UG, IPMAT, BITSAT, ISI and TNEA 2027. I will add them to this post and to the [Upcoming Deadlines](/deadlines/) page as they come out.
+The Key dates box above lists the dates confirmed on official sites: UCEED, NID DAT, CA Foundation, CMI, and JEE Main 2027 Session 1 (applications close on 22 November 2026; the exam is in January 2027). Not yet announced when last checked: CUET-UG, IPMAT, BITSAT, ISI and TNEA 2027. I will add them to this post and to the [Upcoming Deadlines](/deadlines/) page as they come out.
 
-## A note for Cambridge students
+## Do Indian entrance exams accept Cambridge A Levels?
 
 Most Indian entrance exams and universities accept A Level, but some ask for a UGC equivalence certificate (formerly issued by the AIU) or a minimum mark in specific subjects. Check this early, not in Grade 12. I do not issue or arrange the certificate, but I can guide students through the process.
 
 ## Credit
 
-The roadmap structure and skill lists are drawn from Careermaxxing by Kungumavishnu ([careermaxxing.kungumavishnu.com/roadmap](https://careermaxxing.kungumavishnu.com/roadmap)). The summaries, the India mapping and the subject advice are mine. Every role on the page links back to its original roadmap, which goes much deeper.
+The roadmap structure and skill lists are drawn from Careermaxxing by Kungumavishnu. The summaries, the India mapping and the subject advice are mine.

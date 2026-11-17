@@ -13,6 +13,15 @@ tags_audience: [students]
 countries: [united-kingdom]
 parent_summary: "For UK applications, the personal statement is the part of the application a student can still improve after grades are set, and research shows it changes outcomes for equally qualified applicants. The piece explains what admissions tutors look for and the mistakes to avoid. A question to ask your child's counsellor: when should my child start drafting, and who will give honest feedback?"
 official_links: []
+faq:
+  - q: "How important is the UCAS personal statement?"
+    a: "More than many families think. Sutton Trust research found that state school applicants with identical grades to privately educated peers were one third less likely to get an offer from a leading university, and the main reason identified was the quality of their personal statement."
+  - q: "What should a UCAS personal statement be about?"
+    a: "It should be about you, not just your subject. Admissions tutors want to know why you are drawn to the subject, what you have done beyond the classroom, how your thinking has changed, and which questions in the field excite you."
+  - q: "What are common mistakes in a UCAS personal statement?"
+    a: "Opening with a cliché, listing activities without reflection, focusing too much on extracurriculars, hedging every claim, and writing for the counsellor rather than the admissions tutor. For most UK universities, academic engagement should be the main theme."
+  - q: "How do I sell myself in a personal statement without boasting?"
+    a: "Be specific and confident about genuine strengths. Describe particular moments, questions and realisations instead of general claims such as \"I am a hard-working student\"."
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-12
@@ -24,7 +33,9 @@ published_date: 2026-03-18
 
 Three university representatives from the United Kingdom came together for a Unifrog webinar to discuss one of the most consequential pieces of writing a school leaver will ever produce: the UCAS personal statement. This post captures the key takeaways — what admissions teams are really looking for, the pitfalls students consistently fall into, and the concrete resources available to counsellors and students through Unifrog.
 
-## Why the Personal Statement Matters More Than You Think
+## Does the personal statement really matter?
+
+Yes, especially when applicants are equally qualified on paper.
 
 Most students and parents believe that university offers are driven almost entirely by grades. The research suggests otherwise — especially when applicants are equally qualified on paper.
 
@@ -49,7 +60,9 @@ Admissions tutors read hundreds of statements. They already know what History is
 
 The personal statement is not a subject essay. It is an argument for why this particular person belongs on this course.
 
-## How to Sell Yourself — Authentically
+## How do I sell myself without boasting?
+
+Be specific and confident about your genuine strengths.
 
 The second theme of the webinar — how to sell yourself — makes many students uncomfortable. The word "sell" feels at odds with modesty and academic humility. But selling yourself in a personal statement does not mean boasting. It means being specific and confident about genuine strengths.
 
@@ -63,7 +76,9 @@ The difference between a weak and strong statement often comes down to this dist
 
 Specificity is what makes a statement feel real. Generic praise of a subject signals that the student lacks authentic engagement. Specific moments, questions, and realisations signal genuine intellectual character.
 
-## Common Pitfalls to Avoid
+## What mistakes should I avoid in a personal statement?
+
+Avoid clichéd openings, lists of activities without reflection, too much on extracurriculars, hedging, and writing for the counsellor.
 
 The university representatives were candid about patterns they see repeatedly that weaken otherwise capable applications:
 

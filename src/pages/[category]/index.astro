@@ -2,6 +2,7 @@
 // Category listing page (PRD 6.2): main category OR extra categories.
 import Base from '../../layouts/Base.astro';
 import PostList from '../../components/PostList.astro';
+import UniversityFinder from '../../components/UniversityFinder.astro';
 import Icon from '../../components/Icon.astro';
 import { categories, categoryByKey } from '../../config/site';
 import { getVisiblePosts, postsInCategory } from '../../lib/content';
@@ -14,6 +15,9 @@ export async function getStaticPaths() {
 const key = Astro.params.category as CategoryKey;
 const cat = categoryByKey[key];
 const posts = postsInCategory(await getVisiblePosts(), key);
+// Universities: profiles with quick facts go in the Finder table; anything else (articles) stays as cards.
+const finderPosts = key === 'universities' ? posts.filter((p) => p.category === 'universities' && p.glance) : [];
+const listPosts = finderPosts.length ? posts.filter((p) => !finderPosts.includes(p)) : posts;
 const intro: Record<CategoryKey, string> = {
   careers: 'What different careers are really like, how people get into them, and what to study on the way.',
   opportunities:
@@ -44,9 +48,17 @@ const intro: Record<CategoryKey, string> = {
       </div>
     )
   }
-  <div class="container section">
+  {
+    finderPosts.length > 0 && (
+      <div class="container section">
+        <UniversityFinder posts={finderPosts} />
+        {listPosts.length > 0 && <h2>More about universities</h2>}
+      </div>
+    )
+  }
+  <div class="container section" style={finderPosts.length ? 'padding-top:0' : undefined}>
     <PostList
-      posts={posts}
+      posts={listPosts}
       context={key}
       sortDefault={key === 'opportunities' ? 'deadline' : 'newest'}
       headingLevel="h2"

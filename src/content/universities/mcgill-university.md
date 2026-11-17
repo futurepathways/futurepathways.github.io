@@ -29,6 +29,17 @@ key_dates:
     label: "Application deadline for international applicants (Fall 2027)"
     note: "Entrance scholarship deadline about a week later"
     url: "https://www.mcgill.ca/undergraduate-admissions/"
+glance:
+  kind: foreign-public
+  where: "Montreal, Quebec, Canada"
+  region: "Canada"
+  cambridge: with-conditions
+  cambridge_note: "Yes. A Levels are accepted; subjects depend on the programme. A Level English grade C or IGCSE English grade B lets you skip the English test."
+  entry: "Apply on McGill's own website by 15 January; admission is mainly on school marks, with essays or auditions for some programmes."
+  routes: [class-12-marks, other]
+  cost: "About ₹24 lakh (Science) to ₹53 lakh (Management) a year in tuition and fees; housing and food extra (2026-27)"
+  fee_band: 15-40l
+  watch: "Quebec needs its own certificate (CAQ) before the study permit, and CBSE and ISC students must take an English test. Start both early."
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
@@ -52,7 +63,7 @@ McGill hosts live virtual campus tours led by a student guide, who talks about c
 
 **Visit a university in person.** I strongly recommend that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to me at pcmadankumar@gmail.com.
 
-## McGill Admission Requirements, CBSE/State Boards and Cambridge A Level
+## What does McGill ask of CBSE, State Board and Cambridge A Level students?
 
 > Please read the rows on English tests and the Quebec Acceptance Certificate (CAQ) with care. Both surprise many families, and both are easy to handle if you start early.
 
@@ -97,7 +108,7 @@ McGill's own 2026-27 table for new international undergraduates shows a wide ran
 
 Medicine is one of McGill's best known programmes, and McGill calls its Medicine faculty the first in Canada. Places for international students are very few, and Indian guides report that most successful Indian applicants apply after a Canadian bachelor's degree, not straight from Class 12. We could not confirm McGill's current number of places for international students. If Medicine is your goal, please do not treat direct entry as likely. A bachelor's degree at McGill or another Canadian university is a safer first step, and I can talk it through with you.
 
-## What parents should know
+## What should families know before applying?
 
 - CRITICAL, the Quebec Acceptance Certificate (CAQ): Quebec asks for a CAQ before the federal study permit. The fee is reported as CAD 135 and the usual time is about 25 business days. Show CAD 24,617 for living costs, plus tuition and travel. Quebec limits how many CAQs it issues, so do not wait. Ontario universities such as Toronto work differently.
 - CRITICAL, the English test: McGill does not exempt CBSE or ISC students because of English marks. Book IELTS, TOEFL or Duolingo early. Cambridge students with A Level English at grade C or better, or IGCSE English at grade B or better, can skip the test.

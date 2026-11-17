@@ -13,6 +13,15 @@ tags_audience: [students]
 countries: []
 parent_summary: "Large companies use psychometric tests of reasoning, judgement and work style in their internship and apprenticeship programmes, some open to Grade 12 leavers. They reward self-knowledge and practice, which Unifrog's quizzes and guides support. No cost. A question to ask your child's counsellor: which Unifrog guides should my child complete before applying for internships?"
 official_links: []
+faq:
+  - q: "What do psychometric tests measure?"
+    a: "They measure cognitive abilities such as verbal and numerical reasoning, how you respond to realistic workplace scenarios (job simulation), and your personality and work style. Employers use them to see what you are good at, what motivates you and how you are likely to behave at work."
+  - q: "Which companies use psychometric tests for school leavers?"
+    a: "Companies like Nestlé and Rolls-Royce run internship and apprenticeship programmes open to Grade 12 school leavers and undergraduate students. Their formal application processes include psychometric assessments."
+  - q: "What is the Nestlé Nesternship?"
+    a: "It is Nestlé's flagship internship programme, offering one-month projects in Sales, Marketing, Supply Chain and IT. Applicants register via the Talent Games portal and complete a gamified psychometric assessment. For many roles, the minimum requirement is 104 UCAS points."
+  - q: "How can students prepare for psychometric tests?"
+    a: "Build self-knowledge over months, and practise: verbal reasoning and job simulation tests improve with deliberate practice. Unifrog's quizzes and its guides \"An Introduction to Psychometric Tests\" and \"A Guide to Assessment Days\" support this."
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-12
@@ -34,7 +43,9 @@ Psychometric tests are structured assessments used by employers to evaluate cand
 
 The core purpose is simple: companies want to understand what a candidate is good at, what motivates them, and how they are likely to behave in a real work environment. Academic grades tell part of that story — psychometric data fills in the rest.
 
-## Why This Matters for Our Students
+## Why should school students care about psychometric tests?
+
+Because big companies use them to choose interns and apprentices, including Grade 12 school leavers.
 
 Companies like Nestlé and Rolls-Royce run internship and apprenticeship programmes that are open to Grade 12 school leavers and undergraduate students. These are not entry-level jobs found through informal referrals — they are structured, competitive programmes with formal application processes that include psychometric assessments.
 
@@ -44,7 +55,9 @@ Nestlé's flagship internship programme offers one-month projects in Sales, Mark
 
 These opportunities matter because they give students early, real-world experience with globally recognised brands — and because they demonstrate to universities that a student is proactively preparing for the workplace, not just studying for exams.
 
-## What the Webinar Highlighted: Key Takeaways
+## How can students do well in psychometric tests?
+
+Know yourself, practise, and use self-assessment quizzes like Unifrog's.
 
 ### 1. Self-Knowledge Is the Foundation
 
@@ -68,7 +81,7 @@ Verbal reasoning and job simulation tests are skills — and like any skill, the
 
 There is a direct link between the self-assessment activities available in Unifrog and the psychometric assessments used by employers. Students who complete Unifrog's quizzes are not just filling in a school requirement — they are practising the kind of reflective, structured thinking that modern employers actively seek and assess.
 
-## Next steps for students and counsellors
+## What should students and counsellors do next?
 
 The webinar concluded with two specific resources in the Unifrog Know-how library that are worth assigning to Grade 12 students as structured preparation:
 

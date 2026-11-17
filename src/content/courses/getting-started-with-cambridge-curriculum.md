@@ -13,6 +13,17 @@ tags_audience: [parents, students]
 countries: []
 parent_summary: "A five-minute explainer of the Cambridge programme your child's school follows: the stages from Cambridge Primary to AS and A Level, the learner attributes, and the emphasis on understanding over memorising. A question to ask your child's counsellor: how do Cambridge qualifications translate into university entry in India and abroad?"
 official_links: []
+faq:
+  - q: "What is Cambridge International Education?"
+    a: "It is part of Cambridge University Press & Assessment and provides programmes and qualifications for learners aged 5 to 19. It is designed to help students develop the skills, knowledge and attitudes they need to thrive in a rapidly changing world."
+  - q: "What are the stages of the Cambridge curriculum?"
+    a: "There are four: Cambridge Primary (ages 5 to 11), Cambridge Lower Secondary (ages 11 to 14), Cambridge IGCSE (ages 14 to 16) and Cambridge International AS & A Level (ages 16 to 19). AS & A Level are university-entrance qualifications recognised worldwide."
+  - q: "How is the Cambridge curriculum different from other curricula?"
+    a: "It puts deep understanding before rote memorisation. Assessment tests how well students can apply their knowledge, not just recall it, and the curriculum takes a global perspective."
+  - q: "How many schools follow the Cambridge curriculum?"
+    a: "The Cambridge International curriculum is trusted by over 10,000 schools across 160 countries."
+  - q: "Where should a new Cambridge teacher start?"
+    a: "Start with the Cambridge Curriculum Framework for your subject and stage. After that, the Cambridge Teacher Community and subject-specific training workshops are useful resources."
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-12
@@ -37,7 +48,9 @@ At the heart of Cambridge education is a set of attributes that define what it m
 - Innovative — and creative in their thinking and their approach to learning
 - Engaged — intellectually and socially, ready to make a difference
 
-## Key Stages and Qualifications
+## What are the stages of the Cambridge curriculum?
+
+There are four stages, from Cambridge Primary (ages 5 to 11) to Cambridge International AS & A Level (ages 16 to 19).
 
 Cambridge programmes span the full school journey:
 
@@ -46,13 +59,13 @@ Cambridge programmes span the full school journey:
 - Cambridge IGCSE (Ages 14–16): The world's most popular international qualification for 14–16 year olds
 - Cambridge International AS & A Level (Ages 16–19): University-entrance qualifications recognised worldwide
 
-## Why Cambridge Stands Apart
+## What makes Cambridge different?
 
 What makes Cambridge distinctive is its emphasis on deep understanding over rote memorisation. Assessment is carefully designed to test how well students can apply their knowledge, not just recall it. The curriculum also supports schools in adapting its content to local contexts while maintaining global standards.
 
 > "Cambridge education is not about filling a bucket, but lighting a fire — a fire of curiosity, critical thinking, and a love of learning that lasts a lifetime."
 
-## Getting Started as an Educator
+## How do teachers get started with Cambridge?
 
 If you are new to teaching a Cambridge programme, the first step is familiarising yourself with the Cambridge Curriculum Framework for your subject and stage. From there, the Cambridge Teacher Community and subject-specific training workshops are invaluable resources.
 

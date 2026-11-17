@@ -17,6 +17,17 @@ official_links:
     url: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485"
   - label: "Canada: Post-graduation work permit (PGWP)"
     url: "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html"
+faq:
+  - q: "How many hours can international students work in Australia?"
+    a: "As checked in October 2026, students can work up to 48 hours per fortnight during term. After graduating, eligible students can apply for the Temporary Graduate visa (subclass 485), usually for two to three years depending on the qualification."
+  - q: "How many hours can international students work in Canada?"
+    a: "As checked in October 2026, students can work up to 24 hours a week off campus during term, and full time in scheduled breaks. University graduates can apply for a Post Graduation Work Permit of up to three years, in any field."
+  - q: "What is co-op at Canadian universities?"
+    a: "Co-op (cooperative education) means students alternate between study terms and paid work terms during the degree. Many Canadian employers use co-op to spot future hires."
+  - q: "What is work integrated learning in Australia?"
+    a: "It means getting real work experience as part of your course. It takes three forms: placements, internships with companies, and industry projects where a student team solves a company's real problem."
+  - q: "What should parents ask a university about jobs after the degree?"
+    a: "Ask what work experience is built into the course, how many students get placements, and what support exists for international students in particular. A university that answers clearly and with numbers takes careers seriously."
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-16
@@ -44,7 +55,9 @@ Lauren put it simply. AI is changing *which* skills employers value. It is not r
 
 Emily added a figure every parent should hear. Today's students may change careers five to ten times in their lives. Not small moves within one field, but full changes. So the best universities are not just training students for a first job. They are teaching them to adapt.
 
-## Australia: real work built into the degree
+## How do Australian universities make students job ready?
+
+They build real work into the degree through work integrated learning.
 
 Tom explained that job demand in Australia changes by region, with healthcare, education, engineering and technology leading. Queensland alone expects more than 430,000 job openings by November 2029. About 185,000 of these are new jobs, and around 250,000 come from people retiring or moving on. The Brisbane 2032 Olympics are expected to support more than 91,000 jobs at their peak [1].
 
@@ -60,7 +73,9 @@ Griffith gave concrete examples. Its *Creating Better Business* course had over 
 
 Tom also pointed counsellors to **QILT**, an Australian government website that compares universities using independent data on jobs and student satisfaction [3]. At Griffith, 75.8% of international undergraduates were employed four to six months after graduating. I plan to use QILT much more in my own sessions.
 
-## Canada: co-op, the paid internship inside the degree
+## What is co-op in Canada?
+
+Co-op is a paid internship built into the degree.
 
 Canada's big idea is **co-op** (short for cooperative education). Students alternate between study terms and paid work terms. Lauren shared her own story: two years of study, then four months of paid work, back to class, back to work, and so on. She graduated with twelve months of paid, relevant experience on her CV. Many Canadian employers use co-op to spot future hires.
 
@@ -78,7 +93,9 @@ Freya's closing message was the clearest: get involved from week one of year one
 
 Each university gives the same idea a different name. Do not get lost in the labels. Ask the plain question instead: *How will my child get real work experience before graduating?*
 
-## Work rules in brief (checked October 2026)
+## How many hours can international students work? (checked October 2026)
+
+During term, up to 48 hours per fortnight in Australia and up to 24 hours a week off campus in Canada.
 
 The panel covered these quickly, so I checked the current official position.
 

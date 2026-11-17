@@ -28,6 +28,17 @@ key_dates:
   - date: 2027-01-02
     label: "Regular Decision deadline"
     url: "https://admissions.yale.edu/apply"
+glance:
+  kind: foreign-private
+  where: "New Haven, Connecticut, USA"
+  region: "USA"
+  cambridge: yes
+  cambridge_note: "Yes, Cambridge AS and A Level are accepted with predicted grades, but A Level results do not replace the SAT or ACT."
+  entry: "Common App, Coalition or QuestBridge with SAT or ACT (required); SCEA by 1 November or RD by 2 January."
+  routes: [common-app, sat-act]
+  cost: "Full cost about USD 97,985 a year all-in before aid (2026-27); tuition USD 72,500"
+  fee_band: over-40l
+  watch: "SAT or ACT is now required for every applicant; many guides still wrongly call Yale test flexible."
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
@@ -48,7 +59,7 @@ You can see Yale on video at any time. [Watch “That’s Why I Chose Yale” he
 
 **Visit a university in person.** I strongly recommend that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to me at pcmadankumar@gmail.com.
 
-## Yale Admission Requirements — CBSE/State Boards and Cambridge A Level
+## What does Yale ask of CBSE, State Board and Cambridge A Level students?
 
 | Requirement | CBSE / Indian State Boards | Cambridge A Level |
 |---|---|---|
@@ -94,7 +105,7 @@ Every Yale undergraduate belongs to one of 14 residential colleges. Each is a sm
 
 About 24% of Yale’s students are international, so a student from India will not be alone. Yale’s International Students and Scholars office supports new arrivals, and Indian students are active across departments. After the degree, F-1 students can work in the US through OPT (Optional Practical Training). STEM graduates get a longer period than others. The US Department of Homeland Security says it is reviewing OPT, but we found no proposed rule that ends or shortens it. A new fee for OPT applications has been proposed. Check the latest position when your child applies. Yale’s alumni network is strong in law, government, teaching, journalism and the arts.
 
-## What parents should know
+## What should families know before applying?
 
 - CRITICAL: Yale now requires the SAT or ACT from every first year applicant, including international students. AP, IB, A Level and Indian board results cannot replace it. Many guides still say Yale is “test flexible”, and that is wrong. Book SAT or ACT dates early, so the scores arrive before 1 November (SCEA) or 2 January (RD)
 - Deadlines for 2027 entry: Single-Choice Early Action on 1 November 2026 and Regular Decision on 2 January 2027. Financial aid forms for international applicants have their own dates, so read Yale’s financial aid page when you register. CBSE and Cambridge A Level results both come in May, so Yale decides on Class 11 marks and predicted grades

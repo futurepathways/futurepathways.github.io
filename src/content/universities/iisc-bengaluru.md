@@ -42,6 +42,17 @@ key_dates:
     label: "JEE Advanced 2027 brochure expected (approximate)"
     note: "Watch jeeadv.ac.in"
     url: "https://jeeadv.ac.in/"
+glance:
+  kind: national-institute
+  where: "Malleswaram, Bengaluru, Karnataka"
+  region: "Karnataka"
+  cambridge: with-conditions
+  cambridge_note: "A Level is a listed Class 12 equivalent; plan five A Levels incl. English General Paper for the 75% five-subject JoSAA rule."
+  entry: "BS (Research): IISc application plus JEE Advanced or IAT rank. B.Tech: JEE Advanced rank through JoSAA only."
+  routes: [jee-advanced, other]
+  cost: "About ₹2 lakh a year all-in for BS (Research); tuition ₹80,000 (from 2026-27); B.Tech tuition ₹2 lakh"
+  fee_band: 1-3l
+  watch: "JEE Advanced alone does not give a BS (Research) seat: you need IISc's own application, and missing the in-person counselling day means no seat."
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
@@ -65,7 +76,7 @@ IISc has no campus tour video of its own that we could find. [Watch A Day at IIS
 
 **Visit a university in person.** I strongly recommend that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to me at pcmadankumar@gmail.com.
 
-## IISc Admission Requirements for CBSE/State Boards and Cambridge A Level
+## What does IISc ask of CBSE, State Board and Cambridge A Level students?
 
 Please read the Entrance Exams row and the Deadlines row first. IISc has two undergraduate doors, and they open in different ways. The four year BS (Research) needs IISc's own application plus a rank in JEE Advanced or the IISER Aptitude Test (IAT). The B.Tech degrees are filled only through JoSAA, the joint counselling for IITs, on a JEE Advanced rank. Every date below is from the 2026 cycle, because the 2027 notices are not out yet. IISc usually posts its notice in February.
 
@@ -106,7 +117,7 @@ The B.Tech in Mathematics and Computing began in 2022-23 with 50 seats. From 202
 
 The 400 acre campus houses nearly 3,000 students in hostels, including about 500 women, and a new undergraduate complex for over 1,000 students. The main library is open 24 hours on weekdays. The Health Centre has doctors on site round the clock, an ambulance, and group insurance cover of up to INR 3 lakhs a year. Group medical insurance is compulsory. Five messes and a food court feed the campus. A parent can reach the campus from Tamil Nadu in a morning.
 
-## What parents should know
+## What should families know before applying?
 
 - CRITICAL, plan five A Level subjects, with English General Paper. JoSAA's 75 percent rule counts five subjects including a language, and IISc asks for Physics, Chemistry and Mathematics as main subjects. The Cambridge student who entered IISER Thiruvananthapuram through the IAT took English General Paper, Physics, Chemistry, Mathematics and Biology. That is the pattern to follow. Please tell me in Class 11, and I will settle the subject list and the marks certificate with IISc and JoSAA well before the exam.
 - CRITICAL, two separate applications and one day in Bengaluru. JEE Advanced alone does not get a seat in the BS (Research). IISc needs its own application in May, and the rank entered within three days of the result. For B.Tech there is no IISc form at all, only JoSAA. The BS (Research) counselling in 2026 was in person at IISc, with reporting by 7:45 am, and a student who did not attend lost the seat. Keep that week free of travel plans.

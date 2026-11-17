@@ -34,6 +34,17 @@ key_dates:
     label: "UCAS deadline for all other courses"
     note: "6 pm UK time, 11:30 pm in India"
     url: "https://www.imperial.ac.uk/study/apply/undergraduate/process/deadlines/"
+glance:
+  kind: foreign-public
+  where: "South Kensington, London, UK"
+  region: "UK"
+  cambridge: check
+  cambridge_note: "Imperial accepts A Levels (offers AAA to A*A*A) but its page does not name Cambridge International A Level, so confirm."
+  entry: "UCAS application with predicted grades, plus ESAT, TMUA or UCAT where the course needs it."
+  routes: [ucas, other]
+  cost: "GBP 42,700 to 45,500 a year in tuition (~₹54–58 lakh, 2026-27); Medicine GBP 58,600"
+  fee_band: over-40l
+  watch: "Tests come first: if your course needs ESAT, TMUA or UCAT and you skip it, Imperial cannot consider your application. Book early."
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
@@ -55,7 +66,7 @@ On-demand access to the Imperial College London virtual campus tour is available
 
 **Visit a university in person.** I strongly recommend that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to me at pcmadankumar@gmail.com.
 
-## ICL Admission Requirements — CBSE and Cambridge A Level
+## What does ICL ask of CBSE, State Board and Cambridge A Level students?
 
 The table below sets out what Imperial College London asks for from students in each pathway. Rules differ by course, so please read the course page as well. For subject advice and help with admissions tests, write to me for a one to one session.
 
@@ -102,7 +113,7 @@ Imperial teaches science, engineering, medicine and business. Its four faculties
 
 The main award for 2027 entry is the Imperial Inspires Scholarship. It gives at least GBP 15,000 a year (~INR 19 lakhs at ~GBP 127/INR, October 2026) for every year of the course. Imperial plans at least 300 awards for overseas fee paying students, including undergraduates. It is a partial award, so the family still pays the rest. After you apply through UCAS, Imperial invites eligible applicants to a separate scholarship application from October 2026. Undergraduates are asked for an optional essay. The India Future Leaders Scholarship is for Master’s students only, so it does not help a Class 12 student.
 
-## What parents should know
+## What should families know before applying?
 
 - CRITICAL: Imperial’s Class 12 bar for CBSE is now 90% overall across five subjects and 90% in the relevant subjects. Older guides say 85%. Some departments ask for more, so read the course page before you plan.
 - CRITICAL: Tests come first. Booking for the October ESAT and TMUA closed on 28 September 2026. Imperial lists a January sitting from 4 to 8 January 2027, with booking from 26 October to 21 December 2026 (6 pm UK time). If your course needs a test and you skip it, Imperial cannot consider your application. Each test costs about GBP 133 (~INR 17,000) outside the UK and Ireland.

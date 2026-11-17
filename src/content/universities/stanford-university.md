@@ -37,6 +37,17 @@ key_dates:
   - date: 2027-02-15
     label: "CSS Profile priority date for international aid applicants"
     url: "https://financialaid.stanford.edu/undergrad/apply/requirements/rd_international.html"
+glance:
+  kind: foreign-private
+  where: "Stanford, California, USA"
+  region: "USA"
+  cambridge: yes
+  cambridge_note: "Yes. Stanford has no preference for one school system; the school sends GCSE results and predicted A Level marks."
+  entry: "Common Application with essays, two teacher letters and SAT or ACT (required); REA by 1 November or RD by 5 January."
+  routes: [common-app, sat-act]
+  cost: "About USD 97,545 a year all-in before aid (2026-27); tuition alone USD 67,731"
+  fee_band: over-40l
+  watch: "Need-aware for international students: asking for aid makes entry harder, and if you do not ask, you cannot ask later in any year."
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
@@ -58,7 +69,7 @@ Stanford’s admission office runs live online visits and has a recorded informa
 
 **Visit a university in person.** I strongly recommend that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to me at pcmadankumar@gmail.com.
 
-## Stanford Admission Requirements for CBSE and Cambridge A Level
+## What does Stanford ask of CBSE, State Board and Cambridge A Level students?
 
 > Important note for all international families: Stanford's financial aid rule for international students is the most important thing in this document. Stanford is need-aware for international applicants. We explain it in the table below and again in What Parents Should Know. Please read both parts before you decide whether to ask for aid.
 
@@ -106,7 +117,7 @@ There are two good points. First, Stanford says it is committed to meeting the d
 
 The best known Indian Stanford story starts in Chennai. Sundar Pichai studied at IIT Kharagpur, did his MS at Stanford, and now leads Google and Alphabet. Vinod Khosla (IIT Delhi, then a Stanford MBA) is widely reported as a co-founder of Sun Microsystems and later started Khosla Ventures. Sabeer Bhatia (Stanford MS in Computer Science) is widely reported as a co-founder of Hotmail. These are well known public facts that we did not re-check on Stanford's own pages this month. They show that Indian students have a place in the industry that grew around Stanford.
 
-## What parents should know
+## What should families know before applying?
 
 - CRITICAL: Financial aid is NEED-AWARE for international students. Asking for aid makes the review more selective. If you say you will not apply for aid and your child is later admitted, your family cannot apply for aid in any of the four years. Decide with care, before you submit
 - CRITICAL: Do not copy the well known "families under USD 100,000 pay nothing" line. Stanford's page says its income levels (below USD 100,000 no parent contribution, below USD 150,000 tuition covered) "may not apply to families living outside of the United States". For an Indian family, aid depends on your own papers. The page we read was last updated on 8 February 2023, so ask for a net cost estimate, not a rule of thumb

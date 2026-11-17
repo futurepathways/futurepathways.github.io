@@ -13,6 +13,17 @@ tags_audience: [parents, students]
 countries: [germany]
 parent_summary: "Most German public universities charge no tuition, even to international students, but living costs are about ₹13 lakhs a year and must be shown in a blocked account. There are four routes after Class 12, two of which pay a training allowance. New 2026 rule: at least 70 percent in Class 12. A question to ask your child's counsellor: should my child start German now, and is the APS exemption for Cambridge students confirmed?"
 official_links: []
+faq:
+  - q: "Is university tuition free in Germany for Indian students?"
+    a: "At most public universities, yes. Tuition is €0 in 15 of 16 states; Baden-Württemberg charges non-EU students €1,500 per semester. You still pay a semester contribution of €150 to €350, and private universities charge €5,000 to €20,000+ a year."
+  - q: "How much money do I need to live in Germany as a student?"
+    a: "For the visa, a student must show €11,904 for the year (€992 a month, about ₹13 lakh) in a blocked account. This is the legal minimum; Munich and Frankfurt cost more. The blocked account is the student's own money, released monthly after arrival."
+  - q: "What Class 12 percentage do I need for a German university?"
+    a: "From Winter 2026/27, Indian undergraduate applicants need at least 70% overall in Class 12, across CBSE, ISC or State boards. This follows updated anabin criteria, effective 15 March 2026."
+  - q: "Do Cambridge A Level students need an APS certificate for Germany?"
+    a: "Students with Cambridge A Levels or the IB may be exempt from the APS certificate, but this needs confirming case by case. For others, APS costs ₹18,000, takes 5 to 10 weeks and is valid for 3 years."
+  - q: "Can Indian students work part-time while studying in Germany?"
+    a: "Yes. Non-EU students may work 140 full days a year, and realistic earnings are about €450 to €950 a month. On-campus (HiWi) jobs often don't count toward the limit."
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-12
@@ -43,7 +54,9 @@ Germany now offers a credible answer for almost every aspiration — engineering
 
 The four traditional English-language destinations each carry trade-offs worth naming honestly: the US (policy and visa uncertainty), the UK (a saturated diaspora job market), Australia (cost and past safety concerns), and Singapore (intense competition). Germany’s offer is different — world-class public education at a fraction of the cost, with a clear route to stay and work in Europe. Frame it as a credible primary option, not a fallback.
 
-## 2. The Four Pathways After Class 12
+## 2. What are the routes to Germany after Class 12?
+
+There are four: a Bachelor’s degree, a Dual Study Programme, vocational training (Ausbildung) and a Studienkolleg foundation year.
 
 Germany is unusual in offering four distinct routes after Class 12 — and two of them let a student earn while they learn. Match the pathway to the student’s profile, not to a rank.
 
@@ -58,7 +71,9 @@ Germany is unusual in offering four distinct routes after Class 12 — and two o
 
 Both Dual Study and Ausbildung pay a genuine training allowance — typically €850–€1,300/month (≈ ₹0.9–1.4 lakh), depending on programme, sector and year. Healthcare and IT pay most; some first-year Ausbildung trades start near the 2026 legal minimum of €724. It is gross and taxed, so take-home is lower — genuine support, not a full salary, but enough to cover most living costs in a smaller city.
 
-## 3. The Real Cost Picture — “Free” Decoded
+## 3. Is studying in Germany really free?
+
+Tuition is free at most public universities, but living costs are not.
 
 This is the slide families most misread. “Free” is true for tuition — but living in Germany still costs money. Here is the honest 2026 picture, every figure verified this month — the section parents most want when they ask, “what will it actually cost?”
 
@@ -74,7 +89,9 @@ This is the slide families most misread. “Free” is true for tuition — but 
 
 Tuition is genuinely free at most public universities — but plan for living costs of about ₹13 lakh a year (the blocked-account minimum; cheaper cities can run a little lower). The blocked account is the student’s own money, released monthly after arrival — it is proof of funds, not a fee.
 
-## 4. Eligibility & the 2026 Rules to Get Right
+## 4. What are the 2026 eligibility rules for Germany?
+
+You need at least 70% overall in Class 12, an APS certificate, a language score and a student visa backed by a blocked account.
 
 These are the requirements to get exactly right — and the ones most likely to shift year on year. Several changed in 2025–26; the versions below are current.
 

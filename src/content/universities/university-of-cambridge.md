@@ -37,6 +37,17 @@ key_dates:
   - date: 2027-01-27
     label: "Interview outcomes released"
     url: "https://www.undergraduate.study.cam.ac.uk/apply/application-dates-deadlines"
+glance:
+  kind: foreign-public
+  where: "Cambridge, England, UK"
+  region: "UK"
+  cambridge: yes
+  cambridge_note: "Yes, Cambridge International A Levels are the route Cambridge knows best; usual offer A*A*A for sciences, and tests still apply."
+  entry: "UCAS by 15 October, My Cambridge Application by 22 October, an admissions test for most courses, then a College interview."
+  routes: [ucas, interview, lnat, other]
+  cost: "About GBP 56,000 to 76,000 a year all-in (tuition, College fee and living) for most courses"
+  fee_band: over-40l
+  watch: "Most courses need an admissions test booked by late September, weeks before the 15 October UCAS deadline."
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
@@ -58,7 +69,7 @@ On-demand access to the Cambridge campus tour is available on YouTube. [Watch th
 
 **Visit a university in person.** I strongly recommend that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to me at pcmadankumar@gmail.com.
 
-## Cambridge Admission Requirements for CBSE and Cambridge A Level
+## What does Cambridge ask of CBSE, State Board and Cambridge A Level students?
 
 > Important note for CBSE students: Cambridge accepts CBSE Class 12 only for some courses, and only at some of its Colleges. Engineering, Natural Sciences, Computer Science, Mathematics, Economics and Medicine are not on its CBSE list. For these courses, Class 12 results alone are not the route. Cambridge A Level students are on the route Cambridge knows best, but they still need the admissions tests.
 
@@ -103,7 +114,7 @@ In Natural Sciences, students choose three science subjects plus a Maths based s
 
 Cambridge and India have a long shared history. India's first Prime Minister Jawaharlal Nehru studied at Trinity College. The mathematician Srinivasa Ramanujan from Tamil Nadu worked at Trinity with G.H. Hardy. Amartya Sen (Nobel Prize in Economics, 1998) and Dr Manmohan Singh both studied Economics at Cambridge in the 1950s. Vikram Sarabhai, who founded India's space programme, studied Natural Sciences there.
 
-## What parents should know
+## What should families know before applying?
 
 - CRITICAL, test booking: Cambridge needs a test for most courses. Booking for ESAT and TMUA closed on 28 September 2026 at 6 pm UK time, UCAT closed on 16 September and LNAT on 15 September. The January sitting is only for mature Colleges. A child who has not booked should not expect to apply to these courses in this round. Please write to us today so that we can talk about 2028 entry or other UK universities. Most of them have a later UCAS deadline, 13 January 2027 at 6 pm UK time.
 - CRITICAL, CBSE and the course list: Cambridge's CBSE list does not include Engineering, Natural Sciences, Computer Science, Mathematics, Economics or Medicine. A student on CBSE who wants one of these needs more than Class 12. Cambridge names A Levels and the IB. It also names five or more AP tests at score 5, with A1 in five relevant Class 12 subjects. Another route is a first year at a university outside the UK. JEE Advanced is not named on the India page, so I will ask the College first. Please plan this from Grade 10.

@@ -37,6 +37,17 @@ key_dates:
     label: "Online interviews during December"
     note: "Shortlisted applicants only"
     url: "https://www.ox.ac.uk/admissions/undergraduate/applying/for-international-students"
+glance:
+  kind: foreign-public
+  where: "Oxford, Oxfordshire, England, UK"
+  region: "UK"
+  cambridge: yes
+  cambridge_note: "Yes, Cambridge International AS and A Level are accepted; offers run from AAA to A*A*A, and tests and interviews still apply."
+  entry: "UCAS by 15 October, an admissions test in October for most courses, then an online interview in December if shortlisted."
+  routes: [ucas, interview, lnat, other]
+  cost: "Tuition GBP 39,620 to 66,580 a year (2027 entry); about GBP 52,895 to 86,155 with living costs"
+  fee_band: over-40l
+  watch: "One deadline, 15 October, for every course, with a test booked by late September. Aid for a first degree is very limited."
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
@@ -58,7 +69,7 @@ On-demand access to the Oxford virtual campus tour is available on YouTube. [Wat
 
 **Visit a university in person.** I strongly recommend that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to me at pcmadankumar@gmail.com.
 
-## Oxford Admission Requirements for CBSE and Cambridge A Level
+## What does Oxford ask of CBSE, State Board and Cambridge A Level students?
 
 > Important: Oxford accepts Class 12 results from CBSE (All India Senior School Certificate) and CISCE (ISC). It does not accept State Board results or NIOS Class 12. It also does not take JEE or NEET scores in place of Class 12. CBSE results come after the October deadline, so your school sends predicted grades. These are the marks the school expects your child to score. For course by course rules, please write to me for a one to one session.
 
@@ -108,7 +119,7 @@ Oxford has courses in sciences, engineering, mathematics, computer science, law,
 
 Money for a first degree is very limited, but Oxford has real funding for later study. The Felix Scholarship is for Indian students. The Clarendon Fund has no rule on nationality. Rhodes Scholars from India also study at Oxford. These help students who plan a Master's or PhD. Please read the Felix rule about a degree from a university outside India, in the next section.
 
-## What parents should know
+## What should families know before applying?
 
 - CRITICAL, admissions tests: Oxford says all applicants must take their test in October 2026. The booking window closed on 28 September 2026 at 6 pm UK time. The test days are 12 to 16 October 2026, and results come on 16 November 2026. A January sitting, on 4 to 8 January 2027, is only for the Astrophoria Foundation Year. Each UAT-UK test costs GBP 133 (~INR 17,000) outside the UK. If your child is applying for a course that needs a test and has not booked, please write to us today.
 - CRITICAL, deadline: UCAS closes on 15 October 2026 at 6 pm UK time, which is 10:30 pm in India. Your school must send the reference and predicted grades before then. Please ask the teachers now. Oxford interviews are online in December 2026.

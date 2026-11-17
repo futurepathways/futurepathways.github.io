@@ -37,6 +37,17 @@ key_dates:
   - date: 2027-02-01
     label: "Documents due; Computer Science and Rotman Commerce supplementary applications due"
     url: "https://future.utoronto.ca/deadlines"
+glance:
+  kind: foreign-public
+  where: "Toronto, Ontario, Canada"
+  region: "Canada"
+  cambridge: with-conditions
+  cambridge_note: "Yes, with five IGCSE subjects and three A Levels; Engineering needs Mathematics and Physics, with 70 percent or more in each prerequisite."
+  entry: "Apply to a named programme through OUAC by 15 January 2027; Computer Science, Commerce and Engineering need an extra form."
+  routes: [class-12-marks, other]
+  cost: "Tuition CAD 66,110 a year (2026-27, Arts and Science, CS, Commerce); first year about CAD 83,000 to 107,000 all-in"
+  fee_band: over-40l
+  watch: "Most new students need a Provincial Attestation Letter before the study permit. Places are limited, so accept and pay the deposit quickly."
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
@@ -59,7 +70,7 @@ You can watch a University of Toronto campus tour on YouTube. [Watch the Univers
 
 **Visit a university in person.** I strongly recommend that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to me at pcmadankumar@gmail.com.
 
-## U of T Admission Requirements for CBSE/State Boards and Cambridge A Level
+## What does U of T ask of CBSE, State Board and Cambridge A Level students?
 
 > Please read the rows on Standard Mathematics and the Provincial Attestation Letter (PAL) with care. A PAL is a letter from the Ontario government that most new international undergraduates need before they can apply for a study permit. Places are limited. The Mathematics rule can catch CBSE families by surprise.
 
@@ -103,7 +114,7 @@ Several families have asked me about the tension between India and Canada in rec
 
 Unlike the UK system (UCAS) or the single US application, U of T admits students into a named programme. Computer Science, Engineering and Commerce (Rotman) need an extra application on top of OUAC, and they are far harder to enter than the university's general figures suggest. Computer Science and Rotman Commerce need a supplementary application by 1 February 2027. Engineering needs an Online Student Profile by 15 January 2027. A strong all round profile is not enough on its own. Pick the target programme early and prepare for it.
 
-## What parents should know
+## What should families know before applying?
 
 - CRITICAL, Lester B. Pearson International Scholarship: this covers tuition, books, fees and residence for four years, but a student cannot apply alone. The school must nominate its one best candidate, and each school can nominate only one student a year. For 2027 entry the school nomination closed on 9 October 2026. No the school campus put a student forward this year, so this scholarship is not open to a child now in Class 12. Families with a child in Class 11 should speak to me early in the next academic year. U of T sends the forms to schools in July, and the school must choose its nominee by early October 2027.
 - CRITICAL, Mathematics: Class 12 Standard Mathematics is needed for business, engineering and science programmes. U of T says Applied Mathematics does not meet the calculus requirement. Please check your child's subject choice now.

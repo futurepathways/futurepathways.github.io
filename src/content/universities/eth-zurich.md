@@ -33,6 +33,17 @@ key_dates:
     label: "Bachelor's application deadline and German C1 certificate due"
     note: "23:59 Swiss time"
     url: "https://ethz.ch/en/studies/bachelor/application/non-swiss-matriculation-certificate/language-requirements.html"
+glance:
+  kind: foreign-public
+  where: "Zurich, Switzerland"
+  region: "Switzerland"
+  cambridge: check
+  cambridge_note: "A Levels alone do not give Bachelor's entry; an entrance exam in German may apply. ETH's treatment of Cambridge A Levels is unconfirmed."
+  entry: "Bachelor's: German C1 by 31 March plus a reduced or full entrance exam in German. Master's: English, on your Bachelor's degree."
+  routes: [own-test, other]
+  cost: "CHF 4,380 a year in tuition (~₹5.1 lakh); Zurich living adds about CHF 22,100 a year"
+  fee_band: 3-6l
+  watch: "Bachelor's courses are taught in German and need a C1 certificate. The Swiss visa needs CHF 21,000 a year in the student's own Swiss bank account."
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
@@ -105,7 +116,7 @@ Every other university in this series teaches undergraduates in English. ETH doe
 
 ETH runs an Ambassadors blog where current students, including Indian students, write about daily life in Zurich. Reading a few posts is a good way for a child to picture the move. We have not re-checked Indian student groups in Zurich this time, so please ask me before you rely on one. Parents should also know that Swiss visa and bank rules are strict, and that the family must plan the funds early. I can help you build that plan.
 
-## What parents should know
+## What should families know before applying?
 
 - CRITICAL. The 2027 Bachelor's start is closed for anyone who must sit ETH's entrance exam (the application deadline was 31 March 2026, and ETH says a student who passes the exam can only enter in the following autumn). For a child now in Class 12, the earliest Bachelor's start is autumn 2028. The Bachelor's route needs a German C1 certificate by 31 March, and the entrance exam is in German in January. ETH is also changing its Bachelor's entry rules from autumn 2028, with details from spring 2027.
 - CRITICAL. The Swiss visa needs proof of CHF 21,000 a year (~INR 24 lakhs). It must sit in the STUDENT'S OWN Swiss bank account, or come as a guarantee from a Swiss resident. A parents' support letter is not accepted. Plan the transfer early.

@@ -33,6 +33,17 @@ key_dates:
   - date: 2027-02-01
     label: "Financial aid forms due for Regular Decision"
     url: "https://college.harvard.edu/financial-aid/apply-financial-aid/prospective-students"
+glance:
+  kind: foreign-private
+  where: "Cambridge, Massachusetts, USA"
+  region: "USA"
+  cambridge: yes
+  cambridge_note: "A Level students use the same application with predicted grades; final results are expected by mid August. SAT or ACT is still needed."
+  entry: "Common App with SAT or ACT, five short essays and two teacher letters; REA 1 Nov or RD 1 Jan."
+  routes: [common-app, sat-act]
+  cost: "USD 91,634 a year billed by Harvard, all-in with housing and food (~₹88 lakh, 2026-27)"
+  fee_band: over-40l
+  watch: "SAT or ACT is required for everyone. Also check the court case over Harvard's right to enrol international students before you decide."
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
@@ -54,7 +65,7 @@ On-demand access to the Harvard campus tour is available on YouTube. [Watch the 
 
 **Visit a university in person.** I strongly recommend that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to me at pcmadankumar@gmail.com.
 
-## Harvard Admission Requirements, CBSE and Cambridge A Level
+## What does Harvard ask of CBSE, State Board and Cambridge A Level students?
 
 Harvard looks at the whole student. Marks matter, but they are only the starting point. Essays, teacher letters, activities and a student's own story count too. No two successful applications look the same. Please reach out to me for a one on one counselling session.
 
@@ -102,7 +113,7 @@ Harvard is one of six US universities that are need blind for international stud
 
 Harvard says about 16 percent of the Class of 2029 are international students. Cambridge, Massachusetts is also home to MIT, so the area has a very large student community. We could not confirm a current number of Indian students at Harvard, so please ask me or check Harvard's own pages.
 
-## What parents should know
+## What should families know before applying?
 
 - CRITICAL. Harvard requires the SAT or ACT, and Restrictive Early Action closes on 1 November 2026, soon after the date of this document. Harvard asks for early action test scores by the end of October. Most families who have not yet sat the test should plan for Regular Decision on 1 January 2027 and book the next test date at once. TOEFL and IELTS cannot take the place of the SAT or ACT.
 - CRITICAL. Aid depends on your family income, and you must apply for it. Harvard gives no merit scholarship. It says families under USD 100,000 (~INR 96 lakhs) pay nothing toward attendance. Families up to USD 200,000 (~INR 1.9 crores) have full tuition covered. Families above that may still get aid, but there is no promise. Students are expected to earn about USD 3,500 a year for personal costs, usually through campus work. Loans are available if a family wishes, but Harvard says it will never require them.

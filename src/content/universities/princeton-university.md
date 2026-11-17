@@ -36,6 +36,17 @@ key_dates:
   - date: 2027-02-01
     label: "Financial aid application due for Regular Decision"
     url: "https://admission.princeton.edu/apply/first-year-application-dates-deadlines"
+glance:
+  kind: foreign-private
+  where: "Princeton, New Jersey, USA"
+  region: "USA"
+  cambridge: yes
+  cambridge_note: "Yes. Cambridge AS and A Level results are accepted and understood; Princeton says no system has an advantage."
+  entry: "Common Application with essays, a graded written paper and teacher letters; SAT or ACT optional for 2027 entry."
+  routes: [common-app, sat-act]
+  cost: "About ₹87 lakh a year (USD 90,574) for tuition, fees, housing and food before aid (2026-27)"
+  fee_band: over-40l
+  watch: "Test-optional for fall 2027 entry only; from fall 2028 the SAT or ACT is required. Plan tests by your entry year."
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
@@ -57,7 +68,7 @@ A campus tour video made by the student newspaper, The Daily Princetonian, is on
 
 **Visit a university in person.** I strongly recommend that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to me at pcmadankumar@gmail.com.
 
-## Princeton Admission Requirements — CBSE/State Boards and Cambridge A Level
+## What does Princeton ask of CBSE, State Board and Cambridge A Level students?
 
 | Requirement | CBSE / Indian State Boards | Cambridge A Level |
 |---|---|---|
@@ -107,7 +118,7 @@ Princeton has no business school, no law school and no medical school. This keep
 
 Princeton's Indian connections reach from economic policy to space science. Dr. Gita Gopinath completed her PhD in Economics at Princeton in 2001 and went on to become Chief Economist of the IMF. Nambi Narayanan studied rocket propulsion at Princeton and later received the Padma Bhushan. Princeton's Davis International Center supports international students once they arrive. The university's aid policy applies in the same way to Indian families as to American ones. For a family weighing the true cost of an American degree, that is the main reason to take Princeton seriously.
 
-## What parents should know
+## What should families know before applying?
 
 - CRITICAL — Princeton is test optional for fall 2027 entry only. From fall 2028 entry, it will require the SAT or ACT. If your child is in Class 11 now, plan SAT or ACT dates this academic year.
 - Aid forms have their own dates. For SCEA, the aid application is due on 9 November 2026, not 1 November. For RD, it is due on 1 February 2027. You cannot apply for aid before you apply for admission.

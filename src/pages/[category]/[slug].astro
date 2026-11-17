@@ -7,6 +7,7 @@ import Icon from '../../components/Icon.astro';
 import TagChips from '../../components/TagChips.astro';
 import DeadlineBadge from '../../components/DeadlineBadge.astro';
 import PostCard from '../../components/PostCard.astro';
+import GlanceCard from '../../components/GlanceCard.astro';
 import { site, categoryByKey } from '../../config/site';
 import {
   getVisiblePosts,
@@ -16,6 +17,8 @@ import {
   streamLabel,
   opportunityTypeLabel,
   monthsSince,
+  nextDateOf,
+  glanceCambridgeLabel,
   type Post,
 } from '../../lib/content';
 import { countryBySlug } from '../../lib/data';
@@ -36,10 +39,80 @@ const outOfDate = monthsSince(post.lastChecked) >= 6;
 const previewImage = post.coverImage ? post.coverImage.src : `/images/preview-${post.category}.png`;
 const { Content, headings } = await render(post.entry);
 const toc = headings.filter((h) => h.depth === 2).slice(0, 14);
+// Layered posts: sections fold into <details> (src/lib/rehype-sections.mjs); same rule here for the toolbar.
+const fold = (post.entry.data as any).fold as boolean | undefined;
+const layered =
+  fold !== false &&
+  ((post.category === 'universities' && !!post.glance) ||
+    ((fold === true || post.category === 'courses' || post.category === 'countries') &&
+      headings.filter((h) => h.depth === 2).length >= 5));
 const modeLabel: Record<string, string> = { online: 'Online', 'in-person': 'In person', hybrid: 'Online and in person' };
+
+// "Last updated" (16 Nov 2026): the date the facts were last checked, never earlier than publication.
+const updated = post.lastChecked > post.publishedDate ? post.lastChecked : post.publishedDate;
+const iso = (d: Date) => d.toISOString().slice(0, 10);
+
+// Questions families ask: the post's own `faq`, plus, for university profiles, four questions
+// built from the quick facts card, so the answers always match the card.
+// "University Spotlight: CHRIST (Deemed to be University), Bengaluru" -> "CHRIST (Deemed to be University)"
+const uniName = post.title.replace(/^University Spotlight:\s*/i, '').replace(/,\s*[^,()]+$/, '');
+const camAnswer: Record<string, string> = { yes: 'Yes.', 'with-conditions': 'Yes, with conditions.', check: 'Possibly: check with the university.' };
+const autoFaq: { q: string; a: string }[] = [];
+if (post.category === 'universities' && post.glance) {
+  const g = post.glance;
+  const next = nextDateOf(post);
+  const nextItem = next ? post.keyDates.find((k) => k.date === next) : undefined;
+  autoFaq.push(
+    { q: `Can a Cambridge A Level student apply to ${uniName}?`, a: `${camAnswer[g.cambridge] ?? glanceCambridgeLabel[g.cambridge]} ${g.cambridge_note}` },
+    { q: `How do you get into ${uniName}?`, a: g.entry },
+    { q: `How much does ${uniName} cost a year?`, a: `${g.cost}. Fees change every year, so check the official fee page before you plan.` },
+    {
+      q: `When is the next date for ${uniName}?`,
+      a: nextItem
+        ? `${formatDateString(nextItem.date)}: ${nextItem.label}.${nextItem.note ? ' ' + nextItem.note.replace(/\.$/, '') + '.' : ''} Dates can change, so confirm on the official site.`
+        : `No date for the next admission cycle had been announced when this profile was last checked on ${formatDate(post.lastChecked)}. Watch the official site.`,
+    },
+  );
+}
+const faq = [...autoFaq, ...post.faq];
+
+// Structured data: the guide as an Article, its breadcrumb trail, and its questions.
+const pageUrl = new URL(post.path, Astro.site).href;
+const schema: object[] = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title.length > 110 ? post.title.slice(0, 107) + '...' : post.title,
+    description: post.summary,
+    image: new URL(previewImage, Astro.site).href,
+    datePublished: iso(post.publishedDate),
+    dateModified: iso(updated),
+    inLanguage: 'en-IN',
+    mainEntityOfPage: pageUrl,
+    author: { '@type': 'Person', name: post.author || site.ownerName, url: site.ownerSite },
+    publisher: { '@type': 'Person', name: site.ownerName, url: site.ownerSite },
+    isPartOf: { '@type': 'WebSite', name: site.name, url: new URL('/', Astro.site).href },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
+      { '@type': 'ListItem', position: 2, name: main.name, item: new URL(main.path, Astro.site).href },
+      { '@type': 'ListItem', position: 3, name: post.title, item: pageUrl },
+    ],
+  },
+];
+if (faq.length) {
+  schema.push({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+  });
+}
 ---
 
-<Base title={post.title} description={post.summary} image={previewImage} type="article">
+<Base title={post.title} description={post.summary} image={previewImage} type="article" schema={schema}>
   {post.status === 'draft' && <p class="draft-banner">Draft. This post is not on the live site yet.</p>}
 
   <article class={`post cat-${post.category}`} data-pagefind-body data-pagefind-meta={`slug:${post.slug}`} data-post-slug={post.slug}>
@@ -89,6 +162,12 @@ const modeLabel: Record<string, string> = { online: 'Online', 'in-person': 'In p
               <time datetime={post.publishedDate.toISOString().slice(0, 10)}>{formatDate(post.publishedDate)}</time>
             </dd>
           </div>
+          <div>
+            <dt>Last updated</dt>
+            <dd>
+              <time datetime={iso(updated)}>{formatDate(updated)}</time>
+            </dd>
+          </div>
           {
             post.author && (
               <div>
@@ -120,6 +199,8 @@ const modeLabel: Record<string, string> = { online: 'Online', 'in-person': 'In p
 
     <div class="container post-layout">
       <div class="post-main">
+        {post.glance && post.category === 'universities' && <GlanceCard post={post} />}
+
         {
           post.coverImage ? (
             <figure class="post-cover">
@@ -259,9 +340,35 @@ const modeLabel: Record<string, string> = { online: 'Online', 'in-person': 'In p
           )
         }
 
+        {
+          layered && (
+            <p class="sec-toolbar js-only" data-pagefind-ignore>
+              <span>Tap a heading to open that section.</span>
+              <button type="button" class="btn btn--outline btn--small" data-expand-all>Open all</button>
+              <button type="button" class="btn btn--outline btn--small" data-collapse-all>Close all</button>
+            </p>
+          )
+        }
+
         <div class="post-body prose">
           <Content />
         </div>
+
+        {
+          faq.length > 0 && (
+            <section class="faq" id="questions" aria-labelledby="faq-heading">
+              <h2 id="faq-heading">Questions families ask</h2>
+              <dl>
+                {faq.map((f) => (
+                  <div class="faq-item">
+                    <dt>{f.q}</dt>
+                    <dd>{f.a}</dd>
+                  </div>
+                ))}
+              </dl>
+            </section>
+          )
+        }
 
         <p class="checked-line" data-pagefind-ignore>
           {
@@ -352,6 +459,29 @@ const modeLabel: Record<string, string> = { online: 'Online', 'in-person': 'In p
       a.rel = 'noopener';
     }
   });
+  // Layered sections: open the one a link points to, open/close all, and print everything.
+  const secs = () => Array.from(document.querySelectorAll<HTMLDetailsElement>('.post-body details.sec'));
+  function openFor(hash: string) {
+    if (!hash || hash.length < 2) return;
+    const el = document.getElementById(decodeURIComponent(hash.slice(1)));
+    const d = el?.closest('details');
+    if (d && !d.open) d.open = true;
+    if (d) el!.scrollIntoView();
+  }
+  openFor(location.hash);
+  window.addEventListener('hashchange', () => openFor(location.hash));
+  document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach((a) =>
+    a.addEventListener('click', () => setTimeout(() => openFor(a.getAttribute('href') || ''), 0)),
+  );
+  document.querySelectorAll('[data-expand-all]').forEach((b) => b.addEventListener('click', () => secs().forEach((d) => (d.open = true))));
+  document.querySelectorAll('[data-collapse-all]').forEach((b) => b.addEventListener('click', () => secs().forEach((d) => (d.open = false))));
+  let printed: HTMLDetailsElement[] = [];
+  window.addEventListener('beforeprint', () => {
+    printed = secs().filter((d) => !d.open);
+    printed.forEach((d) => (d.open = true));
+  });
+  window.addEventListener('afterprint', () => printed.forEach((d) => (d.open = false)));
+
   const btn = document.querySelector<HTMLButtonElement>('[data-copy-link]');
   btn?.addEventListener('click', async () => {
     try {
@@ -563,6 +693,71 @@ const modeLabel: Record<string, string> = { online: 'Online', 'in-person': 'In p
     margin-top: 1.8rem;
     padding-top: 1.2rem;
   }
+  /* Layered sections */
+  .sec-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0 0 0.6rem;
+    color: var(--text-muted);
+    font-size: 0.92rem;
+  }
+  .sec-toolbar span {
+    margin-right: auto;
+  }
+  .post-body :global(details.sec) {
+    border-top: 1px solid var(--border);
+  }
+  .post-body :global(details.sec:first-of-type) {
+    border-top: 0;
+  }
+  .post-body :global(.sec-summary) {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.9rem 0;
+  }
+  .post-body :global(.sec-summary::-webkit-details-marker) {
+    display: none;
+  }
+  .post-body :global(.sec-summary::before) {
+    content: '';
+    flex: none;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-right: 2px solid var(--link);
+    border-bottom: 2px solid var(--link);
+    transform: rotate(-45deg);
+    transition: transform 0.15s;
+  }
+  .post-body :global(details[open] > .sec-summary::before) {
+    transform: rotate(45deg);
+  }
+  .post-body :global(.sec-summary h2) {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    font-size: 1.25rem;
+  }
+  .post-body :global(.sec-summary:hover h2) {
+    color: var(--link);
+  }
+  .post-body :global(.sec-summary:focus-visible) {
+    outline: 2px solid var(--link);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  .post-body :global(.sec-body) {
+    padding: 0 0 1rem 1.2rem;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .post-body :global(.sec-summary::before) {
+      transition: none;
+    }
+  }
   .post-body :global(h2:first-child) {
     border-top: 0;
     margin-top: 0;
@@ -607,6 +802,35 @@ const modeLabel: Record<string, string> = { online: 'Online', 'in-person': 'In p
     scroll-margin-top: 1rem;
   }
 
+  .faq {
+    margin-top: 2rem;
+    padding: 1rem 1.2rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+  }
+  .faq h2 {
+    margin: 0 0 0.6rem;
+    font-size: 1.25rem;
+  }
+  .faq dl {
+    margin: 0;
+  }
+  .faq-item {
+    padding: 0.7rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .faq-item:first-child {
+    border-top: 0;
+    padding-top: 0.2rem;
+  }
+  .faq dt {
+    font-weight: 700;
+    color: var(--heading);
+  }
+  .faq dd {
+    margin: 0.25rem 0 0;
+  }
   .checked-line {
     margin-top: 2rem;
     padding: 0.8rem 1rem;

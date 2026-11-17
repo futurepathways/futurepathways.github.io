@@ -30,6 +30,17 @@ key_dates:
     label: "Applications close for the July 2027 mid-year start"
     note: "Some courses only"
     url: "https://study.unimelb.edu.au/how-to-apply/undergraduate-study/international-applications/applications"
+glance:
+  kind: foreign-public
+  where: "Parkville, Melbourne, Victoria, Australia"
+  region: "Australia"
+  cambridge: with-conditions
+  cambridge_note: "Yes, with at least three A Levels and grade C or better in the subjects the course requires."
+  entry: "Apply direct on Melbourne's international portal with school results and English proof; no SAT, ACT or Indian entrance exam for most courses."
+  routes: [class-12-marks]
+  cost: "Biomedicine tuition AUD 54,780 to 61,460 for the first year (2026), tuition only"
+  fee_band: 15-40l
+  watch: "February start: a child finishing Class 12 or A Level in 2027 normally starts in February 2028. Medicine and Law need a first degree."
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-11-15
@@ -51,7 +62,7 @@ A tour of the campus is available on YouTube. [Watch the University of Melbourne
 
 **Visit a university in person.** I strongly recommend that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to me at pcmadankumar@gmail.com.
 
-## Melbourne Admission Requirements for CBSE/State Boards and Cambridge A Level
+## What does Melbourne ask of CBSE, State Board and Cambridge A Level students?
 
 > Please read the Melbourne Model row and the Intake and Deadlines row with care. They are the two things most Indian families do not expect from an Australian university.
 
@@ -95,7 +106,7 @@ Melbourne gives two undergraduate scholarships by automatic consideration. There
 
 About 46 percent of Melbourne’s students are international, from over 150 nationalities. The university has an India page and an India alumni network, and it offers support for accommodation and arrival. The campus is close to the city centre. We could not confirm a recent count of Indian students, so please ask us if the number matters to your decision.
 
-## What parents should know
+## What should families know before applying?
 
 - CRITICAL. Visa costs have risen quickly. The student visa is AUD 2,500 (about INR 1.6 lakhs) from 1 July 2026. The post-study work visa is AUD 5,750 (about INR 3.7 lakhs) since 1 July 2026. The two together are about AUD 8,250 (about INR 5.3 lakhs at ~AUD 64/INR, November 2026) in government fees, before health cover and any agent or test costs.
 - CRITICAL. Dates differ by board. For the February 2027 start the closing date was 30 November 2026, so it is for students who finished school in 2026. A child finishing Class 12 or A Level in 2027 should plan for February 2028. Melbourne has not yet published 2028 dates, so watch its page from mid 2027.

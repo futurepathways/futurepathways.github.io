@@ -57,8 +57,62 @@ export interface Post {
   status: 'draft' | 'published';
   readingMinutes: number;
   opportunity: OpportunityInfo | null;
+  glance: Glance | null;
+  faq: { q: string; a: string }[];
   body: string;
 }
+
+/** University quick facts (frontmatter `glance`), used by the profile card and the University Finder. */
+export interface Glance {
+  kind: string;
+  where: string;
+  region: string;
+  cambridge: 'yes' | 'with-conditions' | 'check';
+  cambridge_note: string;
+  entry: string;
+  routes: string[];
+  cost: string;
+  fee_band: string;
+  watch: string;
+}
+
+export const glanceKindLabel: Record<string, string> = {
+  government: 'Government or aided',
+  private: 'Private',
+  deemed: 'Deemed university',
+  'national-institute': 'Institute of National Importance',
+  'foreign-public': 'Public university abroad',
+  'foreign-private': 'Private university abroad',
+};
+export const glanceRouteLabel: Record<string, string> = {
+  'class-12-marks': 'Class 12 marks',
+  'own-test': 'Own entrance test',
+  interview: 'Interview',
+  'jee-main': 'JEE Main',
+  'jee-advanced': 'JEE Advanced',
+  neet: 'NEET',
+  cuet: 'CUET',
+  'sat-act': 'SAT or ACT',
+  lnat: 'LNAT',
+  ucas: 'UCAS',
+  'common-app': 'Common App',
+  portfolio: 'Portfolio',
+  other: 'Other (see profile)',
+};
+export const glanceFeeLabel: Record<string, string> = {
+  'under-1l': 'Under ₹1 lakh',
+  '1-3l': '₹1–3 lakh',
+  '3-6l': '₹3–6 lakh',
+  '6-15l': '₹6–15 lakh',
+  '15-40l': '₹15–40 lakh',
+  'over-40l': 'Over ₹40 lakh',
+  unknown: 'Not published',
+};
+export const glanceCambridgeLabel: Record<string, string> = {
+  yes: 'Accepted',
+  'with-conditions': 'Accepted, with conditions',
+  check: 'Check with the university',
+};
 
 /** Card data: everything a listing card or search result needs, small enough for JSON. */
 export interface CardData {
@@ -161,6 +215,8 @@ function normalise(entry: AnyEntry): Post {
     status: d.status,
     readingMinutes: readingMinutes(entry.body ?? ''),
     opportunity,
+    glance: (d.glance as Glance | undefined) ?? null,
+    faq: (d.faq as { q: string; a: string }[] | undefined) ?? [],
     body: entry.body ?? '',
   };
 }

@@ -13,6 +13,17 @@ tags_audience: [students]
 countries: [india]
 parent_summary: "Notes from IIT Bombay's open house for JEE Advanced qualifiers. The branch a student enters no longer locks them in: 40 percent of the degree is free to shape through minors, honours and dual degrees. Up to a quarter of students get merit-cum-means support, and the parental income certificate must be ready before registration. A question to ask your child's counsellor: what does my child want to build in four years there, beyond a placement?"
 official_links: []
+faq:
+  - q: "Can you change branch at IIT Bombay?"
+    a: "Formal branch change stopped in 2023. Instead, 60% of the B.Tech is your core branch and 40% is yours to shape through electives, minors, honours, focus tags and dual degrees, so you are not locked into the branch you enter."
+  - q: "What scholarships does IIT Bombay offer?"
+    a: "Up to 25% of students get merit-cum-means scholarships, which give free messing and up to a full tuition waiver. Eligibility is your JEE rank plus a parental income certificate (for FY 2025–26, both parents' income), which should be ready before registration."
+  - q: "Can first-year students do research at IIT Bombay?"
+    a: "Yes. Any undergraduate can email a professor or walk into a lab and pick up a small project from the second or third semester. Undergraduate Research Awards (UR-1, UR-2, UR-3) add credits and boost your CPI."
+  - q: "Can non-CSE students study AI at IIT Bombay?"
+    a: "Yes. AI is taught across mechanical, civil, chemical, bioscience, maths and more, and centres like C-MInDS, AI-for-Manufacturing and BharatGen are open to students from any branch."
+  - q: "Can IIT Bombay students do a semester abroad?"
+    a: "Yes. IIT Bombay has exchange links with up to about 200 universities. You can spend a semester abroad, for example in France, Germany, Australia or the US, and the credits transfer back."
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-12
@@ -68,7 +79,9 @@ IIT Bombay has exchange links with up to ~200 universities. You can spend a seme
 
 Placements are taken seriously — but the Deputy Director put it bluntly: "Placement is the least expectation." The institute would rather you aim at research, your own venture, a faculty path or corporate R&D. Internships (after Year 2/3, including on-campus at the Research Park, with a new internship fair) are treated as the real bridge — a strong internship often converts into a pre-placement offer.
 
-## Section 2: The Flexibility Toolkit — At a Glance
+## Section 2: How flexible is the IIT Bombay B.Tech?
+
+Very: 40% of the degree is yours to shape through electives, minors, honours, focus tags and dual degrees.
 
 | Pathway / Feature | What It Is | How to Use It |
 |---|---|---|
@@ -79,7 +92,9 @@ Placements are taken seriously — but the Deputy Director put it bluntly: "Plac
 | Dual Degree / IDDP | B.Tech + M.Tech in 5 years (Electrical at entry; all others by conversion after Year 3). IDDP allows cross-discipline jumps (engineering, science, humanities). | Decide by third year; conversion is seamless. A late-blooming interest is not a dead end. |
 | Safety Nets | Academic Support Program (slower pace if you struggle), B.Sc. exit, semester drops, Academic Bank of Credit, Centre for Multidisciplinary Education (design-your-own BS). | A bad semester is recoverable. The system is built to bend, not break you. |
 
-## Section 3: Support, Inclusion & Well-Being
+## Section 3: What support does IIT Bombay give students?
+
+It offers merit-cum-means scholarships, language and disability support, and a Student Wellness Center.
 
 A large part of the session was a promise: nobody is left to sink.
 
@@ -101,7 +116,9 @@ A large part of the session was a promise: nobody is left to sink.
 - Flourishing Hub (new, alumni-backed, first of its kind in India): A credited wellness-workshop course in positive psychology — resilience, mindset, life skills and self-awareness, in small batches.
 - Their framing: "Academics and grades may get you a job, but life is much more than that."
 
-## Section 4: Your First-Year Playbook
+## Section 4: What should you do in your first year at IIT Bombay?
+
+Explore, contact a professor or lab early, and plan your electives toward a Minor or a Focus.
 
 ### In Your First Weeks
 

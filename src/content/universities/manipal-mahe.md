@@ -10,7 +10,7 @@ tags_exam: [jee, cambridge-exams]
 tags_level: [undergraduate]
 tags_audience: [parents]
 countries: [india]
-parent_summary: "A large private deemed university with its main campus in Manipal, Karnataka, and campuses in Mangalore, Bengaluru, Jamshedpur and Dubai. B.Tech entry is through MAHE's own Manipal Entrance Test (MET) or a JEE Main rank, and MBBS is only through NEET. B.Tech Computer Science costs about ₹6.2 lakh in the first year (2026-27) before hostel. A question to ask at home: are we planning for MET, JEE Main or both?"
+parent_summary: "A large private deemed university with its main campus in Manipal, Karnataka, and campuses in Mangalore, Bengaluru, Jamshedpur and Dubai. B.Tech entry is through MAHE's own Manipal Entrance Test (MET) or a JEE Main rank, and MBBS is only through NEET. B.Tech Computer Science costs about ₹6.2 lakh in the first year (2026-27) before hostel, or about ₹7.5 to ₹8.7 lakh with hostel and food. A question to ask at home: are we planning for MET, JEE Main or both?"
 official_links:
   - label: "MAHE Admissions (Official)"
     url: "https://www.manipal.edu/admissions/admission-overview"
@@ -21,6 +21,17 @@ official_links:
   - label: "MAHE Entrance Tests (Official)"
     url: "https://www.manipal.edu/admissions/entrance-exams"
 key_dates: []
+glance:
+  kind: deemed
+  where: "Manipal, Karnataka; also Mangalore, Bengaluru, Jamshedpur and Dubai"
+  region: "Karnataka"
+  cambridge: with-conditions
+  cambridge_note: "Yes. B.Tech needs Physics and Mathematics at A Level plus a third subject, with English at AS or IGCSE; MAHE still asks for an equivalence certificate."
+  entry: "B.Tech through MAHE's own MET (half MET score, half Class 12 marks) or a JEE Main rank; MBBS and BDS only through NEET."
+  routes: [own-test, jee-main, neet, class-12-marks]
+  cost: "About ₹6.18 lakh in Year 1 for B.Tech CSE; about ₹7.5 to ₹8.7 lakh with hostel and food (MIT Manipal, 2026-27)"
+  fee_band: 6-15l
+  watch: "Only the top 100 MET ranks get a full fee waiver; the 20 percent Scholar award needs 80 percent in Class 12, so most families should budget the full fee."
 author: "Madan Kumar PC"
 last_checked: 2026-11-15
 status: published
@@ -36,13 +47,13 @@ published_date: 2026-11-15
 
 **Three different "Manipal" universities.** Manipal University Jaipur and Sikkim Manipal University are separate universities with their own rules, fees and rankings. Manipal University Jaipur appears separately in NIRF (58th among universities in 2025). Do not mix their figures with MAHE's.
 
-## Popular courses
+## Which courses are most popular?
 
 - **B.Tech at MIT Manipal and MIT Bengaluru:** Computer Science and Engineering (with specialisations such as AI and Machine Learning, Cyber Security and Data Science), Electronics, Electrical, Mechanical, Aeronautical, Biotechnology, Mathematics and Computing, and others.
 - **Health sciences:** MBBS at Kasturba Medical College (KMC) in Manipal and Mangalore, BDS, pharmacy, nursing, physiotherapy and allied health.
 - **Others:** architecture (B.Arch, through NATA), BBA, B.Com, design and liberal arts.
 
-## How to get in: B.Tech
+## How do you get into B.Tech?
 
 MAHE fills B.Tech seats in two ways.
 
@@ -61,24 +72,25 @@ Pass Class 12 with Physics, Mathematics and English as compulsory subjects, plus
 - **Grade conversion:** MAHE does not publish a table. Cambridge's statement of results shows a percentage uniform mark (PUM) for each AS and A Level subject, and Indian universities often use these. Ask MAHE which figure it will use for the 50 percent Class 12 weight.
 - **Equivalence certificate:** MAHE's pages still ask for a certificate from the Association of Indian Universities (AIU). Since 2025, the University Grants Commission (UGC) issues equivalence certificates for school results through equivalence.ugc.ac.in. Ask MAHE's admissions office to confirm it will accept the UGC certificate.
 
-## How to get in: MBBS and BDS
+## How do you get into MBBS and BDS?
 
 MBBS and BDS are not through MET. All general and NRI seats are filled on a NEET (UG) rank through Medical Counselling Committee (MCC) counselling for deemed universities, which is open to students from every state. NEET needs Physics, Chemistry, Biology or Biotechnology, and English in Class 12, and a minimum age of 17 by 31 December of the exam year (NTA's 2026 bulletin). Cambridge students should plan Physics, Chemistry and Biology at A Level with English, and keep a UGC equivalence certificate ready before counselling.
 
-## Application window and fee
+## When do applications open, and what is the fee?
 
 - **Application fee:** ₹800 for the general category, plus a ₹1,200 entrance test fee for courses that use MET. NRI, foreign and NRI-sponsored applicants pay ₹2,500.
 - **Dates:** MAHE's admissions pages are labelled for 2027 entry, but I could not confirm official MET 2027 test dates on manipal.edu. In the 2026 cycle the test ran in phases in spring, with counselling in June and July. Watch manipal.edu/met for the 2027 schedule.
 
-## Approximate annual cost
+## How much does it cost a year?
 
 From MAHE's Prospectus 2026, for students joining in 2026-27 in the general category:
 
 - **B.Tech Computer Science and Engineering at MIT Manipal:** about ₹6.18 lakh in the first year (tuition plus other fees, including a ₹10,000 refundable caution deposit), and about ₹24.4 lakh for four years. Core branches such as Civil and Chemical cost less.
 - **MBBS at KMC Manipal:** about ₹17.8 lakh for the first instalment and about ₹71 lakh for the whole course.
-- **Hostel and food are extra.** Rates depend on room type and are in the fee section of the prospectus. 2027 fees were not out when this was checked.
+- **Hostel and food are extra.** At MIT Manipal for 2026-27, the prospectus puts the hostel package at ₹1,27,500 a year (triple room, shared bathroom, non-AC) up to ₹2,54,000 (single AC room with attached bathroom). These figures include the ₹62,000 mess fee and deposits. Mess is compulsory in the first year (as on 18 Oct 2026).
+- **Year 1 all-in for B.Tech CSE at MIT Manipal:** about ₹7.5 lakh with the cheapest room, up to about ₹8.7 lakh with the costliest, before books and travel (2026-27 fees, general category, no scholarship). 2027 fees were not out when this was checked.
 
-## Scholarships
+## Are there scholarships?
 
 From MAHE's Scholarships 2026 document, for B.Tech at MIT Manipal and MIT Bengaluru:
 
@@ -87,13 +99,21 @@ From MAHE's Scholarships 2026 document, for B.Tech at MIT Manipal and MIT Bengal
 - **Both need 80 percent** in Mathematics, Physics and the optional subject in Class 12, and together they cover only 5 percent of general seats in each branch. To keep them, the student needs a CGPA of 8 or more with no backlogs. Hostel and food are not covered.
 - **Achiever:** 20 percent off from the second year for the top 5 percent of each branch on the previous year's results.
 - **MBBS and BDS:** Kalam-Pai, Freeship and Scholar awards by NEET rank.
+- **NRI and international students:** NRI and NRI-sponsored undergraduates get a 15 percent fee waiver for 90 percent or more in Class 12, and 10 percent for 75 to 89.99 percent. International undergraduates (not MBBS, BDS or Nursing) can get the Scholar award of 20 percent off the programme fee (Scholarships 2026, as on 18 Oct 2026). Only one scholarship applies at a time.
 - Other schemes include a full scholarship (fees, hostel and mess) for B.Tech students from government schools with low family income, and awards for girls in some core branches. Read the full document for the rules.
 
-## NRI, OCI and foreign national routes
+## Can NRI, OCI and foreign students apply?
 
 MAHE keeps 15 percent of seats in every programme for its Foreign/NRI category. This covers foreign nationals, OCI and PIO card holders, NRIs and NRI-sponsored students. MAHE says these are not management or payment seats. Except for MBBS, BDS and a few others, admission in this category is on Class 12 or A Level results with no entrance test, and fees are in US dollars. MAHE admits international students only on a student visa. Note: OCI and PIO holders may also apply in the general category, subject to eligibility.
 
-## Things families should know
+**Fees in US dollars (2026-27, as on 18 Oct 2026):**
+
+- **B.Tech CSE at MIT Manipal:** USD 15,350 in the first year and USD 60,800 for four years. Core branches such as Civil, Chemical and Biotechnology cost USD 7,250 in the first year. Hostel for Foreign and NRI students is USD 1,790 to 2,430 a year, plus a mess fee of ₹62,000.
+- **MBBS at KMC Manipal (NRI):** USD 49,450 for the first instalment and USD 1,97,200 for the whole course.
+
+**DASA route for B.Tech.** MIT Manipal also admits B.Tech students through DASA (Direct Admission of Students Abroad), a Government of India scheme for foreign nationals, OCI and PIO card holders, NRIs and children of Indian workers in the Gulf. You apply only on the DASA website, not on MAHE's portal. In 2026, DASA students from SAARC countries got 20 percent off (B.Tech CSE USD 12,320 in the first year). DASA students in the CIWG category (children of Indian workers in the Gulf) paid in rupees, the same as the general category (B.Tech CSE ₹6,18,000 in the first year) (as on 18 Oct 2026).
+
+## What should families know before applying?
 
 - **Most families should budget the full fee.** Only the top 100 MET ranks get a full fee waiver, and the larger Scholar band is 20 percent off and needs 80 percent in Class 12.
 - **Physics and Mathematics are compulsory for B.Tech.** A Cambridge student who drops either at A Level cannot take the MET B.Tech route.
@@ -112,11 +132,14 @@ If a university or counselling body asks for an equivalence or eligibility certi
 1. [MAHE Admission Overview (Official)](https://www.manipal.edu/admissions/admission-overview) — Founded 1953, campuses, Indian and NRI/Foreign tracks.
 2. [MAHE How to Apply (Official)](https://www.manipal.edu/admissions/how-to-apply) — Application fees ₹800, ₹1,200 test fee, ₹2,500 NRI/Foreign.
 3. [MAHE International Admissions (Official)](https://www.manipal.edu/admissions/student-categories/international-admissions) — 15 percent Foreign/NRI seats, categories, A Level rules, AIU wording.
-4. [MAHE Prospectus 2026 (Official, PDF)](https://smude.edu.in/content/dam/manipal/mu/documents/mahe/MAHE%20Prospectus%202026.pdf) — Eligibility and admission process (MET 50:50 merit, JEE Main 20 percent, A Level grade rules), NEET and MCC route, course fees 2026-27, Foreign/NRI category rules. Hosted on a Manipal group site.
+4. [MAHE Prospectus 2026 (Official, PDF)](https://smude.edu.in/content/dam/manipal/mu/documents/mahe/MAHE%20Prospectus%202026.pdf) — Eligibility and admission process (MET 50:50 merit, JEE Main 20 percent, A Level grade rules), NEET and MCC route, course fees 2026-27, MIT hostel and mess fees, Foreign/NRI category rules. Hosted on a Manipal group site.
 5. [MIT Manipal programme page (Official)](https://www.manipal.edu/mit/program-list/btech/btech-computer-science-engineering.html) — B.Tech eligibility for Indian boards and A Level, MET merit list.
-6. [MAHE Scholarships 2026 (Official, PDF)](https://smude.edu.in/content/dam/manipal/mu/documents/Admissions/adm2026/mahe_scholarships_2026_v17.pdf) — Freeship, Scholar and Achiever rules and rank bands, MBBS and BDS awards, HBSF scheme. Hosted on a Manipal group site.
+6. [MAHE Scholarships 2026 (Official, PDF)](https://smude.edu.in/content/dam/manipal/mu/documents/Admissions/adm2026/mahe_scholarships_2026_v17.pdf) — Freeship, Scholar and Achiever rules and rank bands, MBBS and BDS awards, HBSF scheme, NRI and international student waivers. Hosted on a Manipal group site.
 7. [MAHE Entrance Tests (Official)](https://www.manipal.edu/admissions/entrance-exams) — MET, DT and other accepted tests.
 8. [NIRF India Rankings 2025, University (Official)](https://www.nirfindia.org/Rankings/2025/UniversityRanking.html) — MAHE 3rd. Also [Overall](https://www.nirfindia.org/Rankings/2025/OverallRanking.html) (14th), [Research](https://www.nirfindia.org/Rankings/2025/ResearchRanking.html) (19th), [Medical](https://www.nirfindia.org/Rankings/2025/MedicalRanking.html) (KMC Manipal 10th), [Dental](https://www.nirfindia.org/Rankings/2025/DentalRanking.html) (5th), [Pharmacy](https://www.nirfindia.org/Rankings/2025/PharmacyRanking.html) (8th), [Engineering](https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html) (MIT 59th).
 9. [NEET (UG) 2026 Information Bulletin (Official, NTA, PDF)](https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf) — Age and subject rules, foreign board rule.
 10. [UGC Equivalence Portal (Official)](https://equivalence.ugc.ac.in/) — UGC equivalence certificates for school education.
 11. [Cambridge International, India FAQ (Official, PDF)](https://www.cambridgeinternational.org/Images/745293-india-frequently-asked-questions.pdf) — Percentage uniform marks and Indian admissions.
+12. [DASA 2026 Admissions Reporting Instructions, MIT Manipal (Official, PDF)](https://smude.edu.in/content/dam/manipal/mu/documents/Admissions/adm2026/DASA_2026_Reporting%20Instructions_Aug.2,%202026.pdf) — B.Tech fees in USD for DASA Non-SAARC, SAARC and CIWG students, hostel fees in USD. Hosted on a Manipal group site.
+13. [MAHE DASA Scheme 2026 (Official)](https://blog.smude.edu.in/mu/admission/international-students/dasa.html) — MIT Manipal B.Tech through DASA, apply on the DASA website. Hosted on a Manipal group site.
+14. [KMC Manipal MBBS Admissions 2026 (Official, PDF)](https://evbab.manipal.edu/content/dam/manipal/mu/documents/Admissions/adm2026/KMC%20Manipal_UG_2026_Web%20Upload.pdf) — MBBS fees in rupees and US dollars.

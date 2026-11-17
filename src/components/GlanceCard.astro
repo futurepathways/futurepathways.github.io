@@ -1,0 +1,169 @@
+---
+// University "At a glance" card (15 Nov 2026): five answers a parent needs first.
+// Data comes from the profile's `glance` frontmatter; the next date from its key dates
+// (the site rebuilds daily, so it moves on by itself).
+import type { Post } from '../lib/content';
+import { nextDateOf, glanceKindLabel, glanceRouteLabel, glanceCambridgeLabel } from '../lib/content';
+import { formatDateString } from '../lib/deadlines';
+import DeadlineBadge from './DeadlineBadge.astro';
+import Icon from './Icon.astro';
+
+interface Props {
+  post: Post;
+}
+const { post } = Astro.props;
+const g = post.glance!;
+const next = nextDateOf(post);
+const nextItem = next ? post.keyDates.find((k) => k.date === next) : undefined;
+---
+
+<aside class="glance" aria-labelledby="glance-heading">
+  <h2 id="glance-heading"><Icon name="universities" size={22} /> At a glance</h2>
+  <p class="glance-where">{glanceKindLabel[g.kind] ?? g.kind} · {g.where}</p>
+  <dl class="glance-facts">
+    <div>
+      <dt>Cambridge A Level?</dt>
+      <dd>
+        <span class={`glance-pill glance-pill--${g.cambridge}`}>{glanceCambridgeLabel[g.cambridge]}</span>
+        <span class="glance-text">{g.cambridge_note}</span>
+      </dd>
+    </div>
+    <div>
+      <dt>How you get in</dt>
+      <dd>
+        <span class="glance-text">{g.entry}</span>
+        <span class="glance-routes">{g.routes.map((r) => <span class="glance-route">{glanceRouteLabel[r] ?? r}</span>)}</span>
+      </dd>
+    </div>
+    <div>
+      <dt>Cost a year</dt>
+      <dd><span class="glance-text">{g.cost}</span></dd>
+    </div>
+    <div>
+      <dt>Next date</dt>
+      <dd>
+        {
+          nextItem ? (
+            <span class="glance-text">
+              <strong>{formatDateString(nextItem.date)}</strong>: {nextItem.label} <DeadlineBadge deadline={nextItem.date} rolling={false} />
+            </span>
+          ) : (
+            <span class="glance-text">No upcoming date announced yet. See the key dates and official links below.</span>
+          )
+        }
+      </dd>
+    </div>
+    <div class="glance-watch">
+      <dt>Watch out for</dt>
+      <dd><span class="glance-text">{g.watch}</span></dd>
+    </div>
+  </dl>
+  <p class="glance-foot">
+    The full details are in the sections below. <button type="button" class="linklike js-only" data-expand-all>Open all sections</button>
+  </p>
+</aside>
+
+<style>
+  .glance {
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--cat, var(--gold));
+    border-radius: var(--radius);
+    padding: 1rem 1.2rem 0.9rem;
+    margin-bottom: 1.4rem;
+    background: var(--surface);
+  }
+  .glance h2 {
+    margin: 0 0 0.2rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .glance-where {
+    margin: 0 0 0.8rem;
+    color: var(--text-muted);
+    font-weight: 600;
+  }
+  .glance-facts {
+    margin: 0;
+    display: grid;
+    gap: 0.6rem;
+  }
+  .glance-facts > div {
+    display: grid;
+    grid-template-columns: 10.5em 1fr;
+    gap: 0.6rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .glance-facts > div:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  .glance-facts dt {
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    padding-top: 0.2rem;
+  }
+  .glance-facts dd {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+  .glance-pill {
+    align-self: flex-start;
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 0.1rem 0.6rem;
+    border-radius: 999px;
+    border: 1px solid var(--border-strong);
+  }
+  .glance-pill--yes {
+    color: var(--tag-text);
+    background: var(--tag-bg);
+    border-color: transparent;
+  }
+  .glance-pill--with-conditions {
+    color: var(--gold-text);
+    border-color: var(--gold);
+  }
+  .glance-routes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+  }
+  .glance-route {
+    font-size: 0.82rem;
+    padding: 0.05rem 0.55rem;
+    border-radius: 999px;
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+  }
+  .glance-watch dd {
+    font-weight: 600;
+  }
+  .glance-foot {
+    margin: 0.8rem 0 0;
+    font-size: 0.92rem;
+    color: var(--text-muted);
+  }
+  .linklike {
+    background: none;
+    border: 0;
+    padding: 0;
+    font: inherit;
+    color: var(--link);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  @media (max-width: 560px) {
+    .glance-facts > div {
+      grid-template-columns: 1fr;
+      gap: 0.25rem;
+    }
+  }
+</style>

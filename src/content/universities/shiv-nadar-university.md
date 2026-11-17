@@ -24,6 +24,17 @@ key_dates:
     label: "SNUSAT 2026: last application window closed (for reference)"
     note: "Window 1 to 15 June 2026, test 22 June, offers 30 June. 2027 dates not yet published"
     url: "https://snuadmissions.com/admission_info_2026.php"
+glance:
+  kind: deemed
+  where: "Greater Noida, Uttar Pradesh (Delhi NCR)"
+  region: "Uttar Pradesh"
+  cambridge: with-conditions
+  cambridge_note: "Yes, with at least two A Levels at an aggregate of 65 percent PUM, plus each programme's subject rules."
+  entry: "SNUSAT (own online test), JEE Main, SAT, ACT or CUET; interviews for some routes and a portfolio for B.Des."
+  routes: [own-test, jee-main, sat-act, cuet, interview, portfolio]
+  cost: "About ₹6.4 to 8.4 lakh a year all-in with hostel; tuition about ₹4 to 6 lakh (2026 figures)"
+  fee_band: 6-15l
+  watch: "Shiv Nadar University Chennai is a separate university. Seats and scholarships fill as SNUSAT cycles pass, so apply early."
 author: "Madan Kumar PC"
 last_checked: 2026-11-15
 status: published
@@ -36,11 +47,11 @@ published_date: 2026-11-15
 - **Not to be confused with** Shiv Nadar University Chennai, which is a separate university with its own test and fees.
 - **Quality marks:** In India's NIRF 2025 rankings it is 57th among universities and 85th overall. NAAC Grade A (2019), which the university says remains valid under a NAAC extension notice of December 2025. NIRF 2026 had not been published on 15 November 2026.
 
-## Popular courses
+## Which courses are most popular?
 
 Shiv Nadar University offers B.Tech (Computer Science, Electrical and Computer Engineering, Mechanical, Civil, Chemical), B.Sc. Economics and Economics and Finance, BMS (management), B.A. International Relations, B.A. (Research) in Interdisciplinary Humanities and Social Sciences, B.Des, and the natural sciences (Biotechnology, Chemistry, Mathematics, Physics). It also has 2+2 programmes with Arizona State University (ASU) in the USA, where students spend two years at Shiv Nadar and two at ASU.
 
-## How to get in: CBSE and other Indian boards
+## How do CBSE and other Indian board students get in?
 
 - **Minimum:** At least 65 percent aggregate across all subjects on the Class 12 marksheet.
 - **Subjects:** Each programme has its own subject rules. For example, B.Sc. Economics needs English and Mathematics; B.Sc. Physics needs English, Mathematics and Physics; B.Tech Chemical needs Physics, Chemistry and Mathematics; Biotechnology needs English and Biology.
@@ -52,20 +63,20 @@ Shiv Nadar University offers B.Tech (Computer Science, Electrical and Computer E
 - **SNUSAT:** The university's own test, taken online at home with a remote proctor (someone watching by webcam). It has Quantitative Reasoning (20 questions, 45 minutes) and Logical Reasoning (20 questions, 45 minutes). B.Tech and BS Computer Science applicants also take APT: Mathematics and Physics, 20 questions each, 30 minutes each.
 - **CUET route:** Opens only after CUET results, and only for seats still left.
 
-## How to get in: Cambridge AS & A Level students
+## How do Cambridge AS & A Level students get in?
 
 - **Minimum:** At least two subjects at A Level with an aggregate of at least 65 percent PUM. PUM is the Percentage Uniform Mark printed on the Cambridge statement of results, so Shiv Nadar uses Cambridge's own percentage rather than a conversion table.
 - **English:** Not compulsory for Cambridge and IB students, but each programme's subject rules still apply (for example, Mathematics for Economics and Physics).
 - **Tests:** The same routes as everyone else. SAT and ACT are open to all.
 - **Equivalence certificate:** Shiv Nadar's 2026 admissions page does not mention one. Since April 2025, equivalence for foreign school qualifications is granted by the UGC through its equivalence portal; ask admissions whether they need one from a Cambridge student.
 
-## Application window and fee
+## When do applications open, and what is the fee?
 
 - **2026 cycle (for reference):** SNUSAT ran in six cycles from January to July 2026. The last window ran 1 to 15 June 2026, with the test on 22 June and offers on 30 June.
 - **2027 entry:** The university's site says undergraduate registrations for 2027 are open, but the 2027 dates and fees had not been published on 15 November 2026. Check snuadmissions.com.
 - **Fee:** An entrance fee of ₹2,500 (2026 cycle).
 
-## Approximate annual cost
+## How much does it cost a year?
 
 For students who joined in 2026 (tuition plus hostel and living):
 
@@ -78,7 +89,7 @@ For students who joined in 2026 (tuition plus hostel and living):
 
 Hostel and living (AC twin room, mess, laundry and 24-hour primary medical care) is about ₹2.44 lakh a year; a non-AC twin room is about ₹2.29 lakh. In the first year, add an admission fee of ₹60,000 (not refunded), a refundable deposit of ₹30,000 and the ₹2,500 entrance fee. Tuition and living charges may rise by up to 8 percent a year. The two ASU years are in US dollars and cost far more; Shiv Nadar estimates about US$60,000 a year.
 
-## Scholarships
+## Are there scholarships?
 
 Listed on the university's admissions page (one scholarship per student):
 
@@ -88,13 +99,15 @@ Listed on the university's admissions page (one scholarship per student):
 - **UCEED (B.Des):** Rank 120 or better: 100 percent tuition.
 - **Need-based:** Family income below ₹3 lakh a year: up to 100 percent of tuition and hostel, after checks by the university.
 - **Others:** Sports (20 to 100 percent), Women in B.Tech (₹1 lakh a year), Vice-Chancellor's award for top SNUSAT scorers (₹1 lakh a year), armed forces families (25 to 100 percent), and 100 percent for the top 10 in the Humanities research programme's test.
+- **College Board India Scholars:** For students who apply on the SAT route. The award is paid by the College Board, not the university (2026 cycle, as on 18 Oct 2026).
+- **Scholarship or financial aid, not both:** A scholarship cannot be combined with financial aid (2026 cycle, as on 18 Oct 2026).
 - **To keep it:** CGPA of 7.0 or more each year, at least 75 percent attendance, and no discipline case. Awards run one year at a time for up to four years.
 
-## NRI, OCI and foreign nationals
+## Can NRI, OCI and foreign students apply?
 
 The admissions pages do not describe a separate NRI, OCI or foreign quota or fee. SAT and ACT routes are open to all, so students abroad can apply with those scores. Ask the admissions office about documents, equivalence and visas.
 
-## Things families should know
+## What should families know before applying?
 
 - **Two universities share the name.** Apply to the right one (Delhi NCR through snuadmissions.com).
 - **Keep Maths.** Economics, Economics and Finance, Physics, Civil, Chemical and BS Computer Science all need it.
@@ -117,10 +130,11 @@ If a university or counselling body asks for an equivalence or eligibility certi
 
 1. [Shiv Nadar University UG Admissions Info 2026 (Official)](https://snuadmissions.com/admission_info_2026.php) — 65 percent rule, subject rules, Cambridge two A Levels at 65 percent PUM, routes by school, SNUSAT and APT format, 2026 fees, hostel, one-time fees, 8 percent rise, ASU costs.
 2. [Shiv Nadar University UG Admissions 2026-27 home (Official)](https://snuadmissions.com/) — June 2026 window dates, six SNUSAT cycles, ₹2,500 entrance fee.
-3. [Shiv Nadar University Admissions (Official)](https://snu.edu.in/admissions/) — Scholarship list, amounts and renewal rules; registrations for 2027.
+3. [Shiv Nadar University Admissions (Official)](https://snu.edu.in/admissions/) — Scholarship list, amounts and renewal rules, College Board India Scholars; registrations for 2027.
 4. [Shiv Nadar University home (Official)](https://snu.edu.in/home/) — Institution of Eminence on 3 August 2022.
 5. [Institution of Eminence, Mandatory Disclosure (Official)](https://snu.edu.in/home/mandatory-disclosure/institution-of-eminence/) — Institution of Eminence Deemed to be University status.
 6. [NAAC, Mandatory Disclosure (Official)](https://snu.edu.in/home/mandatory-disclosure/national-assessment-and-accreditation-council-naac/) — Grade A from 26 November 2019, NAAC extension notice of 5 December 2025.
 7. [NIRF India Rankings 2025, University Category (Official)](https://www.nirfindia.org/Rankings/2025/UniversityRanking.html) — Rank 57.
 8. [NIRF India Rankings 2025, Overall (Official)](https://www.nirfindia.org/Rankings/2025/OverallRanking.html) — Rank 85.
 9. [UGC Public Notice on the Equivalence Regulations, 4 April 2025 (Official)](https://www.ugc.gov.in/pdfnews/0775288_Public-Notice---Equivalence-Regulations.pdf) — UGC grants equivalence through equivalence.ugc.ac.in.
+10. [Shiv Nadar University Financial Aid (Official)](https://snu.edu.in/admissions/financial-aid/) — Single aid form; aid cannot be combined with a scholarship.

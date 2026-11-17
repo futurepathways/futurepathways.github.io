@@ -16,6 +16,17 @@ official_links: []
 opportunity_type: scholarship
 rolling: true
 mode: in-person
+faq:
+  - q: "How much is a US athletic scholarship worth?"
+    a: "It varies with athletic level. At the top end it is a 100% full ride, including a pocket money stipend; at the lower end, partial scholarships are $10,000 to $20,000 per year. Scholarships aim to cover tuition fees, university fees, and room and board."
+  - q: "What SAT score do student-athletes need for US colleges?"
+    a: "MAE works with a minimum SAT of 1100. Competitive schools ask for more: top-50 engineering programmes, for example, may require 1400+. Students also need an English test such as IELTS, TOEFL or Duolingo."
+  - q: "When should a student-athlete start the US scholarship process?"
+    a: "At least two years before the intended start date. The timeline is driven by coaches, not university admissions deadlines, and rosters fill up quickly while scholarship budgets are finite."
+  - q: "Are A Levels accepted for US athletic scholarships?"
+    a: "Yes. Standard A Level programmes are accepted across all divisions and leagues. NCAA eligibility depends on the specific combination of subjects studied, so do not drop subjects without consulting MAE first."
+  - q: "What is the difference between the NCAA and the NAIA?"
+    a: "The NCAA is the best-known league, with Divisions I, II and III, and Division I is the most competitive. The NAIA, with Divisions I and II, is a strong alternative that is often more accessible for international students and those with BTECs."
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-12
@@ -77,7 +88,9 @@ MAE supports student-athletes across a very wide range of sports. The key messag
 
 Note: Some sports — including triathlon, rugby and fencing — are classified as 'emerging' in the US system. Scholarships may be limited or unavailable for these.
 
-## Section 5: Academic Entry Requirements
+## Section 5: What grades and test scores do student-athletes need?
+
+MAE works with a minimum SAT of 1100, plus an English test score.
 
 Academic eligibility is a key part of the process. Below are the minimum standards MAE works with:
 
@@ -94,7 +107,9 @@ In addition to test scores, MAE requires: high school transcripts (all years), l
 
 Standard A-level programmes are accepted across all divisions and leagues. Students should not drop subjects without consulting MAE first — NCAA eligibility is based on the specific combination of subjects studied. If a student athlete mentions changing their subject choices, alert MAE before the decision is finalised.
 
-## Section 6: The Athletic Scholarship Application Process
+## Section 6: How does the athletic scholarship process work?
+
+Coaches drive it, and it should start at least two years before the intended start date.
 
 The process for securing an athletic scholarship is fundamentally different from a standard university application. The timeline is driven by coaches, not by university admissions deadlines. MAE recommends starting at least two years before the intended start date — rosters fill up quickly and scholarship budgets are finite.
 
@@ -116,7 +131,7 @@ The process for securing an athletic scholarship is fundamentally different from
 
 The athletic portfolio is the most critical element. MAE builds this for each student but needs: competition videos from the past few years (informal parent recordings are fine — professional production is not required), full game/match recordings where possible, an athletic CV / career résumé, and photographs. MAE edits the footage into a professional highlight reel tailored to what coaches look for.
 
-## Section 7: Scholarships, Costs & MAE Fees
+## Section 7: How much does an athletic scholarship cover?
 
 When MAE negotiates scholarships, they aim to cover tuition fees, university fees, and room and board. Scholarship value varies significantly:
 

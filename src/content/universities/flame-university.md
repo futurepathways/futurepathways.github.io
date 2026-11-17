@@ -42,6 +42,17 @@ key_dates:
     label: "FLAME Cycle IV (last cycle): apply by this date"
     note: "Result 9 Jun 2027"
     url: "https://www.flame.edu.in/admissions/ug/admission-schedule"
+glance:
+  kind: private
+  where: "Pune, Maharashtra"
+  region: "Maharashtra"
+  cambridge: with-conditions
+  cambridge_note: "Needs five IGCSE or O Level passes at A to C including English, plus three A Levels; A Level Maths for Maths-based majors."
+  entry: "FEAT (FLAME's own test) or a SAT, ACT or JEE Main score, plus an essay and online interview; five cycles."
+  routes: [own-test, sat-act, jee-main, interview]
+  cost: "About ₹9.15 lakh in tuition in Year 1; about ₹11.95 lakh all-in with hostel and food (2027 entry)"
+  fee_band: 6-15l
+  watch: "It is expensive: plan for about ₹12 lakh in the first year, rising every year, and about ₹50 lakh over four years before extras."
 author: "Madan Kumar PC"
 last_checked: 2026-11-15
 status: published
@@ -54,7 +65,7 @@ published_date: 2026-11-15
 - **Quality marks:** NAAC A++ (the year is not given on its page). It also lists QS I-Gauge ratings. It does not appear in the NIRF 2025 rankings.
 - **Teaching style:** A liberal education. Students take a common base of courses, then pick a major and can add minors from other subjects. All four-year degrees are honours degrees; students may also leave with a three-year degree.
 
-## Popular courses
+## Which courses are most popular?
 
 FLAME's four-year honours degrees and majors include:
 
@@ -63,7 +74,7 @@ FLAME's four-year honours degrees and majors include:
 - **BBA (Hons):** Finance, Business Analytics and AI, Marketing, Human Resource Management, Entrepreneurship, Operations, General Management
 - **BBA (Communications Management) (Hons):** Digital Media Management, Advertising and Branding, Digital Marketing and Communications
 
-## How to get in: CBSE and other Indian boards
+## How do CBSE and other Indian board students get in?
 
 - **Minimum:** A pass in Class 12 from CBSE, CISCE or a state board. The eligibility page sets no minimum percentage.
 - **Maths:** Class 12 Mathematics is a must for Computer Science, Applied Mathematics, Computer Science and Design, and Data Science and Economics. It is "desirable" for Economics; without it, an Economics student takes two maths courses in the first year.
@@ -71,7 +82,7 @@ FLAME's four-year honours degrees and majors include:
 - **Test:** A test is compulsory. Take FLAME's own FEAT (FLAME Entrance Aptitude Test), or send a SAT, ACT or JEE Main Paper 1 score instead. FEAT is online, 120 minutes, with Verbal (50 marks), Reasoning (40), Quantitative (30) and General Knowledge (20) sections. No cut-off score is published for SAT, ACT or JEE Main.
 - **Selection:** Holistic, meaning FLAME looks at the whole student: test score, a 20-minute online essay on a topic given on the day, an online interview, school record, activities and a statement of purpose.
 
-## How to get in: Cambridge AS & A Level students
+## How do Cambridge AS & A Level students get in?
 
 - **Minimum:** Five subjects at IGCSE or O Level with grades A, B or C, including English, plus three subjects at A Level. No minimum A Level grade is stated.
 - **Maths rule:** For the Maths-required majors above, Cambridge students need Mathematics at the Class 12 level, which means A Level Mathematics.
@@ -79,7 +90,7 @@ FLAME's four-year honours degrees and majors include:
 - **Equivalence certificate:** FLAME asks for a UGC equivalence certificate from students with "other foreign 10+2" qualifications. Cambridge is listed as its own route on the same page, so ask FLAME admissions whether a Cambridge student needs one. Since April 2025, these certificates are granted by the UGC through its equivalence portal.
 - **Grade conversion:** Not published. Same test, essay and interview as everyone else.
 
-## Application window and fee (2027 entry)
+## When do applications open for 2027 entry, and what is the fee?
 
 | Cycle | Apply by | FEAT | Interviews | Result |
 |---|---|---|---|---|
@@ -91,7 +102,7 @@ FLAME's four-year honours degrees and majors include:
 
 FLAME says dates may change. The application fee is ₹2,000, not refunded. Apply at apply.flame.edu.in.
 
-## Approximate annual cost
+## How much does it cost a year?
 
 For the incoming class of 2027, the same fee applies to all undergraduate programmes:
 
@@ -104,19 +115,19 @@ For the incoming class of 2027, the same fee applies to all undergraduate progra
 
 Lodging and boarding covers the room, meals and some laundry. Other fees cover IT, on-campus medical care, counselling, sports, the gym and the city bus. There is also a refundable caution deposit of ₹75,000. An air-conditioned twin room with attached bathroom adds about ₹1.48 lakh a year. Books, field trips, immersions and printing are extra. Four years come to about ₹50 lakh before extras.
 
-## Scholarships
+## Are there scholarships?
 
 - **Merit scholarship at admission:** Based mainly on your final internal score in the admission process (test, essay, interview and profile). It can be a partial or a full fee waiver; the amount is in the offer letter.
 - **Special scholarships:** For state, board or national academic rank holders, sports medal winners (first to third at state, national or international level), and state or national achievers in other fields. Apply with certificates.
 - **Need-based help:** Emergency tuition support after a family crisis, such as the death of a parent or a serious illness.
-- **College Board India Scholars:** FLAME names this programme for students who apply with a SAT score. It is run and paid for by the College Board, not FLAME; check the College Board's own rules.
+- **College Board India Scholars:** FLAME names this programme for students who apply with a SAT score. It is run and paid for by the College Board, not FLAME. FLAME's scholarships page gives the College Board's criteria as a SAT score of 1300 or more and a family income below ₹8 lakh a year, and the award as full tuition for the whole programme (as on 18 Oct 2026). These are the College Board's rules and may change, so check them before you apply.
 - **To keep a scholarship:** GPA and CGPA of at least 7 every semester. Scholarships are adjusted against fees, not paid in cash.
 
-## NRI, OCI and foreign nationals
+## Can NRI, OCI and foreign students apply?
 
 FLAME does not publish a separate NRI, OCI or foreign quota or fee. Everyone uses the same application, cycles and rupee fees, and there is no management quota. A passport is accepted as identity proof. Students with a foreign 10+2 need the UGC equivalence certificate.
 
-## Things families should know
+## What should families know before applying?
 
 - **It is expensive.** Plan for about ₹12 lakh in the first year, rising every year.
 - **Apply early.** The Early Decision deadline is 29 November 2026. The merit scholarship depends on your internal score, so a strong test, essay and interview matter.
@@ -142,7 +153,7 @@ If a university or counselling body asks for an equivalence or eligibility certi
 2. [FLAME UG Admission Procedure (Official)](https://flame.edu.in/admissions/ug/admission-procedure) — ₹2,000 application fee, FEAT format, SAT, ACT and JEE Main alternatives, essay, interview, documents.
 3. [FLAME UG Admission Schedule (Official)](https://www.flame.edu.in/admissions/ug/admission-schedule) — Five cycles for 2027 entry.
 4. [FLAME UG Fees, Incoming Class of 2027 (Official)](https://flame.edu.in/admissions/ug/fees) — Year by year fees, deposit, room upgrades, what is included.
-5. [FLAME Scholarships (Official)](https://www.flame.edu.in/admissions/scholarships) — Merit, special and need-based awards, renewal rules.
+5. [FLAME Scholarships (Official)](https://www.flame.edu.in/admissions/scholarships) — Merit, special and need-based awards, College Board India Scholars criteria (SAT 1300+, income below ₹8 lakh, full tuition), renewal rules.
 6. [FLAME Accreditation (Official)](https://flame.edu.in/about-flame/accreditation) — State Act, UGC 2(f), NAAC A++, QS I-Gauge.
 7. [FLAME UG Program Structure (Official)](https://www.flame.edu.in/academics/ug/program-structure) — Degrees, majors and three-year exit option.
 8. [UGC Public Notice on the Equivalence Regulations, 4 April 2025 (Official)](https://www.ugc.gov.in/pdfnews/0775288_Public-Notice---Equivalence-Regulations.pdf) — UGC grants equivalence through equivalence.ugc.ac.in.

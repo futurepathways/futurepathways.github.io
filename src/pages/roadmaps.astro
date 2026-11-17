@@ -117,7 +117,6 @@ const description = `${roles.length} roles, from backend engineer to video edito
       <li><strong>Look at the subjects that keep the door open.</strong> This matters most in Grade 10 and before AS Level or Class 11 choices. Some subject combinations quietly close doors.</li>
       <li><strong>Look at the routes in India.</strong> These are the usual degrees and entrance exams. Most of these jobs do not need one specific degree, but some routes make the start much easier.</li>
       <li><strong>Read the three phases.</strong> Phase 1 is the basics you can start even in school. Phase 3 is what people learn on the job.</li>
-      <li><strong>Open the original roadmap</strong> for the full detail. Each role links to its page on Careermaxxing.</li>
     </ol>
 
     {
@@ -158,9 +157,6 @@ const description = `${roles.length} roles, from backend engineer to video edito
                     <strong>Starter project:</strong> {r.project}
                   </p>
                   <p class="rm-links">
-                    <a href={r.source} target="_blank" rel="noopener">
-                      Original roadmap on Careermaxxing
-                    </a>
                     <a href={`#${r.slug}`} class="rm-permalink" data-rm-copy={`#${r.slug}`}>
                       Copy link to this role
                     </a>
@@ -171,15 +167,6 @@ const description = `${roles.length} roles, from backend engineer to video edito
         </section>
       ))
     }
-
-    <h2>Practice resources on the same site</h2>
-    <p class="prose">
-      For students heading into software roles, Careermaxxing also offers two free coding practice sets:
-      <a href="https://careermaxxing.kungumavishnu.com/roadmap/dsa-75" target="_blank" rel="noopener">DSA 75</a> (75
-      data structures and algorithms problems) and
-      <a href="https://careermaxxing.kungumavishnu.com/roadmap/dsa-faq-150" target="_blank" rel="noopener">DSA FAQ 150</a>
-      (150 common interview questions). These are best started in the first or second year of college, not in school.
-    </p>
 
     <h2>Official links for the exams named above</h2>
     <p class="prose">Always confirm dates, eligibility and fees on the official site for the current year.</p>
@@ -194,8 +181,7 @@ const description = `${roles.length} roles, from backend engineer to video edito
     </ul>
 
     <div class="note rm-credit">
-      <strong>Credit.</strong> {roadmaps.credit}{' '}
-      <a href={roadmaps.source_url} target="_blank" rel="noopener">Open the Careermaxxing roadmap page</a>.
+      <strong>Credit.</strong> {roadmaps.credit}
     </div>
 
     <p class="counsellor-note">

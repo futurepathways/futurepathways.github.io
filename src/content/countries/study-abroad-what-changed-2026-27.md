@@ -38,6 +38,17 @@ key_dates:
     label: "NTU applications close for Indian Standard 12 and UK A Level"
     note: "For the 2027 intake"
     url: "https://www.ntu.edu.sg/admissions/undergraduate/admission-guide/international-qualifications"
+faq:
+  - q: "How long is the UK Graduate visa from 2027?"
+    a: "If you apply on or after 1 January 2027, you can stay for 18 months. If you apply on or before 31 December 2026, you can stay for 2 years. A PhD graduate still gets 3 years."
+  - q: "How much do Australian student visas cost from 1 July 2026?"
+    a: "The Student visa (subclass 500) now costs AUD 2,500 for the main applicant, and the Temporary Graduate visa (subclass 485) costs AUD 5,750. Together that is about AUD 8,250, or roughly ₹5.3 lakh at 15 November 2026 rates, in government fees alone."
+  - q: "How many A Levels do NUS and NTU in Singapore ask for?"
+    a: "Both ask international A Level applicants for at least four A Level subjects, and NUS does not count AS Levels towards this. NTU may look at a student with three, but not for a place on a subsidised tuition fee under the MOE Tuition Grant."
+  - q: "Is the Malaysia Graduate Pass still open to Indian students?"
+    a: "The official page says the arrangement for Indian and Chinese nationals is valid until 31 December 2026. It lets a graduate stay for 12 months after a bachelor's degree or higher. When checked in November 2026, there was no notice that it will run past 2026."
+  - q: "Is the new US fee on OPT a final rule?"
+    a: "No. On 8 October 2026 the US Department of Homeland Security published a proposed rule adding fees of US$70,000 for the first OPT period and US$30,000 for any later OPT. It is a proposal, not a final rule, and nothing has changed yet for students."
 author: "Madan Kumar PC"
 last_checked: 2026-11-15
 status: published
@@ -47,7 +58,9 @@ A short, plain update on the study-abroad rules that moved this year.
 
 Every few months a family tells me something they heard about a visa or a fee, and half the time it is old news or a rumour. So I sat down and checked the official government and university pages myself. Below are the changes I could confirm, with the date each one starts and a link to the page that says so. Rupee figures are rough, at the exchange rates of 15 November 2026.
 
-## United Kingdom: a shorter work visa after the degree
+## How long is the UK Graduate visa now?
+
+From 1 January 2027, it drops from 2 years to 18 months for new applications.
 
 The **Graduate visa** (the UK's post-study work visa: it lets a student stay and work after finishing a degree) is getting shorter.
 
@@ -70,7 +83,9 @@ Together that is about **AUD 8,250**, or roughly **₹5.3 lakh**, in government 
 
 Read more: the [University of Melbourne spotlight](/universities/university-of-melbourne/) and [how Australia and Canada make students job ready](/countries/from-study-to-career-australia-canada/).
 
-## Singapore: four A Levels, and why three can cost you the grant
+## How many A Levels do Singapore universities want?
+
+NUS and NTU both ask for at least four A Level subjects.
 
 This is not brand new, but it catches many Cambridge families in India by surprise, because many students here take three A Levels.
 
@@ -91,7 +106,9 @@ The official page says the arrangement for **Indian and Chinese nationals is val
 
 What to do: if your child is graduating in Malaysia soon, check the official page before relying on this pass. I could not find any notice yet that it will run past 2026.
 
-## United States: a proposed fee on OPT, not a rule yet
+## Is there a new US fee on OPT?
+
+Not yet: it is only a proposed rule.
 
 **OPT** (Optional Practical Training) lets international students in the US work in their field after their degree. On **8 October 2026**, the US Department of Homeland Security published a **proposed rule** that would add new fees for each F-1 student on OPT, paid through the student's university:
 

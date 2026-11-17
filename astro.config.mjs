@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import rehypeSections from './src/lib/rehype-sections.mjs';
 
 // The live address and base path live ONLY here (PRD Section 5.1).
 // If the GitHub organisation name changes, change `site` here and the repo name on GitHub.
@@ -10,6 +11,10 @@ export default defineConfig({
   trailingSlash: 'always',
   build: {
     format: 'directory',
+  },
+  markdown: {
+    // Long posts open as a list of sections (src/lib/rehype-sections.mjs).
+    rehypePlugins: [rehypeSections],
   },
   integrations: [
     sitemap({

@@ -37,6 +37,17 @@ key_dates:
     label: "UCAS deadline for most courses"
     note: "6 pm UK time, 11:30 pm in India"
     url: "https://www.ucl.ac.uk/study/prospective-students/undergraduate/courses/computer-science-and-mathematics-meng"
+glance:
+  kind: foreign-public
+  where: "Bloomsbury, Central London, UK"
+  region: "UK"
+  cambridge: check
+  cambridge_note: "UCL accepts A Levels, but its pages do not name Cambridge International, so confirm for the course. Offers run from AAA to A*A*A."
+  entry: "UCAS by 13 January 2027 (Medicine 15 October 2026); several courses need a test such as TARA, ESAT, TMUA, LNAT or UCAT."
+  routes: [ucas, lnat, other]
+  cost: "Tuition GBP 33,300 to 48,600 a year (2027 entry), plus London living costs"
+  fee_band: over-40l
+  watch: "Several courses now need a test booked before the January deadline; Medicine closes on 15 October with only 24 overseas places."
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
@@ -59,7 +70,7 @@ You can watch a UCL campus tour on YouTube. [Watch the UCL Bloomsbury Campus Tou
 
 **Visit a university in person.** I strongly recommend that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to me at pcmadankumar@gmail.com.
 
-## UCL Admission Requirements for CBSE, State Boards and Cambridge A Level
+## What does UCL ask of CBSE, State Board and Cambridge A Level students?
 
 > Please read the rows on Admissions Tests and Application Deadlines first. The old idea that UCL asks for no test is no longer true. Computer Science, Mechanical Engineering, Electronic and Electrical Engineering, Economics, Law, Medicine and some social science courses now need one. The January deadline is real, but the test dates come earlier.
 
@@ -102,7 +113,7 @@ UCL offers well over 100 undergraduate courses, from Engineering and Computer Sc
 
 UCL was founded in 1826 as London's first university and opened its doors to students of any faith. Gandhi and Tagore are among the Indian names on UCL's India page. Today UCL has more than 1,000 Indian students. For families in Tamil Nadu, the most useful fact is simple. UCL says it accepts the Tamil Nadu State Board directly, with the same marks it asks of CBSE. A student does not need to switch to CBSE to apply.
 
-## What parents should know
+## What should families know before applying?
 
 - CRITICAL, tests: Computer Science and Mechanical Engineering need TARA. Electronic and Electrical Engineering needs ESAT. Economics needs TMUA. Law needs LNAT by 31 December 2026, as UCL states. Medicine needs UCAT. The October test booking closed on 28 September 2026. The January test days are 4 to 8 January 2027, and UCL's page for its ESAT course gives 21 December 2026 as the booking date. Each of the first three tests costs about GBP 133 outside the UK (~INR 17,000). Please speak to me now if your child is applying to any of these courses.
 - CRITICAL, Medicine: the deadline is 15 October 2026 at 6 pm UK time, which is 10:30 pm in India. UCL has only 24 places for overseas fee paying students. The UCAT must be taken in the year of application, and interviews are online. UCL's 2027 entry page for Medicine lists A Levels, IB and a few other qualifications. It does not list Indian boards. I will ask UCL whether CBSE is accepted before you apply.

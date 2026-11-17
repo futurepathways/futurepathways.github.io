@@ -42,6 +42,17 @@ key_dates:
     label: "JEE Advanced 2027 exam"
     note: "Sunday. Only for the top 2,50,000 in JEE Main 2027 Paper 1"
     url: "https://jeeadv.ac.in/"
+faq:
+  - q: "Are Cambridge A Levels accepted in India?"
+    a: "Yes. JEE, NEET and CUET accept Cambridge International AS and A Levels, and so do Indian universities. Some admissions ask for one or two extra certificates, and almost all want your results as marks, not grades."
+  - q: "Do Cambridge students in India need a UGC equivalence certificate?"
+    a: "Often, no. Cambridge's India FAQ says most Indian institutions, including the IITs, do not ask for one when you took your Cambridge exams in India. Apply on the UGC Equivalence Portal only when a university or exam asks you for it."
+  - q: "How are Cambridge A Level grades turned into a percentage in India?"
+    a: "They are not converted. Cambridge students in India get a Percentage Uniform Mark (PUM) for each subject, and Indian universities should use these. Add up the PUMs of the subjects asked for and divide by how many there are."
+  - q: "What do Cambridge students need for the IIT 75% rule?"
+    a: "The JEE Advanced 2026 brochure asks for at least 75% aggregate (65% for SC, ST and PwD students) or a place in the top 20 percentile of your board. The 75% is worked out over five subjects: Physics, Chemistry, Maths, a language and one more subject. Cambridge does not publish a top-20-percentile cut-off, so the 75% route is the safer one to plan for."
+  - q: "Can Cambridge students apply for Tamil Nadu MBBS and BDS?"
+    a: "Yes, but the 2026–27 prospectuses say students from boards other than the State Board, CBSE and ISC must upload an Eligibility Certificate from the Tamil Nadu Dr. M.G.R. Medical University with the online application. Without it, the application is rejected."
 author: "Madan Kumar PC"
 last_checked: 2026-11-15
 status: published
@@ -60,7 +71,7 @@ A few words first:
 - **Eligibility certificate:** a paper from one particular university saying you may join its colleges. It is different from equivalence, and only some universities ask for it.
 - **PUM (Percentage Uniform Mark):** a mark out of 100 that Cambridge prints next to each grade on your statement of results. Indian universities use it as your "percentage".
 
-## 1. Equivalence: who gives it now
+## 1. Who gives the equivalence certificate now?
 
 Since April 2025, India's **University Grants Commission (UGC)**, the body that oversees universities, has issued equivalence certificates for school qualifications from foreign boards. Before that, the Association of Indian Universities (AIU) did this job. The rules are the UGC's Equivalence Regulations 2025, published on 4 April 2025.
 
@@ -90,7 +101,9 @@ These are the Tamil Nadu examples I could check on official pages.
 
 Other universities set their own rules. Some name Cambridge directly, and some ask for nothing extra. Always read that year's prospectus.
 
-## 3. JEE, NEET and CUET for Cambridge students
+## 3. Can Cambridge students take JEE, NEET and CUET?
+
+Yes, as long as your subjects meet each exam's rules.
 
 **JEE Main (NTA).** The JEE Main 2027 bulletin lists "GCE A Level (London/Cambridge/Sri Lanka)" as an accepted qualifying exam, so Cambridge A Level students can sit it. Cambridge's FAQ adds that JEE needs one language: any A Level language, or any AS Level English. IELTS or TOEFL do not count instead.
 
@@ -106,7 +119,9 @@ NITs and IIITs fill their seats through JoSAA, which has its own Class 12 rule, 
 
 **CUET-UG (for central universities such as Delhi University).** The CUET-UG 2026 bulletin accepts "GCE A Level (London/Cambridge/Sri Lanka)". Boards not on its list need a **UGC** certificate. Each university then applies its own subject and marks rules, so check the programme page of each university you choose.
 
-## 4. How your grades become a percentage
+## 4. How do Cambridge grades become a percentage?
+
+Indian universities use your PUMs as your marks; they do not convert grades.
 
 Cambridge students in India get a PUM for every subject. Cambridge's FAQ says Indian universities should use these PUMs and **not convert grades**. To get an aggregate, add up the PUMs of the subjects asked for and divide by how many there are. For A Levels taken in two stages (AS, then A2), use the A Level PUMs, not the AS ones.
 

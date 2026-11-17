@@ -1,0 +1,1849 @@
+[
+  {
+    "vault": 1,
+    "name": "Alliance School of Law, Alliance University",
+    "where": "Bengaluru, Karnataka",
+    "region": "Karnataka",
+    "kind": "private",
+    "cambridge": "check",
+    "cambridge_note": "No A Level rule published. Site asks only for 10+2 or equivalent with 50% aggregate; confirm Cambridge eligibility.",
+    "entry": "CLAT or LSAT India score, or the university's own AUSAT test, then shortlist and personal interview.",
+    "routes": [
+      "other",
+      "own-test",
+      "interview"
+    ],
+    "cost": "BA LLB Year 1 (2027 intake): INR 3,63,000 fees; about INR 6,56,000 with single AC hostel.",
+    "fee_band": "6-15l",
+    "url": "https://www.alliance.edu.in/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 2,
+    "name": "Alliance University",
+    "where": "Bengaluru, Karnataka",
+    "region": "Karnataka",
+    "kind": "private",
+    "cambridge": "check",
+    "cambridge_note": "Not found. Only 10+2 from a recognised board; B.Tech needs Physics and Maths. Get written confirmation on A Levels.",
+    "entry": "Own test (AUSAT, AUMAT or AUEET) or JEE Main, KCET, COMEDK, CUET or SAT scores, then personal interview.",
+    "routes": [
+      "own-test",
+      "jee-main",
+      "cuet",
+      "sat-act",
+      "interview",
+      "other"
+    ],
+    "cost": "B.Tech CSE Year 1 (2027 intake): INR 4,63,000 fees; about INR 7,56,000 with single AC hostel.",
+    "fee_band": "6-15l",
+    "url": "https://www.alliance.edu.in/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 3,
+    "name": "Amity University Uttar Pradesh (Noida campus)",
+    "where": "Noida, Uttar Pradesh",
+    "region": "Uttar Pradesh",
+    "kind": "private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Per-programme Class 12 %, e.g. B.Tech CSE 60% with Physics and Maths. Prospectus asks for a UGC equivalence certificate.",
+    "entry": "Class 10 and 12 marks plus a personal interview for most UG programmes; SAT and CUET scores accepted.",
+    "routes": [
+      "class-12-marks",
+      "interview",
+      "sat-act",
+      "cuet"
+    ],
+    "cost": "B.Tech CSE about Rs 6.5 lakh in Year 1 with AC hostel (2026); sponsored category about Rs 8.5 lakh.",
+    "fee_band": "6-15l",
+    "url": "https://www.amity.edu/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 5,
+    "name": "Bannari Amman Institute of Technology",
+    "where": "Sathyamangalam, Erode district, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Not named; TNEA treats it as Other Boards. Needs Maths, Physics and Chemistry with a 45% PCM average (40% reserved categories).",
+    "entry": "No entrance test. TNEA rank on Class 12 PCM marks; management quota also on Class 12 PCM marks.",
+    "routes": [
+      "class-12-marks"
+    ],
+    "cost": "Management quota 2026-27: tuition Rs 1,65,000 plus hostel about Rs 63,000, about Rs 2,28,000 a year (hostel third party).",
+    "fee_band": "1-3l",
+    "url": "https://www.bitsathy.ac.in/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 6,
+    "name": "BMS College of Architecture, Design and Planning (BMSCA)",
+    "where": "Basavanagudi, Bengaluru, Karnataka",
+    "region": "Karnataka",
+    "kind": "private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Physics and Maths at A Level plus one listed subject, 45% aggregate (COA rule), and a NATA or JEE Main Paper 2A score.",
+    "entry": "NATA or JEE Main Paper 2A merit through KEA or COMEDK counselling; management seats by direct admission.",
+    "routes": [
+      "other",
+      "jee-main"
+    ],
+    "cost": "Management quota B.Arch 2026-27: INR 7,00,000 a year tuition; hostel fee not published.",
+    "fee_band": "6-15l",
+    "url": "https://bmsca.org/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 9,
+    "name": "Dr. G.R. Damodaran College of Science",
+    "where": "Coimbatore, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Not named. Needs an equivalence certificate accepted by Bharathiar University; now issued by UGC, so confirm which one.",
+    "entry": "No entrance test. Merit on Class 11 and 12 marks, then an interview for shortlisted candidates.",
+    "routes": [
+      "class-12-marks",
+      "interview"
+    ],
+    "cost": "About INR 1,75,000 for B.Sc Computer Science Year 1 incl. hostel and food, 2026 listing (third-party figure).",
+    "fee_band": "1-3l",
+    "url": "https://www.grd.org/grdcs/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 10,
+    "name": "Dr. N.G.P. Institute of Technology",
+    "where": "Coimbatore, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Not named; TNEA treats it as Other Boards. Needs Maths, Physics and Chemistry with a 45% PCM average (40% reserved categories).",
+    "entry": "No entrance test. TNEA rank on Class 12 PCM marks; management quota by online application to the college.",
+    "routes": [
+      "class-12-marks"
+    ],
+    "cost": "B.E. CSE management quota: about Rs 1,96,000 a year incl. hostel, year not stated (third-party figure).",
+    "fee_band": "1-3l",
+    "url": "https://www.drngpit.ac.in/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 12,
+    "name": "JAIN (Deemed-to-be University), incl. Centre for Management Studies",
+    "where": "Bengaluru, Karnataka",
+    "region": "Karnataka",
+    "kind": "deemed",
+    "cambridge": "check",
+    "cambridge_note": "Not found. Only a 10+2 pass from a recognised or equivalent board; no A Level count or grade rule published.",
+    "entry": "Own JET test, then extempore or group discussion and a personal interview; B.Tech also takes JEE Main, KCET, COMEDK.",
+    "routes": [
+      "own-test",
+      "interview",
+      "jee-main",
+      "other"
+    ],
+    "cost": "BBA Year 1 about INR 5,00,000 incl. hostel, 2027 listing (third-party figure).",
+    "fee_band": "3-6l",
+    "url": "https://www.jainuniversity.ac.in/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 13,
+    "name": "Kongu Engineering College",
+    "where": "Perundurai, Erode district, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Not named; TNEA treats it as Other Boards. Needs Maths, Physics and Chemistry with a 45% PCM average (40% reserved categories). Check management quota.",
+    "entry": "No entrance test. TNEA rank on Class 12 PCM marks; management quota on Class 12 PCM merit.",
+    "routes": [
+      "class-12-marks"
+    ],
+    "cost": "B.E. CSE management quota 2025-26: tuition Rs 1,65,000 plus hostel about Rs 85,000, about Rs 2,50,000 a year.",
+    "fee_band": "1-3l",
+    "url": "https://www.kongu.ac.in/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 14,
+    "name": "KPR Institute of Engineering and Technology",
+    "where": "Coimbatore, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "TNEA treats Cambridge as Other Boards: Maths, Physics, Chemistry with 45% PCM average. Foreign route: 50% overall and in PCM.",
+    "entry": "No entrance test. TNEA rank on Class 12 PCM marks; management quota direct with the college on Class 12 PCM.",
+    "routes": [
+      "class-12-marks"
+    ],
+    "cost": "B.E. CSE management quota (2025 disclosure): tuition Rs 87,000 plus hostel about Rs 1,22,400, about Rs 2,09,400 a year.",
+    "fee_band": "1-3l",
+    "url": "https://www.kpriet.ac.in/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 15,
+    "name": "Kumaraguru College of Liberal Arts and Science (KCLAS)",
+    "where": "Coimbatore, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "At least 3 A Levels at grade C or above. Site still asks for AIU equivalence; now issued by UGC, so confirm which one.",
+    "entry": "Own online test and personality test, then a campus day with critical thinking task, statement of purpose and interview.",
+    "routes": [
+      "own-test",
+      "interview"
+    ],
+    "cost": "About INR 2,55,000 for B.Com or BBA Year 1 incl. hostel; tuition 2025, hostel 2024-25 (third-party figure).",
+    "fee_band": "1-3l",
+    "url": "https://www.kclas.ac.in/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 17,
+    "name": "Lovely Professional University (LPU)",
+    "where": "Phagwara, Jalandhar, Punjab",
+    "region": "Punjab",
+    "kind": "private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "No Cambridge rule. B.Tech CSE needs 60% with Physics, Maths and English; ask how this is worked out from A Levels.",
+    "entry": "Own LPUNEST test, or a JEE Main or CUET score for B.Tech, then online counselling and seat allotment.",
+    "routes": [
+      "own-test",
+      "jee-main",
+      "cuet"
+    ],
+    "cost": "B.Tech CSE Year 1: about INR 4,59,100 incl. hostel and mess (2026 fees, no scholarship).",
+    "fee_band": "3-6l",
+    "url": "https://www.lpu.in/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 21,
+    "name": "Mount Carmel (Deemed to be University), Bengaluru",
+    "where": "Bengaluru, Karnataka",
+    "region": "Karnataka",
+    "kind": "deemed",
+    "cambridge": "check",
+    "cambridge_note": "Not mentioned. Class 12 or equivalent with course subject rules; a board eligibility fee applies. Confirm with admissions.",
+    "entry": "Own online test, document shortlist, then personal interview for most B.Com, BBA and BA programmes.",
+    "routes": [
+      "own-test",
+      "interview"
+    ],
+    "cost": "BBA Year 1: about INR 2,05,000 tuition and fees for a non-Karnataka student, year not stated; hostel extra.",
+    "fee_band": "1-3l",
+    "url": "https://mccblr.edu.in/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 26,
+    "name": "PSG College of Arts and Science",
+    "where": "Coimbatore, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "private",
+    "cambridge": "check",
+    "cambridge_note": "Not mentioned; 10+2 or equivalent. Site still asks for an AIU certificate for foreign boards; now issued by UGC, so confirm.",
+    "entry": "No entrance test. Merit rank on four Class 12 subjects (out of 400), then counselling by rank.",
+    "routes": [
+      "class-12-marks"
+    ],
+    "cost": "Self-financing BBA about Rs 2,30,000 for Year 1 incl. hostel, 2025 fee guide (third-party figure).",
+    "fee_band": "1-3l",
+    "url": "https://www.psgcas.ac.in/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 28,
+    "name": "PSG Institute of Medical Sciences and Research",
+    "where": "Coimbatore, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "MBBS: Physics, Chemistry, Biology and English, 50% in PCB. Needs an Eligibility Certificate from the TN Dr. M.G.R. Medical University.",
+    "entry": "MBBS: NEET UG rank through Tamil Nadu state counselling (government, management and NRI quotas). No interview.",
+    "routes": [
+      "neet"
+    ],
+    "cost": "MBBS 2026-27: management quota about INR 17,14,000 a year; NRI quota about INR 29,14,000 (hostel and mess third party).",
+    "fee_band": "15-40l",
+    "url": "https://psgimsr.ac.in/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 29,
+    "name": "PSGR Krishnammal College for Women",
+    "where": "Coimbatore, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "2 to 3 A Levels plus 5 IGCSE passes incl. English, average grade D. Site still asks for AIU; now issued by UGC, so confirm.",
+    "entry": "Women only. No entrance test; merit on Class 12 marks (out of 400) with Tamil Nadu reservation rules.",
+    "routes": [
+      "class-12-marks"
+    ],
+    "cost": "Fees not published; ask the admissions office",
+    "fee_band": "unknown",
+    "url": "https://www.psgrkcw.ac.in/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 30,
+    "name": "RV University",
+    "where": "Bengaluru, Karnataka",
+    "region": "Karnataka",
+    "kind": "private",
+    "cambridge": "yes",
+    "cambridge_note": "Cambridge is named as an accepted board; no A Level subject count or grade rule is published.",
+    "entry": "Own RVSAT test plus interview for liberal arts and law; B.Tech through KCET, JEE Main or management quota.",
+    "routes": [
+      "own-test",
+      "interview",
+      "jee-main",
+      "other"
+    ],
+    "cost": "B.Tech CSE management quota 2026-27: INR 10,50,000 tuition and fees (per year not stated); hostel extra.",
+    "fee_band": "6-15l",
+    "url": "https://rvu.edu.in/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 31,
+    "name": "Saveetha Institute of Medical and Technical Sciences (SIMATS)",
+    "where": "Chennai, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "deemed",
+    "cambridge": "check",
+    "cambridge_note": "Not published (admission portal needs a login). MBBS and BDS follow NEET UG eligibility rules.",
+    "entry": "MBBS and BDS: NEET UG through MCC deemed university counselling. Other UG: own SIMATS Entrance Exam.",
+    "routes": [
+      "neet",
+      "own-test"
+    ],
+    "cost": "B.E. CSE Year 1 about INR 3,90,000 incl. hostel, 2024 fee text (third-party figure).",
+    "fee_band": "3-6l",
+    "url": "https://www.saveetha.com/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 32,
+    "name": "Saveetha School of Law (SIMATS)",
+    "where": "Poonamallee, Chennai, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "deemed",
+    "cambridge": "with-conditions",
+    "cambridge_note": "No Cambridge rule published. Needs a Higher Secondary or equivalent pass with at least 60% marks.",
+    "entry": "Own admission test, then group discussion and interview.",
+    "routes": [
+      "own-test",
+      "interview"
+    ],
+    "cost": "BA LLB about INR 3,50,000 a year on average, 2025 listing; hostel extra (third-party figure).",
+    "fee_band": "3-6l",
+    "url": "https://saveethalaw.com/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 34,
+    "name": "Sri Krishna Arts and Science College",
+    "where": "Coimbatore, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "private",
+    "cambridge": "check",
+    "cambridge_note": "Not named. Bharathiar University asks for an equivalence certificate for study abroad (now issued by UGC); course subject rules apply.",
+    "entry": "No entrance test. Rank list on Class 12 marks under Tamil Nadu admission rules.",
+    "routes": [
+      "class-12-marks"
+    ],
+    "cost": "B.Sc Computer Science about Rs 1,52,000 for Year 1 incl. hostel, 2026 listing (third-party figure).",
+    "fee_band": "1-3l",
+    "url": "https://skasc.ac.in/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 35,
+    "name": "Sri Krishna College of Engineering and Technology (SKCET)",
+    "where": "Coimbatore, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Not named; HSC or equivalent with Maths, Physics and Chemistry at a 45% average (40% reserved categories).",
+    "entry": "No entrance test. TNEA rank on Class 12 PCM marks; management quota on Class 12 PCM marks.",
+    "routes": [
+      "class-12-marks"
+    ],
+    "cost": "B.E. CSE management quota: about INR 2,65,000 a year incl. hostel; tuition per 2025 disclosure (third-party figure).",
+    "fee_band": "1-3l",
+    "url": "https://skcet.ac.in/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 38,
+    "name": "St Joseph's University",
+    "where": "Bengaluru, Karnataka",
+    "region": "Karnataka",
+    "kind": "government",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Five IGCSE passes incl. English and 2 or 3 A Levels at grade C or above. AIU equivalence if in doubt; now issued by UGC.",
+    "entry": "Shortlist on Class 12 marks, then interview; own SJUET test first for some programmes.",
+    "routes": [
+      "class-12-marks",
+      "interview",
+      "own-test"
+    ],
+    "cost": "B.Com 2026-27, non-Karnataka student: about INR 3,26,000 first year incl. ladies' hostel and mess.",
+    "fee_band": "3-6l",
+    "url": "https://www.sju.edu.in/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 39,
+    "name": "Sona College of Arts and Science",
+    "where": "Salem, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "private",
+    "cambridge": "check",
+    "cambridge_note": "Not named. Periyar University must accept the board as equivalent; programme subject rules apply.",
+    "entry": "No entrance test. Mainly Class 12 marks; some programmes may hold an interview or test.",
+    "routes": [
+      "class-12-marks"
+    ],
+    "cost": "B.Com Year 1 about INR 2,38,000 with top AC hostel; tuition 2025 (third-party figure).",
+    "fee_band": "1-3l",
+    "url": "https://www.sonacas.edu.in/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 41,
+    "name": "VET Institute of Arts and Science (Co-education) College",
+    "where": "Thindal, Erode, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "private",
+    "cambridge": "check",
+    "cambridge_note": "Not named. Bharathiar University asks for an equivalence certificate for study abroad (now issued by UGC); course subject rules apply.",
+    "entry": "No entrance test. Merit on Class 12 marks, then counselling, document upload and fee payment.",
+    "routes": [
+      "class-12-marks"
+    ],
+    "cost": "B.Com or BBA tuition about Rs 72,000 for Year 1; hostel fee not published (third-party figure).",
+    "fee_band": "under-1l",
+    "url": "https://vetias.ac.in/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 42,
+    "name": "Woxsen University",
+    "where": "Kamkole, Sangareddy district (near Hyderabad), Telangana",
+    "region": "Telangana",
+    "kind": "private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Cambridge is a listed board. 55% for most programmes; B.Tech needs Physics, Chemistry and Maths at 50% each.",
+    "entry": "Own test (WAT, W-JEET, WDT, WLAT) or JEE Main, SAT, CLAT and other scores, then personal interview.",
+    "routes": [
+      "own-test",
+      "jee-main",
+      "sat-act",
+      "interview",
+      "other"
+    ],
+    "cost": "BBA or B.Tech Year 1 (2027 batch): INR 8,28,500 all-in with premium food and hostel plan.",
+    "fee_band": "6-15l",
+    "url": "https://woxsen.edu.in/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 43,
+    "name": "Indian Institute of Technology Madras (IIT Madras)",
+    "where": "Chennai, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "national-institute",
+    "cambridge": "with-conditions",
+    "cambridge_note": "A Level listed as equivalent. Needs Physics, Chemistry, Maths and 75% over five subjects or top 20 percentile of the board.",
+    "entry": "JEE Main, then JEE Advanced rank and JoSAA counselling. Class 12 marks are only an eligibility gate.",
+    "routes": [
+      "jee-main",
+      "jee-advanced"
+    ],
+    "cost": "B.Tech 2026 admission: institute fees INR 2,56,804 for Year 1; hostel and mess extra.",
+    "fee_band": "1-3l",
+    "url": "https://www.iitm.ac.in/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 44,
+    "name": "National Institute of Technology Tiruchirappalli (NIT Trichy)",
+    "where": "Tiruchirappalli, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "national-institute",
+    "cambridge": "with-conditions",
+    "cambridge_note": "A Level listed as equivalent. Needs Physics, Maths and Chemistry, and 75% over five subjects or top 20 percentile of the board.",
+    "entry": "JEE Main rank through JoSAA and CSAB counselling. Class 12 marks are only an eligibility gate.",
+    "routes": [
+      "jee-main"
+    ],
+    "cost": "B.Tech 2026 admission: about INR 2,48,000 for Year 1 incl. first semester hostel; second semester hostel extra.",
+    "fee_band": "1-3l",
+    "url": "https://www.nitt.edu/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 45,
+    "name": "Anna University (CEG Guindy, ACT, MIT Chromepet, SAP)",
+    "where": "Chennai, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "government",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Via TNEA as an Other Board: A Level Maths, Physics, Chemistry with 45% PCM average (40% reserved). Submit marks, not only grades; marks are normalised.",
+    "entry": "B.E./B.Tech: TNEA rank on normalised Class 12 PCM marks, no entrance exam. B.Arch needs an aptitude score such as NATA. NRI/FN seats apply separately.",
+    "routes": [
+      "class-12-marks",
+      "other"
+    ],
+    "cost": "About Rs 1.43 lakh in year 1 for B.E. CSE (Self Supporting) with hostel, 2025-26; regular seats cost less",
+    "fee_band": "1-3l",
+    "url": "https://www.annauniv.edu/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 46,
+    "name": "Madras Medical College",
+    "where": "Chennai, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "government",
+    "cambridge": "with-conditions",
+    "cambridge_note": "NEET rule: Physics, Chemistry, Biology, English passed, 50% in PCB (40% reserved). State quota needs a Dr. M.G.R. Medical University Eligibility Certificate.",
+    "entry": "MBBS on NEET UG merit only, no interview: 15% All India Quota via MCC, 85% Tamil Nadu state quota (needs nativity).",
+    "routes": [
+      "neet"
+    ],
+    "cost": "About Rs 68,073 a year for MBBS, 2026-27: official fee Rs 18,073 plus hostel up to Rs 50,000; mess extra (third-party figure)",
+    "fee_band": "under-1l",
+    "url": "https://tnmedicalselection.net/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 47,
+    "name": "Christian Medical College, Vellore (CMC Vellore)",
+    "where": "Vellore, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "MBBS: Physics, Chemistry, Biology, English passed in one attempt, 50% in PCB (40% reserved), plus a Dr. M.G.R. Medical University Eligibility Certificate.",
+    "entry": "MBBS on NEET UG rank only, with CMC's own application and Tamil Nadu counselling. Nursing and allied health: CMC's own entrance test, then tests and interviews.",
+    "routes": [
+      "neet",
+      "own-test",
+      "interview"
+    ],
+    "cost": "About INR 2,08,330 in the first year for MBBS with hostel, 2026-27; nursing and allied health degrees cost less",
+    "fee_band": "1-3l",
+    "url": "https://admissions.cmcvellore.ac.in/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 48,
+    "name": "National Law School of India University (NLSIU)",
+    "where": "Bengaluru, Karnataka",
+    "region": "Karnataka",
+    "kind": "government",
+    "cambridge": "with-conditions",
+    "cambridge_note": "BA LLB: pass in 10+2 or equivalent with at least 45% or its equivalent in grade (40% SC/ST/PwD). No subject rule stated. NLS BA (Hons) needs 55%.",
+    "entry": "BA LLB (Hons): CLAT UG rank only, through Consortium counselling, no interview. NLS BA (Hons): NLSIU's own NLSAT-BA. Foreign nationals: own test plus interview.",
+    "routes": [
+      "other",
+      "own-test"
+    ],
+    "cost": "INR 4,51,000 a year for BA LLB (Hons), 2026-27: tuition and facilities plus housing with meals; one-time fees extra",
+    "fee_band": "3-6l",
+    "url": "https://www.nls.ac.in/admissions/ba-llb-hons/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 49,
+    "name": "School of Planning and Architecture, New Delhi (SPA Delhi; also SPA Bhopal and Vijayawada)",
+    "where": "New Delhi, Delhi (also Bhopal and Vijayawada)",
+    "region": "Delhi",
+    "kind": "national-institute",
+    "cambridge": "with-conditions",
+    "cambridge_note": "A Level accepted for JoSAA, but needs 75% in five subjects (no top 20 percentile figure for Cambridge). B.Arch needs Physics, Chemistry, Maths; B.Plan needs Maths.",
+    "entry": "JEE Main Paper 2A (B.Arch) or 2B (B.Plan) rank, then JoSAA counselling. NATA not accepted. No interview or portfolio. Students abroad apply through DASA.",
+    "routes": [
+      "jee-main"
+    ],
+    "cost": "INR 1,24,497 for the first semester of B.Arch with mess, 2025-27 notices; full-year total not published",
+    "fee_band": "1-3l",
+    "url": "https://spa.ac.in/index.php/en/academics/programs/under-graduate-programmes",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 50,
+    "name": "Indian Institute of Management Indore (IIM Indore), Integrated Programme in Management",
+    "where": "Indore, Madhya Pradesh",
+    "region": "Madhya Pradesh",
+    "kind": "national-institute",
+    "cambridge": "yes",
+    "cambridge_note": "Foreign boards may apply; no subject or minimum percentage in the 2026 rules. Strict age limit. June series results may arrive after classes start; check.",
+    "entry": "IPMAT Indore (own test), then interview; final merit is 65% test and 35% interview. Board marks not scored. Foreign passport holders use SAT 1300+.",
+    "routes": [
+      "own-test",
+      "interview"
+    ],
+    "cost": "Rs 7,04,000 in year 1 (2026-31 batch): course fee including lodging, plus caution and mess deposits; years 4 and 5 cost more",
+    "fee_band": "6-15l",
+    "url": "https://www.iimidr.ac.in/academic-programmes/five-year-integrated-programme-in-management-ipm/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 51,
+    "name": "The University of Manchester",
+    "where": "Manchester, England, UK",
+    "region": "UK",
+    "kind": "foreign-public",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Offers vary by course. Example: BSc Computer Science A*AA with A* in Maths plus a science; science practical must be passed.",
+    "entry": "UCAS application with personal statement and reference, judged on course entry criteria. Medicine and Dentistry also use UCAT and interviews.",
+    "routes": [
+      "ucas"
+    ],
+    "cost": "About £50,239 a year for BSc Computer Science, 2027 entry: tuition £39,700 plus living costs; visa and health surcharge extra",
+    "fee_band": "over-40l",
+    "url": "https://www.manchester.ac.uk/study/undergraduate/applications/how-to-apply/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 52,
+    "name": "University of Leeds",
+    "where": "Leeds, England, UK",
+    "region": "UK",
+    "kind": "foreign-public",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Offers vary by course. Example: Computer Science BSc AAA including Maths, science practical passed, plus IGCSE English grade 4 (C) or equivalent.",
+    "entry": "UCAS application with personal statement and reference, judged on each course's entry criteria. Medicine and Dentistry have the early UCAS deadline.",
+    "routes": [
+      "ucas"
+    ],
+    "cost": "About £44,239 a year for Computer Science BSc, 2027/28: tuition £33,700 plus living costs; visa and health surcharge extra",
+    "fee_band": "over-40l",
+    "url": "https://courses.leeds.ac.uk/3260/computer-science-bsc",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 53,
+    "name": "Taylor's University",
+    "where": "Subang Jaya, Greater Kuala Lumpur, Malaysia",
+    "region": "Malaysia",
+    "kind": "foreign-private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Rules differ by programme. Example: Computer Science needs A Level pass with at least DD, plus 5 IGCSE/O Level credits including Additional Mathematics.",
+    "entry": "Direct online application; meet the programme's minimum entry rules and subject prerequisites. IELTS 5.5 or an English-medium pre-university course.",
+    "routes": [
+      "other"
+    ],
+    "cost": "About RM 113,008 in year 1 for Computer Science, Feb 2027 intake: tuition, one-time fees, cheapest campus room and living",
+    "fee_band": "15-40l",
+    "url": "https://university.taylors.edu.my/en/study/how-to-apply.html",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 54,
+    "name": "Singapore Institute of Management (SIM Global Education)",
+    "where": "Clementi, Singapore",
+    "region": "Singapore",
+    "kind": "foreign-private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Set by each partner university. Example, University of London BSc Economics and Management: two A Levels plus three O Levels, O Level Maths C6 or better.",
+    "entry": "Direct online application to SIM against the partner's academic and English rules. Degrees are awarded by partner universities, not by SIM.",
+    "routes": [
+      "other"
+    ],
+    "cost": "About S$47,005 in year 1 for the University of London BSc Economics and Management, 2027: fees, cheapest hostel and living",
+    "fee_band": "15-40l",
+    "url": "https://www.sim.edu.sg/degrees-diplomas/admissions/application-process",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 55,
+    "name": "University of Birmingham Dubai",
+    "where": "Dubai International Academic City, Dubai, UAE",
+    "region": "UAE",
+    "kind": "foreign-public",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Same rules as the UK campus. Example: Computer Science A*AA to ABB with A in A Level Maths. Foundation route from CC. Predicted grades accepted to apply.",
+    "entry": "Direct online application (not UCAS) with personal statement and reference; no interview or SAT. No application fee.",
+    "routes": [
+      "other"
+    ],
+    "cost": "About AED 239,038 a year for Computer Science BSc: tuition AED 156,718 (Sept 2026 entry) plus official living estimate; visa extra",
+    "fee_band": "over-40l",
+    "url": "https://www.birmingham.ac.uk/dubai/study/apply/index.aspx",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 56,
+    "name": "University of Bristol",
+    "where": "Bristol, England, UK",
+    "region": "UK",
+    "kind": "foreign-public",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Typically AAA or higher. Example: BSc Computer Science A*AA including A* in Maths (contextual AAB with A in Maths); GCSE profile rules also apply.",
+    "entry": "UCAS application with personal statement and reference; each course's admissions statement sets how it selects.",
+    "routes": [
+      "ucas"
+    ],
+    "cost": "About £45,239 a year for BSc Computer Science, 2027: tuition £34,700 plus living costs; visa and health surcharge extra",
+    "fee_band": "over-40l",
+    "url": "https://www.bristol.ac.uk/study/undergraduate/2027/computer-science/bsc-computer-science/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 57,
+    "name": "Dublin City University (DCU)",
+    "where": "Glasnevin, Dublin, Ireland",
+    "region": "Ireland",
+    "kind": "foreign-public",
+    "cambridge": "with-conditions",
+    "cambridge_note": "At least 2 A Levels plus 4 O Levels (or mixes with AS), all grade C or above, including Maths and English. Programmes may add subject rules.",
+    "entry": "Direct application through the DCU portal (not CAO), assessed on grades converted to points per programme. No admissions test; places are competitive.",
+    "routes": [
+      "other"
+    ],
+    "cost": "About €33,850 a year (life sciences, 2027/28): tuition €23,850 plus the €10,000 Irish immigration living funds figure",
+    "fee_band": "15-40l",
+    "url": "https://www.dcu.ie/registry/international-undergraduate-admissions",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 58,
+    "name": "Middlesex University Dubai",
+    "where": "Dubai Knowledge Park, Dubai, UAE",
+    "region": "UAE",
+    "kind": "foreign-private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Two A Levels at top grades or three at about BBC. IGCSE only means the International Foundation Programme first.",
+    "entry": "Direct online application; no SAT, interview or portfolio for A Level or Indian board students. Offer usually within 48 hours. January and September intakes.",
+    "routes": [
+      "other"
+    ],
+    "cost": "About AED 124,557 a year: tuition AED 64,557 (2026/27) plus estimated housing and living; visa extra",
+    "fee_band": "15-40l",
+    "url": "https://www.mdx.ac.ae/admissions",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 59,
+    "name": "Monash University Malaysia",
+    "where": "Bandar Sunway (Greater Kuala Lumpur), Malaysia",
+    "region": "Malaysia",
+    "kind": "foreign-private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Score from best 3 A Levels (A*/A = 5 to E = 1). Engineering needs 10 (e.g. BCC) with Maths and a science; Psychology needs 8",
+    "entry": "Direct application; offers on entry score and course prerequisites. CBSE 80% for Engineering, 70% for Psychology",
+    "routes": [
+      "class-12-marks"
+    ],
+    "cost": "About RM 102,883 a year all-in for Engineering 2027 (tuition plus 6% tax, fees, visa, living)",
+    "fee_band": "15-40l",
+    "url": "https://www.monash.edu.my/about/welcome",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 60,
+    "name": "University for the Creative Arts (UCA)",
+    "where": "Canterbury, Epsom and Farnham (Kent and Surrey), England",
+    "region": "UK",
+    "kind": "foreign-public",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Typical BA offer 112 UCAS points (BBC at A Level) plus a portfolio and four GCSE-level passes including English",
+    "entry": "Apply direct (free) or through UCAS; UCAS points plus a portfolio of 12 to 20 pieces, or an audition for performing arts",
+    "routes": [
+      "class-12-marks",
+      "portfolio",
+      "ucas"
+    ],
+    "cost": "About £30,339 a year: tuition £19,800 (2027/28) plus UK visa living figure",
+    "fee_band": "15-40l",
+    "url": "https://www.uca.ac.uk/about-us/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 62,
+    "name": "Curtin Singapore",
+    "where": "Singapore",
+    "region": "Singapore",
+    "kind": "foreign-private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Minimum 5 points from 2 A Levels plus 3 O Level passes; BCom cut-off A Level 5. Degree awarded by Curtin University",
+    "entry": "Direct or through an agent; grade cut-off plus English requirement. No entrance test or interview for BCom",
+    "routes": [
+      "class-12-marks"
+    ],
+    "cost": "About S$56,480 a year: BCom tuition S$34,008 plus admin fee and living benchmark (fees rise yearly)",
+    "fee_band": "15-40l",
+    "url": "https://www.curtin.edu.sg/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 63,
+    "name": "Dalhousie University",
+    "where": "Halifax, Nova Scotia, Canada",
+    "region": "Canada",
+    "kind": "foreign-public",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Five academic subjects incl. two A Levels or four AS Levels, with programme prerequisites; no grade offer, programme average applies",
+    "entry": "Direct online application; mainly on programme average (70 to 80%) and prerequisites. No SAT/ACT",
+    "routes": [
+      "class-12-marks"
+    ],
+    "cost": "About CAD 75,361 a year for Engineering 2026-27: tuition and fees plus IRCC living figure",
+    "fee_band": "over-40l",
+    "url": "https://www.dal.ca/admissions/how-to-apply/undergraduate-admissions.html",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 64,
+    "name": "Deakin University",
+    "where": "Melbourne (Burwood), Geelong and Warrnambool, Victoria, Australia",
+    "region": "Australia",
+    "kind": "foreign-public",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Points from best three A Levels (A = 5 to E = 1); 2027 minimums e.g. B Arts 6 (DDD), B Commerce 8 at Burwood; prerequisites apply",
+    "entry": "Apply direct or via an authorised agent; minimum score per course and campus. No SAT/ACT or entrance exam",
+    "routes": [
+      "class-12-marks"
+    ],
+    "cost": "About AUD 67,910 a year for B Arts 2027 (tuition plus visa living figure); B Commerce AUD 76,510",
+    "fee_band": "15-40l",
+    "url": "https://www.deakin.edu.au/study/how-to-apply/international-student-applications",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 65,
+    "name": "EPITA School of Engineering and Computer Science (BSc Computer Science)",
+    "where": "Le Kremlin-Bicêtre (Paris area), France",
+    "region": "France",
+    "kind": "foreign-private",
+    "cambridge": "check",
+    "cambridge_note": "No A Level offer published; needs a high school diploma with a strong maths and science background. Ask about offers before results",
+    "entry": "Direct online application; file review of motivation, academic level and English. No test or interview on the international route",
+    "routes": [
+      "class-12-marks"
+    ],
+    "cost": "About €23,650 for Year 1: tuition €10,450 plus EPITA's Paris living figure",
+    "fee_band": "15-40l",
+    "url": "https://www.epita.fr/en/admissions/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 67,
+    "name": "ESSCA School of Management (Bachelor in International Management)",
+    "where": "Angers, Paris, Lyon and other campuses, France",
+    "region": "France",
+    "kind": "foreign-private",
+    "cambridge": "check",
+    "cambridge_note": "No A Level offer published; a non-French high school diploma is accepted, with the last two years' transcripts",
+    "entry": "Direct online application in rolling sessions; academic file review, then an online motivation interview. No written test",
+    "routes": [
+      "class-12-marks",
+      "interview"
+    ],
+    "cost": "About €23,785 for Year 1: tuition €12,500 (2027-28) plus extras and visa living minimum",
+    "fee_band": "15-40l",
+    "url": "https://www.essca.eu/en/programmes/all-programmes/bachelor-in-international-management/admissions/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 68,
+    "name": "ESSEC Business School, Asia-Pacific campus Singapore (Global BBA)",
+    "where": "Singapore",
+    "region": "Singapore",
+    "kind": "foreign-private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "GCE A Level accepted but no grade offer; a record well above average with steady or rising results is expected",
+    "entry": "Online application in rounds; committee reviews the file, references and CV, then a 30-minute interview. SAT optional",
+    "routes": [
+      "class-12-marks",
+      "interview"
+    ],
+    "cost": "About €22,193 Year 1 fees (2026 intake) plus about S$21,600 living benchmark",
+    "fee_band": "15-40l",
+    "url": "https://www.essec.edu/en/program/global-bba-international/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 69,
+    "name": "Istituto Europeo di Design (IED Milano)",
+    "where": "Milan, Italy",
+    "region": "Italy",
+    "kind": "foreign-private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "A Levels meet the 12-year schooling rule (IGCSE alone does not); needs a Declaration of Value or CIMEA statement",
+    "entry": "Direct application; admission test of academic record, portfolio or set project and language, then an interview. Places limited",
+    "routes": [
+      "portfolio",
+      "interview"
+    ],
+    "cost": "About €31,170 for Year 1: flat non-EU fee €20,800 (2026-27) plus tax and visa living minimum",
+    "fee_band": "15-40l",
+    "url": "https://www.ied.edu/study-in-italy/undergraduate",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 70,
+    "name": "King's College London",
+    "where": "London, England",
+    "region": "UK",
+    "kind": "foreign-public",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Accepted grade for grade with UK A Levels; e.g. Computer Science A*A*A with A in Maths. Thinking Skills, Global Perspectives not counted",
+    "entry": "UCAS only; grades and predictions, personal statement and reference. LNAT for Law, UCAT for Medicine and Dentistry",
+    "routes": [
+      "ucas",
+      "class-12-marks",
+      "lnat"
+    ],
+    "cost": "About £56,661 a year: Computer Science tuition £42,900 (2027-28) plus UK visa London living figure",
+    "fee_band": "over-40l",
+    "url": "https://www.kcl.ac.uk/study/undergraduate/how-to-apply/entry-requirements",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 71,
+    "name": "Le Cordon Bleu Australia (Melbourne campus)",
+    "where": "Melbourne, Victoria, Australia",
+    "region": "Australia",
+    "kind": "foreign-private",
+    "cambridge": "check",
+    "cambridge_note": "Bachelor needs Australian Year 12 with ATAR 60 or equivalent; no A Level grade table published, so ask admissions",
+    "entry": "Apply online direct or via an agent; assessed on education, age (18 at start) and English. No test, portfolio or interview",
+    "routes": [
+      "class-12-marks"
+    ],
+    "cost": "About AU$50,269 a year: Bachelor of Business tuition (AU$61,676 over 3 years) plus visa living figure",
+    "fee_band": "15-40l",
+    "url": "https://www.cordonbleu.edu/melbourne/bachelor-of-business/en",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 73,
+    "name": "University of Nebraska–Lincoln",
+    "where": "Lincoln, Nebraska, USA",
+    "region": "USA",
+    "kind": "foreign-public",
+    "cambridge": "with-conditions",
+    "cambridge_note": "No A Level offer; core subject units in maths, science, social science and English needed. A Levels at C or above can earn credit",
+    "entry": "Common App or Nebraska's own application; formula-based assured admission, else committee review. Test optional, except some majors",
+    "routes": [
+      "common-app",
+      "class-12-marks",
+      "sat-act"
+    ],
+    "cost": "About USD 53,922 a year all-in for 2026-27 (tuition, fees, housing, food, insurance)",
+    "fee_band": "over-40l",
+    "url": "https://admissions.unl.edu/apply/admission-requirements/international/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 74,
+    "name": "The University of Sydney",
+    "where": "Sydney (Camperdown/Darlington), Australia",
+    "region": "Australia",
+    "kind": "foreign-public",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Score from best three or four A2 subjects (A*=6 to E=1); AS not counted. 2027 guide: e.g. B Science 13 (ABB), B Commerce 17 (A*A*A).",
+    "entry": "Apply direct online. Rank based on your A Level or CBSE score plus any course criteria; Medicine adds a written test and panel; Music needs portfolio.",
+    "routes": [
+      "class-12-marks"
+    ],
+    "cost": "About AUD 93,310 a year (tuition plus living, B Science (Medical Science), 2027); Commerce about AUD 88,810",
+    "fee_band": "over-40l",
+    "url": "https://www.sydney.edu.au/study/applying/how-to-apply/undergraduate/recognised-qualifications.html",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 76,
+    "name": "University of the Arts London (UAL)",
+    "where": "London, United Kingdom",
+    "region": "UK",
+    "kind": "foreign-public",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Varies by course. Many studio courses (e.g. CSM Fine Art, CSM Fashion) need a Foundation Diploma year too; LCF Fashion Design and Development takes 112 UCAS points.",
+    "entry": "Degrees through UCAS (deadline 13 Jan 2027). Portfolio-led selection, interview if invited. Foundation Diploma is a direct application.",
+    "routes": [
+      "ucas",
+      "portfolio",
+      "interview"
+    ],
+    "cost": "About £45,271 a year (tuition £31,510 plus London living, Sept 2027); a Foundation year adds about £38,916",
+    "fee_band": "over-40l",
+    "url": "https://www.arts.ac.uk/study-at-ual/apply/undergraduate",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 77,
+    "name": "University of Wollongong in Dubai (UOWD)",
+    "where": "Dubai, United Arab Emirates",
+    "region": "UAE",
+    "kind": "foreign-private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "5 IGCSEs at D and 3 A Levels at CCD for the 3 year degree; 2 AS or 1 A Level at D for the 4 year route. Engineering adds Maths and Physics placement tests.",
+    "entry": "Direct online application on marks: A Level grades or a CBSE points score (10.5 for 3 year route). No essay or interview listed.",
+    "routes": [
+      "class-12-marks"
+    ],
+    "cost": "About AED 147,509 a year (Engineering tuition AED 68,909 plus housing and food, current list); visa extra",
+    "fee_band": "15-40l",
+    "url": "https://www.uowdubai.ac.ae/join-uowd/admission-requirements/bachelors-degrees",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 78,
+    "name": "Texas Christian University (TCU)",
+    "where": "Fort Worth, Texas, USA",
+    "region": "USA",
+    "kind": "foreign-private",
+    "cambridge": "check",
+    "cambridge_note": "No A Level offer or A Level page published; TCU reads the school transcript and curriculum rigour. Check with admissions.",
+    "entry": "Holistic review: grades, rigour, essay, recommendations, activities. Test optional through 2028. Need-aware for international students.",
+    "routes": [
+      "common-app",
+      "sat-act"
+    ],
+    "cost": "About USD 92,588 a year (tuition, housing, food, insurance and other costs, 2026-27)",
+    "fee_band": "over-40l",
+    "url": "https://admissions.tcu.edu/info-for/international-students.php",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 81,
+    "name": "Manchester Metropolitan University",
+    "where": "Manchester, United Kingdom",
+    "region": "UK",
+    "kind": "foreign-public",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Course specific; e.g. BSc Computer Science BBB with a B in IT, Computer Science, Maths or a science. AS Levels not accepted; three full A Levels needed.",
+    "entry": "Through UCAS (code M40) or an approved agent. Grades and predictions, reference and personal statement; some courses audition, interview or portfolio.",
+    "routes": [
+      "ucas"
+    ],
+    "cost": "About £32,039 a year (tuition up to £21,500 plus living, 2027/28)",
+    "fee_band": "15-40l",
+    "url": "https://www.mmu.ac.uk/study/international/how-to-apply/international-undergraduate-degrees",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 82,
+    "name": "Nanyang Technological University, Singapore (NTU)",
+    "where": "Singapore",
+    "region": "Singapore",
+    "kind": "foreign-public",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Good passes in 4 A Levels from one sitting (3 case by case, not for Tuition Grant). No predicted grades; results needed by 31 July.",
+    "entry": "Direct online application, decided on actual final results plus subject rules. Interviews for some; international Olympiad medals help.",
+    "routes": [
+      "class-12-marks",
+      "interview"
+    ],
+    "cost": "About S$59,800 a year (Engineering non-subsidised tuition plus living, AY2026/27); S$40,600 with Tuition Grant",
+    "fee_band": "over-40l",
+    "url": "https://www.ntu.edu.sg/admissions/undergraduate/admission-guide/international-qualifications/uk-a-level-certificates-cambridge-pre-u",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 83,
+    "name": "Singapore Management University (SMU)",
+    "where": "Singapore",
+    "region": "Singapore",
+    "kind": "foreign-public",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Good pass in at least 3 A Levels from one sitting. Teacher-attested predicted grades plus 3 AS subjects accepted. Maths needed for Economics and Computing.",
+    "entry": "Direct online application (Nov to Mar). Results, SAT or ACT scores, then interview if shortlisted; Law adds a writing test.",
+    "routes": [
+      "class-12-marks",
+      "sat-act",
+      "interview"
+    ],
+    "cost": "About S$60,067 to S$84,067 a year (non-subsidised tuition, fees and living, AY2026/27)",
+    "fee_band": "over-40l",
+    "url": "https://admissions.smu.edu.sg/admissions-requirements/international-and-other-qualifications",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 84,
+    "name": "University of Bath",
+    "where": "Bath, United Kingdom",
+    "region": "UK",
+    "kind": "foreign-public",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Course specific and high; e.g. BSc Computer Science A*A*A including A in Maths. GCSE English Language or Literature at 4/C.",
+    "entry": "UCAS only (code B16), deadline 13 Jan 2027. Grades and predictions, personal statement and reference; interviews only for some.",
+    "routes": [
+      "ucas"
+    ],
+    "cost": "About £43,489 a year (Band 3 tuition £32,950 plus living, 2027/28)",
+    "fee_band": "over-40l",
+    "url": "https://www.bath.ac.uk/guides/applying-for-an-undergraduate-course/",
+    "checked": "2026-10-18"
+  },
+  {
+    "vault": 86,
+    "name": "Ahmedabad University",
+    "where": "Ahmedabad, Gujarat",
+    "region": "Gujarat",
+    "kind": "private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Two or more A Levels count as Class 12; no minimum grade stated. Subject rules by programme (e.g. calculus maths for Data Science). AICE Diploma not recognised.",
+    "entry": "Holistic: school record, personal statement and interaction with faculty; portfolio for Integrated Arts. BTech uses JEE Main or GUJCET.",
+    "routes": [
+      "class-12-marks",
+      "interview",
+      "jee-main",
+      "portfolio"
+    ],
+    "cost": "About ₹8.46 lakh for Year 1 of BA, BSc or BCom (tuition, housing and meals, 2026-27)",
+    "fee_band": "6-15l",
+    "url": "https://ahduni.edu.in/admission/undergraduate-admission/",
+    "checked": "2026-10-31"
+  },
+  {
+    "vault": 87,
+    "name": "Pearl Academy",
+    "where": "New Delhi, Jaipur, Mumbai and Bengaluru",
+    "region": "Many states",
+    "kind": "private",
+    "cambridge": "check",
+    "cambridge_note": "Class 12 pass in any stream; no Cambridge rule and no equivalence rule stated. Confirm with the admissions office.",
+    "entry": "Own entrance test (written test plus online interview with portfolio review). International applicants: interview and portfolio only.",
+    "routes": [
+      "own-test",
+      "interview",
+      "portfolio"
+    ],
+    "cost": "Up to ₹7.88 lakh a year, tuition only (BDes Fashion Design, 2026-27), plus ₹85,000 one-time fee",
+    "fee_band": "6-15l",
+    "url": "https://www.pearlacademy.com/admission",
+    "checked": "2026-10-31"
+  },
+  {
+    "vault": 88,
+    "name": "UPES (University of Petroleum and Energy Studies)",
+    "where": "Dehradun, Uttarakhand",
+    "region": "Uttarakhand",
+    "kind": "private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "A Level accepted as Class 12. BTech: 50% in Class 10, 12 and PCM (70% for Maths and Computing). Some may need a UGC equivalence certificate.",
+    "entry": "Score based: UPESEAT, JEE Main, SAT, CUET or board marks, then counselling. Own tests for Design, BBA, Pharmacy and Law.",
+    "routes": [
+      "own-test",
+      "jee-main",
+      "sat-act",
+      "cuet",
+      "class-12-marks"
+    ],
+    "cost": "About ₹7.95 lakh for Year 1 of BTech CSE (tuition and dearest hostel, 2026-27)",
+    "fee_band": "6-15l",
+    "url": "https://www.upes.ac.in/admissions/btech",
+    "checked": "2026-10-31"
+  },
+  {
+    "vault": 89,
+    "name": "Chandigarh University",
+    "where": "Gharuan, Mohali, Punjab",
+    "region": "Punjab",
+    "kind": "private",
+    "cambridge": "check",
+    "cambridge_note": "No Cambridge rule found. B.E. CSE needs 60% with Physics and Maths plus one listed subject; check A Level marks against this.",
+    "entry": "Own test CUCET (waived above 90% in Class 12 or JEE Main rank up to 50,000); JEE Main accepted for B.E. Merit based offers.",
+    "routes": [
+      "own-test",
+      "jee-main",
+      "class-12-marks"
+    ],
+    "cost": "About ₹5.6 lakh for Year 1 of B.E. CSE (tuition and dearest hostel, 2027-28)",
+    "fee_band": "3-6l",
+    "url": "https://www.cuchd.in/admissions/",
+    "checked": "2026-10-31"
+  },
+  {
+    "vault": 90,
+    "name": "Dr. N.G.P. Arts and Science College",
+    "where": "Coimbatore, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "private",
+    "cambridge": "check",
+    "cambridge_note": "Cambridge not named; 10+2 or equivalent. Needs a Bharathiar University eligibility certificate and an equivalence certificate (now issued by UGC).",
+    "entry": "No entrance test. Merit list on Class 12 marks, then counselling by rank (third party).",
+    "routes": [
+      "class-12-marks"
+    ],
+    "cost": "About INR 2,01,000 for B.Sc Year 1: tuition (2026-27) plus single AC hostel (2024-25 rate) (third-party figure)",
+    "fee_band": "1-3l",
+    "url": "https://drngpasc.ac.in/index.php",
+    "checked": "2026-10-31"
+  },
+  {
+    "vault": 91,
+    "name": "Kongu Arts and Science College",
+    "where": "Nanjanapuram, Erode, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "private",
+    "cambridge": "check",
+    "cambridge_note": "Cambridge not named; 10+2 or equivalent with programme subjects. Needs a Bharathiar University eligibility certificate and equivalence (now issued by UGC).",
+    "entry": "No entrance test. Merit on Class 12 marks and government criteria, then counselling; apply online or on campus.",
+    "routes": [
+      "class-12-marks"
+    ],
+    "cost": "Fees not published; ask the admissions office",
+    "fee_band": "unknown",
+    "url": "https://www.kasc.ac.in/admission/",
+    "checked": "2026-10-31"
+  },
+  {
+    "vault": 92,
+    "name": "Mahatma Gandhi Medical College and Research Institute (MGMCRI), Sri Balaji Vidyapeeth",
+    "where": "Pillaiyarkuppam, Puducherry",
+    "region": "Puducherry",
+    "kind": "deemed",
+    "cambridge": "check",
+    "cambridge_note": "No Cambridge rule. MBBS follows NMC: Physics, Chemistry, Biology and English, 50% in PCB. Equivalence now issued by UGC; confirm which is accepted.",
+    "entry": "MBBS: NEET UG rank through MCC deemed university counselling. Allied health, nursing and BPT: SBV's own online entrance test (SBVDUCET).",
+    "routes": [
+      "neet",
+      "own-test"
+    ],
+    "cost": "About INR 34,89,500 for MBBS Year 1, management quota: tuition, fees and AC hostel (2026-27)",
+    "fee_band": "15-40l",
+    "url": "https://mgmcri.ac.in/admissionsmbbs/",
+    "checked": "2026-10-31"
+  },
+  {
+    "vault": 93,
+    "name": "M S Ramaiah College of Arts, Science and Commerce (Autonomous)",
+    "where": "Bengaluru, Karnataka",
+    "region": "Karnataka",
+    "kind": "private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "At least 3 A Levels at grade C or better; programme subjects apply (Accountancy for B.Com and BBA). Equivalence certificate (now issued by UGC) asked for.",
+    "entry": "No entrance test for UG. Admission on Class 12 marks in the relevant subjects (third party).",
+    "routes": [
+      "class-12-marks"
+    ],
+    "cost": "INR 1,30,000 Year 1 tuition for B.Com (General) at the non-Karnataka rate (2026-27); hostel fee not published",
+    "fee_band": "1-3l",
+    "url": "https://msrcasc.edu.in/ug-landing-page",
+    "checked": "2026-10-31"
+  },
+  {
+    "vault": 94,
+    "name": "PSG Institute of Advanced Studies",
+    "where": "Coimbatore, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "80% in Grade 12 from a recognised board (IGCSE named). Degree is awarded by a partner university abroad; transfer needs CGPA 7.5 and IELTS, TOEFL or German.",
+    "entry": "No national test. Board marks against the 80% minimum; an entrance test for those below it. Online application.",
+    "routes": [
+      "class-12-marks",
+      "own-test"
+    ],
+    "cost": "About INR 5.96 lakh Year 1 for BA (Hons) International Business, India years only; years abroad extra (third-party figure)",
+    "fee_band": "3-6l",
+    "url": "https://www.psgias.ac.in/admissions-2026-27/",
+    "checked": "2026-10-31"
+  },
+  {
+    "vault": 95,
+    "name": "St. Joseph's College of Engineering",
+    "where": "Semmencherry, Chennai, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "private",
+    "cambridge": "check",
+    "cambridge_note": "Cambridge not named; via TNEA it counts as 'Other Boards' with marks normalised. Maths, Physics and Chemistry with a 45% average.",
+    "entry": "No entrance test. TNEA rank on Class 12 Maths, Physics and Chemistry marks, or management quota on Class 12 marks.",
+    "routes": [
+      "class-12-marks"
+    ],
+    "cost": "About INR 2,00,000 a year for CSE, management quota: tuition, development fee and hostel (2025-26)",
+    "fee_band": "1-3l",
+    "url": "https://stjosephs.ac.in/pages/Admission.html",
+    "checked": "2026-10-31"
+  },
+  {
+    "vault": 96,
+    "name": "Stella Maris College",
+    "where": "Cathedral Road, Chennai, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "government",
+    "cambridge": "with-conditions",
+    "cambridge_note": "A Levels accepted if equivalent to Plus Two, with University of Madras eligibility and equivalence certificates. Programme subject rules apply. Women only.",
+    "entry": "No national test. Online application, then interview; entrance test for B.A. English and drawing test for B.V.A. Half the seats are for Catholic students.",
+    "routes": [
+      "interview",
+      "own-test"
+    ],
+    "cost": "About INR 2,78,000 for B.Com (Honours) Year 1 incl. hostel and mess (2026-27); aided B.A. fees are far lower",
+    "fee_band": "1-3l",
+    "url": "https://www.stellamariscollege.edu.in",
+    "checked": "2026-11-04"
+  },
+  {
+    "vault": 97,
+    "name": "Vinayaka Mission's Law School (VMRF Deemed University)",
+    "where": "Paiyanoor, Chennai, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "deemed",
+    "cambridge": "check",
+    "cambridge_note": "Cambridge not named; 10+2 or equivalent with 45%. Expect a VMRF eligibility certificate and an equivalence certificate (now issued by UGC).",
+    "entry": "Own online test (VLAT) plus Class 12 marks, then counselling. CLAT, AILET, LSAT-India or CUET accepted only in exceptional cases.",
+    "routes": [
+      "own-test",
+      "class-12-marks"
+    ],
+    "cost": "About INR 2,00,000 a year tuition for B.A. LL.B. (Hons) (2025 listing); hostel fee not published (third-party figure)",
+    "fee_band": "1-3l",
+    "url": "https://admissions.vmls.edu.in/",
+    "checked": "2026-11-04"
+  },
+  {
+    "vault": 99,
+    "name": "Dhanalakshmi Srinivasan Institute of Medical Sciences and Hospital (DSIMSH)",
+    "where": "Perambalur, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "private",
+    "cambridge": "check",
+    "cambridge_note": "Not named. NMC rule: Physics, Chemistry, Biology and English, 50% in PCB. The eligibility or equivalence certificate depends on the counselling route.",
+    "entry": "NEET UG, then counselling. The 2026-27 route (MCC deemed or Tamil Nadu state) is unclear; confirm with the college.",
+    "routes": [
+      "neet"
+    ],
+    "cost": "About INR 26,25,000 for MBBS Year 1, management seat: tuition, AC hostel and one-time fees (college page, undated)",
+    "fee_band": "15-40l",
+    "url": "https://dsimsh.org/admissions/",
+    "checked": "2026-11-04"
+  },
+  {
+    "vault": 102,
+    "name": "Symbiosis International (Deemed University) (SIU)",
+    "where": "Lavale, Pune, Maharashtra",
+    "region": "Maharashtra",
+    "kind": "deemed",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Accepted as 10+2 equivalent with 50% (45% SC/ST). Programme subjects apply, e.g. Physics and Maths for B.Tech; Liberal Arts sets O and A Level rules.",
+    "entry": "SET, SITEEE, SLAT or SEED test, then institute shortlist and personal interaction (SET 70 + PI 30). B.Des adds a portfolio review.",
+    "routes": [
+      "own-test",
+      "interview",
+      "portfolio"
+    ],
+    "cost": "About INR 9,63,200 for Liberal Arts Year 1: tuition, single room and mess (2026-27)",
+    "fee_band": "6-15l",
+    "url": "https://www.set-test.org/",
+    "checked": "2026-11-04"
+  },
+  {
+    "vault": 103,
+    "name": "Ashoka University",
+    "where": "Sonipat, Haryana",
+    "region": "Haryana",
+    "kind": "private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "At least 3 subjects at A Level; IGCSE results required; predicted grades accepted. No Maths in Class 12 means a Calculus course for some majors.",
+    "entry": "Application with essays, Ashoka's own essay and aptitude or maths test, then interview if shortlisted. SAT, CUET and others optional.",
+    "routes": [
+      "own-test",
+      "interview"
+    ],
+    "cost": "About INR 13,75,400 for Year 1: tuition, residence, services and minimum meals (2027-28)",
+    "fee_band": "6-15l",
+    "url": "https://www.ashoka.edu.in/admissions/undergraduate-students/",
+    "checked": "2026-11-04"
+  },
+  {
+    "vault": 104,
+    "name": "SASTRA Deemed University",
+    "where": "Thanjavur, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "deemed",
+    "cambridge": "with-conditions",
+    "cambridge_note": "No equivalence certificate needed for Cambridge. B.Tech needs 60% with Maths and Physics in a single sitting; must be under 19 on 1 August.",
+    "entry": "B.Tech: JEE Main percentile (Phase I), or JEE Main plus Class 12 or Class 12 alone (Phase II). Law: CLAT. Other UG: marks plus CUET.",
+    "routes": [
+      "jee-main",
+      "class-12-marks",
+      "cuet",
+      "other"
+    ],
+    "cost": "About INR 3,02,000 for B.Tech Year 1: tuition and fees, shared AC hostel and mess (2026-27)",
+    "fee_band": "3-6l",
+    "url": "https://www.sastra.edu/admissions/ug-pg.html",
+    "checked": "2026-11-04"
+  },
+  {
+    "vault": 105,
+    "name": "ATLAS SkillTech University",
+    "where": "Kurla West, Mumbai, Maharashtra",
+    "region": "Maharashtra",
+    "kind": "private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "BBA: 2 A Levels at grades A to C. B.Des: 2 A Levels plus 5 IGCSE subjects incl. English. Both need 5 IGCSE subjects.",
+    "entry": "Own online test (DAT, BAT, TAT or law test), then interview. B.Des adds a portfolio review; BBA a group case exercise.",
+    "routes": [
+      "own-test",
+      "interview",
+      "portfolio"
+    ],
+    "cost": "About INR 16,18,000 for B.Des Year 1: tuition, enrolment and partner housing with meals (2027-28) (third-party figure)",
+    "fee_band": "15-40l",
+    "url": "https://atlasuniversity.edu.in/admissions/ug-admissions",
+    "checked": "2026-11-04"
+  },
+  {
+    "vault": 106,
+    "name": "Tamil Nadu Agricultural University",
+    "where": "Coimbatore, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "government",
+    "cambridge": "with-conditions",
+    "cambridge_note": "International boards accepted if the four-subject rule is met; ranked on marks, not grades. Tamil Nadu nativity needed for general seats.",
+    "entry": "No entrance test: rank on the Class 12 aggregate of four subjects (out of 200), then online counselling.",
+    "routes": [
+      "class-12-marks"
+    ],
+    "cost": "About INR 1,37,000 for Year 1 of a technology programme incl. hostel charges, mess extra (2026-27)",
+    "fee_band": "1-3l",
+    "url": "https://tnau.ac.in/",
+    "checked": "2026-11-04"
+  },
+  {
+    "vault": 107,
+    "name": "B.M.S. College of Engineering",
+    "where": "Basavanagudi, Bengaluru, Karnataka",
+    "region": "Karnataka",
+    "kind": "private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "A Level named for the international route. Physics and Maths compulsory; migration certificate needed; ask about VTU eligibility.",
+    "entry": "COMEDK UGET or KCET counselling; management seats need a current CET, COMEDK or JEE Main rank.",
+    "routes": [
+      "other",
+      "jee-main"
+    ],
+    "cost": "About INR 16,20,000 for B.E. CSE management seat Year 1 incl. hostel, 2026-27 (hostel part is a third-party figure)",
+    "fee_band": "15-40l",
+    "url": "https://bmsce.ac.in/home/Under-Graduation",
+    "checked": "2026-11-04"
+  },
+  {
+    "vault": 108,
+    "name": "Chettinad Academy of Research and Education",
+    "where": "Kelambakkam, Chengalpattu district (near Chennai), Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "deemed",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Equivalence certificate required at reporting (now issued by UGC). Physics, Chemistry, Biology and English, with 50% in PCB.",
+    "entry": "NEET-UG rank; all MBBS seats through MCC deemed-university counselling.",
+    "routes": [
+      "neet"
+    ],
+    "cost": "About INR 35,83,000 for MBBS Year 1 incl. hostel, mess and other fees (2026-27)",
+    "fee_band": "15-40l",
+    "url": "https://care.edu.in/",
+    "checked": "2026-11-04"
+  },
+  {
+    "vault": 109,
+    "name": "Dhanalakshmi Srinivasan Medical College and Hospital",
+    "where": "Siruvachur, Perambalur, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Tamil Nadu Dr. M.G.R. Medical University eligibility certificate needed at application. PCB and English, with 50% in PCB.",
+    "entry": "NEET-UG rank; all seats through Tamil Nadu Medical Selection Committee counselling.",
+    "routes": [
+      "neet"
+    ],
+    "cost": "About INR 22,00,200 for MBBS Year 1, management quota, incl. hostel, mess and other fees (2026-27)",
+    "fee_band": "15-40l",
+    "url": "https://dsmedicalcollege.org/",
+    "checked": "2026-11-04"
+  },
+  {
+    "vault": 110,
+    "name": "H.R. College of Commerce and Economics, Mumbai",
+    "where": "Churchgate, Mumbai, Maharashtra",
+    "region": "Maharashtra",
+    "kind": "government",
+    "cambridge": "check",
+    "cambridge_note": "Not mentioned; 10+2 from a recognised board. Ask whether an HSNC University eligibility certificate is needed.",
+    "entry": "Merit lists on Class 12 aggregate marks; BMS also needs MAH-CET or the university H-CET-2 test.",
+    "routes": [
+      "class-12-marks",
+      "other"
+    ],
+    "cost": "INR 1,07,100 tuition for BMS Year 1 (2026-27); no college hostel, private housing extra",
+    "fee_band": "1-3l",
+    "url": "https://www.hrcollege.edu/",
+    "checked": "2026-11-04"
+  },
+  {
+    "vault": 111,
+    "name": "Birla Institute of Technology and Science, Pilani (BITS Pilani)",
+    "where": "Pilani, Rajasthan (also Goa and Hyderabad campuses)",
+    "region": "Rajasthan",
+    "kind": "deemed",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Physics, Chemistry and Maths at full A Level plus a language; 75% in PCM and 60% in each. Equivalence certificate (now issued by UGC).",
+    "entry": "BITSAT score (up to two sittings); one merit list for Pilani, Goa and Hyderabad. No interview.",
+    "routes": [
+      "own-test"
+    ],
+    "cost": "About INR 7,67,000 for B.E. Year 1 incl. hostel and mess advance (2026-27)",
+    "fee_band": "6-15l",
+    "url": "https://admissions.bits-pilani.ac.in/",
+    "checked": "2026-11-04"
+  },
+  {
+    "vault": 112,
+    "name": "Indian Institute of Technology Delhi (IIT Delhi)",
+    "where": "Hauz Khas, New Delhi",
+    "region": "Delhi",
+    "kind": "national-institute",
+    "cambridge": "with-conditions",
+    "cambridge_note": "GCE A Level named as Class 12 equivalent. Needs PCM and 75% over five subjects, or top 20 percentile of the board.",
+    "entry": "JEE Main, then JEE Advanced rank; seats through JoSAA. No interview.",
+    "routes": [
+      "jee-main",
+      "jee-advanced"
+    ],
+    "cost": "About INR 3,46,000 for B.Tech Year 1 incl. hostel and mess (2025 entry; hostel part is a third-party figure)",
+    "fee_band": "3-6l",
+    "url": "https://home.iitd.ac.in/ug-admissions.php",
+    "checked": "2026-11-04"
+  },
+  {
+    "vault": 113,
+    "name": "Indian Institute of Information Technology, Sri City (IIIT Sri City)",
+    "where": "Sri City, Chittoor district, Andhra Pradesh",
+    "region": "Andhra Pradesh",
+    "kind": "national-institute",
+    "cambridge": "with-conditions",
+    "cambridge_note": "JoSAA rules: 75% in Class 12 or top 20 percentile of the board. Physics, Chemistry and Maths at A Level.",
+    "entry": "JEE Main rank, then JoSAA/CSAB counselling (DASA for NRIs and foreign nationals). No interview.",
+    "routes": [
+      "jee-main"
+    ],
+    "cost": "About INR 5,00,000 for B.Tech Year 1 incl. hostel, mess and one-time fees (2026-27)",
+    "fee_band": "3-6l",
+    "url": "https://iiits.ac.in/admissions/b-tech-programme/josaa-csab/",
+    "checked": "2026-11-04"
+  },
+  {
+    "vault": 114,
+    "name": "Kristu Jayanti (Deemed to be University)",
+    "where": "Kothanur, Bengaluru, Karnataka",
+    "region": "Karnataka",
+    "kind": "deemed",
+    "cambridge": "check",
+    "cambridge_note": "Not named, but international-board students in India have their own fee category. 40% aggregate; confirm documents needed.",
+    "entry": "Online application, then the university's own entrance test or interview. No national test.",
+    "routes": [
+      "own-test",
+      "interview"
+    ],
+    "cost": "About INR 3,61,000 for B.Com (ACCA) Year 1 incl. hostel (2027-28; hostel part is a third-party figure)",
+    "fee_band": "3-6l",
+    "url": "https://www.kristujayanti.edu.in/admission",
+    "checked": "2026-11-04"
+  },
+  {
+    "vault": 115,
+    "name": "National Institute of Technology Raipur (NIT Raipur)",
+    "where": "Raipur, Chhattisgarh",
+    "region": "Chhattisgarh",
+    "kind": "national-institute",
+    "cambridge": "with-conditions",
+    "cambridge_note": "GCE A Level accepted through JoSAA; 75% in Class 12 or top 20 percentile of the board. B.Arch needs Maths.",
+    "entry": "JEE Main (Paper 1 for B.Tech, Paper 2 for B.Arch); seats through JoSAA and CSAB. No interview.",
+    "routes": [
+      "jee-main"
+    ],
+    "cost": "About INR 2,42,000 for B.Tech/B.Arch Year 1 incl. hostel and mess advance (2026-27)",
+    "fee_band": "1-3l",
+    "url": "https://nitrr.ac.in/admission.php",
+    "checked": "2026-11-04"
+  },
+  {
+    "vault": 116,
+    "name": "Presidency College, Chennai",
+    "where": "Chepauk, Chennai, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "government",
+    "cambridge": "with-conditions",
+    "cambridge_note": "University of Madras eligibility certificate needed for boards other than TN HSC, CBSE and ISC.",
+    "entry": "No entrance test: Class 12 marks through the TNGASA portal, then counselling.",
+    "routes": [
+      "class-12-marks"
+    ],
+    "cost": "About INR 4,000 in college fees for B.Sc Year 1; hostel fee not published (third-party figure)",
+    "fee_band": "under-1l",
+    "url": "https://www.pcc.ac.in/",
+    "checked": "2026-11-04"
+  },
+  {
+    "vault": 117,
+    "name": "Sri Sathya Sai Institute of Higher Learning",
+    "where": "Puttaparthi, Andhra Pradesh (also Anantapur, Bengaluru, Muddenahalli)",
+    "region": "Andhra Pradesh",
+    "kind": "deemed",
+    "cambridge": "check",
+    "cambridge_note": "Not named; 10+2 from a recognised board (CBSE or equivalent) with 60% aggregate. Ask admissions by email.",
+    "entry": "No test for most UG: merit shortlist on Class 10 to 12 marks, then an online interview.",
+    "routes": [
+      "class-12-marks",
+      "interview"
+    ],
+    "cost": "No tuition or other fees (2026); boarding and lodging charged, amount not published",
+    "fee_band": "under-1l",
+    "url": "https://www.sssihl.edu.in/",
+    "checked": "2026-11-04"
+  },
+  {
+    "vault": 120,
+    "name": "Karpagam Academy of Higher Education (Karpagam University)",
+    "where": "Eachanari, Coimbatore, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "deemed",
+    "cambridge": "check",
+    "cambridge_note": "Not mentioned; boards accepted by KAHE as equivalent. Ask the Registrar whether an equivalence certificate is needed.",
+    "entry": "Engineering: own entrance test plus Class 12 marks. B.Arch: NATA. Other UG: no test.",
+    "routes": [
+      "own-test",
+      "class-12-marks",
+      "other"
+    ],
+    "cost": "About INR 3,75,500 for B.E. CSE Year 1 incl. hostel (2026-27; hostel part is a third-party figure)",
+    "fee_band": "3-6l",
+    "url": "https://kahedu.edu.in/",
+    "checked": "2026-11-04"
+  },
+  {
+    "vault": 121,
+    "name": "Kalinga University",
+    "where": "Naya Raipur, Chhattisgarh",
+    "region": "Chhattisgarh",
+    "kind": "private",
+    "cambridge": "check",
+    "cambridge_note": "Cambridge boards named in the scholarship policy; eligibility page silent. B.Tech needs PCM with 45% (third party).",
+    "entry": "Own online KALSEE test (KAL-MAT plus interview for BBA), then shortlist and offer.",
+    "routes": [
+      "own-test",
+      "interview"
+    ],
+    "cost": "About INR 3,93,350 for B.Tech CS (AI and ML) Year 1 incl. AC hostel with food (2026-27, fees marked proposed)",
+    "fee_band": "3-6l",
+    "url": "https://kalingauniversity.ac.in/admissions",
+    "checked": "2026-11-04"
+  },
+  {
+    "vault": 122,
+    "name": "Sathyabama Institute of Science and Technology",
+    "where": "Rajiv Gandhi Salai (OMR), Chennai, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "deemed",
+    "cambridge": "check",
+    "cambridge_note": "Not named; 10+2 or equivalent with Maths and Physics. Expect to be asked for an equivalence certificate (now issued by UGC).",
+    "entry": "Own SAEEE test (JEE Main accepted, third party), then rank-based counselling. B.Arch: NATA.",
+    "routes": [
+      "own-test",
+      "jee-main",
+      "other"
+    ],
+    "cost": "About INR 6,75,000 for B.E. CSE Year 1 incl. hostel, 2026-27 (third-party figure)",
+    "fee_band": "6-15l",
+    "url": "https://www.sathyabama.ac.in/admissions",
+    "checked": "2026-11-04"
+  },
+  {
+    "vault": 123,
+    "name": "Unitedworld Institute of Design (UID), Karnavati University",
+    "where": "Uvarsad, Gandhinagar, Gujarat",
+    "region": "Gujarat",
+    "kind": "private",
+    "cambridge": "check",
+    "cambridge_note": "Not named; 10+2 in any stream with 50% aggregate. Ask whether an equivalence certificate is needed.",
+    "entry": "Own UID DAT: online Tier I test, then a situation test, portfolio or interview.",
+    "routes": [
+      "own-test",
+      "portfolio",
+      "interview"
+    ],
+    "cost": "About INR 12,27,500 for B.Des Year 1 incl. hostel and mess, 2026-27 (tuition part is a third-party figure)",
+    "fee_band": "6-15l",
+    "url": "https://uid.edu.in/admission/",
+    "checked": "2026-11-04"
+  },
+  {
+    "vault": 124,
+    "name": "M.O.P. Vaishnav College for Women",
+    "where": "Nungambakkam, Chennai, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "University of Madras eligibility certificate needed for boards other than TN HSC, CBSE and ISC.",
+    "entry": "Online application on Class 12 merit; Visual Communication and Electronic Media add a test, portfolio and interview.",
+    "routes": [
+      "class-12-marks",
+      "own-test",
+      "portfolio",
+      "interview"
+    ],
+    "cost": "About INR 69,000 tuition for B.Com (Hons) Year 1, 2026 listing; no college hostel (third-party figure)",
+    "fee_band": "under-1l",
+    "url": "https://mopvc.edu.in/",
+    "checked": "2026-11-04"
+  },
+  {
+    "vault": 125,
+    "name": "Acharya Institute of Technology",
+    "where": "Soladevanahalli, Bengaluru, Karnataka",
+    "region": "Karnataka",
+    "kind": "private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "VTU eligibility certificate needed for non-Karnataka boards. Physics and Maths plus one science, 45% aggregate.",
+    "entry": "COMEDK UGET (KCET for Karnataka-eligible students) or a management seat on merit; JEE Main also named.",
+    "routes": [
+      "other",
+      "jee-main"
+    ],
+    "cost": "About INR 4,42,000 for B.E. CSE Year 1 on COMEDK fee incl. hostel (2025-26; hostel part is a third-party figure)",
+    "fee_band": "3-6l",
+    "url": "https://www.acharya.ac.in/admissions.html",
+    "checked": "2026-11-15"
+  },
+  {
+    "vault": 126,
+    "name": "Bangalore Institute of Technology",
+    "where": "V.V. Puram, Bengaluru, Karnataka",
+    "region": "Karnataka",
+    "kind": "private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "VTU eligibility and migration certificates needed. Physics and Maths plus one science, 45% aggregate.",
+    "entry": "KCET (Karnataka-eligible only), COMEDK UGET, or a management seat that needs a CET, COMEDK or JEE rank.",
+    "routes": [
+      "other",
+      "jee-main"
+    ],
+    "cost": "About INR 11,96,000 for B.E. CSE management Year 1 incl. booking fee and hostel, 2025-26 (third-party figure)",
+    "fee_band": "6-15l",
+    "url": "https://bit-bangalore.edu.in/admission-be",
+    "checked": "2026-11-15"
+  },
+  {
+    "vault": 127,
+    "name": "Chennai Institute of Technology",
+    "where": "Kundrathur, Chennai, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Treated as an Other Board in TNEA, with marks normalised. Needs Maths, Physics and Chemistry with a 45% average.",
+    "entry": "No test: TNEA counselling on Class 12 PCM marks; management seats through the Consortium on marks.",
+    "routes": [
+      "class-12-marks"
+    ],
+    "cost": "About INR 2,55,000 for B.E. CSE management quota Year 1 incl. hostel (2025-26)",
+    "fee_band": "1-3l",
+    "url": "https://www.citchennai.edu.in/admission",
+    "checked": "2026-11-15"
+  },
+  {
+    "vault": 129,
+    "name": "Sri Eshwar College of Engineering",
+    "where": "Kinathukadavu, Coimbatore district, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Non-CBSE, non-TN board students need an equivalence certificate (now issued by UGC). PCM with a 45% average.",
+    "entry": "No test: TNEA counselling on Class 12 PCM marks; management seats on cut-off marks through the Consortium.",
+    "routes": [
+      "class-12-marks"
+    ],
+    "cost": "About INR 2,37,000 for B.E. CSE management quota Year 1 incl. hostel (2025-26 tuition)",
+    "fee_band": "1-3l",
+    "url": "https://sece.ac.in/admissions/",
+    "checked": "2026-11-15"
+  },
+  {
+    "vault": 130,
+    "name": "Velalar College of Engineering and Technology",
+    "where": "Thindal, Erode, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "Treated as an Other Board in TNEA, with marks normalised. Needs Maths, Physics and Chemistry with a 45% average.",
+    "entry": "No test: TNEA counselling on Class 12 PCM marks; management seats on Class 12 cut-off marks.",
+    "routes": [
+      "class-12-marks"
+    ],
+    "cost": "About INR 1,33,600 for B.E. CSE management quota Year 1 incl. hostel (2026-27; hostel part is a third-party figure)",
+    "fee_band": "1-3l",
+    "url": "https://www.velalarengg.ac.in/",
+    "checked": "2026-11-15"
+  },
+  {
+    "vault": 133,
+    "name": "RV College of Architecture (RVCA)",
+    "where": "Banashankari 6th Stage, Bengaluru, Karnataka",
+    "region": "Karnataka",
+    "kind": "private",
+    "cambridge": "with-conditions",
+    "cambridge_note": "UGC equivalence and VTU eligibility certificates needed. Physics and Maths plus one subject, 45%; management seats need 60% in each of PCM.",
+    "entry": "NATA or JEE Main Paper 2 score; seats through COMEDK, KEA (Karnataka only) or the management quota.",
+    "routes": [
+      "other",
+      "jee-main"
+    ],
+    "cost": "About INR 8,72,500 for B.Arch management quota Year 1 incl. hostel and mess (2026-27)",
+    "fee_band": "6-15l",
+    "url": "https://rvca.edu.in/admission/",
+    "checked": "2026-11-15"
+  },
+  {
+    "vault": 134,
+    "name": "Saveetha College of Architecture and Design (SCAD), SIMATS",
+    "where": "Thandalam, Chennai, Tamil Nadu",
+    "region": "Tamil Nadu",
+    "kind": "deemed",
+    "cambridge": "check",
+    "cambridge_note": "No Cambridge rule; B.Arch needs Physics and Maths plus one listed subject, 45%. Ask SIMATS about an equivalence certificate.",
+    "entry": "Direct admission by SIMATS. B.Arch: NATA or JEE Main Paper 2A plus Class 12 marks; B.Des and B.Sc on merit.",
+    "routes": [
+      "other",
+      "jee-main",
+      "class-12-marks"
+    ],
+    "cost": "About INR 4,40,000 for B.Arch Year 1 incl. hostel and mess, 2026-27 (third-party figure)",
+    "fee_band": "3-6l",
+    "url": "https://scad.saveetha.com/admission-page",
+    "checked": "2026-11-15"
+  },
+  {
+    "vault": 135,
+    "name": "University of Design, Innovation and Technology (UDIT)",
+    "where": "Sector 68, Gurugram, Haryana",
+    "region": "Haryana",
+    "kind": "private",
+    "cambridge": "check",
+    "cambridge_note": "International boards accepted; any stream, 50% aggregate. Ask whether a UGC equivalence certificate is needed.",
+    "entry": "Own U-DAT (design) or U-MAT (BBA) at Gurugram, plus portfolio review and interview.",
+    "routes": [
+      "own-test",
+      "portfolio",
+      "interview"
+    ],
+    "cost": "About INR 6,80,000 for B.Des Year 1 incl. admission, software and meal plan; hostel extra (2026-27)",
+    "fee_band": "6-15l",
+    "url": "https://www.udit.edu.in/admissions/",
+    "checked": "2026-11-15"
+  }
+]

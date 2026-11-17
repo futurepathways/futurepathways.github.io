@@ -33,6 +33,17 @@ key_dates:
     label: "Regular Decision deadline"
     note: "Other materials by 10 January; decision in mid March; reply by 1 May"
     url: "https://www.admissions.caltech.edu/apply/first-year-applicants/deadlines"
+glance:
+  kind: foreign-private
+  where: "Pasadena, California, USA"
+  region: "USA"
+  cambridge: yes
+  cambridge_note: "A Level students apply the same way as everyone else; Caltech names no grades, but A Levels do not replace the SAT or ACT."
+  entry: "Common App or QuestBridge, with SAT or ACT, essays and two teacher letters; REA 1 Nov or RD 4 Jan."
+  routes: [common-app, sat-act, other]
+  cost: "USD 98,622 a year all-in on campus (~₹95 lakh, 2026-27)"
+  fee_band: over-40l
+  watch: "Aid is need-aware for international students and must be asked for at the first application. Skip it, or miss it in year one, and you can never apply for aid later."
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
@@ -58,7 +69,7 @@ Caltech has its own YouTube playlist, “Caltech Student Campus Tour”. [Watch 
 
 Caltech is a very small and very demanding place. Its core course asks every student to study basic sciences, humanities and social science, whatever the major. Caltech lists 33 undergraduate majors, mostly in science and engineering. This suits a child who enjoys long, hard problem sets and would rather go deep into one question than wide across many subjects. It may not suit a child who is good at many subjects but does not love maths and physics. It may also not suit a child who wants a large campus with a lot of variety. The numbers also say it is a long shot. For the class of 2029, Caltech had 11,285 applicants and a first-year class of 248. Fit matters more here than almost anywhere, so please read this edition with that in mind.
 
-## Caltech Admission Requirements, CBSE/State Boards and Cambridge A Level
+## What does Caltech ask of CBSE, State Board and Cambridge A Level students?
 
 | Requirement | CBSE / Indian State Boards | Cambridge A Level |
 |---|---|---|
@@ -104,7 +115,7 @@ Please plan around one strict rule. An international student must ask for aid wh
 
 Caltech does not publish a list of accepted Indian boards that we could find. CBSE, State Board and Cambridge A Level students all apply through the same Common App or QuestBridge route. Caltech’s requirement pages ask for the SAT or ACT, two teacher letters, essays and English proof if your school does not teach in English. They do not list JEE or NEET.
 
-## What parents should know
+## What should families know before applying?
 
 - CRITICAL. Caltech is need aware for international students, and you must ask for aid when you first apply. If you skip aid, or apply and do not get it in year one, you cannot ask for aid at Caltech in any later year. Decide the family budget before you apply, not after
 - Older guides say that applying Restrictive Early Action (1 November) cancels aid for international students. Caltech’s current pages say REA and RD applicants can both ask for aid. Please check the rule again on Caltech’s international page before you choose your round

@@ -12,6 +12,10 @@ interface Props {
   /** Set true on pages that search engines must not list (PRD 5.4). */
   noindex?: boolean;
   type?: 'website' | 'article';
+  /** Use this exact text as the page title instead of "Title | Future Pathways" (the home page). */
+  fullTitle?: string;
+  /** Structured data (schema.org JSON-LD) for this page: one object or a list. */
+  schema?: object | object[];
 }
 
 const {
@@ -20,9 +24,13 @@ const {
   image = '/images/preview-default.png',
   noindex = false,
   type = 'website',
+  schema,
 } = Astro.props;
 
-const fullTitle = title === site.name ? site.name : `${title} | ${site.name}`;
+const fullTitle = Astro.props.fullTitle ?? (title === site.name ? site.name : `${title} | ${site.name}`);
+const schemas = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
+// '<' is escaped so text inside the JSON can never close the script tag.
+const jsonLd = (o: object) => JSON.stringify(o).replace(/</g, '\\u003c');
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const imageUrl = new URL(image, Astro.site);
 ---
@@ -59,6 +67,10 @@ const imageUrl = new URL(image, Astro.site);
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={imageUrl} />
+
+    {site.googleVerification && <meta name="google-site-verification" content={site.googleVerification} />}
+    {site.bingVerification && <meta name="msvalidate.01" content={site.bingVerification} />}
+    {schemas.map((o) => <script type="application/ld+json" set:html={jsonLd(o)} />)}
 
     <slot name="head" />
   </head>

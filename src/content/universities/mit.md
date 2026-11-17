@@ -39,6 +39,17 @@ key_dates:
   - date: 2027-02-15
     label: "CSS Profile due for Regular Action"
     url: "https://sfs.mit.edu/undergraduate-students/apply-for-aid/"
+glance:
+  kind: foreign-private
+  where: "Cambridge, Massachusetts, USA"
+  region: "USA"
+  cambridge: yes
+  cambridge_note: "Yes. MIT accepts Cambridge AS and A Level and looks at external exam results; it sets no minimum grades."
+  entry: "MIT's own portal (not the Common App), with SAT or ACT, essays, two teacher letters and an interview where offered."
+  routes: [sat-act, other]
+  cost: "About ₹89 lakh a year all-in before aid (USD 92,760, 2026-27); flights extra"
+  fee_band: over-40l
+  watch: "One application a year: an Early Action rejection means no Regular Action try. SAT or ACT is required."
 author: "Madan Kumar PC"
 reviewed_by: "Madan Kumar PC"
 last_checked: 2026-10-11
@@ -60,7 +71,7 @@ On demand, a campus tour of MIT is available on YouTube. [Watch the MIT Campus T
 
 **Visit a university in person.** I strongly recommend that families of Grade 9 and above students visit at least one university: this one, a local university in India, or any place you choose. Seeing the labs and classrooms and talking to students gives a child something a virtual tour cannot. If you need help planning a visit, write to me at pcmadankumar@gmail.com.
 
-## MIT Admission Requirements for CBSE and Cambridge A Level
+## What does MIT ask of CBSE, State Board and Cambridge A Level students?
 
 The table below sums up what MIT says it needs from applicants in each pathway. MIT publishes no cut-off marks, so we do not give a magic number. For subject plans and application strategy, please write to me for a one to one session.
 
@@ -102,7 +113,7 @@ MIT is not only for engineers. It teaches Computer Science, Electrical Engineeri
 
 MIT is one of six US universities that are both need-blind for international students and meet their full need. The six are Amherst, Dartmouth, Harvard, MIT, Princeton and Yale. Need-blind means MIT does not look at your family's ability to pay when it decides admission. Full need means MIT meets 100 percent of the need it works out for you, whatever your citizenship. The sticker price for 2026-27 is USD 92,760 (~INR 89 lakhs at ~USD 96/INR, October 2026). MIT says students who received a need based scholarship paid a median of USD 10,268 (~INR 9.9 lakhs) in 2024-25. It also says 88 percent of students graduate debt free. Read the warnings in the next section before you plan around these numbers.
 
-## What parents should know
+## What should families know before applying?
 
 - CRITICAL: Do not plan around the USD 10,268 figure or the "families under USD 100,000 pay nothing" line. MIT's page says families with income below USD 100,000 have no parent contribution and families below USD 200,000 typically attend tuition free. It does not say how these levels apply to families living in India. I can ask MIT for a net price estimate based on your own papers. Aid is worked out from your CSS Profile and tax return, not from a rule of thumb
 - CRITICAL: "No loans" is not the full story. MIT builds the offer so that you should not need to borrow. Loans are still available, though. MIT also expects a student contribution from summer savings and term time work. I will ask MIT how this works for an international student on an F-1 visa

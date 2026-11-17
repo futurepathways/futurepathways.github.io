@@ -26,6 +26,17 @@ key_dates:
     label: "TNEA 2026: registration closed (for reference)"
     note: "Ran 3 May to 5 June 2026; rank list 1 July; general counselling 20 July to 30 August. TNEA 2027 dates not yet announced"
     url: "https://www.tneaonline.org/"
+glance:
+  kind: government
+  where: "Peelamedu, Coimbatore, Tamil Nadu"
+  region: "Tamil Nadu"
+  cambridge: with-conditions
+  cambridge_note: "Yes, under Other Boards, with 45 percent in A Level Maths, Physics and Chemistry. Show actual marks, not only grades, or TNEA counts the lowest mark."
+  entry: "TNEA on Class 12 Maths, Physics and Chemistry marks; no entrance exam. A separate route for OCI, foreign and Gulf-worker (CIWGC) students."
+  routes: [class-12-marks]
+  cost: "About ₹24,700 (aided) to ₹92,300 (self-supporting) a year in college fees (2025-26); hostel about ₹1 lakh extra"
+  fee_band: under-1l
+  watch: "Grades alone can cost a Cambridge student marks. Get a marks statement, and check whether the seat is aided or self-supporting."
 author: "Madan Kumar PC"
 last_checked: 2026-11-15
 status: published
@@ -40,11 +51,11 @@ published_date: 2026-11-15
 - **How you get in:** Mostly through TNEA, the Tamil Nadu government's single-window counselling, which ranks students on Class 12 marks. There is no entrance exam.
 - **Unusual option:** Five-year "sandwich" B.E. courses in Mechanical, Electrical and Electronics, and Production Engineering. Students train in industry in the mornings and study in the evenings.
 
-## Popular courses
+## Which courses are most popular?
 
 PSG Tech offers a wide range of B.E. and B.Tech branches. Computer Science, Electronics and Communication, Information Technology and Mechanical are among the most sought after. It also runs less common branches such as Textile Technology, Fashion Technology, Metallurgical, Production, Biomedical, Robotics and Automation, and Instrumentation and Control.
 
-## How to get in
+## How do you get in?
 
 ### For CBSE and other Indian board students
 
@@ -61,11 +72,11 @@ PSG Tech offers a wide range of B.E. and B.Tech branches. Computer Science, Elec
 4. **Equivalence.** PSG asks for a migration certificate from students of boards other than the Tamil Nadu State Board. An equivalence certificate for foreign qualifications is now issued by the University Grants Commission (UGC) through its equivalence portal. Ask the college early which papers it wants.
 5. **Timing.** Cambridge March-series results came out on 19 May 2026, well before TNEA counselling began in July. A subject taken in the June series would be too late, so keep every subject in March.
 
-## Application window and fee
+## When do applications open, and what is the fee?
 
 PSG's own page says B.E. and B.Tech seats are filled through single-window counselling by the Directorate of Technical Education (DoTE). For the 2026 cycle, TNEA registration ran from 3 May to 5 June 2026, the rank list came on 1 July, and general counselling ran from 20 July to 30 August. The registration fee was ₹500, or ₹250 for SC, SCA and ST students. The 2027 dates were not out when this was checked.
 
-## Approximate annual cost
+## How much does it cost a year?
 
 These are PSG's own figures for a government-quota (TNEA) seat in the first year, 2025-26. They cover the college fee for the year. Hostel is separate.
 
@@ -80,7 +91,7 @@ The same branch name can have both aided and self-supporting seats, at very diff
 
 So a family should budget roughly **₹1.2 lakh (aided seat) to ₹2.3 lakh (self-supporting seat, better room) a year in 2025-26 terms** for fee, hostel and food, before books and travel. Fees rise most years.
 
-## Scholarships
+## Are there scholarships?
 
 - **7.5 percent reservation** for students who studied Classes 6 to 12 in government schools. The state pays tuition, hostel and development fees.
 - **First Graduate concession** on tuition for the first in a family to go to college.
@@ -88,13 +99,13 @@ So a family should budget roughly **₹1.2 lakh (aided seat) to ₹2.3 lakh (sel
 - **Post-matric scholarship** for SC, SCA and ST students with family income under ₹2.5 lakh.
 - **PSG's own fee waivers.** These are on a merit-cum-means basis: parents' combined income under ₹6 lakh, judged with the cut-off mark. In 2025-26, 26 undergraduates received waivers.
 
-## Routes for OCI cardholders and foreign nationals
+## Can OCI cardholders and foreign nationals apply?
 
-PSG has a separate route for foreign nationals and OCI cardholders (Overseas Citizens of India), with its own online application. Students need 12 years of schooling with Physics, Chemistry and Mathematics, a pass in every subject, at least 45 percent average in the three, and English medium or English as a subject. If the school gives grades, the Principal must state equivalent marks. A college committee selects on merit, and the seat is confirmed later by Anna University, DoTE and AICTE. Foreign nationals need an Indian student visa. Fees are not published on the page, so ask for them in writing.
+PSG has a separate route for foreign nationals, OCI cardholders (Overseas Citizens of India) and Children of Indian Workers in Gulf Countries (CIWGC), with its own online application. These are extra (supernumerary) seats approved by AICTE, in 16 B.E. and B.Tech branches including CSE, ECE and IT (2026 cycle, as on 18 Oct 2026). The CIWGC seats matter to Indian families working in the Gulf. Students need 12 years of schooling with Physics, Chemistry and Mathematics, a pass in every subject, at least 45 percent average in the three, and English medium or English as a subject. If the school gives grades, the Principal must state equivalent marks. A college committee selects on merit, and the seat is confirmed later by Anna University, DoTE and AICTE. Foreign nationals need an Indian student visa. Fees are not published on the page, so ask for them in writing.
 
 TNEA also lets OCI or PIO cardholders who are Tamil Nadu natives apply under the Open Category, unless they were born abroad after 4 March 2021.
 
-## Things families should know
+## What should families know before applying?
 
 - **There is no entrance exam.** Class 12 marks in Mathematics, Physics and Chemistry decide everything. Mathematics carries half the score.
 - **Grades alone can cost a Cambridge student marks.** Get a marks statement, not just grades, so TNEA does not count the bottom of each grade band.
@@ -122,7 +133,7 @@ If a university or counselling body asks for an equivalence or eligibility certi
 2. [TNEA 2026 Schedule, DoTE (Official, PDF)](https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf) — Registration 3 May to 5 June 2026, rank list 1 July, general counselling 20 July to 30 August.
 3. [PSG Tech First Year BE/BTech Admission 2025 letter (Official, PDF)](https://events.psgtech.ac.in/flashedu/images/files/BE%20Counseling%20candidates%20ADMISSION%20web%202025.pdf) — 2025-26 fees by seat type, hostel charges, migration certificate rule.
 4. [PSG Tech Mandatory Disclosure (Official, PDF)](https://psgtech.edu/files/general/Mandatory%20Disclosure.pdf) — Merit-cum-means waiver rule, 26 UG waivers in 2025-26, State Fee Committee tuition.
-5. [PSG Tech BE/BTech Admission 2026 under FN / OCI (Official)](https://psgtech.edu/fn_oci/) — Eligibility, branches, selection, documents, visa.
+5. [PSG Tech BE/BTech Admission 2026 under FN / OCI (Official)](https://psgtech.edu/fn_oci/) — Eligibility, branches, selection, documents, visa; AICTE supernumerary seats for FN, OCI and CIWGC in 16 branches.
 6. [PSG Tech Admission Procedure (Official)](https://psgtech.edu/admission.php) — B.E. and B.Tech through DoTE single-window counselling.
 7. [NIRF India Rankings 2025, Engineering (Official)](https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html) — PSG College of Technology at 67.
 8. [Cambridge International, March series results (Official)](https://www.cambridgeinternational.org/exam-administration/march-series/march-results/) — March 2026 results on 19 May 2026.

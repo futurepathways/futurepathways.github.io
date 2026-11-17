@@ -13,7 +13,12 @@ export const site = {
   builtByUrl: 'https://pcmadankumar.github.io/future-pathways.html',
   // GoatCounter is off until Madan decides (PRD Section 16, item 3).
   // When on, set this to the GoatCounter site code, e.g. 'futurepathways'.
-  goatCounterCode: '',
+  goatCounterCode: 'futurepathways',
+  // Home page title for search results and AI tools (16 Nov 2026).
+  homeTitle: 'Future Pathways: Career and University Guides for India',
+  // Search Console / Bing Webmaster verification codes: paste only the content="..." value.
+  googleVerification: '',
+  bingVerification: '',
 } as const;
 
 export type CategoryKey = 'careers' | 'opportunities' | 'courses' | 'countries' | 'universities';
